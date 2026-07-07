@@ -20,6 +20,7 @@ The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `
 - Vercel rows without a favicon were removed.
 - A Codex Curation corner was added after reading the official HP, publication list, and note articles. It should feel like a small guided shelf, not a full second portfolio.
 - Papers were included as bridges from the publication list to visible web demos, especially Gray-Scott and proportion regulation.
+- Non-app note essays should stay in a compact shelf under the curation corner so they add Daishin's voice without crowding the app-related notes.
 - The Twitter/X profile image for `@dueyama` replaced the earlier GitHub avatar in the top profile panel.
 - Internal build notes such as data-source strings or collection-status caveats should not appear in the visible page.
 - The top update date is useful and should remain visible.
