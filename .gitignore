@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Editor and local environment
+.vscode/
+.idea/
+.env
+.env.*
+
+# Dependencies and build artifacts
+node_modules/
+dist/
+build/
+coverage/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Local hosting/deployment state
+.vercel/
