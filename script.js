@@ -81,6 +81,16 @@ const projects = [
     tags: ["BigInt", "prime", "Next.js"],
   },
   {
+    title: "BlockchainJewelryConcept",
+    repo: "https://github.com/dueyama/BlockchainJewelryConcept",
+    demo: "https://www.bcj-concept.com/",
+    demoLabel: "Project",
+    kind: "art",
+    description:
+      "Ethereumのブロックサイズ列から、Spiral Manifoldなどのブロックチェーン由来ジュエリー/彫刻作品を生成するリポジトリ。",
+    tags: ["Ethereum", "NFT", "3D art"],
+  },
+  {
     title: "Buddhist Text Embedding Map",
     repo: "https://github.com/dueyama/buddhist-text-embedding-map",
     demo: "https://dueyama.github.io/buddhist-text-embedding-map/",
@@ -311,6 +321,8 @@ const englishDescriptions = {
     "A Next.js atlas of known three-body problem orbit examples, with 2D/projected-3D views, RK4/RK45 integration, perturbation controls, and localized UI.",
   "PrimePortrait Maker":
     "A fully browser-side tool that converts an image into a 3,840-digit portrait and searches for a giant probable-prime candidate by changing only the suffix.",
+  BlockchainJewelryConcept:
+    "A repository for generative blockchain-derived jewelry and sculptural works, including Spiral Manifold, built from Ethereum block-size sequences.",
   "Buddhist Text Embedding Map":
     "A public research repository that uses semantic embeddings to build exploratory maps across Chinese Buddhist texts, Japanese Buddhist writings, and multilingual correspondences.",
   "Honen-Shinran Shared Core Map":
