@@ -506,6 +506,11 @@ h3 {
   color: var(--muted);
 }
 
+.suno-card .suno-count-note {
+  margin: -8px 0 18px;
+  font-size: 0.9rem;
+}
+
 .suno-list {
   display: grid;
   gap: 12px;
