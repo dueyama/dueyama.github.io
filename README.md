@@ -10,6 +10,7 @@
 - 既存HPの研究・教育資料への入口
 - GitHub公開リポジトリの概要
 - Codexキュレーションによる公式HP・論文・noteの注目入口
+- Project DonnyU / Blockchain Jewelry Concept の活動
 - Suno DonnyU (@donnyu) の公開曲トップ5
 - Vercelで公開しているデモ
 - App Store公開アプリと関連note記事

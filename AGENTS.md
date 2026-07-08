@@ -4,7 +4,7 @@ This is a public working note for the Codex-assisted profile page. It is not mea
 
 ## What We Built
 
-This repository became a bilingual GitHub Pages profile for Daishin Ueyama. The page gathers public-facing work from the existing Google Sites HP, GitHub repositories, Vercel demos, App Store apps, and note articles.
+This repository became a bilingual GitHub Pages profile for Daishin Ueyama. The page gathers public-facing work from the existing Google Sites HP, Project DonnyU / Blockchain Jewelry Concept, GitHub repositories, Vercel demos, App Store apps, Suno songs, and note articles.
 
 The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `language.js`, and `script.js`.
 
@@ -18,8 +18,9 @@ The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `
 - GitHub Pages publications should be labeled `Pages`, not `Demo`.
 - Vercel items should stay small and should use favicons when possible.
 - Vercel rows without a favicon were removed.
-- A Codex Curation corner was added after reading the official HP, publication list, and note articles. It should feel like a small guided shelf, not a full second portfolio.
+- A Codex Curation corner was added after reading the official HP, publication list, Project DonnyU, and note articles. It should feel like a small guided shelf, not a full second portfolio.
 - Papers were included as bridges from the publication list to visible web demos, especially Gray-Scott and proportion regulation.
+- Project DonnyU / Blockchain Jewelry Concept was added as a web3 art activity that connects Ethereum block-size data, time, memory, 3D objects, NFTs, and future AR/metaverse contexts.
 - Non-app note essays should stay in a compact shelf under the curation corner so they add Daishin's voice without crowding the app-related notes.
 - Suno DonnyU (`@donnyu`) public songs were added as a small top-played list. Play counts are static values checked on 2026-07-08 JST; refresh them from the public Suno profile/feed when needed.
 - The Twitter/X profile image for `@dueyama` replaced the earlier GitHub avatar in the top profile panel.
