@@ -26,6 +26,11 @@ The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `
 - The Twitter/X profile image for `@dueyama` replaced the earlier GitHub avatar in the top profile panel.
 - Internal build notes such as data-source strings or collection-status caveats should not appear in the visible page.
 - The top update date is useful and should remain visible.
+- The first version grew too long because HP, curation, Suno, iOS, GitHub, and Vercel were all treated as equally large sections.
+- The page was reorganized around three ideas instead of publishing platforms: making mathematics tangible, building tools from lived experience, and turning memory and time into form.
+- Codex Curation now leads with three substantial selections. Additional picks stay available in a collapsed shelf rather than extending the initial page.
+- GitHub, Vercel, iOS, writing, and music now share one tabbed public-work index. Only one collection is visible at a time, and GitHub initially shows six repositories.
+- Keep the homepage as a single gathering place for now. Prefer progressive disclosure over splitting it into many small pages unless the collection becomes substantially larger.
 
 ## iOS Apps
 

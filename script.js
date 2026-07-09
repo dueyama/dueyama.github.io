@@ -341,13 +341,24 @@ const projectGrid = document.querySelector("#project-grid");
 const vercelTable = document.querySelector("#vercel-table");
 const iosAppGrid = document.querySelector("#ios-app-grid");
 const filterButtons = document.querySelectorAll(".filter-button");
+const collectionTabs = document.querySelectorAll(".collection-tab");
+const collectionPanels = document.querySelectorAll("[data-collection-panel]");
+const collectionLinks = document.querySelectorAll("[data-select-collection]");
+const projectToggle = document.querySelector("#project-toggle");
 const languageLinks = document.querySelectorAll("[data-language-choice]");
 const isEnglish = document.documentElement.lang.toLowerCase().startsWith("en");
 const languageStorageKey = "dueyama-profile-language";
+const projectPreviewLimit = 6;
+let currentProjectFilter = "all";
+let showAllProjects = false;
 
 function renderProjects(filter = "all") {
   const visibleProjects = projects.filter((project) => filter === "all" || project.kind === filter);
-  projectGrid.innerHTML = visibleProjects
+  const displayedProjects = showAllProjects
+    ? visibleProjects
+    : visibleProjects.slice(0, projectPreviewLimit);
+
+  projectGrid.innerHTML = displayedProjects
     .map((project) => {
       const description = isEnglish
         ? englishDescriptions[project.title] || project.description
@@ -368,6 +379,18 @@ function renderProjects(filter = "all") {
       `;
     })
     .join("");
+
+  if (projectToggle) {
+    const hasMoreProjects = visibleProjects.length > projectPreviewLimit;
+    projectToggle.hidden = !hasMoreProjects;
+    projectToggle.textContent = showAllProjects
+      ? isEnglish
+        ? "Return to six repositories"
+        : "6件表示に戻す"
+      : isEnglish
+        ? `Show all ${visibleProjects.length} listed repositories`
+        : `掲載中の${visibleProjects.length}件をすべて表示`;
+  }
 }
 
 function renderVercelTable() {
@@ -446,8 +469,41 @@ filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     filterButtons.forEach((item) => item.classList.remove("is-active"));
     button.classList.add("is-active");
-    renderProjects(button.dataset.filter);
+    currentProjectFilter = button.dataset.filter;
+    showAllProjects = false;
+    renderProjects(currentProjectFilter);
   });
+});
+
+function selectCollection(collection) {
+  collectionTabs.forEach((tab) => {
+    const isSelected = tab.dataset.collection === collection;
+    tab.classList.toggle("is-active", isSelected);
+    tab.setAttribute("aria-selected", String(isSelected));
+  });
+
+  collectionPanels.forEach((panel) => {
+    const isSelected = panel.dataset.collectionPanel === collection;
+    panel.classList.toggle("is-active", isSelected);
+    panel.hidden = !isSelected;
+  });
+}
+
+collectionTabs.forEach((tab) => {
+  tab.addEventListener("click", () => selectCollection(tab.dataset.collection));
+});
+
+collectionLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    selectCollection(link.dataset.selectCollection);
+    document.querySelector("#archive")?.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+projectToggle?.addEventListener("click", () => {
+  showAllProjects = !showAllProjects;
+  renderProjects(currentProjectFilter);
 });
 
 languageLinks.forEach((link) => {

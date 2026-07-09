@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daishin Ueyama | GitHub / Vercel / HP Overview</title>
+    <title>上山大信 | 研究と制作の記録</title>
     <meta
       name="description"
-      content="上山大信の既存HP、GitHub公開リポジトリ、Vercel公開デモ、App Storeアプリ、note、Suno公開曲を横断してまとめたプロフィールページ。"
+      content="上山大信の研究、シミュレーション、アプリ、文章、アート、音楽を横断して紹介するプロフィールページ。"
     />
     <meta name="color-scheme" content="light" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
     <link rel="alternate" hreflang="en" href="en/" />
     <script src="language.js"></script>
-    <link rel="stylesheet" href="styles.css?v=20260708-suno" />
+    <link rel="stylesheet" href="styles.css?v=20260710-story" />
   </head>
   <body>
     <a class="skip-link" href="#main">本文へ移動</a>
@@ -27,12 +27,9 @@
           <span>Daishin Ueyama</span>
         </a>
         <div class="nav-links">
-          <a href="#hp">HP</a>
-          <a href="#curation">Picks</a>
-          <a href="#suno">Suno</a>
-          <a href="#ios">iOS</a>
-          <a href="#github">GitHub</a>
-          <a href="#vercel">Vercel</a>
+          <a href="#themes">活動</a>
+          <a href="#featured">Selected</a>
+          <a href="#archive">公開物</a>
           <a class="language-link" href="en/" data-language-choice="en">English</a>
         </div>
       </nav>
@@ -41,402 +38,220 @@
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Research / Apps / Code / Updated 2026-07-08 JST</p>
+          <p class="eyebrow">Research / Making / Memory / Updated 2026-07-08 JST</p>
           <h1 id="hero-title">
-            <span>上山大信の</span>
-            <span>研究・制作</span>
-            <span>ポートフォリオ</span>
+            <span>上山大信</span>
+            <span class="hero-title-sub">研究と制作の記録</span>
           </h1>
           <p class="lead">
-            既存HPで語られてきたパターン形成・自己組織化の研究を起点に、GitHubで公開している
-            研究ノート、Webアプリ、AI支援の人文学プロジェクト、Vercelのライブデモを一つの入口にまとめます。
+            パターン形成の数学から、触れられるシミュレーション、生活や寺院から生まれた道具、
+            記憶を扱う作品、文章と音楽まで。別々の場所にある活動を、一つの流れとして紹介します。
           </p>
-          <div class="hero-actions" aria-label="外部リンク">
-            <a class="primary-link" href="https://sites.google.com/site/dueyama/">既存HP</a>
+          <div class="hero-actions" aria-label="主なリンク">
+            <a class="primary-link" href="#themes">活動を見る</a>
+            <a class="secondary-link" href="https://sites.google.com/site/dueyama/">既存HP</a>
             <a class="secondary-link" href="https://github.com/dueyama">GitHub</a>
-            <a class="secondary-link" href="#vercel">Vercelデモ</a>
           </div>
         </div>
 
         <aside class="profile-panel" aria-label="プロフィール概要">
-          <img
-            class="avatar"
-            src="assets/profile/dueyama-twitter.jpg"
-            alt="Twitter/X @dueyama のプロフィール写真"
-            width="132"
-            height="132"
-          />
-          <div>
-            <p class="profile-name">Prof. Daishin Ueyama</p>
-            <p class="profile-meta">Musashino University / Mathematical Engineering</p>
-            <a class="profile-social" href="https://x.com/dueyama">X @dueyama</a>
+          <div class="profile-intro">
+            <img
+              class="avatar"
+              src="assets/profile/dueyama-twitter.jpg"
+              alt="Twitter/X @dueyama のプロフィール写真"
+              width="112"
+              height="112"
+            />
+            <div>
+              <p class="profile-name">Prof. Daishin Ueyama</p>
+              <p class="profile-meta">Musashino University<br />Mathematical Engineering</p>
+              <a class="profile-social" href="https://x.com/dueyama">X @dueyama</a>
+            </div>
           </div>
           <dl class="stats">
-            <div>
-              <dt>GitHub</dt>
-              <dd>26 public repos</dd>
-            </div>
-            <div>
-              <dt>Vercel</dt>
-              <dd>9 demos</dd>
-            </div>
-            <div>
-              <dt>iOS</dt>
-              <dd>6 apps</dd>
-            </div>
-            <div>
-              <dt>Focus</dt>
-              <dd>pattern formation</dd>
-            </div>
+            <div><dt>GitHub</dt><dd>26 public repos</dd></div>
+            <div><dt>Vercel</dt><dd>9 live works</dd></div>
+            <div><dt>iOS</dt><dd>6 apps</dd></div>
+            <div><dt>Research</dt><dd>pattern formation</dd></div>
           </dl>
         </aside>
       </section>
 
-      <section class="section intro-grid" aria-label="概要">
-        <article class="summary-block accent-teal">
-          <span class="kicker">Research</span>
-          <h2>模様を科学する</h2>
-          <p>
-            反応拡散系、自己組織化、比率調整、自己駆動粒子、メッシュ生成など、
-            自然に現れる複雑なパターンを数学とシミュレーションで読む研究が中心です。
-          </p>
-        </article>
-        <article class="summary-block accent-gold">
-          <span class="kicker">Apps</span>
-          <h2>研究を触れる形にする</h2>
-          <p>
-            Gray-Scott、樹枝状成長、葉序、交通流、比率調整などのモデルを、
-            ブラウザで試せる可視化アプリとして公開しています。
-          </p>
-        </article>
-        <article class="summary-block accent-coral">
-          <span class="kicker">AI + Humanities</span>
-          <h2>読む場所を探す地図</h2>
-          <p>
-            仏教文献、法然・親鸞比較、百人一首などを対象に、意味埋め込みを
-            「解釈の結論」ではなく「精読の入口」として使う公開物を整えています。
-          </p>
-        </article>
-      </section>
-
-      <section class="section" id="curation" aria-labelledby="curation-title">
-        <div class="section-heading">
-          <p class="eyebrow">Codex Curation</p>
-          <h2 id="curation-title">Codexが拾った面白い入口</h2>
+      <section class="section themes-section" id="themes" aria-labelledby="themes-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Three Threads</p>
+          <h2 id="themes-title">活動を貫く、3つの流れ</h2>
           <p class="section-copy">
-            公式HP・論文リスト・Project DonnyU・noteを眺めて、単なる代表作ではなく「上山大信らしさが出ている」と感じた入口を選びました。
+            公開先ではなく、何を形にしようとしているかで活動をたどります。
           </p>
         </div>
-        <div class="curation-grid">
-          <article class="curation-card">
-            <span class="curation-source">Official HP / Research</span>
-            <h3>模様を科学する研究</h3>
+        <div class="theme-grid">
+          <article class="theme-card accent-teal">
+            <span class="theme-number">01</span>
+            <p class="kicker">Research & Simulation</p>
+            <h3>数学を、触れられる形へ</h3>
             <p>
-              <strong>ポイント:</strong>
-              身のまわりの模様、偏微分方程式、シミュレーション、自己組織化が一つの流れとして語られている。
+              反応拡散、比率調整、樹枝状成長、葉序、交通流。論文で扱ってきたパターン形成を、
+              ブラウザ上で動かし、観察できるものへ展開しています。
             </p>
-            <p>
-              <strong>選んだ理由:</strong>
-              Vercelの数理モデル群やGitHubの研究ページが、どこから伸びているのか分かる起点だから。
-            </p>
-            <div class="curation-links">
-              <a href="https://sites.google.com/site/dueyama/">HP</a>
-              <a href="https://sites.google.com/site/dueyama/research">Research</a>
+            <div class="theme-links">
+              <a href="https://gray-scott-3d.vercel.app/">Gray-Scott 3D</a>
+              <a href="https://sites.google.com/site/dueyama/publications">Publications</a>
             </div>
           </article>
-          <article class="curation-card">
-            <span class="curation-source">Official HP / Learning</span>
-            <h3>シミュレーションを学ぶ教材群</h3>
+
+          <article class="theme-card accent-gold">
+            <span class="theme-number">02</span>
+            <p class="kicker">Apps & Practice</p>
+            <h3>生活や現場から、道具を作る</h3>
             <p>
-              <strong>ポイント:</strong>
-              macOS環境、C言語、Python、Processingなど、数値計算を手で動かすための導線が残されている。
+              写真を飾る祭壇、除夜の鐘のタイマー、色だけの日記。研究用とは違うアプリも、
+              実際の暮らしや寺院の時間から必要な形を見つけて作っています。
             </p>
-            <p>
-              <strong>選んだ理由:</strong>
-              研究を「読む」だけでなく、実際に動かして理解する姿勢がはっきり見えるから。
-            </p>
-            <div class="curation-links">
-              <a href="https://sites.google.com/site/dueyama/home-jp/simulation">macOS</a>
-              <a href="https://sites.google.com/site/dueyama/home-jp/python_simulation">Python</a>
+            <div class="theme-links">
+              <a href="https://apps.apple.com/jp/developer/daishin-ueyama/id495395197">App Store</a>
+              <a href="#archive" data-select-collection="ios">6つのアプリ</a>
             </div>
           </article>
-          <article class="curation-card">
-            <span class="curation-source">Publications / Pattern Formation</span>
-            <h3>Gray-Scottモデルの論文群</h3>
+
+          <article class="theme-card accent-coral">
+            <span class="theme-number">03</span>
+            <p class="kicker">Memory & Expression</p>
+            <h3>記憶や時間を、作品にする</h3>
             <p>
-              <strong>ポイント:</strong>
-              自己複製パターン、自己崩壊、時空カオスなど、現在の反応拡散デモにつながる基礎的な研究の流れ。
+              Ethereumの履歴を立体へ変える作品、写真の色褪せ、日々の随筆、生成音楽。
+              データや技術を、人が時間を感じるための表現へつなげています。
             </p>
-            <p>
-              <strong>選んだ理由:</strong>
-              Web上のGray-Scott可視化が、単なるきれいな模様ではなく長い研究史を持つテーマだと分かるから。
-            </p>
+            <div class="theme-links">
+              <a href="https://www.bcj-concept.com/ja">Project DonnyU</a>
+              <a href="#archive" data-select-collection="music">Suno</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section featured-section" id="featured" aria-labelledby="featured-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Codex Curation</p>
+          <h2 id="featured-title">3つの入口から見る、上山大信らしさ</h2>
+          <p class="section-copy">
+            代表作の順位ではなく、研究・実用・表現がどのようにつながっているかが見えるものを選びました。
+          </p>
+        </div>
+
+        <div class="featured-grid">
+          <article class="featured-card">
+            <div class="featured-index">01 / RESEARCH</div>
+            <h3>Gray-Scottモデルの論文群と3D可視化</h3>
+            <p><strong>ポイント</strong> 自己複製、自己崩壊、時空カオスを扱ってきた研究が、現在はWebGLによる3次元の体験へ伸びています。</p>
+            <p><strong>選んだ理由</strong> 画面上の美しい模様だけでなく、その奥に長い研究史があることを、論文と公開アプリの往復で最も素直に感じられる入口だから。</p>
             <div class="curation-links">
               <a href="https://sites.google.com/site/dueyama/publications">Publications</a>
               <a href="https://gray-scott-3d.vercel.app/">Gray-Scott 3D</a>
             </div>
           </article>
-          <article class="curation-card">
-            <span class="curation-source">Paper / WebApp</span>
-            <h3>比率調整の数理</h3>
-            <p>
-              <strong>ポイント:</strong>
-              個体同士の局所的な接触から、全体の比率が自己組織的に整う仕組みを扱う研究。
-            </p>
-            <p>
-              <strong>選んだ理由:</strong>
-              論文、公式リスト、WebAppがつながっていて、「理論を触れる形にする」流れが見えやすいから。
-            </p>
+
+          <article class="featured-card">
+            <div class="featured-index">02 / PRACTICE</div>
+            <h3>想いの祭壇</h3>
+            <p><strong>ポイント</strong> 大切な写真に言葉や花、灯りを添え、iPhoneやARの中に小さな祭壇を作るアプリです。</p>
+            <p><strong>選んだ理由</strong> 技術の中心に「人が何かに想いを寄せる場所」があり、アプリ開発、僧侶としての感覚、Codexとの制作過程が一つの形に収まっているから。</p>
             <div class="curation-links">
-              <a href="https://sites.google.com/site/dueyama/publications">Publications</a>
-              <a href="https://regulation-lab.vercel.app/">Regulation Lab</a>
+              <a href="https://apps.apple.com/jp/app/%E6%83%B3%E3%81%84%E3%81%AE%E7%A5%AD%E5%A3%87/id6770172873">App Store</a>
+              <a href="https://note.com/daishin_ueyama/n/n82e538b62e32">制作note</a>
             </div>
           </article>
-          <article class="curation-card">
-            <span class="curation-source">Project DonnyU / Web3 Art</span>
+
+          <article class="featured-card">
+            <div class="featured-index">03 / EXPRESSION</div>
             <h3>Blockchain Jewelry Concept</h3>
-            <p>
-              <strong>ポイント:</strong>
-              Ethereumのブロックサイズ列を、時間範囲を持つ3D/NFT作品「Spiral Manifold」などへ変換する活動。
-            </p>
-            <p>
-              <strong>選んだ理由:</strong>
-              数理的なデータ列を、記憶や時間の記念碑として扱う発想が、研究・僧侶・アート活動を自然につないでいるから。
-            </p>
+            <p><strong>ポイント</strong> Ethereumのブロックサイズ列を、時間範囲を持つ3D作品やNFT「Spiral Manifold」などへ変換する活動です。</p>
+            <p><strong>選んだ理由</strong> 数理的なデータ列を記憶や時間の記念碑として扱う発想が、研究、僧侶、アートという一見離れた活動を自然につないでいるから。</p>
             <div class="curation-links">
               <a href="https://www.bcj-concept.com/ja">Project</a>
               <a href="https://github.com/dueyama/BlockchainJewelryConcept">GitHub</a>
-              <a href="https://www.bcj-concept.com/creations">Creations</a>
-              <a href="https://www.bcj-concept.com/ja/about">About</a>
-            </div>
-          </article>
-          <article class="curation-card">
-            <span class="curation-source">Official HP / App</span>
-            <h3>TheDLA</h3>
-            <p>
-              <strong>ポイント:</strong>
-              DLAによる自然な形の生成を、教育アプリとして触れる形にした初期からの代表的な試み。
-            </p>
-            <p>
-              <strong>選んだ理由:</strong>
-              「研究を触れるものにする」という、このページ全体の軸を古くから体現しているから。
-            </p>
-            <div class="curation-links">
-              <a href="https://sites.google.com/site/dueyama/home-jp/thedla">HP</a>
-              <a href="https://note.com/daishin_ueyama/n/n79977cfb66d3">note</a>
-            </div>
-          </article>
-          <article class="curation-card">
-            <span class="curation-source">note / App Making</span>
-            <h3>想いの祭壇</h3>
-            <p>
-              <strong>ポイント:</strong>
-              AR、記憶、祭壇、App Store公開、Codexとの制作手順が一つにつながっている。
-            </p>
-            <p>
-              <strong>選んだ理由:</strong>
-              技術の話なのに、中心にあるのは「人が何かに想いを寄せる場所」だと感じたから。
-            </p>
-            <div class="curation-links">
-              <a href="https://note.com/daishin_ueyama/n/n82e538b62e32">制作手順</a>
-              <a href="https://note.com/daishin_ueyama/n/n3b7febf86439">リリース</a>
-            </div>
-          </article>
-          <article class="curation-card">
-            <span class="curation-source">note / Essay App</span>
-            <h3>VintagePhotos</h3>
-            <p>
-              <strong>ポイント:</strong>
-              写真に色褪せや紙質を重ねるアプリが、時間や記憶についての文章にもなっている。
-            </p>
-            <p>
-              <strong>選んだ理由:</strong>
-              アプリの機能説明を越えて、「古くなること」をどう表現するかという作品性があるから。
-            </p>
-            <div class="curation-links">
-              <a href="https://note.com/daishin_ueyama/n/na47555eedf1b">エッセイ</a>
-              <a href="https://note.com/daishin_ueyama/n/n7c76212591ed">制作記</a>
-            </div>
-          </article>
-          <article class="curation-card">
-            <span class="curation-source">note / Temple Tool</span>
-            <h3>JoyaTimer</h3>
-            <p>
-              <strong>ポイント:</strong>
-              除夜の鐘を0時に合わせて108回鳴らすための実用アプリが、テレビ・ラジオで紹介された記録にもつながっている。
-            </p>
-            <p>
-              <strong>選んだ理由:</strong>
-              寺院の実務、アプリ開発、個人的な時間が重なっていて、他ではあまり見ない種類の道具だから。
-            </p>
-            <div class="curation-links">
-              <a href="https://note.com/daishin_ueyama/n/n2604ac1bb183">TV</a>
-              <a href="https://note.com/daishin_ueyama/n/n0249114826bd">Radio</a>
             </div>
           </article>
         </div>
-        <div class="essay-shelf" aria-labelledby="essay-shelf-title">
-          <div>
-            <span class="curation-source">note / Essay Shelf</span>
-            <h3 id="essay-shelf-title">アプリに紐づかない随筆</h3>
-            <p>
-              noteにはアプリ制作記だけでなく、記憶、寺の生活、数学の面白さ、世代感覚をめぐる文章もあります。
-              人柄や視点が見える入口として、軽く読めるものを別棚にしました。
-            </p>
+
+        <details class="more-picks">
+          <summary>その他のCodex Picksを見る</summary>
+          <div class="compact-picks">
+            <article><h3>シミュレーション教材群</h3><p>研究を読むだけでなく、自分の手で動かして理解する姿勢が見える入口。</p><a href="https://sites.google.com/site/dueyama/home-jp/python_simulation">Python教材</a></article>
+            <article><h3>比率調整の数理</h3><p>局所的な接触から全体の秩序が立ち上がる理論を、論文とWebAppで往復できます。</p><a href="https://regulation-lab.vercel.app/">Regulation Lab</a></article>
+            <article><h3>TheDLA</h3><p>研究を触れるものにするという軸を、初期から体現してきた教育アプリ。</p><a href="https://note.com/daishin_ueyama/n/n79977cfb66d3">note</a></article>
+            <article><h3>VintagePhotos</h3><p>写真加工の機能を越えて、「古くなること」と時間の手触りを考える作品。</p><a href="https://note.com/daishin_ueyama/n/na47555eedf1b">エッセイ</a></article>
+            <article><h3>JoyaTimer</h3><p>寺院の実務、アプリ開発、家族の記憶が重なる、他ではあまり見ない道具。</p><a href="https://note.com/daishin_ueyama/n/n0249114826bd">note</a></article>
           </div>
+        </details>
+      </section>
+
+      <section class="section archive-section" id="archive" aria-labelledby="archive-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Public Work Index</p>
+          <h2 id="archive-title">公開物一覧</h2>
+          <p class="section-copy">見たい種類を選ぶと、その一覧だけを表示します。</p>
+        </div>
+
+        <div class="collection-tabs" role="tablist" aria-label="公開物の種類">
+          <button class="collection-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="collection-github" data-collection="github">GitHub</button>
+          <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-vercel" data-collection="vercel">Vercel</button>
+          <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-ios" data-collection="ios">iOS</button>
+          <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-writing" data-collection="writing">文章</button>
+          <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-music" data-collection="music">音楽</button>
+        </div>
+
+        <div class="collection-panel is-active" id="collection-github" role="tabpanel" data-collection-panel="github">
+          <div class="panel-heading">
+            <div><p class="kicker">GitHub</p><h3>コードと研究の公開リポジトリ</h3></div>
+            <div class="filter-group" role="group" aria-label="プロジェクトフィルタ">
+              <button class="filter-button is-active" type="button" data-filter="all">All</button>
+              <button class="filter-button" type="button" data-filter="simulation">Simulation</button>
+              <button class="filter-button" type="button" data-filter="research">Research</button>
+              <button class="filter-button" type="button" data-filter="art">Art</button>
+              <button class="filter-button" type="button" data-filter="tool">Tools</button>
+            </div>
+          </div>
+          <div class="project-grid" id="project-grid"></div>
+          <button class="show-more-button" id="project-toggle" type="button">掲載中のリポジトリをすべて表示</button>
+        </div>
+
+        <div class="collection-panel" id="collection-vercel" role="tabpanel" data-collection-panel="vercel" hidden>
+          <div class="panel-heading"><div><p class="kicker">Vercel</p><h3>ブラウザで触れられる公開作</h3></div></div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th scope="col">Project</th><th scope="col">Framework</th><th scope="col">Created</th><th scope="col">Demo</th><th scope="col">Source</th></tr></thead>
+              <tbody id="vercel-table"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="collection-panel" id="collection-ios" role="tabpanel" data-collection-panel="ios" hidden>
+          <div class="panel-heading"><div><p class="kicker">iOS Apps</p><h3>生活と現場から生まれた6つのアプリ</h3></div></div>
+          <div class="ios-app-grid" id="ios-app-grid"></div>
+        </div>
+
+        <div class="collection-panel" id="collection-writing" role="tabpanel" data-collection-panel="writing" hidden>
+          <div class="panel-heading"><div><p class="kicker">note / Essay Shelf</p><h3>アプリに紐づかない随筆</h3></div><a class="panel-external-link" href="https://note.com/daishin_ueyama">noteを開く</a></div>
           <ul class="essay-list">
-            <li>
-              <a href="https://note.com/daishin_ueyama/n/n5d6458da1862">
-                ドレッシングと思い出の話を書いていたら、最後にAIの話になった
-              </a>
-              <span>
-                <strong>Codexの感想:</strong>
-                家庭科の記憶から、気づけばAIとの距離感へ移っていく流れが自然で、日常の連想がそのまま文章になっているところが良い。
-                技術の話をしているのに、起点は味や手つきの記憶で、その脱線の仕方にnoteらしい柔らかさがあります。
-              </span>
-            </li>
-            <li>
-              <a href="https://note.com/daishin_ueyama/n/n412a28d3e006">子供の頃に法座で読経したなぁ</a>
-              <span>
-                <strong>Codexの感想:</strong>
-                僧侶としての現在と、子どもの頃の記憶が重なっていて、寺の時間が生活の手触りで伝わってきます。
-                宗教的な説明というより、法座や読経が身体に残っている感じがあり、このプロフィールに人の奥行きを足してくれる記事です。
-              </span>
-            </li>
-            <li>
-              <a href="https://note.com/daishin_ueyama/n/n017582ef6c9f">巨大素数で肖像画って素敵じゃないか</a>
-              <span>
-                <strong>Codexの感想:</strong>
-                数学の話なのに、驚き方がとても柔らかくて、研究者プロフィールの外側にある好奇心が見えます。
-                数式や証明ではなく「そんな表現ができるのか」という感動から入っているので、数学を作品として眺める入口にもなっています。
-              </span>
-            </li>
-            <li>
-              <a href="https://note.com/daishin_ueyama/n/n753563c9f1c0">世代という罠</a>
-              <span>
-                <strong>Codexの感想:</strong>
-                制服の話題から、時代の空気がどう入れ替わるかを見ている文章で、社会観の入口として置きたい一本です。
-                ある時代の「当然」が次の時代では反転することを、怒りではなく少し引いた観察として書いているところが面白いです。
-              </span>
-            </li>
+            <li><a href="https://note.com/daishin_ueyama/n/n5d6458da1862">ドレッシングと思い出の話を書いていたら、最後にAIの話になった</a><span><strong>Codexの感想:</strong> 家庭科の記憶から、気づけばAIとの距離感へ移っていく流れが自然です。技術の話をしているのに起点は味や手つきの記憶で、その脱線の仕方にnoteらしい柔らかさがあります。</span></li>
+            <li><a href="https://note.com/daishin_ueyama/n/n412a28d3e006">子供の頃に法座で読経したなぁ</a><span><strong>Codexの感想:</strong> 僧侶としての現在と子どもの頃の記憶が重なり、寺の時間が生活の手触りで伝わります。宗教的な説明より、法座や読経が身体に残っている感じが印象的です。</span></li>
+            <li><a href="https://note.com/daishin_ueyama/n/n017582ef6c9f">巨大素数で肖像画って素敵じゃないか</a><span><strong>Codexの感想:</strong> 数学の話なのに驚き方が柔らかく、研究者プロフィールの外側にある好奇心が見えます。「そんな表現ができるのか」という感動から入るので、数学を作品として眺める入口にもなっています。</span></li>
+            <li><a href="https://note.com/daishin_ueyama/n/n753563c9f1c0">世代という罠</a><span><strong>Codexの感想:</strong> 制服の話題から、時代の空気がどう入れ替わるかを見ています。ある時代の「当然」が次では反転することを、怒りではなく少し引いた観察として書いているところが面白いです。</span></li>
           </ul>
         </div>
-      </section>
 
-      <section class="section split-section" id="suno" aria-labelledby="suno-title">
-        <div>
-          <p class="eyebrow">Suno / DonnyU</p>
-          <h2 id="suno-title">公開曲トップ5</h2>
-        </div>
-        <div class="suno-card">
-          <p>
-            Sunoで公開されている DonnyU（@donnyu）の曲を再生回数順に並べ、
-            上位5曲へ直接飛べる入口を作りました。
-          </p>
-          <p class="suno-count-note">
-            再生回数はリアルタイム更新ではなく、2026-07-08 JSTに確認した値です。
-          </p>
+        <div class="collection-panel" id="collection-music" role="tabpanel" data-collection-panel="music" hidden>
+          <div class="panel-heading"><div><p class="kicker">Suno / DonnyU</p><h3>公開曲トップ5</h3></div><a class="panel-external-link" href="https://suno.com/@donnyu">Sunoを開く</a></div>
+          <p class="collection-note">再生回数はリアルタイム更新ではなく、2026-07-08 JSTに確認した値です。</p>
           <ol class="suno-list" aria-label="Suno公開曲の再生回数トップ5">
-            <li>
-              <span class="suno-rank">1</span>
-              <a href="https://suno.com/song/2f996f6b-ae42-46d5-833c-3c030c922767">Higher Than the Night</a>
-              <span class="suno-meta">8,714 plays</span>
-            </li>
-            <li>
-              <span class="suno-rank">2</span>
-              <a href="https://suno.com/song/73a29c6e-f8f5-4702-9673-0098b5bc5374">Run.exe</a>
-              <span class="suno-meta">6,907 plays</span>
-            </li>
-            <li>
-              <span class="suno-rank">3</span>
-              <a href="https://suno.com/song/106c7ec1-c8b7-4ce2-afe3-f46fdc97a598">Lanterns in the Sky</a>
-              <span class="suno-meta">3,593 plays</span>
-            </li>
-            <li>
-              <span class="suno-rank">4</span>
-              <a href="https://suno.com/song/6778153f-5a8e-4f76-9577-82e5c129ad1e">When the Lights Come Back</a>
-              <span class="suno-meta">2,284 plays</span>
-            </li>
-            <li>
-              <span class="suno-rank">5</span>
-              <a href="https://suno.com/song/af82e8bb-94ca-41f0-927a-a2633bb106bc">Shake the Dark Awake</a>
-              <span class="suno-meta">1,288 plays</span>
-            </li>
+            <li><span class="suno-rank">1</span><a href="https://suno.com/song/2f996f6b-ae42-46d5-833c-3c030c922767">Higher Than the Night</a><span class="suno-meta">8,714 plays</span></li>
+            <li><span class="suno-rank">2</span><a href="https://suno.com/song/73a29c6e-f8f5-4702-9673-0098b5bc5374">Run.exe</a><span class="suno-meta">6,907 plays</span></li>
+            <li><span class="suno-rank">3</span><a href="https://suno.com/song/106c7ec1-c8b7-4ce2-afe3-f46fdc97a598">Lanterns in the Sky</a><span class="suno-meta">3,593 plays</span></li>
+            <li><span class="suno-rank">4</span><a href="https://suno.com/song/6778153f-5a8e-4f76-9577-82e5c129ad1e">When the Lights Come Back</a><span class="suno-meta">2,284 plays</span></li>
+            <li><span class="suno-rank">5</span><a href="https://suno.com/song/af82e8bb-94ca-41f0-927a-a2633bb106bc">Shake the Dark Awake</a><span class="suno-meta">1,288 plays</span></li>
           </ol>
-          <div class="link-row">
-            <a href="https://suno.com/@donnyu">Suno DonnyU</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section split-section" id="hp" aria-labelledby="hp-title">
-        <div>
-          <p class="eyebrow">Existing HP</p>
-          <h2 id="hp-title">既存HPの内容</h2>
-        </div>
-        <div class="text-stack">
-          <p>
-            Google Sites の既存HPは、上山大信の研究者プロフィール、CV、研究紹介、論文リスト、
-            macOSでのシミュレーション教材、C言語・Python・Processingの学習資料、TheDLAなどを収めた
-            長期的な活動アーカイブです。
-          </p>
-          <p>
-            研究紹介では、身の回りの模様、偏微分方程式によるシミュレーション、分岐理論、
-            自己組織化による工学応用が中心に置かれています。GitHub/Vercelの近年の制作物は、
-            その研究テーマを現代的なWebアプリや公開リポジトリへ移したものとして位置づけられます。
-          </p>
-          <div class="link-row">
-            <a href="https://sites.google.com/site/dueyama/">ホーム</a>
-            <a href="https://sites.google.com/site/dueyama/home-jp/cv">CV</a>
-            <a href="https://sites.google.com/site/dueyama/research">Research</a>
-            <a href="https://sites.google.com/site/dueyama/publications">Publications</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="ios" aria-labelledby="ios-title">
-        <div class="section-heading">
-          <p class="eyebrow">iOS Apps</p>
-          <h2 id="ios-title">App Store公開アプリ</h2>
-        </div>
-        <div class="ios-app-grid" id="ios-app-grid"></div>
-      </section>
-
-      <section class="section" id="github" aria-labelledby="github-title">
-        <div class="section-heading with-filter">
-          <div>
-            <p class="eyebrow">GitHub</p>
-            <h2 id="github-title">公開リポジトリ概要</h2>
-          </div>
-          <div class="filter-group" role="group" aria-label="プロジェクトフィルタ">
-            <button class="filter-button is-active" type="button" data-filter="all">All</button>
-            <button class="filter-button" type="button" data-filter="simulation">Simulation</button>
-            <button class="filter-button" type="button" data-filter="research">Research</button>
-            <button class="filter-button" type="button" data-filter="art">Art</button>
-            <button class="filter-button" type="button" data-filter="tool">Tools</button>
-          </div>
-        </div>
-        <div class="project-grid" id="project-grid"></div>
-      </section>
-
-      <section class="section" id="vercel" aria-labelledby="vercel-title">
-        <div class="section-heading">
-          <p class="eyebrow">Vercel</p>
-          <h2 id="vercel-title">公開デモ一覧</h2>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Project</th>
-                <th scope="col">Framework</th>
-                <th scope="col">Created</th>
-                <th scope="col">Demo</th>
-                <th scope="col">Source</th>
-              </tr>
-            </thead>
-            <tbody id="vercel-table"></tbody>
-          </table>
         </div>
       </section>
 
@@ -448,7 +263,6 @@
           <a href="AGENTS.md">AGENTS.md</a> にまとめています。
         </p>
       </section>
-
     </main>
 
     <script src="script.js" defer></script>

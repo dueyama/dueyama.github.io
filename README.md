@@ -7,14 +7,11 @@
 
 ## Contents
 
-- 既存HPの研究・教育資料への入口
-- GitHub公開リポジトリの概要
-- Codexキュレーションによる公式HP・論文・noteの注目入口
-- Project DonnyU / Blockchain Jewelry Concept の活動
-- Suno DonnyU (@donnyu) の公開曲トップ5
-- Vercelで公開しているデモ
+- 「数学を触れられる形へ」「生活や現場から道具を作る」「記憶や時間を作品にする」の3テーマ
+- 公式HP・論文・アプリ・Project DonnyUを結ぶCodexキュレーション
+- GitHub、Vercel、App Store、note、Sunoを切り替えて見る公開物一覧
 - App Store公開アプリと関連note記事
-- Codexとの協働で整理した公開プロフィール索引
+- Suno DonnyU (`@donnyu`) の公開曲トップ5
 
 ## Structure
 

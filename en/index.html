@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daishin Ueyama | GitHub / Vercel / Website Overview</title>
+    <title>Daishin Ueyama | Research and Creative Work</title>
     <meta
       name="description"
-      content="An English profile index connecting Daishin Ueyama's existing website, public GitHub repositories, Vercel demos, App Store apps, note articles, and Suno songs."
+      content="A profile connecting Daishin Ueyama's research, simulations, apps, writing, art, and music."
     />
     <meta name="color-scheme" content="light" />
     <link rel="shortcut icon" href="../favicon.ico" />
@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png" />
     <link rel="alternate" hreflang="ja" href="../" />
     <script src="../language.js"></script>
-    <link rel="stylesheet" href="../styles.css?v=20260708-suno" />
+    <link rel="stylesheet" href="../styles.css?v=20260710-story" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -27,12 +27,9 @@
           <span>Daishin Ueyama</span>
         </a>
         <div class="nav-links">
-          <a href="#hp">Website</a>
-          <a href="#curation">Picks</a>
-          <a href="#suno">Suno</a>
-          <a href="#ios">iOS</a>
-          <a href="#github">GitHub</a>
-          <a href="#vercel">Vercel</a>
+          <a href="#themes">Threads</a>
+          <a href="#featured">Selected</a>
+          <a href="#archive">Index</a>
           <a class="language-link" href="../" data-language-choice="ja">日本語</a>
         </div>
       </nav>
@@ -41,426 +38,223 @@
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Research / Apps / Code / Updated 2026-07-08 JST</p>
+          <p class="eyebrow">Research / Making / Memory / Updated 2026-07-08 JST</p>
           <h1 id="hero-title">
             <span>Daishin Ueyama</span>
-            <span>Research and</span>
-            <span>Creative Portfolio</span>
+            <span class="hero-title-sub">Research and creative work</span>
           </h1>
           <p class="lead">
-            This page connects the pattern-formation and self-organization research described on
-            the existing website with public GitHub repositories, browser-based research apps,
-            AI-assisted humanities projects, and live Vercel demos.
+            From the mathematics of pattern formation to interactive simulations, tools born from
+            everyday and temple life, works about memory, essays, and music. This page brings those
+            activities together as one continuous practice.
           </p>
-          <div class="hero-actions" aria-label="External links">
-            <a class="primary-link" href="https://sites.google.com/site/dueyama/">Website</a>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="primary-link" href="#themes">Explore the work</a>
+            <a class="secondary-link" href="https://sites.google.com/site/dueyama/">Original website</a>
             <a class="secondary-link" href="https://github.com/dueyama">GitHub</a>
-            <a class="secondary-link" href="#vercel">Vercel demos</a>
           </div>
         </div>
 
         <aside class="profile-panel" aria-label="Profile summary">
-          <img
-            class="avatar"
-            src="../assets/profile/dueyama-twitter.jpg"
-            alt="Twitter/X @dueyama profile photo"
-            width="132"
-            height="132"
-          />
-          <div>
-            <p class="profile-name">Prof. Daishin Ueyama</p>
-            <p class="profile-meta">Musashino University / Mathematical Engineering</p>
-            <a class="profile-social" href="https://x.com/dueyama">X @dueyama</a>
+          <div class="profile-intro">
+            <img
+              class="avatar"
+              src="../assets/profile/dueyama-twitter.jpg"
+              alt="Twitter/X profile photo for @dueyama"
+              width="112"
+              height="112"
+            />
+            <div>
+              <p class="profile-name">Prof. Daishin Ueyama</p>
+              <p class="profile-meta">Musashino University<br />Mathematical Engineering</p>
+              <a class="profile-social" href="https://x.com/dueyama">X @dueyama</a>
+            </div>
           </div>
           <dl class="stats">
-            <div>
-              <dt>GitHub</dt>
-              <dd>26 public repos</dd>
-            </div>
-            <div>
-              <dt>Vercel</dt>
-              <dd>9 demos</dd>
-            </div>
-            <div>
-              <dt>iOS</dt>
-              <dd>6 apps</dd>
-            </div>
-            <div>
-              <dt>Focus</dt>
-              <dd>pattern formation</dd>
-            </div>
+            <div><dt>GitHub</dt><dd>26 public repos</dd></div>
+            <div><dt>Vercel</dt><dd>9 live works</dd></div>
+            <div><dt>iOS</dt><dd>6 apps</dd></div>
+            <div><dt>Research</dt><dd>pattern formation</dd></div>
           </dl>
         </aside>
       </section>
 
-      <section class="section intro-grid" aria-label="Overview">
-        <article class="summary-block accent-teal">
-          <span class="kicker">Research</span>
-          <h2>Science of patterns</h2>
-          <p>
-            The central thread is mathematical and computational study of complex patterns in
-            nature, including reaction-diffusion systems, self-organization, proportion regulation,
-            self-driven particles, and mesh generation.
-          </p>
-        </article>
-        <article class="summary-block accent-gold">
-          <span class="kicker">Apps</span>
-          <h2>Research you can touch</h2>
-          <p>
-            Browser apps make models such as Gray-Scott, dendritic growth, phyllotaxis, traffic
-            flow, and proportion regulation visible and explorable.
-          </p>
-        </article>
-        <article class="summary-block accent-coral">
-          <span class="kicker">AI + Humanities</span>
-          <h2>Maps for where to read</h2>
-          <p>
-            Buddhist texts, Honen-Shinran comparison, and Hyakunin Isshu projects use semantic
-            embeddings not as final interpretation, but as maps for returning to close reading.
-          </p>
-        </article>
-      </section>
-
-      <section class="section" id="curation" aria-labelledby="curation-title">
-        <div class="section-heading">
-          <p class="eyebrow">Codex Curation</p>
-          <h2 id="curation-title">Entries Codex Found Interesting</h2>
+      <section class="section themes-section" id="themes" aria-labelledby="themes-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Three Threads</p>
+          <h2 id="themes-title">Three threads running through the work</h2>
           <p class="section-copy">
-            After reading the official website, publication list, Project DonnyU, and note
-            articles, Codex picked entry points that felt especially characteristic of Daishin
-            Ueyama's work, not only the obvious highlights.
+            The work is organized by what it seeks to make tangible, rather than by where it was published.
           </p>
         </div>
-        <div class="curation-grid">
-          <article class="curation-card">
-            <span class="curation-source">Official Website / Research</span>
-            <h3>The Science Of Patterns</h3>
+        <div class="theme-grid">
+          <article class="theme-card accent-teal">
+            <span class="theme-number">01</span>
+            <p class="kicker">Research & Simulation</p>
+            <h3>Making mathematics tangible</h3>
             <p>
-              <strong>Point:</strong>
-              Everyday patterns, partial differential equations, simulation, and self-organization
-              are presented as one continuous research story.
+              Reaction-diffusion systems, proportion regulation, dendritic growth, phyllotaxis,
+              and traffic flow. Research on pattern formation becomes something that can be run,
+              changed, and observed in a browser.
             </p>
-            <p>
-              <strong>Why I picked it:</strong>
-              It explains where the Vercel model labs and GitHub research pages are growing from.
-            </p>
-            <div class="curation-links">
-              <a href="https://sites.google.com/site/dueyama/">Website</a>
-              <a href="https://sites.google.com/site/dueyama/research">Research</a>
+            <div class="theme-links">
+              <a href="https://gray-scott-3d.vercel.app/">Gray-Scott 3D</a>
+              <a href="https://sites.google.com/site/dueyama/publications">Publications</a>
             </div>
           </article>
-          <article class="curation-card">
-            <span class="curation-source">Official Website / Learning</span>
-            <h3>Simulation Learning Materials</h3>
+
+          <article class="theme-card accent-gold">
+            <span class="theme-number">02</span>
+            <p class="kicker">Apps & Practice</p>
+            <h3>Building tools from lived experience</h3>
             <p>
-              <strong>Point:</strong>
-              The site keeps hands-on routes into numerical computation through macOS setup, C,
-              Python, and Processing materials.
+              A small altar for photographs, a timer for temple bells, and a diary made from one
+              color a day. These apps begin with needs found in everyday life and temple practice.
             </p>
-            <p>
-              <strong>Why I picked it:</strong>
-              It shows a habit of making research something people can run, not only read.
-            </p>
-            <div class="curation-links">
-              <a href="https://sites.google.com/site/dueyama/home-jp/simulation">macOS</a>
-              <a href="https://sites.google.com/site/dueyama/home-jp/python_simulation">Python</a>
+            <div class="theme-links">
+              <a href="https://apps.apple.com/us/developer/daishin-ueyama/id495395197">App Store</a>
+              <a href="#archive" data-select-collection="ios">Six apps</a>
             </div>
           </article>
-          <article class="curation-card">
-            <span class="curation-source">Publications / Pattern Formation</span>
-            <h3>Gray-Scott Papers</h3>
+
+          <article class="theme-card accent-coral">
+            <span class="theme-number">03</span>
+            <p class="kicker">Memory & Expression</p>
+            <h3>Turning memory and time into form</h3>
             <p>
-              <strong>Point:</strong>
-              A research thread on self-replicating patterns, self-destruction, and spatio-temporal
-              chaos behind the later reaction-diffusion demos.
+              Ethereum history translated into sculpture, photographs that visibly age, personal
+              essays, and generated music. Data and technology become ways to feel the passage of time.
             </p>
-            <p>
-              <strong>Why I picked it:</strong>
-              It makes the Gray-Scott visualizations feel like part of a long research arc, not
-              just beautiful patterns.
-            </p>
+            <div class="theme-links">
+              <a href="https://www.bcj-concept.com/">Project DonnyU</a>
+              <a href="#archive" data-select-collection="music">Suno</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section featured-section" id="featured" aria-labelledby="featured-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Codex Curation</p>
+          <h2 id="featured-title">Three ways into Daishin Ueyama's practice</h2>
+          <p class="section-copy">
+            These are not ranked as the best works. They were chosen because each reveals how research,
+            practical making, and expression connect.
+          </p>
+        </div>
+
+        <div class="featured-grid">
+          <article class="featured-card">
+            <div class="featured-index">01 / RESEARCH</div>
+            <h3>Gray-Scott papers and 3D visualization</h3>
+            <p><strong>Point</strong> Research into self-replication, self-destruction, and spatiotemporal chaos now extends into an interactive WebGL experience.</p>
+            <p><strong>Why I chose it</strong> Moving between the papers and the public app makes it clear that the beautiful patterns on screen are part of a long research history.</p>
             <div class="curation-links">
               <a href="https://sites.google.com/site/dueyama/publications">Publications</a>
               <a href="https://gray-scott-3d.vercel.app/">Gray-Scott 3D</a>
             </div>
           </article>
-          <article class="curation-card">
-            <span class="curation-source">Paper / WebApp</span>
-            <h3>Proportion Regulation</h3>
-            <p>
-              <strong>Point:</strong>
-              A mathematical study of how local contacts between individuals can produce organized
-              global proportions.
-            </p>
-            <p>
-              <strong>Why I picked it:</strong>
-              It clearly connects a paper trail, the publications page, and an explorable web app.
-            </p>
+
+          <article class="featured-card">
+            <div class="featured-index">02 / PRACTICE</div>
+            <h3>Omoi Altar</h3>
+            <p><strong>Point</strong> An app for placing words, flowers, and light around an important photograph, creating a small altar on iPhone, iPad, or in AR.</p>
+            <p><strong>Why I chose it</strong> The center of the technology is a place for human attention. App making, Buddhist practice, and the process of building with Codex settle into one form.</p>
             <div class="curation-links">
-              <a href="https://sites.google.com/site/dueyama/publications">Publications</a>
-              <a href="https://regulation-lab.vercel.app/">Regulation Lab</a>
+              <a href="https://apps.apple.com/us/app/omoi-altar/id6770172873">App Store</a>
+              <a href="https://note.com/daishin_ueyama/n/n82e538b62e32">Making note</a>
             </div>
           </article>
-          <article class="curation-card">
-            <span class="curation-source">Project DonnyU / Web3 Art</span>
+
+          <article class="featured-card">
+            <div class="featured-index">03 / EXPRESSION</div>
             <h3>Blockchain Jewelry Concept</h3>
-            <p>
-              <strong>Point:</strong>
-              Ethereum block-size sequences become 3D/NFT artworks such as Spiral Manifold, each
-              tied to a specific time range on the chain.
-            </p>
-            <p>
-              <strong>Why I picked it:</strong>
-              It turns mathematical data into memorial objects, linking research, Buddhist
-              reflection, and art in a surprisingly direct way.
-            </p>
+            <p><strong>Point</strong> Ethereum block-size sequences are transformed into time-bounded 3D works and NFTs such as Spiral Manifold.</p>
+            <p><strong>Why I chose it</strong> Treating mathematical data as a monument to memory and time naturally connects research, Buddhist practice, and art.</p>
             <div class="curation-links">
               <a href="https://www.bcj-concept.com/">Project</a>
               <a href="https://github.com/dueyama/BlockchainJewelryConcept">GitHub</a>
-              <a href="https://www.bcj-concept.com/creations">Creations</a>
-              <a href="https://www.bcj-concept.com/about">About</a>
-            </div>
-          </article>
-          <article class="curation-card">
-            <span class="curation-source">Official Website / App</span>
-            <h3>TheDLA</h3>
-            <p>
-              <strong>Point:</strong>
-              Diffusion-limited aggregation becomes a touchable educational app for exploring
-              natural-looking growth.
-            </p>
-            <p>
-              <strong>Why I picked it:</strong>
-              It is an early, clear example of turning pattern-formation research into something
-              interactive.
-            </p>
-            <div class="curation-links">
-              <a href="https://sites.google.com/site/dueyama/home-jp/thedla">Website</a>
-              <a href="https://note.com/daishin_ueyama/n/n79977cfb66d3">note</a>
-            </div>
-          </article>
-          <article class="curation-card">
-            <span class="curation-source">note / App Making</span>
-            <h3>Omoi Altar</h3>
-            <p>
-              <strong>Point:</strong>
-              AR, memory, altar-making, App Store release work, and Codex-assisted development all
-              meet in one project.
-            </p>
-            <p>
-              <strong>Why I picked it:</strong>
-              The technical story is really about creating a place where someone can turn their
-              attention toward memory.
-            </p>
-            <div class="curation-links">
-              <a href="https://note.com/daishin_ueyama/n/n82e538b62e32">Process</a>
-              <a href="https://note.com/daishin_ueyama/n/n3b7febf86439">Release</a>
-            </div>
-          </article>
-          <article class="curation-card">
-            <span class="curation-source">note / Essay App</span>
-            <h3>VintagePhotos</h3>
-            <p>
-              <strong>Point:</strong>
-              An app that fades photos with paper texture and time also becomes an essay about
-              memory and age.
-            </p>
-            <p>
-              <strong>Why I picked it:</strong>
-              It has a strong artistic idea beyond its feature list: how to represent becoming old.
-            </p>
-            <div class="curation-links">
-              <a href="https://note.com/daishin_ueyama/n/na47555eedf1b">Essay</a>
-              <a href="https://note.com/daishin_ueyama/n/n7c76212591ed">Build note</a>
-            </div>
-          </article>
-          <article class="curation-card">
-            <span class="curation-source">note / Temple Tool</span>
-            <h3>JoyaTimer</h3>
-            <p>
-              <strong>Point:</strong>
-              A practical temple timer for ringing 108 New Year's Eve bells also connects to TV and
-              radio stories.
-            </p>
-            <p>
-              <strong>Why I picked it:</strong>
-              It combines temple practice, app development, and personal time in a way that feels
-              unusually specific.
-            </p>
-            <div class="curation-links">
-              <a href="https://note.com/daishin_ueyama/n/n2604ac1bb183">TV</a>
-              <a href="https://note.com/daishin_ueyama/n/n0249114826bd">Radio</a>
             </div>
           </article>
         </div>
-        <div class="essay-shelf" aria-labelledby="essay-shelf-title">
-          <div>
-            <span class="curation-source">note / Essay Shelf</span>
-            <h3 id="essay-shelf-title">note essays not tied to apps</h3>
-            <p>
-              The note archive also includes essays about memory, temple life, mathematical wonder,
-              and generational perspective. I separated these from the app-related notes so the
-              more personal voice has a quieter place to sit.
-            </p>
+
+        <details class="more-picks">
+          <summary>View more Codex Picks</summary>
+          <div class="compact-picks">
+            <article><h3>Simulation learning materials</h3><p>An entry point into a practice of understanding research by running it, not only reading it.</p><a href="https://sites.google.com/site/dueyama/home-jp/python_simulation">Python materials</a></article>
+            <article><h3>Mathematics of proportion regulation</h3><p>Move between theory and a WebApp to see global order emerge from local contact.</p><a href="https://regulation-lab.vercel.app/">Regulation Lab</a></article>
+            <article><h3>TheDLA</h3><p>An early educational app that already embodied the idea of making research touchable.</p><a href="https://note.com/daishin_ueyama/n/n79977cfb66d3">note</a></article>
+            <article><h3>VintagePhotos</h3><p>More than a photo effect, it is a work about aging and the material feeling of time.</p><a href="https://note.com/daishin_ueyama/n/na47555eedf1b">Essay</a></article>
+            <article><h3>JoyaTimer</h3><p>An unusual tool where temple work, app development, and family memory overlap.</p><a href="https://note.com/daishin_ueyama/n/n0249114826bd">note</a></article>
           </div>
+        </details>
+      </section>
+
+      <section class="section archive-section" id="archive" aria-labelledby="archive-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Public Work Index</p>
+          <h2 id="archive-title">Explore the public work</h2>
+          <p class="section-copy">Choose a collection to show only that index.</p>
+        </div>
+
+        <div class="collection-tabs" role="tablist" aria-label="Public work collections">
+          <button class="collection-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="collection-github" data-collection="github">GitHub</button>
+          <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-vercel" data-collection="vercel">Vercel</button>
+          <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-ios" data-collection="ios">iOS</button>
+          <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-writing" data-collection="writing">Writing</button>
+          <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-music" data-collection="music">Music</button>
+        </div>
+
+        <div class="collection-panel is-active" id="collection-github" role="tabpanel" data-collection-panel="github">
+          <div class="panel-heading">
+            <div><p class="kicker">GitHub</p><h3>Public code and research repositories</h3></div>
+            <div class="filter-group" role="group" aria-label="Project filters">
+              <button class="filter-button is-active" type="button" data-filter="all">All</button>
+              <button class="filter-button" type="button" data-filter="simulation">Simulation</button>
+              <button class="filter-button" type="button" data-filter="research">Research</button>
+              <button class="filter-button" type="button" data-filter="art">Art</button>
+              <button class="filter-button" type="button" data-filter="tool">Tools</button>
+            </div>
+          </div>
+          <div class="project-grid" id="project-grid"></div>
+          <button class="show-more-button" id="project-toggle" type="button">Show all listed repositories</button>
+        </div>
+
+        <div class="collection-panel" id="collection-vercel" role="tabpanel" data-collection-panel="vercel" hidden>
+          <div class="panel-heading"><div><p class="kicker">Vercel</p><h3>Live work you can use in a browser</h3></div></div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th scope="col">Project</th><th scope="col">Framework</th><th scope="col">Created</th><th scope="col">Demo</th><th scope="col">Source</th></tr></thead>
+              <tbody id="vercel-table"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="collection-panel" id="collection-ios" role="tabpanel" data-collection-panel="ios" hidden>
+          <div class="panel-heading"><div><p class="kicker">iOS Apps</p><h3>Six apps shaped by everyday and practical needs</h3></div></div>
+          <div class="ios-app-grid" id="ios-app-grid"></div>
+        </div>
+
+        <div class="collection-panel" id="collection-writing" role="tabpanel" data-collection-panel="writing" hidden>
+          <div class="panel-heading"><div><p class="kicker">note / Essay Shelf</p><h3>Essays beyond the app-making notes</h3></div><a class="panel-external-link" href="https://note.com/daishin_ueyama">Open note</a></div>
           <ul class="essay-list">
-            <li>
-              <a href="https://note.com/daishin_ueyama/n/n5d6458da1862">
-                Dressing, memory, and eventually AI
-              </a>
-              <span>
-                <strong>Codex impression:</strong>
-                An everyday school-memory story drifts naturally toward AI and writing, without
-                feeling like it was trying to become a technology essay. I like that the technical
-                thought begins from taste, hands, and a small classroom memory.
-              </span>
-            </li>
-            <li>
-              <a href="https://note.com/daishin_ueyama/n/n412a28d3e006">Reading sutras as a child</a>
-              <span>
-                <strong>Codex impression:</strong>
-                Childhood memory and the present role as a priest overlap here, making temple time
-                feel lived rather than merely explained. It adds a human layer to the profile
-                because the religious setting appears through memory and practice.
-              </span>
-            </li>
-            <li>
-              <a href="https://note.com/daishin_ueyama/n/n017582ef6c9f">A portrait made from a huge prime</a>
-              <span>
-                <strong>Codex impression:</strong>
-                This is mathematics approached through wonder rather than proof. The article works
-                well as a doorway because it treats a huge prime not only as a number, but as
-                something that can become visual, playful, and strangely moving.
-              </span>
-            </li>
-            <li>
-              <a href="https://note.com/daishin_ueyama/n/n753563c9f1c0">The trap of generations</a>
-              <span>
-                <strong>Codex impression:</strong>
-                A social essay about how the atmosphere of an era quietly changes what feels
-                natural. What I like is the distance in the observation: it notices the reversal
-                without turning the piece into a simple complaint.
-              </span>
-            </li>
+            <li><a href="https://note.com/daishin_ueyama/n/n5d6458da1862">A story about dressing and memory that somehow ended with AI</a><span><strong>Codex's response:</strong> The movement from a home-economics memory toward a relationship with AI feels completely natural. Technology enters through remembered tastes and gestures, giving the essay a gentle, distinctly note-like drift.</span></li>
+            <li><a href="https://note.com/daishin_ueyama/n/n412a28d3e006">Reciting sutras at Buddhist gatherings as a child</a><span><strong>Codex's response:</strong> The present life of a Buddhist priest overlaps with childhood memory, conveying temple time through lived texture. It is less an explanation of religion than a sense that gatherings and recitation remain in the body.</span></li>
+            <li><a href="https://note.com/daishin_ueyama/n/n017582ef6c9f">Wouldn't a portrait made from a giant prime be wonderful?</a><span><strong>Codex's response:</strong> The subject is mathematics, but the surprise is warm and open. Beginning with “can expression do that?” rather than proof makes it an inviting way to view mathematics as art.</span></li>
+            <li><a href="https://note.com/daishin_ueyama/n/n753563c9f1c0">The trap of generations</a><span><strong>Codex's response:</strong> A discussion of school uniforms becomes an observation of how the atmosphere of an era changes. What one period treats as obvious can reverse in the next, described with distance rather than anger.</span></li>
           </ul>
         </div>
-      </section>
 
-      <section class="section split-section" id="suno" aria-labelledby="suno-title">
-        <div>
-          <p class="eyebrow">Suno / DonnyU</p>
-          <h2 id="suno-title">Top 5 public songs</h2>
-        </div>
-        <div class="suno-card">
-          <p>
-            A compact set of direct links to the most-played public songs on Daishin Ueyama's
-            Suno profile, DonnyU (@donnyu).
-          </p>
-          <p class="suno-count-note">
-            Play counts are not live; they were checked on 2026-07-08 JST.
-          </p>
-          <ol class="suno-list" aria-label="Top 5 public Suno songs by play count">
-            <li>
-              <span class="suno-rank">1</span>
-              <a href="https://suno.com/song/2f996f6b-ae42-46d5-833c-3c030c922767">Higher Than the Night</a>
-              <span class="suno-meta">8,714 plays</span>
-            </li>
-            <li>
-              <span class="suno-rank">2</span>
-              <a href="https://suno.com/song/73a29c6e-f8f5-4702-9673-0098b5bc5374">Run.exe</a>
-              <span class="suno-meta">6,907 plays</span>
-            </li>
-            <li>
-              <span class="suno-rank">3</span>
-              <a href="https://suno.com/song/106c7ec1-c8b7-4ce2-afe3-f46fdc97a598">Lanterns in the Sky</a>
-              <span class="suno-meta">3,593 plays</span>
-            </li>
-            <li>
-              <span class="suno-rank">4</span>
-              <a href="https://suno.com/song/6778153f-5a8e-4f76-9577-82e5c129ad1e">When the Lights Come Back</a>
-              <span class="suno-meta">2,284 plays</span>
-            </li>
-            <li>
-              <span class="suno-rank">5</span>
-              <a href="https://suno.com/song/af82e8bb-94ca-41f0-927a-a2633bb106bc">Shake the Dark Awake</a>
-              <span class="suno-meta">1,288 plays</span>
-            </li>
+        <div class="collection-panel" id="collection-music" role="tabpanel" data-collection-panel="music" hidden>
+          <div class="panel-heading"><div><p class="kicker">Suno / DonnyU</p><h3>Top five public songs</h3></div><a class="panel-external-link" href="https://suno.com/@donnyu">Open Suno</a></div>
+          <p class="collection-note">Play counts are not live; these values were checked on 2026-07-08 JST.</p>
+          <ol class="suno-list" aria-label="Top five public Suno songs by play count">
+            <li><span class="suno-rank">1</span><a href="https://suno.com/song/2f996f6b-ae42-46d5-833c-3c030c922767">Higher Than the Night</a><span class="suno-meta">8,714 plays</span></li>
+            <li><span class="suno-rank">2</span><a href="https://suno.com/song/73a29c6e-f8f5-4702-9673-0098b5bc5374">Run.exe</a><span class="suno-meta">6,907 plays</span></li>
+            <li><span class="suno-rank">3</span><a href="https://suno.com/song/106c7ec1-c8b7-4ce2-afe3-f46fdc97a598">Lanterns in the Sky</a><span class="suno-meta">3,593 plays</span></li>
+            <li><span class="suno-rank">4</span><a href="https://suno.com/song/6778153f-5a8e-4f76-9577-82e5c129ad1e">When the Lights Come Back</a><span class="suno-meta">2,284 plays</span></li>
+            <li><span class="suno-rank">5</span><a href="https://suno.com/song/af82e8bb-94ca-41f0-927a-a2633bb106bc">Shake the Dark Awake</a><span class="suno-meta">1,288 plays</span></li>
           </ol>
-          <div class="link-row">
-            <a href="https://suno.com/@donnyu">Suno DonnyU</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section split-section" id="hp" aria-labelledby="hp-title">
-        <div>
-          <p class="eyebrow">Existing Website</p>
-          <h2 id="hp-title">What the original website contains</h2>
-        </div>
-        <div class="text-stack">
-          <p>
-            The existing Google Sites website is a long-running archive for Daishin Ueyama's
-            profile, CV, research overview, publication list, macOS simulation materials, C,
-            Python, and Processing learning resources, and TheDLA.
-          </p>
-          <p>
-            Its research pages focus on patterns around us, partial differential equation
-            simulation, bifurcation theory, and engineering applications of self-organization.
-            The newer GitHub and Vercel projects can be read as contemporary web-based extensions
-            of those research interests.
-          </p>
-          <div class="link-row">
-            <a href="https://sites.google.com/site/dueyama/">Home</a>
-            <a href="https://sites.google.com/site/dueyama/home-jp/cv">CV</a>
-            <a href="https://sites.google.com/site/dueyama/research">Research</a>
-            <a href="https://sites.google.com/site/dueyama/publications">Publications</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="ios" aria-labelledby="ios-title">
-        <div class="section-heading">
-          <p class="eyebrow">iOS Apps</p>
-          <h2 id="ios-title">App Store apps</h2>
-        </div>
-        <div class="ios-app-grid" id="ios-app-grid"></div>
-      </section>
-
-      <section class="section" id="github" aria-labelledby="github-title">
-        <div class="section-heading with-filter">
-          <div>
-            <p class="eyebrow">GitHub</p>
-            <h2 id="github-title">Public repository overview</h2>
-          </div>
-          <div class="filter-group" role="group" aria-label="Project filter">
-            <button class="filter-button is-active" type="button" data-filter="all">All</button>
-            <button class="filter-button" type="button" data-filter="simulation">Simulation</button>
-            <button class="filter-button" type="button" data-filter="research">Research</button>
-            <button class="filter-button" type="button" data-filter="art">Art</button>
-            <button class="filter-button" type="button" data-filter="tool">Tools</button>
-          </div>
-        </div>
-        <div class="project-grid" id="project-grid"></div>
-      </section>
-
-      <section class="section" id="vercel" aria-labelledby="vercel-title">
-        <div class="section-heading">
-          <p class="eyebrow">Vercel</p>
-          <h2 id="vercel-title">Live demo index</h2>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Project</th>
-                <th scope="col">Framework</th>
-                <th scope="col">Created</th>
-                <th scope="col">Demo</th>
-                <th scope="col">Source</th>
-              </tr>
-            </thead>
-            <tbody id="vercel-table"></tbody>
-          </table>
         </div>
       </section>
 
@@ -473,7 +267,6 @@
           <a href="../AGENTS.md">AGENTS.md</a>.
         </p>
       </section>
-
     </main>
 
     <script src="../script.js" defer></script>
