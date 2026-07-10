@@ -325,6 +325,80 @@ h3 {
   font-weight: 800;
 }
 
+.visual-index {
+  display: grid;
+  width: min(1160px, calc(100% - 40px));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 auto;
+  padding: 0 0 60px;
+}
+
+.visual-item {
+  display: grid;
+  min-width: 0;
+  gap: 10px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.visual-frame {
+  display: grid;
+  aspect-ratio: 16 / 10;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #0a1211;
+}
+
+.visual-frame > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.visual-frame-app {
+  background: #e8ecea;
+}
+
+.visual-frame-app > img {
+  width: 48%;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 22%;
+  box-shadow: 0 16px 32px rgba(67, 77, 72, 0.18);
+}
+
+.visual-item:hover .visual-frame > img {
+  transform: scale(1.025);
+}
+
+.visual-label {
+  display: flex;
+  min-width: 0;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 2px;
+}
+
+.visual-label small {
+  color: var(--teal);
+  font-size: 0.74rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.visual-label strong {
+  overflow: hidden;
+  font-size: 0.94rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .section {
   width: min(1160px, calc(100% - 40px));
   margin: 0 auto;
@@ -1000,6 +1074,26 @@ td:first-child {
     width: min(100% - 24px, 1160px);
   }
 
+  .visual-index {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 0 12px 42px;
+    scroll-padding-inline: 12px;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+
+  .visual-index::-webkit-scrollbar {
+    display: none;
+  }
+
+  .visual-item {
+    flex: 0 0 min(78vw, 320px);
+    scroll-snap-align: start;
+  }
+
   .hero {
     padding: 42px 0 38px;
   }
@@ -1104,5 +1198,15 @@ td:first-child {
 
   .stats div {
     grid-template-columns: 78px minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .visual-frame > img {
+    transition: none;
   }
 }

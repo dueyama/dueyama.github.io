@@ -31,6 +31,7 @@ The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `
 - Codex Curation now leads with three substantial selections. Additional picks stay available in a collapsed shelf rather than extending the initial page.
 - GitHub, Vercel, iOS, writing, and music now share one tabbed public-work index. Only one collection is visible at a time, and GitHub initially shows six repositories.
 - Keep the homepage as a single gathering place for now. Prefer progressive disclosure over splitting it into many small pages unless the collection becomes substantially larger.
+- A quiet visual index below the hero uses three images from the actual work: a running Gray-Scott 3D simulation, the Omoi Altar App Store icon, and Blockchain Jewelry artwork. Keep this selection small and meaningful rather than adding decorative images throughout the page.
 
 ## iOS Apps
 
