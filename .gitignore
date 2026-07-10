@@ -21,3 +21,6 @@ coverage/
 
 # Local hosting/deployment state
 .vercel/
+
+# Private research and curation artifacts
+private/

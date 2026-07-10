@@ -32,6 +32,7 @@ The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `
 - GitHub, Vercel, iOS, writing, and music now share one tabbed public-work index. Only one collection is visible at a time, and GitHub initially shows six repositories.
 - Keep the homepage as a single gathering place for now. Prefer progressive disclosure over splitting it into many small pages unless the collection becomes substantially larger.
 - A quiet visual index below the hero uses three images from the actual work: a running Gray-Scott 3D simulation, the Omoi Altar App Store icon, and Blockchain Jewelry artwork. Keep this selection small and meaningful rather than adding decorative images throughout the page.
+- The later Sol design pass made the site feel like an edited research-and-works archive: a strong typographic hero, a dark profile plate, an asymmetric strip of real project images, crisp section rules, and restrained teal, gold, and coral accents. Preserve that editorial tension instead of drifting back toward generic floating profile cards.
 
 ## iOS Apps
 
@@ -66,6 +67,14 @@ Current mapped note links:
 - JoyaTimer: 3 articles
 
 If this is updated later, search beyond titles. Article body, app-development context, and related wording may matter more than exact title matches.
+
+## Deep note Curation
+
+The later Codex Curation revision used note's public index and article data to read all 326 public essays in full, not only titles or search snippets. Each article received a separate factual summary, Codex response, themes, curation tier, and selection rationale. The public page shows only a small edited selection; it must not become a dump of the full corpus.
+
+The working corpus, audit workbook, shortlist, QA previews, and long person-portrait draft live under the gitignored `private/` directory. Keep those research artifacts private. Only deliberately edited bilingual copy belongs in the public site. The full text is retained privately so later embedding or thematic-distribution work can be reproduced without fetching everything again.
+
+The strongest reading was not simply "mathematician + priest + developer." Across the essays, recurring habits were: making unclear things move, preserving imperfection and change instead of erasing them, trusting AI enough to argue with it, allowing mathematics and Buddhism to remain in tension, and facing regional decline without easy optimism. Future curation should preserve those frictions rather than flattening them into a generic interdisciplinary profile.
 
 ## About Note
 
