@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dueyama.github.io/sitemap.xml
