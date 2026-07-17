@@ -54,7 +54,7 @@ The public history lives in `data/suno-history.json`. It stores only public song
 
 `scripts/update-suno-stats.mjs` reads the current public-song count from the DonnyU profile, follows the complete paginated song feed, and checks the collected count and totals before writing anything. The song count is not fixed at 41. New IDs enter the catalog automatically, while songs that later leave the public feed keep their earlier history and simply disappear from the current ranking.
 
-The page shows compact two-series charts beside the current top five. Selecting one opens a larger dialog where all currently public songs are available and cumulative values can be switched to weekly gains. The archived 2026-07-08 top-five play counts seed the first visible trend; full-song and like history begins with the 2026-07-17 snapshot.
+The page shows compact two-series charts beside the current top five, plus a profile-total chart for total plays and total likes. Selecting one opens a larger dialog where the profile totals and all currently public songs are available, and cumulative values can be switched to weekly gains. The archived 2026-07-08 top-five play counts seed the first visible song trends; profile-total, full-song, and like history begins with the 2026-07-17 snapshot.
 
 A Codex Automation updates the history every Sunday at 00:00 JST. Its normal path is: run the deterministic collector, verify the resulting diff, commit only the history JSON, and push `main`. If Suno changes its public data format or validation fails, it must stop without committing guessed values.
 

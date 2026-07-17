@@ -1096,6 +1096,37 @@ td:first-child {
   gap: 0;
 }
 
+.suno-summary {
+  display: grid;
+  max-width: 1040px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+}
+
+.suno-summary-copy {
+  line-height: 1.65;
+}
+
+.suno-total-history {
+  display: grid;
+  grid-template-columns: auto 142px;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+.suno-total-history-label {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.suno-summary .suno-sparkline-button {
+  justify-self: end;
+}
+
 .suno-list li {
   display: grid;
   grid-template-columns: 38px minmax(0, 1fr) minmax(150px, auto) 148px;
@@ -1650,6 +1681,15 @@ td:first-child {
     grid-template-columns: 34px minmax(0, 1fr);
   }
 
+  .suno-summary {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .suno-total-history {
+    justify-content: start;
+  }
+
   .suno-meta {
     grid-column: 2;
     white-space: normal;
@@ -1668,6 +1708,11 @@ td:first-child {
 
   .suno-sparkline-button svg {
     width: 100%;
+  }
+
+  .suno-summary .suno-sparkline-button {
+    grid-column: auto;
+    justify-self: start;
   }
 
   .suno-history-dialog {

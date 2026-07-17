@@ -367,6 +367,7 @@ const sunoModeButtons = document.querySelectorAll("[data-suno-mode]");
 const isEnglish = document.documentElement.lang.toLowerCase().startsWith("en");
 const languageStorageKey = "dueyama-profile-language";
 const projectPreviewLimit = 6;
+const sunoTotalsSeriesId = "profile-totals";
 const numberFormatter = new Intl.NumberFormat(isEnglish ? "en-US" : "ja-JP");
 const compactNumberFormatter = new Intl.NumberFormat(isEnglish ? "en-US" : "ja-JP", {
   notation: "compact",
@@ -507,14 +508,17 @@ function songHistory(songId) {
 
   return sunoHistoryData.snapshots
     .map((snapshot) => {
-      const values = snapshot.songs?.[songId];
-      return values
-        ? {
-            date: snapshot.date,
-            plays: Number.isFinite(values.plays) ? values.plays : null,
-            likes: Number.isFinite(values.likes) ? values.likes : null,
-          }
-        : null;
+      const values = songId === sunoTotalsSeriesId ? snapshot.totals : snapshot.songs?.[songId];
+      if (!values) {
+        return null;
+      }
+
+      const point = {
+        date: snapshot.date,
+        plays: Number.isFinite(values.plays) ? values.plays : null,
+        likes: Number.isFinite(values.likes) ? values.likes : null,
+      };
+      return Number.isFinite(point.plays) || Number.isFinite(point.likes) ? point : null;
     })
     .filter(Boolean);
 }
@@ -550,18 +554,18 @@ function scaledSeries(points, metric, width, top, bottom) {
   };
 }
 
-function renderSparkline(songId) {
+function renderSparkline(songId, accessibleLabel) {
   const points = songHistory(songId);
   const plays = scaledSeries(points, "plays", 132, 3, 18);
   const likes = scaledSeries(points, "likes", 132, 25, 39);
-  const label = isEnglish ? "Open weekly history" : "週次履歴を開く";
+  const label = accessibleLabel || (isEnglish ? "Open weekly history" : "週次履歴を開く");
   const seriesMarkup = (series, lineClass, dotClass) =>
     series
       ? `<path class="${lineClass}" d="${series.path}"></path><circle class="${dotClass}" cx="${series.last.x.toFixed(2)}" cy="${series.last.y.toFixed(2)}" r="2.7"></circle>`
       : "";
 
   return `
-    <button class="suno-sparkline-button" type="button" data-suno-song-id="${songId}" aria-label="${label}" title="${label}">
+    <button class="suno-sparkline-button" type="button" data-suno-song-id="${escapeHtml(songId)}" aria-label="${escapeHtml(label)}" title="${escapeHtml(label)}">
       <svg viewBox="0 0 132 42" aria-hidden="true" focusable="false">
         <line class="suno-sparkline-separator" x1="4" y1="21" x2="128" y2="21"></line>
         ${seriesMarkup(plays, "suno-line-plays", "suno-dot-plays")}
@@ -601,6 +605,8 @@ function renderSunoCollection() {
   }
 
   sunoSummary.replaceChildren();
+  const summaryCopy = document.createElement("span");
+  summaryCopy.className = "suno-summary-copy";
   const summaryStrong = document.createElement("strong");
   summaryStrong.textContent = isEnglish
     ? `${numberFormatter.format(latest.totals.plays)} total plays / ${numberFormatter.format(latest.totals.likes)} likes / ${numberFormatter.format(latest.totals.songs)} public songs.`
@@ -608,7 +614,19 @@ function renderSunoCollection() {
   const checkedText = isEnglish
     ? ` Recorded on ${latest.date} JST.`
     : ` ${latest.date} JSTに記録した値です。`;
-  sunoSummary.append(summaryStrong, document.createTextNode(checkedText));
+  summaryCopy.append(summaryStrong, document.createTextNode(checkedText));
+
+  const totalHistory = document.createElement("span");
+  totalHistory.className = "suno-total-history";
+  const totalHistoryLabel = document.createElement("span");
+  totalHistoryLabel.className = "suno-total-history-label";
+  totalHistoryLabel.textContent = isEnglish ? "All songs over time" : "全公開曲の推移";
+  const totalHistoryAria = isEnglish
+    ? "Open total plays and total likes history"
+    : "総再生数と総いいね数の履歴を開く";
+  totalHistory.append(totalHistoryLabel);
+  totalHistory.insertAdjacentHTML("beforeend", renderSparkline(sunoTotalsSeriesId, totalHistoryAria));
+  sunoSummary.append(summaryCopy, totalHistory);
 
   sunoList.innerHTML = activeSongs
     .slice(0, 5)
@@ -628,15 +646,20 @@ function renderSunoCollection() {
     .join("");
 
   const previousSelection = selectedSunoSongId;
-  sunoSongSelect.innerHTML = activeSongs
-    .map(
-      (song, index) =>
-        `<option value="${song.id}">${index + 1}. ${escapeHtml(song.title)} (${numberFormatter.format(song.plays)})</option>`,
-    )
-    .join("");
-  selectedSunoSongId = activeSongs.some((song) => song.id === previousSelection)
+  const totalsOption = isEnglish
+    ? `All public songs (${numberFormatter.format(latest.totals.plays)} total plays)`
+    : `全公開曲の合計（総再生 ${numberFormatter.format(latest.totals.plays)}）`;
+  sunoSongSelect.innerHTML =
+    `<option value="${sunoTotalsSeriesId}">${totalsOption}</option>` +
+    activeSongs
+      .map(
+        (song, index) =>
+          `<option value="${song.id}">${index + 1}. ${escapeHtml(song.title)} (${numberFormatter.format(song.plays)})</option>`,
+      )
+      .join("");
+  selectedSunoSongId = previousSelection === sunoTotalsSeriesId || activeSongs.some((song) => song.id === previousSelection)
     ? previousSelection
-    : activeSongs[0].id;
+    : sunoTotalsSeriesId;
   sunoSongSelect.value = selectedSunoSongId;
 }
 
@@ -725,8 +748,14 @@ function renderSunoDialog() {
     return;
   }
 
-  const song = sunoHistoryData.catalog[selectedSunoSongId];
+  const isTotalsSeries = selectedSunoSongId === sunoTotalsSeriesId;
+  const song = isTotalsSeries
+    ? { title: isEnglish ? "All public songs" : "全公開曲の合計" }
+    : sunoHistoryData.catalog[selectedSunoSongId];
   const points = songHistory(selectedSunoSongId);
+  if (!song || !points.length) {
+    return;
+  }
   const firstDate = points[0]?.date;
   const lastDate = points.at(-1)?.date;
   const recordText = isEnglish
@@ -740,8 +769,8 @@ function renderSunoDialog() {
   const likeValues = chartPoints(points, "likes", sunoChartMode);
   const latestPlay = playValues.at(-1)?.value;
   const latestLike = likeValues.at(-1)?.value;
-  const playsLabel = isEnglish ? "Plays" : "再生数";
-  const likesLabel = isEnglish ? "Likes" : "いいね数";
+  const playsLabel = isTotalsSeries ? (isEnglish ? "Total plays" : "総再生数") : isEnglish ? "Plays" : "再生数";
+  const likesLabel = isTotalsSeries ? (isEnglish ? "Total likes" : "総いいね数") : isEnglish ? "Likes" : "いいね数";
   const valueText = (value) => {
     if (!Number.isFinite(value)) {
       return "-";
@@ -850,12 +879,15 @@ languageLinks.forEach((link) => {
   });
 });
 
-sunoList?.addEventListener("click", (event) => {
+function handleSunoHistoryClick(event) {
   const button = event.target.closest("[data-suno-song-id]");
   if (button) {
     openSunoDialog(button.dataset.sunoSongId);
   }
-});
+}
+
+sunoList?.addEventListener("click", handleSunoHistoryClick);
+sunoSummary?.addEventListener("click", handleSunoHistoryClick);
 
 sunoSongSelect?.addEventListener("change", () => {
   selectedSunoSongId = sunoSongSelect.value;
