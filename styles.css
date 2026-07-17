@@ -51,9 +51,20 @@ a {
 
 a:focus-visible,
 button:focus-visible,
-summary:focus-visible {
+summary:focus-visible,
+select:focus-visible {
   outline: 3px solid var(--gold);
   outline-offset: 3px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .skip-link {
@@ -1081,13 +1092,13 @@ td:first-child {
 
 .suno-list {
   display: grid;
-  max-width: 820px;
+  max-width: 1040px;
   gap: 0;
 }
 
 .suno-list li {
   display: grid;
-  grid-template-columns: 38px minmax(0, 1fr) auto;
+  grid-template-columns: 38px minmax(0, 1fr) minmax(150px, auto) 148px;
   align-items: center;
   gap: 12px;
   border-top: 1px solid var(--line);
@@ -1111,10 +1122,259 @@ td:first-child {
 }
 
 .suno-meta {
+  display: grid;
+  gap: 1px;
   color: var(--muted);
   font-size: 0.88rem;
   font-weight: 800;
   white-space: nowrap;
+}
+
+.suno-legend {
+  display: flex;
+  max-width: 1040px;
+  justify-content: flex-end;
+  gap: 16px;
+  margin: -10px 0 3px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.suno-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.suno-legend span::before {
+  width: 9px;
+  height: 3px;
+  border-radius: 2px;
+  background: currentColor;
+  content: "";
+}
+
+.suno-legend .is-plays {
+  color: var(--teal);
+}
+
+.suno-legend .is-likes {
+  color: var(--coral);
+}
+
+.suno-sparkline-button {
+  display: grid;
+  width: 142px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1px 4px;
+  background: rgba(255, 255, 255, 0.46);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.suno-sparkline-button:hover {
+  border-color: var(--teal);
+  background: var(--paper);
+}
+
+.suno-sparkline-button svg {
+  display: block;
+  width: 132px;
+  height: 42px;
+}
+
+.suno-sparkline-separator,
+.suno-chart-gridline {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.suno-line-plays,
+.suno-line-likes {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.4;
+}
+
+.suno-line-plays {
+  stroke: var(--teal);
+}
+
+.suno-line-likes {
+  stroke: var(--coral);
+}
+
+.suno-dot-plays {
+  fill: var(--teal);
+}
+
+.suno-dot-likes {
+  fill: var(--coral);
+}
+
+.suno-history-dialog {
+  width: min(920px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  padding: 24px;
+  background: var(--paper);
+  box-shadow: 0 24px 80px rgba(16, 23, 22, 0.28);
+  color: var(--ink);
+}
+
+.suno-history-dialog::backdrop {
+  background: rgba(16, 23, 22, 0.64);
+  backdrop-filter: blur(4px);
+}
+
+.suno-dialog-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 16px;
+}
+
+.suno-dialog-head h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", "Yu Mincho", serif;
+  font-size: 1.7rem;
+  line-height: 1.25;
+}
+
+.suno-dialog-close {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  flex: 0 0 auto;
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  padding: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.suno-dialog-close:hover {
+  background: var(--ink);
+  color: #fff;
+}
+
+.suno-dialog-controls {
+  display: grid;
+  grid-template-columns: auto minmax(220px, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 0 10px;
+}
+
+.suno-dialog-controls label {
+  font-size: 0.84rem;
+  font-weight: 850;
+}
+
+.suno-dialog-controls select {
+  width: 100%;
+  min-width: 0;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0 36px 0 11px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 750;
+}
+
+.suno-mode-toggle {
+  display: inline-grid;
+  grid-auto-flow: column;
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.suno-mode-toggle button {
+  min-height: 40px;
+  border: 0;
+  border-left: 1px solid var(--ink);
+  padding: 0 12px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 850;
+}
+
+.suno-mode-toggle button:first-child {
+  border-left: 0;
+}
+
+.suno-mode-toggle button.is-active {
+  background: var(--ink);
+  color: #fff;
+}
+
+.suno-dialog-summary {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.suno-chart-block {
+  border-top: 1px solid var(--line);
+  padding: 14px 0 4px;
+}
+
+.suno-chart-caption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+
+.suno-chart-caption span {
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.suno-chart-caption strong {
+  font-size: 0.94rem;
+}
+
+.suno-chart-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.suno-chart-axis-label {
+  fill: var(--muted);
+  font-family: inherit;
+  font-size: 11px;
+}
+
+.suno-chart-empty {
+  display: grid;
+  min-height: 120px;
+  place-items: center;
+  color: var(--muted);
+  font-size: 0.88rem;
 }
 
 .about-note {
@@ -1393,6 +1653,50 @@ td:first-child {
   .suno-meta {
     grid-column: 2;
     white-space: normal;
+  }
+
+  .suno-legend {
+    justify-content: flex-start;
+    margin-top: -6px;
+  }
+
+  .suno-sparkline-button {
+    width: min(180px, 100%);
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .suno-sparkline-button svg {
+    width: 100%;
+  }
+
+  .suno-history-dialog {
+    width: calc(100% - 20px);
+    max-height: calc(100dvh - 20px);
+    padding: 18px;
+  }
+
+  .suno-dialog-head {
+    gap: 12px;
+  }
+
+  .suno-dialog-head h3 {
+    font-size: 1.35rem;
+  }
+
+  .suno-dialog-controls {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .suno-mode-toggle {
+    justify-self: start;
+  }
+
+  .suno-chart-caption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1px;
   }
 
   .ios-app-icon {

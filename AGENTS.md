@@ -22,7 +22,7 @@ The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `
 - Papers were included as bridges from the publication list to visible web demos, especially Gray-Scott and proportion regulation.
 - Project DonnyU / Blockchain Jewelry Concept was added as a web3 art activity that connects Ethereum block-size data, time, memory, 3D objects, NFTs, and future AR/metaverse contexts. It also has a public GitHub repository, `dueyama/BlockchainJewelryConcept`, so keep both the project site and GitHub link visible.
 - Non-app note essays should stay in a compact shelf under the curation corner so they add Daishin's voice without crowding the app-related notes.
-- Suno DonnyU (`@donnyu`) public songs were added as a small top-played list. Play counts and the profile's total public plays are static values checked on 2026-07-17 JST; refresh them from the public Suno profile/feed when needed.
+- Suno DonnyU (`@donnyu`) public songs began as a small top-played list and later gained tracked weekly history for plays and likes. The current top five is calculated from the latest snapshot instead of being treated as a fixed set.
 - Codex Rate Widget was added as a macOS SwiftUI/WidgetKit utility born from increased day-to-day Codex use. Its profile copy should retain that lived reason for making it, not describe it only as a generic usage monitor.
 - The Twitter/X profile image for `@dueyama` replaced the earlier GitHub avatar in the top profile panel.
 - Internal build notes such as data-source strings or collection-status caveats should not appear in the visible page.
@@ -47,6 +47,16 @@ The App Store section currently lists six apps under Daishin Ueyama:
 - JoyaTimer
 
 Each app has an icon, a short bilingual description, an App Store link, and related note links when found.
+
+## Suno Weekly History
+
+The public history lives in `data/suno-history.json`. It stores only public song identity, title, URL, dates, play counts, and like counts; it does not retain lyrics or generation prompts.
+
+`scripts/update-suno-stats.mjs` reads the current public-song count from the DonnyU profile, follows the complete paginated song feed, and checks the collected count and totals before writing anything. The song count is not fixed at 41. New IDs enter the catalog automatically, while songs that later leave the public feed keep their earlier history and simply disappear from the current ranking.
+
+The page shows compact two-series charts beside the current top five. Selecting one opens a larger dialog where all currently public songs are available and cumulative values can be switched to weekly gains. The archived 2026-07-08 top-five play counts seed the first visible trend; full-song and like history begins with the 2026-07-17 snapshot.
+
+A Codex Automation updates the history every Sunday at 00:00 JST. Its normal path is: run the deterministic collector, verify the resulting diff, commit only the history JSON, and push `main`. If Suno changes its public data format or validation fails, it must stop without committing guessed values.
 
 ## note Article Search
 

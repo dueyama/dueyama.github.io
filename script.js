@@ -357,11 +357,26 @@ const collectionPanels = document.querySelectorAll("[data-collection-panel]");
 const collectionLinks = document.querySelectorAll("[data-select-collection]");
 const projectToggle = document.querySelector("#project-toggle");
 const languageLinks = document.querySelectorAll("[data-language-choice]");
+const sunoSummary = document.querySelector("#suno-summary");
+const sunoList = document.querySelector("#suno-list");
+const sunoHistoryDialog = document.querySelector("#suno-history-dialog");
+const sunoSongSelect = document.querySelector("#suno-song-select");
+const sunoDialogSummary = document.querySelector("#suno-dialog-summary");
+const sunoLargeChart = document.querySelector("#suno-large-chart");
+const sunoModeButtons = document.querySelectorAll("[data-suno-mode]");
 const isEnglish = document.documentElement.lang.toLowerCase().startsWith("en");
 const languageStorageKey = "dueyama-profile-language";
 const projectPreviewLimit = 6;
+const numberFormatter = new Intl.NumberFormat(isEnglish ? "en-US" : "ja-JP");
+const compactNumberFormatter = new Intl.NumberFormat(isEnglish ? "en-US" : "ja-JP", {
+  notation: "compact",
+  maximumFractionDigits: 1,
+});
 let currentProjectFilter = "all";
 let showAllProjects = false;
+let sunoHistoryData = null;
+let selectedSunoSongId = null;
+let sunoChartMode = "total";
 
 function renderProjects(filter = "all") {
   const visibleProjects = projects.filter((project) => filter === "all" || project.kind === filter);
@@ -476,6 +491,314 @@ function renderIosApps() {
     .join("");
 }
 
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function songHistory(songId) {
+  if (!sunoHistoryData) {
+    return [];
+  }
+
+  return sunoHistoryData.snapshots
+    .map((snapshot) => {
+      const values = snapshot.songs?.[songId];
+      return values
+        ? {
+            date: snapshot.date,
+            plays: Number.isFinite(values.plays) ? values.plays : null,
+            likes: Number.isFinite(values.likes) ? values.likes : null,
+          }
+        : null;
+    })
+    .filter(Boolean);
+}
+
+function scaledSeries(points, metric, width, top, bottom) {
+  const values = points.filter((point) => Number.isFinite(point[metric]));
+  if (!values.length) {
+    return null;
+  }
+
+  const dates = values.map((point) => Date.parse(`${point.date}T00:00:00Z`));
+  const minDate = Math.min(...dates);
+  const maxDate = Math.max(...dates);
+  const metrics = values.map((point) => point[metric]);
+  const minValue = Math.min(...metrics);
+  const maxValue = Math.max(...metrics);
+  const xFor = (date) =>
+    maxDate === minDate
+      ? width / 2
+      : 4 + ((Date.parse(`${date}T00:00:00Z`) - minDate) / (maxDate - minDate)) * (width - 8);
+  const yFor = (value) =>
+    maxValue === minValue
+      ? (top + bottom) / 2
+      : bottom - ((value - minValue) / (maxValue - minValue)) * (bottom - top);
+  const coordinates = values.map((point) => ({
+    x: xFor(point.date),
+    y: yFor(point[metric]),
+  }));
+
+  return {
+    path: coordinates.map(({ x, y }, index) => `${index ? "L" : "M"}${x.toFixed(2)} ${y.toFixed(2)}`).join(" "),
+    last: coordinates.at(-1),
+  };
+}
+
+function renderSparkline(songId) {
+  const points = songHistory(songId);
+  const plays = scaledSeries(points, "plays", 132, 3, 18);
+  const likes = scaledSeries(points, "likes", 132, 25, 39);
+  const label = isEnglish ? "Open weekly history" : "週次履歴を開く";
+  const seriesMarkup = (series, lineClass, dotClass) =>
+    series
+      ? `<path class="${lineClass}" d="${series.path}"></path><circle class="${dotClass}" cx="${series.last.x.toFixed(2)}" cy="${series.last.y.toFixed(2)}" r="2.7"></circle>`
+      : "";
+
+  return `
+    <button class="suno-sparkline-button" type="button" data-suno-song-id="${songId}" aria-label="${label}" title="${label}">
+      <svg viewBox="0 0 132 42" aria-hidden="true" focusable="false">
+        <line class="suno-sparkline-separator" x1="4" y1="21" x2="128" y2="21"></line>
+        ${seriesMarkup(plays, "suno-line-plays", "suno-dot-plays")}
+        ${seriesMarkup(likes, "suno-line-likes", "suno-dot-likes")}
+      </svg>
+    </button>
+  `;
+}
+
+function latestSunoSnapshot() {
+  return sunoHistoryData?.snapshots
+    ?.slice()
+    .reverse()
+    .find((snapshot) => Number.isInteger(snapshot.totals?.plays));
+}
+
+function activeSunoSongs() {
+  const latest = latestSunoSnapshot();
+  if (!latest) {
+    return [];
+  }
+
+  return Object.entries(latest.songs)
+    .map(([id, values]) => ({
+      id,
+      ...values,
+      ...sunoHistoryData.catalog[id],
+    }))
+    .sort((a, b) => b.plays - a.plays || a.title.localeCompare(b.title));
+}
+
+function renderSunoCollection() {
+  const latest = latestSunoSnapshot();
+  const activeSongs = activeSunoSongs();
+  if (!latest || !activeSongs.length || !sunoList || !sunoSummary) {
+    return;
+  }
+
+  sunoSummary.replaceChildren();
+  const summaryStrong = document.createElement("strong");
+  summaryStrong.textContent = isEnglish
+    ? `${numberFormatter.format(latest.totals.plays)} total plays / ${numberFormatter.format(latest.totals.likes)} likes / ${numberFormatter.format(latest.totals.songs)} public songs.`
+    : `総再生数 ${numberFormatter.format(latest.totals.plays)}回 / いいね合計${numberFormatter.format(latest.totals.likes)} / 公開${numberFormatter.format(latest.totals.songs)}曲。`;
+  const checkedText = isEnglish
+    ? ` Recorded on ${latest.date} JST.`
+    : ` ${latest.date} JSTに記録した値です。`;
+  sunoSummary.append(summaryStrong, document.createTextNode(checkedText));
+
+  sunoList.innerHTML = activeSongs
+    .slice(0, 5)
+    .map((song, index) => {
+      const meta = isEnglish
+        ? `<span>${numberFormatter.format(song.plays)} plays</span><span>${numberFormatter.format(song.likes)} likes</span>`
+        : `<span>再生 ${numberFormatter.format(song.plays)}</span><span>いいね ${numberFormatter.format(song.likes)}</span>`;
+      return `
+        <li>
+          <span class="suno-rank">${index + 1}</span>
+          <a href="${escapeHtml(song.url)}">${escapeHtml(song.title)}</a>
+          <span class="suno-meta">${meta}</span>
+          ${renderSparkline(song.id)}
+        </li>
+      `;
+    })
+    .join("");
+
+  const previousSelection = selectedSunoSongId;
+  sunoSongSelect.innerHTML = activeSongs
+    .map(
+      (song, index) =>
+        `<option value="${song.id}">${index + 1}. ${escapeHtml(song.title)} (${numberFormatter.format(song.plays)})</option>`,
+    )
+    .join("");
+  selectedSunoSongId = activeSongs.some((song) => song.id === previousSelection)
+    ? previousSelection
+    : activeSongs[0].id;
+  sunoSongSelect.value = selectedSunoSongId;
+}
+
+function chartPoints(points, metric, mode) {
+  const valid = points.filter((point) => Number.isFinite(point[metric]));
+  if (mode === "total") {
+    return valid.map((point) => ({ date: point.date, value: point[metric] }));
+  }
+
+  return valid.slice(1).map((point, index) => ({
+    date: point.date,
+    value: point[metric] - valid[index][metric],
+  }));
+}
+
+function renderLargeSvg(points, metric, mode, lineClass, dotClass, ariaLabel) {
+  const values = chartPoints(points, metric, mode);
+  if (!values.length) {
+    const empty = isEnglish ? "More weekly records are needed." : "週次記録が増えるとグラフを表示します。";
+    return `<div class="suno-chart-empty">${empty}</div>`;
+  }
+
+  const isCompactChart = window.matchMedia("(max-width: 640px)").matches;
+  const width = isCompactChart ? 360 : 760;
+  const height = 184;
+  const left = isCompactChart ? 50 : 58;
+  const right = isCompactChart ? 8 : 14;
+  const top = 14;
+  const bottom = 30;
+  const plotWidth = width - left - right;
+  const plotHeight = height - top - bottom;
+  const dates = values.map((point) => Date.parse(`${point.date}T00:00:00Z`));
+  const minDate = Math.min(...dates);
+  const maxDate = Math.max(...dates);
+  const rawMin = Math.min(...values.map((point) => point.value));
+  const rawMax = Math.max(...values.map((point) => point.value));
+  const rawRange = rawMax - rawMin;
+  const padding = rawRange === 0 ? Math.max(1, Math.abs(rawMax) * 0.08) : rawRange * 0.12;
+  const yMin =
+    mode === "weekly"
+      ? rawMin >= 0
+        ? 0
+        : rawMin - padding
+      : Math.max(0, rawMin - padding);
+  const yMax = Math.max(yMin + 1, rawMax + padding);
+  const xFor = (date) =>
+    maxDate === minDate
+      ? left + plotWidth / 2
+      : left + ((Date.parse(`${date}T00:00:00Z`) - minDate) / (maxDate - minDate)) * plotWidth;
+  const yFor = (value) => top + plotHeight - ((value - yMin) / (yMax - yMin)) * plotHeight;
+  const coordinates = values.map((point) => ({ ...point, x: xFor(point.date), y: yFor(point.value) }));
+  const path = coordinates
+    .map(({ x, y }, index) => `${index ? "L" : "M"}${x.toFixed(2)} ${y.toFixed(2)}`)
+    .join(" ");
+  const grid = [0, 1, 2, 3]
+    .map((index) => {
+      const ratio = index / 3;
+      const y = top + plotHeight * ratio;
+      const value = yMax - (yMax - yMin) * ratio;
+      return `<line class="suno-chart-gridline" x1="${left}" y1="${y.toFixed(2)}" x2="${width - right}" y2="${y.toFixed(2)}"></line><text class="suno-chart-axis-label" x="${left - 8}" y="${(y + 4).toFixed(2)}" text-anchor="end">${escapeHtml(compactNumberFormatter.format(Math.round(value)))}</text>`;
+    })
+    .join("");
+  const dateLabels =
+    coordinates.length === 1
+      ? `<text class="suno-chart-axis-label" x="${coordinates[0].x}" y="${height - 6}" text-anchor="middle">${coordinates[0].date}</text>`
+      : `<text class="suno-chart-axis-label" x="${left}" y="${height - 6}">${coordinates[0].date}</text><text class="suno-chart-axis-label" x="${width - right}" y="${height - 6}" text-anchor="end">${coordinates.at(-1).date}</text>`;
+  const dots = coordinates
+    .map(
+      ({ x, y, date, value }) =>
+        `<circle class="${dotClass}" cx="${x.toFixed(2)}" cy="${y.toFixed(2)}" r="3.6"><title>${date}: ${numberFormatter.format(value)}</title></circle>`,
+    )
+    .join("");
+
+  return `
+    <svg class="suno-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(ariaLabel)}">
+      ${grid}
+      <path class="${lineClass}" d="${path}"></path>
+      ${dots}
+      ${dateLabels}
+    </svg>
+  `;
+}
+
+function renderSunoDialog() {
+  if (!sunoHistoryData || !selectedSunoSongId || !sunoLargeChart) {
+    return;
+  }
+
+  const song = sunoHistoryData.catalog[selectedSunoSongId];
+  const points = songHistory(selectedSunoSongId);
+  const firstDate = points[0]?.date;
+  const lastDate = points.at(-1)?.date;
+  const recordText = isEnglish
+    ? `${points.length} ${points.length === 1 ? "record" : "records"}`
+    : `${points.length}回の記録`;
+  sunoDialogSummary.textContent = firstDate === lastDate
+    ? `${song.title} / ${firstDate} / ${recordText}`
+    : `${song.title} / ${firstDate} - ${lastDate} / ${recordText}`;
+
+  const playValues = chartPoints(points, "plays", sunoChartMode);
+  const likeValues = chartPoints(points, "likes", sunoChartMode);
+  const latestPlay = playValues.at(-1)?.value;
+  const latestLike = likeValues.at(-1)?.value;
+  const playsLabel = isEnglish ? "Plays" : "再生数";
+  const likesLabel = isEnglish ? "Likes" : "いいね数";
+  const valueText = (value) => {
+    if (!Number.isFinite(value)) {
+      return "-";
+    }
+    const prefix = sunoChartMode === "weekly" && value > 0 ? "+" : "";
+    return `${prefix}${numberFormatter.format(value)}`;
+  };
+
+  sunoLargeChart.innerHTML = `
+    <section class="suno-chart-block">
+      <div class="suno-chart-caption"><span>${playsLabel}</span><strong>${valueText(latestPlay)}</strong></div>
+      ${renderLargeSvg(points, "plays", sunoChartMode, "suno-line-plays", "suno-dot-plays", `${song.title}: ${playsLabel}`)}
+    </section>
+    <section class="suno-chart-block">
+      <div class="suno-chart-caption"><span>${likesLabel}</span><strong>${valueText(latestLike)}</strong></div>
+      ${renderLargeSvg(points, "likes", sunoChartMode, "suno-line-likes", "suno-dot-likes", `${song.title}: ${likesLabel}`)}
+    </section>
+  `;
+}
+
+function openSunoDialog(songId) {
+  selectedSunoSongId = songId;
+  sunoSongSelect.value = songId;
+  sunoChartMode = "total";
+  sunoModeButtons.forEach((button) => {
+    const isActive = button.dataset.sunoMode === sunoChartMode;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+  renderSunoDialog();
+
+  if (typeof sunoHistoryDialog.showModal === "function") {
+    sunoHistoryDialog.showModal();
+  } else {
+    sunoHistoryDialog.setAttribute("open", "");
+  }
+}
+
+async function loadSunoHistory() {
+  if (!sunoList || !sunoHistoryDialog) {
+    return;
+  }
+
+  const dataPath = isEnglish ? "../data/suno-history.json" : "data/suno-history.json";
+  const response = await fetch(dataPath, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Suno history request failed (${response.status})`);
+  }
+
+  const data = await response.json();
+  if (data.schemaVersion !== 1 || !data.catalog || !Array.isArray(data.snapshots)) {
+    throw new Error("Suno history data is invalid");
+  }
+  sunoHistoryData = data;
+  renderSunoCollection();
+}
+
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     filterButtons.forEach((item) => item.classList.remove("is-active"));
@@ -527,6 +850,41 @@ languageLinks.forEach((link) => {
   });
 });
 
+sunoList?.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-suno-song-id]");
+  if (button) {
+    openSunoDialog(button.dataset.sunoSongId);
+  }
+});
+
+sunoSongSelect?.addEventListener("change", () => {
+  selectedSunoSongId = sunoSongSelect.value;
+  renderSunoDialog();
+});
+
+sunoModeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    sunoChartMode = button.dataset.sunoMode;
+    sunoModeButtons.forEach((item) => {
+      const isActive = item === button;
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-pressed", String(isActive));
+    });
+    renderSunoDialog();
+  });
+});
+
+sunoHistoryDialog?.querySelector("[data-suno-close]")?.addEventListener("click", () => {
+  sunoHistoryDialog.close();
+});
+
+sunoHistoryDialog?.addEventListener("click", (event) => {
+  if (event.target === sunoHistoryDialog) {
+    sunoHistoryDialog.close();
+  }
+});
+
 renderProjects();
 renderVercelTable();
 renderIosApps();
+loadSunoHistory().catch((error) => console.warn(error.message));

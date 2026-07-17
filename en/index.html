@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png" />
     <link rel="alternate" hreflang="ja" href="../" />
     <script src="../language.js"></script>
-    <link rel="stylesheet" href="../styles.css?v=20260710-sol" />
+    <link rel="stylesheet" href="../styles.css?v=20260717-suno-history-2" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -323,14 +323,31 @@
 
         <div class="collection-panel" id="collection-music" role="tabpanel" data-collection-panel="music" hidden>
           <div class="panel-heading"><div><p class="kicker">Suno / DonnyU</p><h3>Top five public songs</h3></div><a class="panel-external-link" href="https://suno.com/@donnyu">Open Suno</a></div>
-          <p class="collection-note"><strong>33,715 total plays across 41 public songs.</strong> Play counts are not live; these values were checked on 2026-07-17 JST.</p>
-          <ol class="suno-list" aria-label="Top five public Suno songs by play count">
-            <li><span class="suno-rank">1</span><a href="https://suno.com/song/2f996f6b-ae42-46d5-833c-3c030c922767">Higher Than the Night</a><span class="suno-meta">9,392 plays</span></li>
-            <li><span class="suno-rank">2</span><a href="https://suno.com/song/73a29c6e-f8f5-4702-9673-0098b5bc5374">Run.exe</a><span class="suno-meta">8,620 plays</span></li>
-            <li><span class="suno-rank">3</span><a href="https://suno.com/song/106c7ec1-c8b7-4ce2-afe3-f46fdc97a598">Lanterns in the Sky</a><span class="suno-meta">4,472 plays</span></li>
-            <li><span class="suno-rank">4</span><a href="https://suno.com/song/6778153f-5a8e-4f76-9577-82e5c129ad1e">When the Lights Come Back</a><span class="suno-meta">2,445 plays</span></li>
-            <li><span class="suno-rank">5</span><a href="https://suno.com/song/af82e8bb-94ca-41f0-927a-a2633bb106bc">Shake the Dark Awake</a><span class="suno-meta">1,329 plays</span></li>
+          <p class="collection-note" id="suno-summary"><strong>33,724 total plays / 241 likes / 41 public songs.</strong> Recorded on 2026-07-17 JST.</p>
+          <div class="suno-legend" aria-label="Chart legend"><span class="is-plays">Plays</span><span class="is-likes">Likes</span></div>
+          <ol class="suno-list" id="suno-list" aria-label="Top five public Suno songs by play count">
+            <li><span class="suno-rank">1</span><a href="https://suno.com/song/2f996f6b-ae42-46d5-833c-3c030c922767">Higher Than the Night</a><span class="suno-meta">9,394 plays / 22 likes</span></li>
+            <li><span class="suno-rank">2</span><a href="https://suno.com/song/73a29c6e-f8f5-4702-9673-0098b5bc5374">Run.exe</a><span class="suno-meta">8,621 plays / 27 likes</span></li>
+            <li><span class="suno-rank">3</span><a href="https://suno.com/song/106c7ec1-c8b7-4ce2-afe3-f46fdc97a598">Lanterns in the Sky</a><span class="suno-meta">4,475 plays / 19 likes</span></li>
+            <li><span class="suno-rank">4</span><a href="https://suno.com/song/6778153f-5a8e-4f76-9577-82e5c129ad1e">When the Lights Come Back</a><span class="suno-meta">2,446 plays / 7 likes</span></li>
+            <li><span class="suno-rank">5</span><a href="https://suno.com/song/af82e8bb-94ca-41f0-927a-a2633bb106bc">Shake the Dark Awake</a><span class="suno-meta">1,330 plays / 7 likes</span></li>
           </ol>
+          <dialog class="suno-history-dialog" id="suno-history-dialog" aria-labelledby="suno-history-title">
+            <div class="suno-dialog-head">
+              <div><p class="kicker">Suno / Weekly History</p><h3 id="suno-history-title">Plays and likes over time</h3></div>
+              <button class="suno-dialog-close" type="button" data-suno-close aria-label="Close" title="Close">×</button>
+            </div>
+            <div class="suno-dialog-controls">
+              <label for="suno-song-select">Song</label>
+              <select id="suno-song-select"></select>
+              <div class="suno-mode-toggle" role="group" aria-label="Chart view">
+                <button class="is-active" type="button" data-suno-mode="total" aria-pressed="true">Total</button>
+                <button type="button" data-suno-mode="weekly" aria-pressed="false">Weekly gain</button>
+              </div>
+            </div>
+            <p class="suno-dialog-summary" id="suno-dialog-summary"></p>
+            <div class="suno-large-chart" id="suno-large-chart"></div>
+          </dialog>
         </div>
       </section>
 
@@ -345,6 +362,6 @@
       </section>
     </main>
 
-    <script src="../script.js" defer></script>
+    <script src="../script.js?v=20260717-suno-history-2" defer></script>
   </body>
 </html>

@@ -11,7 +11,7 @@
 - 公式HP・論文・アプリ・Project DonnyUを結ぶCodexキュレーション
 - GitHub、Vercel、App Store、note、Sunoを切り替えて見る公開物一覧
 - App Store公開アプリと関連note記事
-- Suno DonnyU (`@donnyu`) の公開曲トップ5
+- Suno DonnyU (`@donnyu`) の公開曲トップ5と週次推移
 
 ## Structure
 
@@ -20,7 +20,15 @@
 - `script.js`: project, app, Vercel, and note-link data
 - `styles.css`: visual design
 - `language.js`: browser-language routing
+- `data/suno-history.json`: public weekly play and like snapshots
+- `scripts/update-suno-stats.mjs`: Suno collection and validation script
 - `assets/`: profile image and site assets
 - `AGENTS.md`: public working note about how this page came together
 
 This site is intentionally static and build-free.
+
+## Suno History
+
+`node scripts/update-suno-stats.mjs` discovers every currently public DonnyU song, validates the profile totals and song count, then adds or replaces that day's JST snapshot. New songs are added automatically; songs that leave the public feed remain in the historical catalog.
+
+A Codex Automation runs the update every Sunday at 00:00 JST. The public page reads the tracked JSON directly, so no application server or database is required.
