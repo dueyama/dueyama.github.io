@@ -1,5 +1,14 @@
 const projects = [
   {
+    title: "Codex Rate Widget",
+    repo: "https://github.com/dueyama/codex-rate-widget",
+    demo: "",
+    kind: "tool",
+    description:
+      "Codex利用が増えたため、5時間・週次の残量や7日間の使用量を作業中に把握できるよう作った、macOSデスクトップウィジェット/メニューバーアプリ。",
+    tags: ["macOS", "SwiftUI", "WidgetKit"],
+  },
+  {
     title: "Traffic Jam Phase Lab",
     repo: "https://github.com/dueyama/ov-model-traffic-lab",
     demo: "https://ov-model-traffic-lab.vercel.app/",
@@ -303,6 +312,8 @@ const iosApps = [
 ];
 
 const englishDescriptions = {
+  "Codex Rate Widget":
+    "A macOS desktop widget and menu-bar app created as Codex use grew, keeping five-hour and weekly capacity plus seven-day usage visible while working.",
   "Traffic Jam Phase Lab":
     "A Next.js app for exploring the Optimal Velocity traffic-flow model on a circular road, including density, sensitivity, perturbation, fundamental diagrams, and emergent traffic jams.",
   "PMDA PK Curve Viewer":

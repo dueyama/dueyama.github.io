@@ -23,6 +23,7 @@ The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `
 - Project DonnyU / Blockchain Jewelry Concept was added as a web3 art activity that connects Ethereum block-size data, time, memory, 3D objects, NFTs, and future AR/metaverse contexts. It also has a public GitHub repository, `dueyama/BlockchainJewelryConcept`, so keep both the project site and GitHub link visible.
 - Non-app note essays should stay in a compact shelf under the curation corner so they add Daishin's voice without crowding the app-related notes.
 - Suno DonnyU (`@donnyu`) public songs were added as a small top-played list. Play counts are static values checked on 2026-07-08 JST; refresh them from the public Suno profile/feed when needed.
+- Codex Rate Widget was added as a macOS SwiftUI/WidgetKit utility born from increased day-to-day Codex use. Its profile copy should retain that lived reason for making it, not describe it only as a generic usage monitor.
 - The Twitter/X profile image for `@dueyama` replaced the earlier GitHub avatar in the top profile panel.
 - Internal build notes such as data-source strings or collection-status caveats should not appear in the visible page.
 - The top update date is useful and should remain visible.
