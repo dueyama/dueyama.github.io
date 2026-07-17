@@ -34,6 +34,7 @@ The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `
 - Keep the homepage as a single gathering place for now. Prefer progressive disclosure over splitting it into many small pages unless the collection becomes substantially larger.
 - A quiet visual index below the hero uses three images from the actual work: a running Gray-Scott 3D simulation, the Omoi Altar App Store icon, and Blockchain Jewelry artwork. Keep this selection small and meaningful rather than adding decorative images throughout the page.
 - The later Sol design pass made the site feel like an edited research-and-works archive: a strong typographic hero, a dark profile plate, an asymmetric strip of real project images, crisp section rules, and restrained teal, gold, and coral accents. Preserve that editorial tension instead of drifting back toward generic floating profile cards.
+- A compact `What's New` band now occupies the open upper part of the hero. It shows at most four meaningful changes from the latest weekly interval; on mobile the items scroll sideways, with a working next arrow, so the feature does not make the page long again.
 
 ## iOS Apps
 
@@ -56,7 +57,7 @@ The public history lives in `data/suno-history.json`. It stores only public song
 
 The page shows compact two-series charts beside the current top five, plus a profile-total chart for total plays and total likes. Selecting one opens a larger dialog where the profile totals and all currently public songs are available, and cumulative values can be switched to weekly gains. The archived 2026-07-08 top-five play counts seed the first visible song trends; profile-total, full-song, and like history begins with the 2026-07-17 snapshot.
 
-A Codex Automation updates the history every Sunday at 00:00 JST. Its normal path is: run the deterministic collector, verify the resulting diff, commit only the history JSON, and push `main`. If Suno changes its public data format or validation fails, it must stop without committing guessed values.
+A Codex Automation updates the history every Sunday at 00:00 JST. The collector also writes a gitignored diff with newly published songs, profile-total gains, and song-level gains. New songs should take priority in `What's New`; otherwise use the most meaningful weekly play/like movement. If Suno changes its public data format or validation fails, the run must stop without committing guessed values.
 
 ## note Article Search
 
@@ -85,7 +86,15 @@ The later Codex Curation revision used note's public index and article data to r
 
 The working corpus, audit workbook, shortlist, QA previews, and long person-portrait draft live under the gitignored `private/` directory. Keep those research artifacts private. Only deliberately edited bilingual copy belongs in the public site. The full text is retained privately so later embedding or thematic-distribution work can be reproduced without fetching everything again.
 
+The maintained corpus now has a stable local home at `private/note-corpus/articles.jsonl`, with `article-summaries.csv` as the compact audit view. `scripts/sync-note-corpus.mjs` bootstraps that store from the original 326-article output, discovers only unseen note keys, fetches each full article, and leaves readable additions pending until Codex supplies a factual summary, response, themes, profile value, curation tier, and selection reason. The merge command validates those fields before regenerating both files.
+
 The strongest reading was not simply "mathematician + priest + developer." Across the essays, recurring habits were: making unclear things move, preserving imperfection and change instead of erasing them, trusting AI enough to argue with it, allowing mathematics and Buddhism to remain in tension, and facing regional decline without easy optimism. Future curation should preserve those frictions rather than flattening them into a generic interdisciplinary profile.
+
+## Weekly Profile Maintenance
+
+The Sunday run is broader than Suno. `scripts/audit-profile-sources.mjs` compares GitHub, App Store, the existing HP and publication page, Project DonnyU, and known public deployments with the previous ignored snapshot. note is handled by the full-text corpus workflow, while Suno uses its validated song feed and totals.
+
+The public digest lives in `data/whats-new.json`. It may include at most four bilingual items and should report changes, not collection mechanics. `scripts/publish-whats-new.mjs` is the validation gate. Private snapshots, full text, annotations, and audit reports must remain under `private/`; profile lists and curation copy should not be rewritten automatically merely because a source changed.
 
 ## About Note
 

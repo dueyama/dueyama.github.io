@@ -178,7 +178,7 @@ const iosApps = [
     enUrl: "https://apps.apple.com/us/app/omoi-altar/id6770172873?uo=4",
     icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b6/6a/ef/b66aef53-d843-48b5-4963-f162dcc1b55d/icon-0-0-1x_U007epad-0-1-sRGB-85-220.png/100x100bb.jpg",
     genre: "Lifestyle",
-    version: "1.2.1",
+    version: "1.3",
     jaDescription: "大切な写真に名前や言葉、花、灯りを添え、小さな祭壇としてiPhone/iPad内やARで飾るローカルファーストなアプリ。",
     enDescription: "Creates a small photo altar on iPhone/iPad, with words, flowers, lights, fullscreen viewing, and AR placement for important photos and memories.",
     noteLinks: [
@@ -357,6 +357,10 @@ const collectionPanels = document.querySelectorAll("[data-collection-panel]");
 const collectionLinks = document.querySelectorAll("[data-select-collection]");
 const projectToggle = document.querySelector("#project-toggle");
 const languageLinks = document.querySelectorAll("[data-language-choice]");
+const whatsNewList = document.querySelector("#whats-new-list");
+const whatsNewPeriod = document.querySelector("#whats-new-period");
+const whatsNewNext = document.querySelector("#whats-new-next");
+const siteUpdated = document.querySelector("#site-updated");
 const sunoSummary = document.querySelector("#suno-summary");
 const sunoList = document.querySelector("#suno-list");
 const sunoHistoryDialog = document.querySelector("#suno-history-dialog");
@@ -378,6 +382,99 @@ let showAllProjects = false;
 let sunoHistoryData = null;
 let selectedSunoSongId = null;
 let sunoChartMode = "total";
+
+function parseCalendarDate(value) {
+  const [year, month, day] = String(value).split("-").map(Number);
+  return new Date(Date.UTC(year, month - 1, day));
+}
+
+function formatCalendarDate(value, options) {
+  return new Intl.DateTimeFormat(isEnglish ? "en-US" : "ja-JP", {
+    timeZone: "UTC",
+    ...options,
+  }).format(parseCalendarDate(value));
+}
+
+function formatWeekPeriod(startValue, endValue) {
+  const start = parseCalendarDate(startValue);
+  const end = parseCalendarDate(endValue);
+  const sameYear = start.getUTCFullYear() === end.getUTCFullYear();
+  const sameMonth = sameYear && start.getUTCMonth() === end.getUTCMonth();
+
+  if (isEnglish) {
+    const startMonth = formatCalendarDate(startValue, { month: "short" });
+    const endMonth = formatCalendarDate(endValue, { month: "short" });
+    if (sameMonth) return `${startMonth} ${start.getUTCDate()}–${end.getUTCDate()}, ${end.getUTCFullYear()}`;
+    if (sameYear) return `${startMonth} ${start.getUTCDate()}–${endMonth} ${end.getUTCDate()}, ${end.getUTCFullYear()}`;
+    return `${startMonth} ${start.getUTCDate()}, ${start.getUTCFullYear()} – ${endMonth} ${end.getUTCDate()}, ${end.getUTCFullYear()}`;
+  }
+
+  if (sameMonth) return `${start.getUTCFullYear()}.${start.getUTCMonth() + 1}.${start.getUTCDate()}–${end.getUTCDate()}`;
+  if (sameYear) return `${start.getUTCFullYear()}.${start.getUTCMonth() + 1}.${start.getUTCDate()}–${end.getUTCMonth() + 1}.${end.getUTCDate()}`;
+  return `${start.getUTCFullYear()}.${start.getUTCMonth() + 1}.${start.getUTCDate()}–${end.getUTCFullYear()}.${end.getUTCMonth() + 1}.${end.getUTCDate()}`;
+}
+
+function updateWhatsNewNext() {
+  if (!whatsNewList || !whatsNewNext) return;
+  const hasOverflow = whatsNewList.scrollWidth > whatsNewList.clientWidth + 2;
+  const atEnd = whatsNewList.scrollLeft + whatsNewList.clientWidth >= whatsNewList.scrollWidth - 18;
+  whatsNewNext.hidden = !hasOverflow || atEnd;
+}
+
+function renderWhatsNew(data) {
+  if (!whatsNewList || !data?.period?.start || !data?.period?.end || !Array.isArray(data.items)) return;
+
+  whatsNewPeriod.textContent = formatWeekPeriod(data.period.start, data.period.end);
+  siteUpdated.textContent = `Updated ${data.period.end} JST`;
+  whatsNewList.replaceChildren();
+
+  if (!data.items.length) {
+    const empty = document.createElement("p");
+    empty.className = "whats-new-empty";
+    empty.textContent = isEnglish ? "No public changes this week." : "今週の公開上の変化はありません。";
+    whatsNewList.append(empty);
+    return;
+  }
+
+  for (const item of data.items) {
+    const copy = isEnglish ? item.en : item.ja;
+    if (!copy?.label || !copy?.title || !copy?.summary || !item.url) continue;
+
+    const article = document.createElement("article");
+    article.className = "whats-new-item";
+    article.dataset.kind = item.kind || "site";
+
+    const label = document.createElement("p");
+    label.className = "whats-new-label";
+    label.textContent = copy.label;
+
+    const heading = document.createElement("h3");
+    const link = document.createElement("a");
+    link.href = item.url;
+    link.textContent = copy.title;
+    heading.append(link);
+
+    const summary = document.createElement("p");
+    summary.textContent = copy.summary;
+    article.append(label, heading, summary);
+    whatsNewList.append(article);
+  }
+  requestAnimationFrame(updateWhatsNewNext);
+}
+
+async function loadWhatsNew() {
+  if (!whatsNewList) return;
+  const dataPath = isEnglish ? "../data/whats-new.json" : "data/whats-new.json";
+  const response = await fetch(dataPath, { cache: "no-cache" });
+  if (!response.ok) throw new Error(`What's New request failed (${response.status})`);
+  renderWhatsNew(await response.json());
+}
+
+whatsNewNext?.addEventListener("click", () => {
+  whatsNewList.scrollBy({ left: Math.max(180, whatsNewList.clientWidth * 0.78), behavior: "smooth" });
+});
+whatsNewList?.addEventListener("scroll", updateWhatsNewNext, { passive: true });
+window.addEventListener("resize", updateWhatsNewNext);
 
 function renderProjects(filter = "all") {
   const visibleProjects = projects.filter((project) => filter === "all" || project.kind === filter);
@@ -919,4 +1016,5 @@ sunoHistoryDialog?.addEventListener("click", (event) => {
 renderProjects();
 renderVercelTable();
 renderIosApps();
+loadWhatsNew().catch((error) => console.warn(error.message));
 loadSunoHistory().catch((error) => console.warn(error.message));

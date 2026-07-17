@@ -1,0 +1,37 @@
+{
+  "github": {
+    "user": "dueyama"
+  },
+  "appStore": {
+    "developerId": "495395197",
+    "country": "jp"
+  },
+  "pages": [
+    {
+      "id": "official-hp",
+      "kind": "homepage",
+      "url": "https://sites.google.com/site/dueyama/"
+    },
+    {
+      "id": "publications",
+      "kind": "publications",
+      "url": "https://sites.google.com/site/dueyama/publications"
+    },
+    {
+      "id": "blockchain-jewelry",
+      "kind": "project",
+      "url": "https://www.bcj-concept.com/"
+    }
+  ],
+  "deployments": [
+    "https://ov-model-traffic-lab.vercel.app/",
+    "https://pmda-pk-curve-viewer.vercel.app/",
+    "https://kobayashi-phase-field-lab.vercel.app/",
+    "https://tanaka-swarm-oscillators.vercel.app/",
+    "https://gray-scott-3d.vercel.app/",
+    "https://phyllotaxis-simulator.vercel.app/",
+    "https://regulation-lab.vercel.app/",
+    "https://three-body-atlas.vercel.app/",
+    "https://primeportrait-maker.vercel.app/"
+  ]
+}

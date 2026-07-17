@@ -158,13 +158,13 @@ select:focus-visible {
   align-items: end;
   gap: 72px;
   margin: 0 auto;
-  padding: 82px 0 66px;
+  padding: 48px 0 66px;
   scroll-margin-top: 82px;
 }
 
-.hero::before {
+.hero-copy::before {
   position: absolute;
-  top: 88px;
+  top: 4px;
   left: -24px;
   width: 6px;
   height: 112px;
@@ -173,6 +173,7 @@ select:focus-visible {
 }
 
 .hero-copy {
+  position: relative;
   max-width: 760px;
 }
 
@@ -450,6 +451,105 @@ h3 {
   font-size: 0.94rem;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.whats-new-band {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  left: 0;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 22px;
+  margin: 0;
+  border-top: 0;
+  border-bottom: 1px solid var(--line);
+  padding: 10px 0 13px;
+  scroll-margin-top: 78px;
+}
+
+.whats-new-heading .eyebrow {
+  margin-bottom: 3px;
+}
+
+.whats-new-heading h2 {
+  font-size: 1.22rem;
+}
+
+.whats-new-period {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 750;
+}
+
+.whats-new-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0;
+}
+
+.whats-new-scroller {
+  min-width: 0;
+}
+
+.whats-new-next {
+  display: none;
+}
+
+.whats-new-next[hidden] {
+  display: none !important;
+}
+
+.whats-new-item {
+  min-width: 0;
+  border-left: 1px solid var(--line);
+  padding: 0 14px;
+}
+
+.whats-new-item:first-child {
+  border-left-color: var(--teal);
+}
+
+.whats-new-label {
+  margin: 0 0 2px;
+  color: var(--teal);
+  font-size: 0.72rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.whats-new-item[data-kind="note"] .whats-new-label,
+.whats-new-item[data-kind="suno"] .whats-new-label {
+  color: var(--coral);
+}
+
+.whats-new-item[data-kind="app"] .whats-new-label,
+.whats-new-item[data-kind="project"] .whats-new-label {
+  color: var(--gold);
+}
+
+.whats-new-item h3 {
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.whats-new-item h3 a {
+  text-decoration: none;
+}
+
+.whats-new-item h3 a:hover {
+  text-decoration: underline;
+}
+
+.whats-new-item p:last-child {
+  display: none;
+}
+
+.whats-new-empty {
+  margin: 0;
+  color: var(--muted);
 }
 
 .section {
@@ -1439,11 +1539,11 @@ td:first-child {
     min-height: auto;
     grid-template-columns: 1fr;
     gap: 36px;
-    padding-top: 52px;
+    padding-top: 38px;
   }
 
-  .hero::before {
-    top: 56px;
+  .hero-copy::before {
+    top: 4px;
   }
 
   .hero-copy {
@@ -1539,6 +1639,7 @@ td:first-child {
 
   .hero,
   .section,
+  .whats-new-band,
   .about-note {
     width: min(100% - 24px, 1160px);
   }
@@ -1567,8 +1668,87 @@ td:first-child {
     height: 238px;
   }
 
+  .whats-new-band {
+    position: static;
+    grid-column: 1 / -1;
+    grid-template-columns: 104px minmax(0, 1fr);
+    gap: 10px;
+    margin: 0;
+    padding: 8px 0 10px;
+  }
+
+  .whats-new-heading .eyebrow {
+    display: none;
+  }
+
+  .whats-new-heading h2 {
+    font-size: 1rem;
+  }
+
+  .whats-new-period {
+    margin-top: 2px;
+    font-size: 0.65rem;
+  }
+
+  .whats-new-list {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    margin-right: 0;
+    padding-right: 0;
+    scroll-padding-inline: 0 12px;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+
+  .whats-new-scroller {
+    position: relative;
+    padding-right: 40px;
+  }
+
+  .whats-new-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    transform: translateY(-50%);
+    border: 0;
+    border-radius: 50%;
+    background: var(--ink);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(16, 23, 22, 0.24);
+    cursor: pointer;
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .whats-new-next:hover {
+    background: var(--teal-dark);
+  }
+
+  .whats-new-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .whats-new-item {
+    flex: 0 0 min(58vw, 230px);
+    border-top: 0;
+    border-left: 1px solid var(--line);
+    padding: 0 12px;
+    scroll-snap-align: start;
+  }
+
+  .whats-new-item:first-child {
+    border-top: 0;
+    border-left: 2px solid var(--teal);
+  }
+
   .hero {
-    padding: 42px 0 38px;
+    padding: 26px 0 38px;
   }
 
   .hero-meta-line {
@@ -1578,8 +1758,8 @@ td:first-child {
     font-size: 0.7rem;
   }
 
-  .hero::before {
-    top: 46px;
+  .hero-copy::before {
+    top: 4px;
     left: 0;
     width: 4px;
     height: 76px;

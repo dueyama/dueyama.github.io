@@ -1,10 +1,12 @@
-import { readFile, rename, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 
 const API_ORIGIN = "https://studio-api-prod.suno.com";
 const PROFILE_HANDLE = "donnyu";
 const PROFILE_USER_ID = "2f1c6f50-b408-41bd-a6d9-04d49bdcbb7a";
 const HISTORY_PATH = new URL("../data/suno-history.json", import.meta.url);
 const HISTORY_TEMP_PATH = new URL("../data/suno-history.json.tmp", import.meta.url);
+const PRIVATE_MAINTENANCE_DIR = new URL("../private/profile-maintenance/", import.meta.url);
+const DIFF_PATH = new URL("../private/profile-maintenance/suno-latest-diff.json", import.meta.url);
 const DRY_RUN = process.argv.includes("--dry-run");
 
 function assert(condition, message) {
@@ -147,9 +149,7 @@ async function collectSnapshot() {
 }
 
 function validateAgainstPrevious(history, snapshot) {
-  const previous = [...history.snapshots]
-    .reverse()
-    .find((entry) => Number.isInteger(entry.totals?.plays));
+  const previous = latestCompleteSnapshot(history);
 
   if (!previous) {
     return;
@@ -163,6 +163,55 @@ function validateAgainstPrevious(history, snapshot) {
       assert(values.plays >= previousValues.plays, `Play count decreased for ${songId}; manual review is required`);
     }
   }
+}
+
+function latestCompleteSnapshot(history, beforeDate = null) {
+  return [...history.snapshots]
+    .reverse()
+    .find((entry) => Number.isInteger(entry.totals?.plays) && (!beforeDate || entry.date < beforeDate));
+}
+
+function buildDiff(history, songs, snapshot) {
+  const previous = latestCompleteSnapshot(history, snapshot.date);
+  const knownSongIds = new Set(previous ? Object.keys(previous.songs || {}) : Object.keys(history.catalog));
+  const newSongs = songs
+    .filter((song) => !knownSongIds.has(song.id))
+    .map((song) => ({
+      id: song.id,
+      title: song.title,
+      url: `https://suno.com/song/${song.id}`,
+      publishedAt: song.publishedAt,
+      plays: song.plays,
+      likes: song.likes,
+    }));
+
+  const songGains = previous
+    ? songs
+        .filter((song) => previous.songs?.[song.id])
+        .map((song) => ({
+          id: song.id,
+          title: song.title,
+          url: `https://suno.com/song/${song.id}`,
+          plays: song.plays - previous.songs[song.id].plays,
+          likes: song.likes - previous.songs[song.id].likes,
+        }))
+        .sort((a, b) => b.plays - a.plays || b.likes - a.likes || a.title.localeCompare(b.title))
+    : [];
+
+  return {
+    generatedAt: snapshot.capturedAt,
+    previousDate: previous?.date || null,
+    currentDate: snapshot.date,
+    totals: previous
+      ? {
+          plays: snapshot.totals.plays - previous.totals.plays,
+          likes: snapshot.totals.likes - previous.totals.likes,
+          songs: snapshot.totals.songs - previous.totals.songs,
+        }
+      : null,
+    newSongs,
+    topSongGains: songGains.slice(0, 10),
+  };
 }
 
 async function main() {
@@ -187,6 +236,7 @@ async function main() {
   };
 
   validateAgainstPrevious(history, snapshot);
+  const diff = buildDiff(history, songs, snapshot);
 
   for (const song of songs) {
     const existing = history.catalog[song.id];
@@ -218,11 +268,14 @@ async function main() {
   if (!DRY_RUN) {
     await writeFile(HISTORY_TEMP_PATH, `${JSON.stringify(history, null, 2)}\n`);
     await rename(HISTORY_TEMP_PATH, HISTORY_PATH);
+    await mkdir(PRIVATE_MAINTENANCE_DIR, { recursive: true });
+    await writeFile(DIFF_PATH, `${JSON.stringify(diff, null, 2)}\n`);
   }
 
   const topFive = songs.slice(0, 5).map((song) => `${song.title}: ${song.plays} plays / ${song.likes} likes`);
   console.log(`${DRY_RUN ? "Validated" : "Recorded"} ${songs.length} public songs for ${date} JST.`);
   console.log(`Profile totals: ${snapshot.totals.plays} plays / ${snapshot.totals.likes} likes.`);
+  console.log(`New public songs: ${diff.newSongs.length}.`);
   console.log(topFive.join("\n"));
 }
 
