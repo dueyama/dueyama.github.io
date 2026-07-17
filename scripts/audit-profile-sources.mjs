@@ -14,6 +14,15 @@ const DIFF_PATH = path.join(PRIVATE_DIR, "latest-diff.json");
 const REPORT_PATH = path.join(PRIVATE_DIR, "latest-audit.md");
 const USER_AGENT = "dueyama-profile-maintenance/1.0 (+https://dueyama.github.io/)";
 
+function jstDateKey(value) {
+  return new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "Asia/Tokyo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date(value));
+}
+
 async function exists(target) {
   try {
     await stat(target);
@@ -303,12 +312,24 @@ async function collectAll(config) {
 
 async function main() {
   const config = JSON.parse(await readFile(CONFIG_PATH, "utf8"));
-  const previous = (await exists(SNAPSHOT_PATH)) ? JSON.parse(await readFile(SNAPSHOT_PATH, "utf8")) : null;
+  const storedSnapshot = (await exists(SNAPSHOT_PATH)) ? JSON.parse(await readFile(SNAPSHOT_PATH, "utf8")) : null;
   const current = await collectAll(config);
-  const diff = buildDiff(previous, current);
+  const sameJstDay = storedSnapshot && jstDateKey(storedSnapshot.collected_at) === jstDateKey(current.collected_at);
+  let comparisonSnapshot = storedSnapshot;
+
+  if (sameJstDay && (await exists(PREVIOUS_PATH))) {
+    const weeklyBaseline = JSON.parse(await readFile(PREVIOUS_PATH, "utf8"));
+    if (jstDateKey(weeklyBaseline.collected_at) !== jstDateKey(current.collected_at)) {
+      comparisonSnapshot = weeklyBaseline;
+    }
+  }
+
+  const diff = buildDiff(comparisonSnapshot, current);
 
   await mkdir(PRIVATE_DIR, { recursive: true });
-  if (previous) await atomicWrite(PREVIOUS_PATH, `${JSON.stringify(previous, null, 2)}\n`);
+  if (storedSnapshot && !sameJstDay) {
+    await atomicWrite(PREVIOUS_PATH, `${JSON.stringify(storedSnapshot, null, 2)}\n`);
+  }
   await atomicWrite(SNAPSHOT_PATH, `${JSON.stringify(current, null, 2)}\n`);
   await atomicWrite(DIFF_PATH, `${JSON.stringify(diff, null, 2)}\n`);
   await atomicWrite(REPORT_PATH, renderReport(diff, current));
