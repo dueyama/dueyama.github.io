@@ -1,73 +1,41 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T11:39:12.202Z",
+  "generatedAt": "2026-07-18T15:11:11.950Z",
   "period": {
-    "start": "2026-07-11",
-    "end": "2026-07-17"
+    "start": "2026-07-18",
+    "end": "2026-07-19"
   },
   "items": [
     {
-      "id": "note-n74371101215b",
-      "kind": "note",
-      "date": "2026-07-11",
-      "url": "https://note.com/daishin_ueyama/n/n74371101215b",
+      "id": "project-primeportrait-maker-2-6",
+      "kind": "project",
+      "date": "2026-07-18",
+      "url": "https://primeportrait-maker.vercel.app/",
       "ja": {
-        "label": "新しいnote",
-        "title": "326本の文章を読んだCodexと、プロフィールサイトを作る",
-        "summary": "散在する研究、アプリ、音楽、文章を一つの流れに編み直した過程を記録。全文を読むことで、単なるリンク集から人物像の見えるキュレーションへ変わった経緯を振り返っています。"
+        "label": "Webアプリアップデート",
+        "title": "PrimePortrait Maker 2.6",
+        "summary": "保存PNGの数字を画面表示に近い密度へ拡大し、素数肖像をより読みやすく。アプリアイコンと著作権フッターも加わりました。"
       },
       "en": {
-        "label": "New note",
-        "title": "Building a profile site with Codex after it read 326 essays",
-        "summary": "A reflection on bringing scattered research, apps, music, and writing into one edited narrative, and on how full-text reading turned a link collection into a more revealing portrait."
+        "label": "Web app update",
+        "title": "PrimePortrait Maker 2.6",
+        "summary": "Exported PNG digits are now denser and closer to the on-screen grid for better readability; the release also adds an app icon and copyright footer."
       }
     },
     {
-      "id": "github-codex-rate-widget",
-      "kind": "github",
-      "date": "2026-07-17",
-      "url": "https://github.com/dueyama/codex-rate-widget",
-      "ja": {
-        "label": "新しいGitHub",
-        "title": "Codex Rate Widget",
-        "summary": "Codexを使う時間が増えた実感から生まれたmacOSウィジェット。5時間・週次の残量と7日間の利用量を、作業を止めずに確認できます。"
-      },
-      "en": {
-        "label": "New on GitHub",
-        "title": "Codex Rate Widget",
-        "summary": "A macOS widget born from heavier everyday Codex use, keeping five-hour and weekly capacity plus seven-day activity visible without interrupting the work at hand."
-      }
-    },
-    {
-      "id": "app-omoi-altar-1-3",
-      "kind": "app",
-      "date": "2026-07-13",
-      "url": "https://apps.apple.com/jp/app/%E6%83%B3%E3%81%84%E3%81%AE%E7%A5%AD%E5%A3%87/id6770172873?uo=4",
-      "ja": {
-        "label": "iOSアップデート",
-        "title": "想いの祭壇 1.3",
-        "summary": "低負荷モードを追加し、アプリ全体の処理を最適化。端末への負担を抑えながら、写真や灯りを置く小さな祭壇をより快適に使えるようになりました。"
-      },
-      "en": {
-        "label": "iOS update",
-        "title": "Omoi Altar 1.3",
-        "summary": "Adds a low-power mode and optimizes processing throughout the app, making its small photo-and-light altar gentler on the device and more comfortable to use."
-      }
-    },
-    {
-      "id": "suno-weekly-history-start",
+      "id": "suno-donnyu-2026-07-19-gains",
       "kind": "suno",
-      "date": "2026-07-17",
+      "date": "2026-07-19",
       "url": "https://suno.com/@donnyu",
       "ja": {
         "label": "Suno",
-        "title": "公開41曲の週次記録を開始",
-        "summary": "DonnyUの総再生数33,724回、いいね241件を初回スナップショットとして保存。今後は曲の増加にも追随し、再生といいねの週間変化を残します。"
+        "title": "DonnyU、再生413回・いいね4件増",
+        "summary": "公開41曲の合計は34,137再生・245いいねに。期間内では「Lanterns in the Sky」が146再生増で最大でした。"
       },
       "en": {
         "label": "Suno",
-        "title": "Weekly tracking begins across 41 public songs",
-        "summary": "The first complete snapshot records 33,724 plays and 241 likes for DonnyU. Future updates will follow new songs automatically and preserve weekly changes in both measures."
+        "title": "DonnyU adds 413 plays and 4 likes",
+        "summary": "Across 41 public songs, totals reached 34,137 plays and 245 likes; “Lanterns in the Sky” led the interval with 146 new plays."
       }
     }
   ]
