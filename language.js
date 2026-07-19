@@ -18,6 +18,11 @@
     return languages.some((language) => language.toLowerCase().startsWith("ja")) ? "ja" : "en";
   }
 
+  function isSearchCrawler() {
+    const userAgent = navigator.userAgent || "";
+    return /(?:bot|crawler|spider|crawling|Google-InspectionTool|GoogleOther)/i.test(userAgent);
+  }
+
   function readUrlLanguage() {
     const value = new URLSearchParams(window.location.search).get("lang");
     return value === "ja" || value === "en" || value === "auto" ? value : null;
@@ -41,6 +46,10 @@
   } else if (urlLanguage) {
     storeLanguage(urlLanguage);
   }
+
+  // Each language has its own URL. Let crawlers read that URL's source language
+  // instead of applying the browser-language redirect intended for visitors.
+  if (!urlLanguage && isSearchCrawler()) return;
 
   const desiredLanguage =
     urlLanguage === "auto" ? browserLanguage() : urlLanguage || readStoredLanguage() || browserLanguage();

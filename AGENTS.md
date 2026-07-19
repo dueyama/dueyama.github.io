@@ -12,6 +12,7 @@ The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `
 
 - The page needs both Japanese and English versions.
 - Browser language detection should send Japanese browsers to `/` and non-Japanese browsers to `/en/`.
+- Search crawlers should stay on the language-specific URL they request, so the Japanese root and English `/en/` page can both be indexed even though human visitors still receive browser-language detection.
 - Manual language choice should still be possible, and `?lang=auto` should return to browser detection.
 - `Jyousenji Dayori` was removed.
 - The Representative Themes section was removed because it overlapped with the summary cards and the actual project lists.
