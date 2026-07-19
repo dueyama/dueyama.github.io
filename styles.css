@@ -1935,6 +1935,12 @@ td:first-child {
   }
 }
 
+@media (max-width: 360px) {
+  .nav-links a[href="#whats-new"] {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
