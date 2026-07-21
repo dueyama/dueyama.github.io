@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-21T11:32:16+09:00",
+  "current": {
+    "id": "2026-07-20-cicada-holes",
+    "week": {
+      "start": "2026-07-20",
+      "end": "2026-07-26"
+    },
+    "kind": "note",
+    "url": "https://note.com/daishin_ueyama/n/n430593620788",
+    "image": "assets/choice/cicada-holes.jpg",
+    "sourceDate": "2025-01-04",
+    "ja": {
+      "label": "NOTE / ESSAY",
+      "title": "蝉の穴",
+      "dek": "祖父に教わった蝉の穴を確かめたくて、少年は懐中電灯を手に夏の夜へ出る。羽化には出会えなかったが、その「見られなかったこと」が、五右衛門風呂の薪組みとともに科学する目の原点として残りました。",
+      "reflection": "いまなら検索すれば、時期も時刻も外さず観察できるでしょう。この文章が面白いのは、便利さを責めるのではなく、正解へ届かなかった時間にも固有の価値を見つけるところです。「失敗は経験である。かわいそうなことではない」という一節には、研究、アプリ制作、AIとの試行錯誤まで貫く姿勢が短く凝縮されています。祖父や庭の記憶から、科学を成果ではなく手探りの過程として捉える人が見えてくる。今週は、上山大信の仕事を支えるこの小さな原点を選びました。",
+      "linkLabel": "noteで本文を読む",
+      "imageAlt": "金木犀の大木の根元を懐中電灯で照らす少年を描いた「蝉の穴」のアイキャッチ"
+    },
+    "en": {
+      "label": "NOTE / ESSAY",
+      "title": "Cicada Holes",
+      "dek": "A boy takes a flashlight into the summer night, hoping to witness a cicada emerge from one of the holes his grandfather showed him. He never sees it happen. Years later, that missed observation, alongside the practical puzzle of tending a wood-fired bath, remains part of the origin of his scientific eye.",
+      "reflection": "Today, a search could supply the right season and hour. What makes this essay more than nostalgia is that it does not blame convenience; it recognizes that time spent missing the answer had a value of its own. Its line that failure is experience, not misfortune, quietly connects childhood curiosity with the later research, app-making, and patient trial and error found across Ueyama's work. This week, Codex returns to this small essay because it shows science beginning not with a result, but with the wish to see for oneself.",
+      "linkLabel": "Read the essay on note",
+      "imageAlt": "The cover image for Cicada Holes, showing a boy shining a flashlight at the roots of a large fragrant olive tree"
+    }
+  },
+  "history": []
+}

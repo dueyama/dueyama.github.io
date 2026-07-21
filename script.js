@@ -361,6 +361,17 @@ const whatsNewList = document.querySelector("#whats-new-list");
 const whatsNewPeriod = document.querySelector("#whats-new-period");
 const whatsNewNext = document.querySelector("#whats-new-next");
 const siteUpdated = document.querySelector("#site-updated");
+const codexChoiceSection = document.querySelector("#codex-choice");
+const codexChoiceImage = document.querySelector("#codex-choice-image");
+const codexChoiceSource = document.querySelector("#codex-choice-source");
+const codexChoicePeriod = document.querySelector("#codex-choice-period");
+const codexChoiceTitleLink = document.querySelector("#codex-choice-title-link");
+const codexChoiceDek = document.querySelector("#codex-choice-dek");
+const codexChoiceReflection = document.querySelector("#codex-choice-reflection");
+const codexChoiceLink = document.querySelector("#codex-choice-link");
+const codexChoiceHistory = document.querySelector("#codex-choice-history");
+const codexChoiceHistoryList = document.querySelector("#codex-choice-history-list");
+const codexChoiceHistoryToggle = document.querySelector("#codex-choice-history-toggle");
 const sunoSummary = document.querySelector("#suno-summary");
 const sunoList = document.querySelector("#suno-list");
 const sunoHistoryDialog = document.querySelector("#suno-history-dialog");
@@ -371,6 +382,7 @@ const sunoModeButtons = document.querySelectorAll("[data-suno-mode]");
 const isEnglish = document.documentElement.lang.toLowerCase().startsWith("en");
 const languageStorageKey = "dueyama-profile-language";
 const projectPreviewLimit = 6;
+const choiceHistoryPreviewLimit = 8;
 const sunoTotalsSeriesId = "profile-totals";
 const numberFormatter = new Intl.NumberFormat(isEnglish ? "en-US" : "ja-JP");
 const compactNumberFormatter = new Intl.NumberFormat(isEnglish ? "en-US" : "ja-JP", {
@@ -379,6 +391,9 @@ const compactNumberFormatter = new Intl.NumberFormat(isEnglish ? "en-US" : "ja-J
 });
 let currentProjectFilter = "all";
 let showAllProjects = false;
+let showAllChoiceHistory = false;
+let codexChoiceData = null;
+let latestSiteUpdate = null;
 let sunoHistoryData = null;
 let selectedSunoSongId = null;
 let sunoChartMode = "total";
@@ -414,6 +429,13 @@ function formatWeekPeriod(startValue, endValue) {
   return `${start.getUTCFullYear()}.${start.getUTCMonth() + 1}.${start.getUTCDate()}–${end.getUTCFullYear()}.${end.getUTCMonth() + 1}.${end.getUTCDate()}`;
 }
 
+function updateSiteUpdated(value) {
+  const date = String(value || "").slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return;
+  if (!latestSiteUpdate || date > latestSiteUpdate) latestSiteUpdate = date;
+  if (siteUpdated) siteUpdated.textContent = `Updated ${latestSiteUpdate} JST`;
+}
+
 function updateWhatsNewNext() {
   if (!whatsNewList || !whatsNewNext) return;
   const hasOverflow = whatsNewList.scrollWidth > whatsNewList.clientWidth + 2;
@@ -425,7 +447,7 @@ function renderWhatsNew(data) {
   if (!whatsNewList || !data?.period?.start || !data?.period?.end || !Array.isArray(data.items)) return;
 
   whatsNewPeriod.textContent = formatWeekPeriod(data.period.start, data.period.end);
-  siteUpdated.textContent = `Updated ${data.period.end} JST`;
+  updateSiteUpdated(data.period.end);
   whatsNewList.replaceChildren();
 
   if (!data.items.length) {
@@ -470,11 +492,92 @@ async function loadWhatsNew() {
   renderWhatsNew(await response.json());
 }
 
+function renderCodexChoiceHistory(history) {
+  if (!codexChoiceHistory || !codexChoiceHistoryList || !codexChoiceHistoryToggle) return;
+  codexChoiceHistoryList.replaceChildren();
+  codexChoiceHistory.hidden = history.length === 0;
+  if (!history.length) return;
+
+  const visibleChoices = showAllChoiceHistory ? history : history.slice(0, choiceHistoryPreviewLimit);
+  for (const choice of visibleChoices) {
+    const copy = isEnglish ? choice.en : choice.ja;
+    if (!copy?.title || !copy?.dek || !choice.url || !choice.week?.start || !choice.week?.end) continue;
+
+    const article = document.createElement("article");
+    article.className = "codex-choice-history-item";
+
+    const period = document.createElement("p");
+    period.className = "codex-choice-history-period";
+    period.textContent = formatWeekPeriod(choice.week.start, choice.week.end);
+
+    const heading = document.createElement("h3");
+    const link = document.createElement("a");
+    link.href = choice.url;
+    link.textContent = copy.title;
+    heading.append(link);
+
+    const summary = document.createElement("p");
+    summary.textContent = copy.dek;
+    article.append(period, heading, summary);
+    codexChoiceHistoryList.append(article);
+  }
+
+  codexChoiceHistoryToggle.hidden = history.length <= choiceHistoryPreviewLimit;
+  codexChoiceHistoryToggle.textContent = showAllChoiceHistory
+    ? isEnglish
+      ? "Show the latest eight"
+      : "最新8件に戻す"
+    : isEnglish
+      ? `Show all ${history.length}`
+      : `全${history.length}件を表示`;
+}
+
+function renderCodexChoice(data) {
+  const choice = data?.current;
+  const copy = isEnglish ? choice?.en : choice?.ja;
+  if (!choice?.week?.start || !choice?.week?.end || !copy?.title || !copy?.dek || !copy?.reflection) {
+    throw new Error("Codex Choice data is invalid");
+  }
+
+  codexChoiceData = data;
+  codexChoiceSection.dataset.kind = choice.kind || "site";
+  codexChoicePeriod.textContent = formatWeekPeriod(choice.week.start, choice.week.end);
+  codexChoiceTitleLink.href = choice.url;
+  codexChoiceTitleLink.textContent = copy.title;
+  codexChoiceDek.textContent = copy.dek;
+  codexChoiceReflection.textContent = copy.reflection;
+  codexChoiceLink.href = choice.url;
+  codexChoiceLink.textContent = copy.linkLabel;
+  codexChoiceSource.textContent = `${copy.label} / ${formatCalendarDate(choice.sourceDate, {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  })}`;
+  codexChoiceImage.src = isEnglish ? `../${choice.image}` : choice.image;
+  codexChoiceImage.alt = copy.imageAlt;
+  codexChoiceSection.setAttribute("aria-busy", "false");
+  updateSiteUpdated(data.generatedAt);
+  renderCodexChoiceHistory(Array.isArray(data.history) ? data.history : []);
+}
+
+async function loadCodexChoice() {
+  if (!codexChoiceSection) return;
+  const dataPath = isEnglish ? "../data/codex-choice.json" : "data/codex-choice.json";
+  const response = await fetch(dataPath, { cache: "no-cache" });
+  if (!response.ok) throw new Error(`Codex Choice request failed (${response.status})`);
+  renderCodexChoice(await response.json());
+}
+
 whatsNewNext?.addEventListener("click", () => {
   whatsNewList.scrollBy({ left: Math.max(180, whatsNewList.clientWidth * 0.78), behavior: "smooth" });
 });
 whatsNewList?.addEventListener("scroll", updateWhatsNewNext, { passive: true });
 window.addEventListener("resize", updateWhatsNewNext);
+
+codexChoiceHistoryToggle?.addEventListener("click", () => {
+  showAllChoiceHistory = !showAllChoiceHistory;
+  renderCodexChoiceHistory(codexChoiceData?.history || []);
+});
 
 function renderProjects(filter = "all") {
   const visibleProjects = projects.filter((project) => filter === "all" || project.kind === filter);
@@ -1017,4 +1120,8 @@ renderProjects();
 renderVercelTable();
 renderIosApps();
 loadWhatsNew().catch((error) => console.warn(error.message));
+loadCodexChoice().catch((error) => {
+  codexChoiceSection?.setAttribute("aria-busy", "false");
+  console.warn(error.message);
+});
 loadSunoHistory().catch((error) => console.warn(error.message));

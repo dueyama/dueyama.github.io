@@ -552,6 +552,188 @@ h3 {
   color: var(--muted);
 }
 
+.codex-choice-section {
+  width: min(1160px, calc(100% - 40px));
+  margin: 0 auto 54px;
+  padding: 50px 0 46px;
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 0 0 0 100vmax var(--ink);
+  clip-path: inset(0 -100vmax);
+  scroll-margin-top: 78px;
+}
+
+.codex-choice-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: start;
+  gap: 38px 56px;
+}
+
+.codex-choice-media {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+}
+
+.codex-choice-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1280 / 670;
+  border: 1px solid #34413e;
+  border-radius: 3px;
+  background: #1b2523;
+  object-fit: cover;
+}
+
+.codex-choice-media figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 13px;
+  background: rgba(16, 23, 22, 0.88);
+  color: var(--gold-soft);
+  font-size: 0.72rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.codex-choice-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.codex-choice-heading .eyebrow {
+  margin-bottom: 4px;
+  color: #f1bd41;
+}
+
+.codex-choice-period {
+  margin: 0;
+  color: #9eaaa6;
+  font-size: 0.78rem;
+  font-weight: 750;
+}
+
+.codex-choice-copy h2 {
+  margin-top: 16px;
+  color: #fff;
+  font-size: 2.6rem;
+  line-height: 1.12;
+}
+
+.codex-choice-copy h2 a {
+  text-decoration: none;
+}
+
+.codex-choice-copy h2 a:hover {
+  text-decoration: underline;
+}
+
+.codex-choice-dek {
+  margin: 20px 0 0;
+  color: #e6ebe8;
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.codex-choice-reflection {
+  margin-top: 24px;
+  border-left: 4px solid var(--coral);
+  padding: 2px 0 2px 18px;
+}
+
+.codex-choice-reflection .kicker {
+  margin-bottom: 5px;
+  color: #f1bd41;
+}
+
+.codex-choice-reflection p:last-child {
+  margin: 0;
+  color: #bcc6c2;
+  font-size: 0.94rem;
+  line-height: 1.8;
+}
+
+.codex-choice-link {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 8px;
+  margin-top: 26px;
+  border-bottom: 2px solid #f1bd41;
+  color: #fff;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.codex-choice-link::after {
+  content: "\2197";
+}
+
+.codex-choice-link:hover {
+  color: #f1bd41;
+}
+
+.codex-choice-history {
+  grid-column: 1 / -1;
+  border-top: 1px solid #3c4845;
+}
+
+.codex-choice-history summary {
+  padding: 17px 0;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 850;
+}
+
+.codex-choice-history[open] summary {
+  border-bottom: 1px solid #3c4845;
+}
+
+.codex-choice-history-list {
+  display: grid;
+}
+
+.codex-choice-history-item {
+  display: grid;
+  grid-template-columns: 155px minmax(150px, 0.35fr) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 22px;
+  border-bottom: 1px solid #303b38;
+  padding: 15px 0;
+}
+
+.codex-choice-history-period,
+.codex-choice-history-item p:last-child {
+  margin: 0;
+  color: #9eaaa6;
+  font-size: 0.84rem;
+}
+
+.codex-choice-history-item h3 a {
+  color: #f1bd41;
+}
+
+.codex-choice-history-toggle {
+  margin-top: 16px;
+  border: 1px solid #52605c;
+  border-radius: 4px;
+  padding: 8px 12px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+}
+
+.codex-choice-history-toggle:hover {
+  border-color: #f1bd41;
+}
+
 .section {
   width: min(1160px, calc(100% - 40px));
   margin: 0 auto;
@@ -1562,6 +1744,15 @@ td:first-child {
     height: 250px;
   }
 
+  .codex-choice-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .codex-choice-media img {
+    max-height: 430px;
+  }
+
   .theme-grid,
   .project-grid,
   .ios-app-grid {
@@ -1629,7 +1820,7 @@ td:first-child {
     white-space: nowrap;
   }
 
-  .nav-links a[href="#featured"] {
+  .nav-links a[href="#codex-choice"] {
     display: none;
   }
 
@@ -1640,8 +1831,31 @@ td:first-child {
   .hero,
   .section,
   .whats-new-band,
+  .codex-choice-section,
   .about-note {
     width: min(100% - 24px, 1160px);
+  }
+
+  .codex-choice-section {
+    margin-bottom: 36px;
+    padding: 34px 0 32px;
+  }
+
+  .codex-choice-copy h2 {
+    font-size: 2.05rem;
+  }
+
+  .codex-choice-dek {
+    font-size: 0.97rem;
+  }
+
+  .codex-choice-reflection {
+    padding-left: 14px;
+  }
+
+  .codex-choice-history-item {
+    grid-template-columns: 1fr;
+    gap: 3px;
   }
 
   .visual-index {

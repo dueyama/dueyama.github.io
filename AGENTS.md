@@ -4,7 +4,7 @@ This is a public working note for the Codex-assisted profile page. It is not mea
 
 ## What We Built
 
-This repository became a bilingual GitHub Pages profile for Daishin Ueyama. The page gathers public-facing work from the existing Google Sites HP, Project DonnyU / Blockchain Jewelry Concept, GitHub repositories, Vercel demos, App Store apps, Suno songs, and note articles.
+This repository became a bilingual GitHub Pages profile for Daishin Ueyama. The page gathers public-facing work from the official Google Sites HP, Project DonnyU / Blockchain Jewelry Concept, GitHub repositories, Vercel demos, App Store apps, Suno songs, and note articles.
 
 The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `language.js`, and `script.js`.
 
@@ -36,6 +36,16 @@ The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `
 - A quiet visual index below the hero uses three images from the actual work: a running Gray-Scott 3D simulation, the Omoi Altar App Store icon, and Blockchain Jewelry artwork. Keep this selection small and meaningful rather than adding decorative images throughout the page.
 - The later Sol design pass made the site feel like an edited research-and-works archive: a strong typographic hero, a dark profile plate, an asymmetric strip of real project images, crisp section rules, and restrained teal, gold, and coral accents. Preserve that editorial tension instead of drifting back toward generic floating profile cards.
 - A compact `What's New` band now occupies the open upper part of the hero. It shows at most four meaningful changes from the latest weekly interval; on mobile the items scroll sideways, with a working next arrow, so the feature does not make the page long again.
+- `Codex Choice of the Week` is an editorial counterpoint to `What's New`: the latter reports verified changes, while the Choice rereads one note, paper, app, repository, project, site, or song from the whole body of work.
+- Only the current Choice is expanded near the top. Previous choices remain in JSON history and appear under progressive disclosure, with at most eight initially visible, so the feature does not make the HTML or the page grow without bound.
+
+## Codex Choice of the Week
+
+The public source is `data/codex-choice.json`. `current` holds this week's complete bilingual selection and `history` keeps previous selections newest first. The HTML contains only a stable rendering shell; weekly content must not be appended directly to either language page.
+
+Each Choice needs a source URL, week, kind, source date, meaningful image, concise factual setup, and a substantial Codex reflection in both languages. Read the selected work itself before writing. Do not choose solely from popularity metrics or always favor new work; an older essay or project may be the stronger weekly rereading. Avoid repeating the same kind in consecutive weeks when another genuinely strong selection is available.
+
+When rotating the Choice, move the old `current` object to the front of `history`, replace `current`, and run `node scripts/publish-codex-choice.mjs --check`. Prefer existing images; optimize new local images so weekly assets do not bloat the repository. Keep all raw research and candidate notes under `private/`.
 
 ## iOS Apps
 
@@ -93,9 +103,10 @@ The strongest reading was not simply "mathematician + priest + developer." Acros
 
 ## Weekly Profile Maintenance
 
-The Sunday run is broader than Suno. `scripts/audit-profile-sources.mjs` compares GitHub, App Store, the existing HP and publication page, Project DonnyU, and known public deployments with the previous ignored snapshot. note is handled by the full-text corpus workflow, while Suno uses its validated song feed and totals.
+The Sunday run is broader than Suno. `scripts/audit-profile-sources.mjs` compares GitHub, App Store, the official HP and publication page, Project DonnyU, and known public deployments with the previous ignored snapshot. note is handled by the full-text corpus workflow, while Suno uses its validated song feed and totals.
 
 The public digest lives in `data/whats-new.json`. It may include at most four bilingual items and should report changes, not collection mechanics. `scripts/publish-whats-new.mjs` is the validation gate. Private snapshots, full text, annotations, and audit reports must remain under `private/`; profile lists and curation copy should not be rewritten automatically merely because a source changed.
+
 
 ## About Note
 
