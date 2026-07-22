@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-22",
+  "profileUrl": "https://x.com/dueyama",
+  "current": {
+    "id": "2079414733393047769",
+    "selectedAt": "2026-07-22",
+    "postedAt": "2026-07-21T03:54:00+09:00",
+    "url": "https://x.com/dueyama/status/2079414733393047769",
+    "ja": {
+      "title": "「価値がない」という判断も、疑ってみる",
+      "excerpt": "やる価値もないから誰もやってない研究ってのがあるから、新規性だけではダメだと以前怒られたことがあるな。その通りだ。\n\nただ、やる価値もないが思い込みの場合もあるので注意は必要だ。",
+      "reason": "「新規性だけでは足りない」という忠告を受け入れたうえで、価値の有無を決める側の思い込みへ視線を返しているからです。短い投稿の中に、反省と再検討が二段で入っています。",
+      "reflection": "誰も手をつけていない研究は、未開拓の可能性かもしれないし、ただ必要とされていないのかもしれない。この投稿の面白さは、その二択で終わらず、「必要とされていない」という判定自体も時代や流行、測りやすさに左右される、と読める余白を残すところです。新規性を免罪符にせず、既存の価値基準も絶対視しない。実際に叱られた記憶を、自説の正当化ではなく判断の両側を疑う材料にしている。その往復に、上山大信の思考の癖がよく出ています。",
+      "linkLabel": "Xで投稿を開く"
+    },
+    "en": {
+      "title": "Questioning the judgment that something has no value",
+      "excerpt": "There are studies no one pursues simply because they are not worth doing, so I was once told off for thinking novelty alone was enough. That was fair.\n\nBut sometimes “not worth doing” is itself an assumption, so we need to be careful.",
+      "reason": "It accepts the familiar warning that novelty alone is insufficient, then turns the same scrutiny back on those deciding what counts as worthwhile. In a very short post, reflection becomes a second act of reconsideration.",
+      "reflection": "An untouched problem can be a frontier, or it can simply be unnecessary. What makes this post interesting is that it does not stop at that binary: the judgment of “unnecessary” may itself depend on an era, a fashion, or what happens to be measurable. Novelty is not treated as an excuse, but inherited standards of value are not made absolute either. A memory of being corrected becomes material for questioning both sides of the decision rather than proving himself right. That back-and-forth is distinctly Ueyama.",
+      "linkLabel": "Open the post on X"
+    }
+  },
+  "history": []
+}

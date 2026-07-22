@@ -102,6 +102,14 @@ The maintained corpus now has a stable local home at `private/note-corpus/articl
 
 The strongest reading was not simply "mathematician + priest + developer." Across the essays, recurring habits were: making unclear things move, preserving imperfection and change instead of erasing them, trusting AI enough to argue with it, allowing mathematics and Buddhism to remain in tension, and facing regional decline without easy optimism. Future curation should preserve those frictions rather than flattening them into a generic interdisciplinary profile.
 
+The visible six-essay shelf is an editorial snapshot, not a live weekly count. Show the public-article count with an explicit as-of month, and update both only when the full corpus is reread or the deep curation is deliberately refreshed. Weekly note discovery may extend the private corpus without silently changing this public snapshot.
+
+## X Choice
+
+The upper Choice band switches between `Codex Choice of the Week` and a compact `X Choice`; the two views replace each other in place so the page does not become longer. `X Choice` is backed by `data/x-choice.json`, with one bilingual current selection and an archive rather than weekly copy appended to the HTML. A choice should quote a verified public `@dueyama` status, state why it was selected, and offer a real reading rather than ranking posts by impressions.
+
+X's logged-out profile timeline can incorrectly claim that the account has no posts. Discovering a status through public search is useful, but the individual status page must still be opened and read before publishing. Keep candidate comparisons under `private/x-choice/`, avoid the heavy X embed widget, and run `node scripts/check-x-choice.mjs` after an update. If the individual post cannot be verified, leave the existing public choice unchanged.
+
 ## Publications and Media
 
 The public academic bibliography lives in `data/publications.json`. It mirrors 37 peer-reviewed papers, 17 non-peer-reviewed papers and reports, and eight miscellaneous authored works from the official HP. Confirmed DOI metadata supplies normalized authors, title, venue, volume, issue, and pages where available; source wording, rejected DOI candidates, and audit notes remain under gitignored `private/publications/`. Run `node scripts/check-publications.mjs` after every public bibliography edit.

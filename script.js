@@ -382,6 +382,18 @@ const codexChoiceLink = document.querySelector("#codex-choice-link");
 const codexChoiceHistory = document.querySelector("#codex-choice-history");
 const codexChoiceHistoryList = document.querySelector("#codex-choice-history-list");
 const codexChoiceHistoryToggle = document.querySelector("#codex-choice-history-toggle");
+const choiceSwitchButtons = [...document.querySelectorAll("[data-choice-view]")];
+const choicePanels = [...document.querySelectorAll("[data-choice-panel]")];
+const xChoiceTab = document.querySelector("#choice-tab-x");
+const xChoiceShelf = document.querySelector("#x-choice");
+const xChoiceTitle = document.querySelector("#x-choice-title");
+const xChoiceDate = document.querySelector("#x-choice-date");
+const xChoiceExcerpt = document.querySelector("#x-choice-excerpt");
+const xChoiceReason = document.querySelector("#x-choice-reason");
+const xChoiceReflection = document.querySelector("#x-choice-reflection");
+const xChoiceLink = document.querySelector("#x-choice-link");
+const xChoiceHistory = document.querySelector("#x-choice-history");
+const xChoiceHistoryList = document.querySelector("#x-choice-history-list");
 const sunoSummary = document.querySelector("#suno-summary");
 const sunoList = document.querySelector("#suno-list");
 const sunoHistoryDialog = document.querySelector("#suno-history-dialog");
@@ -935,6 +947,113 @@ async function loadCodexChoice() {
   if (!response.ok) throw new Error(`Codex Choice request failed (${response.status})`);
   renderCodexChoice(await response.json());
 }
+
+function formatXChoiceDate(value) {
+  const date = String(value || "").slice(0, 10);
+  if (!isEnglish) {
+    const [year, month, day] = date.split("-").map(Number);
+    return `投稿日 ${year}.${month}.${day}`;
+  }
+  const formatted = formatCalendarDate(date, {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+  return `Posted ${formatted}`;
+}
+
+function renderXChoiceHistory(history) {
+  if (!xChoiceHistory || !xChoiceHistoryList) return;
+  xChoiceHistoryList.replaceChildren();
+  const visibleChoices = history.slice(0, choiceHistoryPreviewLimit);
+  xChoiceHistory.hidden = visibleChoices.length === 0;
+
+  for (const choice of visibleChoices) {
+    const copy = isEnglish ? choice.en : choice.ja;
+    if (!choice.url || !choice.postedAt || !copy?.title || !copy?.excerpt) continue;
+
+    const article = document.createElement("article");
+    article.className = "x-choice-history-item";
+
+    const time = document.createElement("time");
+    time.dateTime = choice.postedAt;
+    time.textContent = formatXChoiceDate(choice.postedAt);
+
+    const heading = document.createElement("h5");
+    const link = document.createElement("a");
+    link.href = choice.url;
+    link.textContent = copy.title;
+    heading.append(link);
+
+    const excerpt = document.createElement("p");
+    excerpt.textContent = copy.excerpt;
+    article.append(time, heading, excerpt);
+    xChoiceHistoryList.append(article);
+  }
+}
+
+function renderXChoice(data) {
+  const choice = data?.current;
+  const copy = isEnglish ? choice?.en : choice?.ja;
+  if (!choice?.url || !choice?.postedAt || !copy?.title || !copy?.excerpt || !copy?.reason || !copy?.reflection) {
+    throw new Error("X Choice data is invalid");
+  }
+
+  xChoiceTitle.textContent = copy.title;
+  xChoiceDate.textContent = formatXChoiceDate(choice.postedAt);
+  xChoiceExcerpt.textContent = copy.excerpt;
+  xChoiceReason.textContent = copy.reason;
+  xChoiceReflection.textContent = copy.reflection;
+  xChoiceLink.href = choice.url;
+  xChoiceLink.textContent = copy.linkLabel;
+  renderXChoiceHistory(Array.isArray(data.history) ? data.history : []);
+  xChoiceShelf.hidden = false;
+  xChoiceShelf.setAttribute("aria-busy", "false");
+  if (xChoiceTab) xChoiceTab.disabled = false;
+  updateSiteUpdated(data.generatedAt);
+}
+
+async function loadXChoice() {
+  if (!xChoiceShelf) return;
+  const dataPath = isEnglish ? "../data/x-choice.json" : "data/x-choice.json";
+  const response = await fetch(dataPath, { cache: "no-cache" });
+  if (!response.ok) throw new Error(`X Choice request failed (${response.status})`);
+  renderXChoice(await response.json());
+}
+
+function selectChoiceView(view, moveFocus = false) {
+  const activeButton = choiceSwitchButtons.find((button) => button.dataset.choiceView === view && !button.disabled);
+  if (!activeButton) return;
+
+  choiceSwitchButtons.forEach((button) => {
+    const isActive = button === activeButton;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-selected", String(isActive));
+    button.tabIndex = isActive ? 0 : -1;
+  });
+  choicePanels.forEach((panel) => {
+    const isActive = panel.dataset.choicePanel === view;
+    panel.hidden = !isActive;
+    panel.inert = !isActive;
+  });
+  if (moveFocus) activeButton.focus();
+}
+
+choiceSwitchButtons.forEach((button) => {
+  button.addEventListener("click", () => selectChoiceView(button.dataset.choiceView));
+  button.addEventListener("keydown", (event) => {
+    if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+    event.preventDefault();
+    const availableButtons = choiceSwitchButtons.filter((item) => !item.disabled);
+    const currentIndex = availableButtons.indexOf(button);
+    let nextIndex = currentIndex;
+    if (event.key === "Home") nextIndex = 0;
+    if (event.key === "End") nextIndex = availableButtons.length - 1;
+    if (event.key === "ArrowLeft") nextIndex = (currentIndex - 1 + availableButtons.length) % availableButtons.length;
+    if (event.key === "ArrowRight") nextIndex = (currentIndex + 1) % availableButtons.length;
+    selectChoiceView(availableButtons[nextIndex].dataset.choiceView, true);
+  });
+});
 
 whatsNewNext?.addEventListener("click", () => {
   whatsNewList.scrollBy({ left: Math.max(180, whatsNewList.clientWidth * 0.78), behavior: "smooth" });
@@ -1535,6 +1654,11 @@ loadPublications().catch((error) => {
 loadWhatsNew().catch((error) => console.warn(error.message));
 loadCodexChoice().catch((error) => {
   codexChoiceSection?.setAttribute("aria-busy", "false");
+  console.warn(error.message);
+});
+loadXChoice().catch((error) => {
+  xChoiceShelf?.setAttribute("aria-busy", "false");
+  xChoiceShelf.hidden = true;
   console.warn(error.message);
 });
 loadPressMedia().catch((error) => {

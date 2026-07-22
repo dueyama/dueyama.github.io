@@ -11,6 +11,7 @@
 - 公式HP・論文・アプリ・Project DonnyUを結ぶCodexキュレーション
 - note、GitHub、アプリ、Sunoなどの1週間の変化をまとめる `What's New`
 - 全活動から毎週一つを読み直す `Codex Choice of the Week`
+- `@dueyama` の短い投稿を本文まで読んで選ぶ `X Choice`
 - 論文、GitHub、Vercel、App Store、note、掲載・出演、Sunoを切り替えて見る公開物一覧
 - App Store公開アプリと関連note記事
 - Suno DonnyU (`@donnyu`) の公開曲トップ5と週次推移
@@ -25,6 +26,7 @@
 - `data/suno-history.json`: public weekly play and like snapshots
 - `data/whats-new.json`: latest bilingual weekly edit
 - `data/codex-choice.json`: current bilingual Codex Choice and its history
+- `data/x-choice.json`: current bilingual X Choice and its history
 - `data/publications.json`: normalized publication titles, citations, DOI links, and source links
 - `data/press-media.json`: verified bilingual authored work, features, and broadcast records
 - `data/profile-sources.json`: public sources checked by weekly maintenance
@@ -33,6 +35,7 @@
 - `scripts/audit-profile-sources.mjs`: GitHub, App Store, HP, project, and deployment change audit
 - `scripts/publish-whats-new.mjs`: validation gate for the public weekly edit
 - `scripts/publish-codex-choice.mjs`: validation gate for the current Choice and archive
+- `scripts/check-x-choice.mjs`: validation gate for the selected `@dueyama` post
 - `scripts/check-publications.mjs`: validation gate for the public bibliography
 - `scripts/check-press-media.mjs`: validation gate for the publications and media index
 - `assets/`: profile image and site assets
@@ -59,3 +62,5 @@ The same weekly run checks note for newly published articles. Full text is store
 GitHub, App Store, the official HP and publications page, Project DonnyU, and known deployments are compared with the previous private snapshot. The short bilingual public result is validated before it can replace `data/whats-new.json`; deeper source changes remain a local review report until deliberately incorporated into the profile.
 
 `Codex Choice` follows the same weekly editorial rhythm but remains an explicitly curated selection from the full body of public work. The page HTML stays a fixed shell: JavaScript reads the current selection and compact archive from `data/codex-choice.json`. Each new week moves the previous current item into history, while the homepage initially exposes no more than eight past choices.
+
+`X Choice` shares the upper Choice band with `Codex Choice of the Week`; a two-tab switcher replaces the contents in place instead of adding another long section. It reads `data/x-choice.json`, shows one verified public `@dueyama` post with a selection reason and Codex reflection, and keeps earlier choices under progressive disclosure. Run `node scripts/check-x-choice.mjs` after editing it. Candidate searches and source notes stay under gitignored `private/x-choice/`; a search snippet alone is not enough to publish a choice.

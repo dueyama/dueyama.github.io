@@ -74,7 +74,7 @@
       }
     </script>
     <script src="../language.js?v=20260719-search-1"></script>
-    <link rel="stylesheet" href="../styles.css?v=20260722-press-1" />
+    <link rel="stylesheet" href="../styles.css?v=20260722-x-choice-1" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -152,34 +152,67 @@
         </aside>
       </section>
 
-      <section class="codex-choice-section" id="codex-choice" aria-labelledby="codex-choice-title" aria-busy="true">
-        <div class="codex-choice-layout">
-          <figure class="codex-choice-media">
-            <img id="codex-choice-image" alt="" width="1280" height="670" />
-            <figcaption id="codex-choice-source">Codex Choice</figcaption>
-          </figure>
+      <section class="codex-choice-section" id="codex-choice" aria-label="Codex Choices" aria-busy="true">
+        <div class="choice-switcher" role="tablist" aria-label="Switch Choice">
+          <button class="choice-switch-button is-active" id="choice-tab-week" type="button" role="tab" aria-selected="true" aria-controls="choice-panel-week" data-choice-view="week">Codex Choice of the Week</button>
+          <button class="choice-switch-button" id="choice-tab-x" type="button" role="tab" aria-selected="false" aria-controls="choice-panel-x" data-choice-view="x" tabindex="-1" disabled>X Choice</button>
+        </div>
 
-          <article class="codex-choice-copy">
-            <header class="codex-choice-heading">
-              <div>
-                <p class="eyebrow">Codex Choice of the Week</p>
-                <p class="codex-choice-period" id="codex-choice-period">Loading this week's selection</p>
+        <div class="choice-panel" id="choice-panel-week" role="tabpanel" aria-labelledby="choice-tab-week" data-choice-panel="week">
+          <div class="codex-choice-layout">
+            <figure class="codex-choice-media">
+              <img id="codex-choice-image" alt="" width="1280" height="670" />
+              <figcaption id="codex-choice-source">Codex Choice</figcaption>
+            </figure>
+
+            <article class="codex-choice-copy">
+              <header class="codex-choice-heading">
+                <div>
+                  <p class="eyebrow">Codex Choice of the Week</p>
+                  <p class="codex-choice-period" id="codex-choice-period">Loading this week's selection</p>
+                </div>
+              </header>
+              <h2 id="codex-choice-title"><a id="codex-choice-title-link" href="#featured">Codex Choice</a></h2>
+              <p class="codex-choice-dek" id="codex-choice-dek"></p>
+              <div class="codex-choice-reflection">
+                <p class="kicker">Why this one, this week</p>
+                <p id="codex-choice-reflection"></p>
               </div>
-            </header>
-            <h2 id="codex-choice-title"><a id="codex-choice-title-link" href="#featured">Codex Choice</a></h2>
-            <p class="codex-choice-dek" id="codex-choice-dek"></p>
-            <div class="codex-choice-reflection">
-              <p class="kicker">Why this one, this week</p>
-              <p id="codex-choice-reflection"></p>
-            </div>
-            <a class="codex-choice-link" id="codex-choice-link" href="#featured">Open the selected work</a>
-          </article>
+              <a class="codex-choice-link" id="codex-choice-link" href="#featured">Open the selected work</a>
+            </article>
 
-          <details class="codex-choice-history" id="codex-choice-history" hidden>
-            <summary>Past Codex Choices</summary>
-            <div class="codex-choice-history-list" id="codex-choice-history-list"></div>
-            <button class="codex-choice-history-toggle" id="codex-choice-history-toggle" type="button" hidden>Show all</button>
-          </details>
+            <details class="codex-choice-history" id="codex-choice-history" hidden>
+              <summary>Past Codex Choices</summary>
+              <div class="codex-choice-history-list" id="codex-choice-history-list"></div>
+              <button class="codex-choice-history-toggle" id="codex-choice-history-toggle" type="button" hidden>Show all</button>
+            </details>
+          </div>
+        </div>
+
+        <div class="choice-panel" id="choice-panel-x" role="tabpanel" aria-labelledby="choice-tab-x" data-choice-panel="x" hidden inert>
+          <section class="x-choice-shelf" id="x-choice" aria-labelledby="x-choice-title" aria-busy="true" hidden>
+            <header class="x-choice-heading">
+              <div>
+                <p class="kicker">@dueyama / Selected Post</p>
+                <h2 id="x-choice-title">Loading the selected post</h2>
+              </div>
+              <p class="x-choice-date" id="x-choice-date"></p>
+            </header>
+            <div class="x-choice-layout">
+              <figure class="x-choice-post">
+                <blockquote id="x-choice-excerpt"></blockquote>
+                <figcaption><a id="x-choice-link" href="https://x.com/dueyama">Open the post on X</a></figcaption>
+              </figure>
+              <div class="x-choice-commentary">
+                <div><p class="x-choice-label">Why this post</p><p id="x-choice-reason"></p></div>
+                <div><p class="x-choice-label">Codex reads it</p><p id="x-choice-reflection"></p></div>
+              </div>
+            </div>
+            <details class="x-choice-history" id="x-choice-history" hidden>
+              <summary>Earlier X Choices</summary>
+              <div class="x-choice-history-list" id="x-choice-history-list"></div>
+            </details>
+          </section>
         </div>
       </section>
 
@@ -439,7 +472,7 @@
         </div>
 
         <div class="collection-panel" id="collection-writing" role="tabpanel" data-collection-panel="writing" hidden>
-          <div class="panel-heading"><div><p class="kicker">note / Essay Shelf</p><h3>Daishin Ueyama in six of 326 essays</h3></div><a class="panel-external-link" href="https://note.com/daishin_ueyama">Open note</a></div>
+          <div class="panel-heading"><div><p class="kicker">note / Essay Shelf</p><h3>Six essays by Daishin Ueyama</h3><p class="panel-heading-meta">Selected from 326 public essays as of July 2026</p></div><a class="panel-external-link" href="https://note.com/daishin_ueyama">Open note</a></div>
           <ul class="essay-list">
             <li><a href="https://note.com/daishin_ueyama/n/n5784d23002ba">Mother and the Stars</a><span><strong>Codex's response:</strong> His mother, living with dementia, repeats that countless stars exist inside a small point of light. The words sound at once like a symptom and a prayer. The essay never resolves the distance between the son explaining galaxies and the mother who may have been seeing a Buddhist cosmos, which is why it lingers.</span></li>
             <li><a href="https://note.com/daishin_ueyama/n/nfe5d80ada5a0">Memories of Mimeograph Printing</a><span><strong>Codex's response:</strong> His mother printing temple newsletters, a school newspaper he made and tearfully retrieved, and the arrival of photocopiers become a small history of media. Because this comes from someone who loves digital tools, the lost smell and weight are not nostalgia alone; they reveal the larger wish to preserve memory in another form.</span></li>
@@ -509,6 +542,6 @@
       </section>
     </main>
 
-    <script src="../script.js?v=20260722-publications-1" defer></script>
+    <script src="../script.js?v=20260722-x-choice-1" defer></script>
   </body>
 </html>

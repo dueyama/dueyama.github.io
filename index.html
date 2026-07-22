@@ -75,7 +75,7 @@
       }
     </script>
     <script src="language.js?v=20260719-search-1"></script>
-    <link rel="stylesheet" href="styles.css?v=20260722-press-1" />
+    <link rel="stylesheet" href="styles.css?v=20260722-x-choice-1" />
   </head>
   <body>
     <a class="skip-link" href="#main">本文へ移動</a>
@@ -152,34 +152,67 @@
         </aside>
       </section>
 
-      <section class="codex-choice-section" id="codex-choice" aria-labelledby="codex-choice-title" aria-busy="true">
-        <div class="codex-choice-layout">
-          <figure class="codex-choice-media">
-            <img id="codex-choice-image" alt="" width="1280" height="670" />
-            <figcaption id="codex-choice-source">Codex Choice</figcaption>
-          </figure>
+      <section class="codex-choice-section" id="codex-choice" aria-label="Codex Choice" aria-busy="true">
+        <div class="choice-switcher" role="tablist" aria-label="Choiceの切り替え">
+          <button class="choice-switch-button is-active" id="choice-tab-week" type="button" role="tab" aria-selected="true" aria-controls="choice-panel-week" data-choice-view="week">今週のCodex Choice</button>
+          <button class="choice-switch-button" id="choice-tab-x" type="button" role="tab" aria-selected="false" aria-controls="choice-panel-x" data-choice-view="x" tabindex="-1" disabled>X Choice</button>
+        </div>
 
-          <article class="codex-choice-copy">
-            <header class="codex-choice-heading">
-              <div>
-                <p class="eyebrow">今週の Codex Choice</p>
-                <p class="codex-choice-period" id="codex-choice-period">今週の一作を読み込んでいます</p>
+        <div class="choice-panel" id="choice-panel-week" role="tabpanel" aria-labelledby="choice-tab-week" data-choice-panel="week">
+          <div class="codex-choice-layout">
+            <figure class="codex-choice-media">
+              <img id="codex-choice-image" alt="" width="1280" height="670" />
+              <figcaption id="codex-choice-source">Codex Choice</figcaption>
+            </figure>
+
+            <article class="codex-choice-copy">
+              <header class="codex-choice-heading">
+                <div>
+                  <p class="eyebrow">今週の Codex Choice</p>
+                  <p class="codex-choice-period" id="codex-choice-period">今週の一作を読み込んでいます</p>
+                </div>
+              </header>
+              <h2 id="codex-choice-title"><a id="codex-choice-title-link" href="#featured">Codex Choice</a></h2>
+              <p class="codex-choice-dek" id="codex-choice-dek"></p>
+              <div class="codex-choice-reflection">
+                <p class="kicker">なぜ今週これを選んだか</p>
+                <p id="codex-choice-reflection"></p>
               </div>
-            </header>
-            <h2 id="codex-choice-title"><a id="codex-choice-title-link" href="#featured">Codex Choice</a></h2>
-            <p class="codex-choice-dek" id="codex-choice-dek"></p>
-            <div class="codex-choice-reflection">
-              <p class="kicker">なぜ今週これを選んだか</p>
-              <p id="codex-choice-reflection"></p>
-            </div>
-            <a class="codex-choice-link" id="codex-choice-link" href="#featured">選んだ作品を読む</a>
-          </article>
+              <a class="codex-choice-link" id="codex-choice-link" href="#featured">選んだ作品を読む</a>
+            </article>
 
-          <details class="codex-choice-history" id="codex-choice-history" hidden>
-            <summary>過去のCodex Choice</summary>
-            <div class="codex-choice-history-list" id="codex-choice-history-list"></div>
-            <button class="codex-choice-history-toggle" id="codex-choice-history-toggle" type="button" hidden>すべて表示</button>
-          </details>
+            <details class="codex-choice-history" id="codex-choice-history" hidden>
+              <summary>過去のCodex Choice</summary>
+              <div class="codex-choice-history-list" id="codex-choice-history-list"></div>
+              <button class="codex-choice-history-toggle" id="codex-choice-history-toggle" type="button" hidden>すべて表示</button>
+            </details>
+          </div>
+        </div>
+
+        <div class="choice-panel" id="choice-panel-x" role="tabpanel" aria-labelledby="choice-tab-x" data-choice-panel="x" hidden inert>
+          <section class="x-choice-shelf" id="x-choice" aria-labelledby="x-choice-title" aria-busy="true" hidden>
+            <header class="x-choice-heading">
+              <div>
+                <p class="kicker">@dueyama / Selected Post</p>
+                <h2 id="x-choice-title">選んだ投稿を読み込んでいます</h2>
+              </div>
+              <p class="x-choice-date" id="x-choice-date"></p>
+            </header>
+            <div class="x-choice-layout">
+              <figure class="x-choice-post">
+                <blockquote id="x-choice-excerpt"></blockquote>
+                <figcaption><a id="x-choice-link" href="https://x.com/dueyama">Xで投稿を開く</a></figcaption>
+              </figure>
+              <div class="x-choice-commentary">
+                <div><p class="x-choice-label">選んだ理由</p><p id="x-choice-reason"></p></div>
+                <div><p class="x-choice-label">Codexの読み</p><p id="x-choice-reflection"></p></div>
+              </div>
+            </div>
+            <details class="x-choice-history" id="x-choice-history" hidden>
+              <summary>過去のX Choice</summary>
+              <div class="x-choice-history-list" id="x-choice-history-list"></div>
+            </details>
+          </section>
         </div>
       </section>
 
@@ -437,7 +470,7 @@
         </div>
 
         <div class="collection-panel" id="collection-writing" role="tabpanel" data-collection-panel="writing" hidden>
-          <div class="panel-heading"><div><p class="kicker">note / Essay Shelf</p><h3>326本から選んだ、上山大信の文章</h3></div><a class="panel-external-link" href="https://note.com/daishin_ueyama">noteを開く</a></div>
+          <div class="panel-heading"><div><p class="kicker">note / Essay Shelf</p><h3>上山大信の文章、6選</h3><p class="panel-heading-meta">2026年7月時点・公開326本から</p></div><a class="panel-external-link" href="https://note.com/daishin_ueyama">noteを開く</a></div>
           <ul class="essay-list">
             <li><a href="https://note.com/daishin_ueyama/n/n5784d23002ba">母と星空</a><span><strong>Codexの感想:</strong> 認知症の母が繰り返す「小さな光の中に無数の星がある」という言葉が、症状であると同時に祈りのように響きます。銀河を説明した息子と、仏の世界を見ていたかもしれない母。そのすれ違いを科学か信仰のどちらかで解消しないため、静かに深く残る文章です。</span></li>
             <li><a href="https://note.com/daishin_ueyama/n/nfe5d80ada5a0">ガリ版印刷の思い出</a><span><strong>Codexの感想:</strong> 寺報を刷る母の姿、学級新聞を作って泣きながら回収した失敗、コピー機への移行が、一つの媒体史として重なります。デジタルを愛する人が失われた匂いや手触りを惜しむから、懐古では終わらず、「記憶を別の形で残す」という制作全体の軸まで見えてきます。</span></li>
@@ -506,6 +539,6 @@
       </section>
     </main>
 
-    <script src="script.js?v=20260722-publications-1" defer></script>
+    <script src="script.js?v=20260722-x-choice-1" defer></script>
   </body>
 </html>
