@@ -6,7 +6,7 @@
     <title>上山大信 | 研究と制作の記録</title>
     <meta
       name="description"
-      content="上山大信の研究、シミュレーション、アプリ、文章、アート、音楽を横断して紹介するプロフィールページ。"
+      content="上山大信の研究、シミュレーション、アプリ、文章、掲載・出演、アート、音楽を横断して紹介するプロフィールページ。"
     />
     <meta name="google-site-verification" content="3VZKF5ikHhHMb9_qURZNMPTf_excDu4GQpsEp1sVDSA" />
     <meta name="robots" content="index,follow,max-image-preview:large" />
@@ -24,7 +24,7 @@
     <meta property="og:title" content="上山大信 | 研究と制作の記録" />
     <meta
       property="og:description"
-      content="研究、シミュレーション、アプリ、文章、アート、音楽を横断する上山大信の公式プロフィール。"
+      content="研究、シミュレーション、アプリ、文章、掲載・出演、アート、音楽を横断する上山大信の公式プロフィール。"
     />
     <meta property="og:url" content="https://dueyama.github.io/" />
     <meta property="og:image" content="https://dueyama.github.io/assets/profile/dueyama-twitter.jpg" />
@@ -36,7 +36,7 @@
     <meta name="twitter:title" content="上山大信 | 研究と制作の記録" />
     <meta
       name="twitter:description"
-      content="研究、シミュレーション、アプリ、文章、アート、音楽を横断する上山大信の公式プロフィール。"
+      content="研究、シミュレーション、アプリ、文章、掲載・出演、アート、音楽を横断する上山大信の公式プロフィール。"
     />
     <meta name="twitter:image" content="https://dueyama.github.io/assets/profile/dueyama-twitter.jpg" />
     <script type="application/ld+json">
@@ -46,10 +46,10 @@
         "@id": "https://dueyama.github.io/#profile-page-ja",
         "url": "https://dueyama.github.io/",
         "name": "上山大信 | 研究と制作の記録",
-        "description": "上山大信の研究、シミュレーション、アプリ、文章、アート、音楽を横断して紹介するプロフィールページ。",
+        "description": "上山大信の研究、シミュレーション、アプリ、文章、掲載・出演、アート、音楽を横断して紹介するプロフィールページ。",
         "inLanguage": "ja",
         "dateCreated": "2026-07-07T12:52:45+09:00",
-        "dateModified": "2026-07-21T11:32:16+09:00",
+        "dateModified": "2026-07-22T10:35:25+09:00",
         "mainEntity": {
           "@type": "Person",
           "@id": "https://dueyama.github.io/#daishin-ueyama",
@@ -75,7 +75,7 @@
       }
     </script>
     <script src="language.js?v=20260719-search-1"></script>
-    <link rel="stylesheet" href="styles.css?v=20260719-about-1" />
+    <link rel="stylesheet" href="styles.css?v=20260722-press-1" />
   </head>
   <body>
     <a class="skip-link" href="#main">本文へ移動</a>
@@ -112,7 +112,7 @@
         </section>
 
         <div class="hero-copy">
-          <p class="eyebrow hero-meta-line"><span>Research / Making / Memory</span><span id="site-updated">Updated 2026-07-17 JST</span></p>
+          <p class="eyebrow hero-meta-line"><span>Research / Making / Memory</span><span id="site-updated">Updated 2026-07-22 JST</span></p>
           <h1 id="hero-title">
             <span>上山大信</span>
             <span class="hero-title-sub">研究と制作の記録</span>
@@ -378,6 +378,7 @@
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-vercel" data-collection="vercel">Vercel</button>
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-ios" data-collection="ios">iOS</button>
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-writing" data-collection="writing">文章</button>
+          <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-media" data-collection="media">掲載・出演</button>
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-music" data-collection="music">音楽</button>
         </div>
 
@@ -423,6 +424,24 @@
           </ul>
         </div>
 
+        <div class="collection-panel" id="collection-media" role="tabpanel" data-collection-panel="media" hidden>
+          <div class="panel-heading">
+            <div><p class="kicker">Publications / Press &amp; Media</p><h3>執筆した記事と、取材・出演の記録</h3></div>
+            <a class="panel-external-link" href="https://sites.google.com/site/dueyama/publications">学術論文一覧</a>
+          </div>
+          <div class="media-toolbar">
+            <p class="collection-note" id="press-media-count">確認済みの記録を読み込んでいます。</p>
+            <div class="media-filter-group" role="group" aria-label="掲載・出演の絞り込み">
+              <button class="media-filter-button is-active" type="button" data-media-filter="all" aria-pressed="true">すべて</button>
+              <button class="media-filter-button" type="button" data-media-filter="authored" aria-pressed="false">執筆</button>
+              <button class="media-filter-button" type="button" data-media-filter="featured" aria-pressed="false">取材・掲載</button>
+              <button class="media-filter-button" type="button" data-media-filter="broadcast" aria-pressed="false">テレビ・ラジオ</button>
+            </div>
+          </div>
+          <p class="media-intro">研究論文の全リストは公式HPにまとめています。ここでは、一般向け・専門誌への執筆と、人物や活動を伝える取材、放送を年代順に紹介します。</p>
+          <div class="media-list" id="press-media-list" aria-live="polite" aria-busy="true"></div>
+        </div>
+
         <div class="collection-panel" id="collection-music" role="tabpanel" data-collection-panel="music" hidden>
           <div class="panel-heading"><div><p class="kicker">Suno / DonnyU</p><h3>公開曲トップ5</h3></div><a class="panel-external-link" href="https://suno.com/@donnyu">Sunoを開く</a></div>
           <p class="collection-note suno-summary" id="suno-summary"><strong>総再生数 33,724回 / いいね合計241 / 公開41曲。</strong> 2026-07-17 JSTに記録した値です。</p>
@@ -463,6 +482,6 @@
       </section>
     </main>
 
-    <script src="script.js?v=20260717-weekly-1" defer></script>
+    <script src="script.js?v=20260722-press-1" defer></script>
   </body>
 </html>

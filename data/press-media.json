@@ -1,0 +1,593 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-22T11:03:22+09:00",
+  "officialPublicationIndex": "https://sites.google.com/site/dueyama/publications",
+  "items": [
+    {
+      "id": "ntv-xbyougo-2025",
+      "date": "2025-12-30",
+      "group": "broadcast",
+      "medium": "television",
+      "ja": {
+        "title": "『X秒後の新世界』でJoyaTimerと浄泉寺の鐘を紹介",
+        "outlet": "日本テレビ『X秒後の新世界』",
+        "role": "本人出演 / アプリ・鐘の音を紹介",
+        "summary": "除夜の鐘の進化を扱う年末特番に出演。JoyaTimerの仕組みが紹介され、浄泉寺の鐘の音は全国の寺院の鐘でベートーヴェン「第九」を奏でる企画にも使われました。"
+      },
+      "en": {
+        "title": "JoyaTimer and the temple bell featured on X Byogo no Shinsekai",
+        "outlet": "Nippon TV, X Byogo no Shinsekai",
+        "role": "On-screen appearance / app and bell feature",
+        "summary": "A year-end segment introduced JoyaTimer as a practical change in the Joya no Kane tradition. The sound of Jyosenji's bell also became one note in a performance of Beethoven's Ninth assembled from temple bells across Japan."
+      },
+      "sources": [
+        {
+          "jaLabel": "番組公式",
+          "enLabel": "Program page",
+          "url": "https://www.ntv.co.jp/xbyougo/articles/5057j3nvp135f20hzrph.html"
+        },
+        {
+          "jaLabel": "放送記録",
+          "enLabel": "Broadcast record",
+          "url": "https://datazoo.jp/n/%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AF%E9%99%A4%E5%A4%9C%E3%81%AE%E9%90%98%E3%81%AE%E9%80%B2%E5%8C%96%E3%81%AB%E9%A9%9A%E3%81%8F/24525383"
+        },
+        {
+          "jaLabel": "本人の記録",
+          "enLabel": "Personal account",
+          "url": "https://note.com/daishin_ueyama/n/n2604ac1bb183"
+        }
+      ]
+    },
+    {
+      "id": "gendai-sugaku-visit-2025",
+      "date": "2025-04",
+      "group": "featured",
+      "medium": "magazine",
+      "ja": {
+        "title": "輝数遇数：数学者訪問(84) 上山大信：現象数理学",
+        "outlet": "現代数学 58巻4号",
+        "role": "人物・研究紹介 / pp.4-7",
+        "summary": "武蔵野大学工学部数理工学科の上山大信を訪ね、現象数理学と研究者としての歩みを紹介した人物記事です。"
+      },
+      "en": {
+        "title": "Mathematician Visit 84: Daishin Ueyama and Mathematical Modeling of Phenomena",
+        "outlet": "Gendai Sugaku 58(4)",
+        "role": "Profile and research feature / pp.4-7",
+        "summary": "A profile of Daishin Ueyama at Musashino University's Department of Mathematical Engineering, centered on mathematical modeling of phenomena and his path as a researcher."
+      },
+      "sources": [
+        {
+          "jaLabel": "CiNii書誌",
+          "enLabel": "CiNii record",
+          "url": "https://cir.nii.ac.jp/crid/1523963415973452416"
+        }
+      ]
+    },
+    {
+      "id": "musashino-research-interview-2025",
+      "date": "2025-02",
+      "group": "featured",
+      "medium": "web",
+      "ja": {
+        "title": "自然界のパターンの仕組みを数学で解き明かす",
+        "outlet": "武蔵野大学『学問の地平から』第57回",
+        "role": "研究インタビュー",
+        "summary": "パターン形成、自己組織化、数理モデルとシミュレーションから、AI、TheDLA、住職との兼務までを一続きに紹介する大学公式インタビューです。"
+      },
+      "en": {
+        "title": "Using Mathematics to Reveal How Patterns Form in Nature",
+        "outlet": "Musashino University, Frontiers of Scholarship 57",
+        "role": "Research interview",
+        "summary": "An official university interview connecting pattern formation, self-organization, mathematical models and simulation with AI, TheDLA, and Ueyama's parallel work as a temple priest."
+      },
+      "sources": [
+        {
+          "jaLabel": "大学公式",
+          "enLabel": "University page",
+          "url": "https://www.musashino-u.ac.jp/research/interview/57_ueyama/"
+        }
+      ]
+    },
+    {
+      "id": "tbs-standby-joyatimer-2024",
+      "date": "2024-12-19",
+      "group": "broadcast",
+      "medium": "radio",
+      "ja": {
+        "title": "大晦日に僧侶相談　ありがとうボックスに、除夜タイマー",
+        "outlet": "TBSラジオ『森本毅郎・スタンバイ！』",
+        "role": "電話取材 / JoyaTimer紹介",
+        "summary": "除夜の鐘を108回、午前0時に合わせる難しさと、現場の混乱からJoyaTimerを作った経緯、寺院外での使われ方を本人が語りました。"
+      },
+      "en": {
+        "title": "New Year's Eve: Priest Consultations, a Thank-You Box, and JoyaTimer",
+        "outlet": "TBS Radio, Morimoto Takeo Stand-by!",
+        "role": "Phone interview / JoyaTimer feature",
+        "summary": "Ueyama explains the difficulty of completing exactly 108 bell strikes at midnight, how that practical problem led to JoyaTimer, and how the app has found uses beyond temples."
+      },
+      "sources": [
+        {
+          "jaLabel": "番組記事",
+          "enLabel": "Program article",
+          "url": "https://www.excite.co.jp/news/article/TBSRadio_91208/"
+        },
+        {
+          "jaLabel": "本人の記録",
+          "enLabel": "Personal account",
+          "url": "https://note.com/daishin_ueyama/n/n0249114826bd"
+        }
+      ]
+    },
+    {
+      "id": "marvelous-math-interviews-3-2023",
+      "date": "2023-09",
+      "group": "featured",
+      "medium": "book",
+      "ja": {
+        "title": "数学者、住職になる",
+        "outlet": "『数学にはこんなマーベラスな役立て方や楽しみ方があるという話をあの人やこの人にディープに聞いてみた本3』",
+        "role": "インタビュー再録",
+        "summary": "数学セミナーのインタビューを再録。寺を離れて研究者になり、のちに数学者と住職を兼ねるまでの歩みと、数学と仏教、マルチキャリアを語ります。"
+      },
+      "en": {
+        "title": "A Mathematician Becomes a Temple Priest",
+        "outlet": "Marvelous Ways Mathematics Can Be Useful and Enjoyed, Vol. 3",
+        "role": "Collected interview",
+        "summary": "A collected version of the Sugaku Seminar interview, tracing Ueyama's route away from temple life into research and back to a dual career, with reflections on mathematics and Buddhism."
+      },
+      "sources": [
+        {
+          "jaLabel": "出版社",
+          "enLabel": "Publisher",
+          "url": "https://www.nippyo.co.jp/shop/book/9127.html"
+        }
+      ]
+    },
+    {
+      "id": "yamaguchi-toryu-seiryu-2021",
+      "date": "2021-01-06",
+      "endDate": "2021-02-24",
+      "group": "authored",
+      "medium": "newspaper",
+      "ja": {
+        "title": "東流西流（全8回）",
+        "outlet": "山口新聞",
+        "role": "連載寄稿",
+        "summary": "読経、数学の得意不得意、座布団、文理の境界、祖父、地域からの発信、こころ、浄泉寺を週ごとに綴った新聞コラムです。"
+      },
+      "en": {
+        "title": "Toryu Seiryu, eight-column series",
+        "outlet": "Yamaguchi Shimbun",
+        "role": "Authored newspaper series",
+        "summary": "Eight weekly columns moving through sutra chanting, learning mathematics, temple cushions, the arts-science divide, his grandfather, regional publishing, mind, and Jyosenji."
+      },
+      "sources": [
+        {
+          "jaLabel": "1 全集中の読経",
+          "enLabel": "1 Concentration in chanting",
+          "url": "https://yama.minato-yamaguchi.co.jp/e-yama/articles/20163"
+        },
+        {
+          "jaLabel": "2 得意だから好き",
+          "enLabel": "2 Liking what we are good at",
+          "url": "https://yama.minato-yamaguchi.co.jp/e-yama/articles/20495"
+        },
+        {
+          "jaLabel": "3 座布団の個性",
+          "enLabel": "3 The character of a cushion",
+          "url": "https://yama.minato-yamaguchi.co.jp/e-yama/articles/20877"
+        },
+        {
+          "jaLabel": "4 文系と理系",
+          "enLabel": "4 Arts and sciences",
+          "url": "https://yama.minato-yamaguchi.co.jp/e-yama/articles/21195"
+        },
+        {
+          "jaLabel": "5 祖父の思い出",
+          "enLabel": "5 Memories of my grandfather",
+          "url": "https://yama.minato-yamaguchi.co.jp/e-yama/articles/21522"
+        },
+        {
+          "jaLabel": "6 全県民が発信せよ",
+          "enLabel": "6 Let everyone publish",
+          "url": "https://yama.minato-yamaguchi.co.jp/e-yama/articles/21847"
+        },
+        {
+          "jaLabel": "7 こころ",
+          "enLabel": "7 Mind",
+          "url": "https://yama.minato-yamaguchi.co.jp/e-yama/articles/22181"
+        },
+        {
+          "jaLabel": "8 浄泉寺",
+          "enLabel": "8 Jyosenji",
+          "url": "https://yama.minato-yamaguchi.co.jp/e-yama/articles/22565"
+        }
+      ]
+    },
+    {
+      "id": "yamaguchi-online-memorial-2020",
+      "date": "2020-12-31",
+      "group": "featured",
+      "medium": "newspaper",
+      "ja": {
+        "title": "浄泉寺がオンライン法要開始",
+        "outlet": "山口新聞",
+        "role": "活動紹介 / 取材",
+        "summary": "帰省が難しい家族も法要に参加できるよう、Zoomと寺内の大型テレビを使って始めたオンライン法要が紹介されました。"
+      },
+      "en": {
+        "title": "Jyosenji Begins Online Memorial Services",
+        "outlet": "Yamaguchi Shimbun",
+        "role": "Activity feature / interview",
+        "summary": "A report on Jyosenji's use of Zoom and a large screen inside the temple to let distant family members participate in memorial services when travel was difficult."
+      },
+      "sources": [
+        {
+          "jaLabel": "記事",
+          "enLabel": "Article",
+          "url": "https://yama.minato-yamaguchi.co.jp/e-yama/articles/19956"
+        }
+      ]
+    },
+    {
+      "id": "sugaku-seminar-proportion-2020",
+      "date": "2020-08",
+      "group": "authored",
+      "medium": "magazine",
+      "ja": {
+        "title": "数理モデルができるまで(第4回) 生物の比率の自動調整機構",
+        "outlet": "数学セミナー 59巻8号",
+        "role": "共著 / pp.64-68",
+        "summary": "さまざまな興味が結びつく過程から、生物集団に見られる比率調整をどのように数理モデルへ導くかを紹介した記事です。"
+      },
+      "en": {
+        "title": "How a Mathematical Model Takes Shape 4: Automatic Proportion Regulation in Biology",
+        "outlet": "Sugaku Seminar 59(8)",
+        "role": "Co-authored article / pp.64-68",
+        "summary": "An account of how several lines of curiosity converged into a mathematical model for automatic proportion regulation in biological populations."
+      },
+      "sources": [
+        {
+          "jaLabel": "公式業績一覧",
+          "enLabel": "Official publication list",
+          "url": "https://sites.google.com/site/dueyama/publications"
+        }
+      ]
+    },
+    {
+      "id": "sugaku-seminar-evacuation-2020",
+      "date": "2020-07",
+      "group": "authored",
+      "medium": "magazine",
+      "ja": {
+        "title": "数理モデルができるまで(第3回) パニック!! 閉鎖空間からの脱出",
+        "outlet": "数学セミナー 59巻7号",
+        "role": "執筆 / pp.68-73",
+        "summary": "Social Forceモデルと縮約モデルを通して、閉鎖空間からの避難という現象を数理的に捉えるまでを解説した記事です。"
+      },
+      "en": {
+        "title": "How a Mathematical Model Takes Shape 3: Panic and Escape from an Enclosed Space",
+        "outlet": "Sugaku Seminar 59(7)",
+        "role": "Authored article / pp.68-73",
+        "summary": "An introduction to modeling evacuation from an enclosed space through the Social Force model and the value of reduced models."
+      },
+      "sources": [
+        {
+          "jaLabel": "公式業績一覧",
+          "enLabel": "Official publication list",
+          "url": "https://sites.google.com/site/dueyama/publications"
+        }
+      ]
+    },
+    {
+      "id": "sugaku-traverse-2020",
+      "date": "2020-03",
+      "group": "featured",
+      "medium": "magazine",
+      "ja": {
+        "title": "数学トラヴァース(第18回) 数学者、住職になる",
+        "outlet": "数学セミナー 59巻3号",
+        "role": "ロングインタビュー / pp.46-53",
+        "summary": "寺の息子としての出発、数学研究者への道、住職との兼務、数学と仏教を語った8ページのインタビューです。"
+      },
+      "en": {
+        "title": "Mathematics Traverse 18: A Mathematician Becomes a Temple Priest",
+        "outlet": "Sugaku Seminar 59(3)",
+        "role": "Long-form interview / pp.46-53",
+        "summary": "An eight-page interview on growing up as a temple son, becoming a mathematical researcher, later serving as a priest, and thinking across mathematics and Buddhism."
+      },
+      "sources": [
+        {
+          "jaLabel": "国会図書館書誌",
+          "enLabel": "National Diet Library record",
+          "url": "https://ndlsearch.ndl.go.jp/books/R000000004-I030229981"
+        }
+      ]
+    },
+    {
+      "id": "asahi-evening-joyatimer-2019",
+      "date": "2019-12-30",
+      "group": "featured",
+      "medium": "newspaper",
+      "ja": {
+        "title": "１年に１度だけ活躍…「除夜の鐘」アプリ、開発者は住職",
+        "outlet": "朝日新聞 西部本社版夕刊 / 朝日新聞デジタル",
+        "role": "アプリ・開発者紹介",
+        "summary": "除夜の鐘を正確に108回、午前0時に突き終えるためのJoyaTimerと、開発した山口県長門市の住職・上山大信を紹介した夕刊記事です。"
+      },
+      "en": {
+        "title": "Once-a-Year App: The Temple Priest Who Built a Joya no Kane Timer",
+        "outlet": "The Asahi Shimbun, Western Japan Evening Edition / Asahi Shimbun Digital",
+        "role": "App and developer feature",
+        "summary": "An evening-edition feature on JoyaTimer, built to help temples complete exactly 108 bell strikes at midnight, and its developer, Daishin Ueyama, a temple priest in Nagato, Yamaguchi."
+      },
+      "sources": [
+        {
+          "jaLabel": "本人の記録",
+          "enLabel": "Personal account",
+          "url": "https://note.com/daishin_ueyama/n/n0b44d8f33c35"
+        },
+        {
+          "jaLabel": "朝日新聞デジタル（リンク切れ）",
+          "enLabel": "Asahi Shimbun Digital (link unavailable)",
+          "url": "https://www.asahi.com/articles/ASMDT6VJSMDTTIPE034.html"
+        }
+      ]
+    },
+    {
+      "id": "netorabo-joyatimer-2019",
+      "date": "2019-12-29",
+      "group": "featured",
+      "medium": "web",
+      "ja": {
+        "title": "真価を発揮するのは1年に1度だけ……お坊さんが作った超ニッチなアプリ",
+        "outlet": "ねとらぼ",
+        "role": "開発者インタビュー",
+        "summary": "JoyaTimerが生まれた寺院現場の困りごと、独学したiOS開発、利用者の反応、個人開発アプリの採算までを詳しく取材した記事です。"
+      },
+      "en": {
+        "title": "A Highly Specialized App That Shines Once a Year",
+        "outlet": "Netorabo",
+        "role": "Developer interview",
+        "summary": "A detailed interview about the temple problem that produced JoyaTimer, learning iOS development independently, user response, and the economics of maintaining a narrowly useful independent app."
+      },
+      "sources": [
+        {
+          "jaLabel": "記事",
+          "enLabel": "Article",
+          "url": "https://nlab.itmedia.co.jp/cont/articles/3299323/"
+        }
+      ]
+    },
+    {
+      "id": "abema-prime-joyatimer-2019",
+      "date": "2019-12-29",
+      "group": "broadcast",
+      "medium": "television",
+      "ja": {
+        "title": "AbemaPrimeでJoyaTimerを紹介",
+        "outlet": "AbemaTV『AbemaPrime』",
+        "role": "ニュース番組で紹介",
+        "summary": "SNSでJoyaTimerが話題になった当日に番組で紹介。放送の事実は、同日のねとらぼによる本人取材記事にも記録されています。"
+      },
+      "en": {
+        "title": "JoyaTimer Featured on AbemaPrime",
+        "outlet": "AbemaTV, AbemaPrime",
+        "role": "News-program feature",
+        "summary": "JoyaTimer was featured on the same day it drew attention on social media. The broadcast is recorded in Netorabo's interview with Ueyama published that day."
+      },
+      "sources": [
+        {
+          "jaLabel": "取材記事内の放送記録",
+          "enLabel": "Broadcast noted in interview",
+          "url": "https://nlab.itmedia.co.jp/cont/articles/3299323/"
+        },
+        {
+          "jaLabel": "本人の回想",
+          "enLabel": "Later personal account",
+          "url": "https://note.com/daishin_ueyama/n/n2604ac1bb183"
+        }
+      ]
+    },
+    {
+      "id": "suri-kagaku-dynamical-systems-2015",
+      "date": "2015-08",
+      "group": "authored",
+      "medium": "magazine",
+      "ja": {
+        "title": "自然の秩序形成と力学系",
+        "outlet": "数理科学 2015年8月号 No.626",
+        "role": "執筆 / pp.34-39",
+        "summary": "自然界で秩序や模様が自発的に生まれる現象を、力学系の考え方から捉えた特集記事です。"
+      },
+      "en": {
+        "title": "Natural Order Formation and Dynamical Systems",
+        "outlet": "Mathematical Sciences, Aug. 2015, No.626",
+        "role": "Authored article / pp.34-39",
+        "summary": "A feature article using dynamical-systems thinking to approach the spontaneous formation of order and pattern in nature."
+      },
+      "sources": [
+        {
+          "jaLabel": "出版社",
+          "enLabel": "Publisher",
+          "url": "https://www.saiensu.co.jp/search/?isbn=4910054690859&y=2015"
+        }
+      ]
+    },
+    {
+      "id": "techplus-math-recipe-2014",
+      "date": "2014-04-01",
+      "group": "featured",
+      "medium": "web",
+      "ja": {
+        "title": "世界を彩る 数学レシピ(17) 総合数理×数学",
+        "outlet": "TECH+ / マイナビニュース",
+        "role": "研究インタビュー",
+        "summary": "パターン形成と自己組織化、リーゼガング現象の数理モデル、シミュレーションを使った「実験数学」、数学教育までを語った長編記事です。"
+      },
+      "en": {
+        "title": "Mathematical Recipes 17: Mathematical Sciences and Mathematics",
+        "outlet": "TECH+ / Mynavi News",
+        "role": "Research interview",
+        "summary": "A long interview spanning pattern formation, self-organization, a mathematical model of the Liesegang phenomenon, simulation as experimental mathematics, and mathematics education."
+      },
+      "sources": [
+        {
+          "jaLabel": "記事",
+          "enLabel": "Article",
+          "url": "https://news.mynavi.jp/techplus/article/sugaku_recipe-17/"
+        }
+      ]
+    },
+    {
+      "id": "suri-kagaku-exact-solutions-2012",
+      "date": "2012-11",
+      "group": "authored",
+      "medium": "magazine",
+      "ja": {
+        "title": "数理生態学における厳密解",
+        "outlet": "数理科学 2012年11月号 No.593",
+        "role": "執筆 / pp.50-55",
+        "summary": "数理生態学に現れる微分方程式と厳密解が、元の生態現象をどう理解する助けになるかを扱った特集記事です。"
+      },
+      "en": {
+        "title": "Exact Solutions in Mathematical Ecology",
+        "outlet": "Mathematical Sciences, Nov. 2012, No.593",
+        "role": "Authored article / pp.50-55",
+        "summary": "A feature article on how exact solutions of differential equations in mathematical ecology can clarify the ecological phenomena from which the equations arise."
+      },
+      "sources": [
+        {
+          "jaLabel": "出版社",
+          "enLabel": "Publisher",
+          "url": "https://www.saiensu.co.jp/search/?isbn=4910054691122&y=2012"
+        }
+      ]
+    },
+    {
+      "id": "womanapps-joyatimer-2012",
+      "date": "2012-02-23",
+      "group": "featured",
+      "medium": "web",
+      "ja": {
+        "title": "寺院で『鐘』を鳴らすタイミングを教えてくれる不思議アプリ",
+        "outlet": "WomanApps / エキサイトニュース",
+        "role": "アプリ紹介",
+        "summary": "公開直後のJoyaTimerを、除夜の鐘に特化した珍しいタイマーとして紹介した初期のウェブ記事です。"
+      },
+      "en": {
+        "title": "An Unusual App That Tells Temples When to Ring a Bell",
+        "outlet": "WomanApps / Excite News",
+        "role": "App feature",
+        "summary": "An early web article introducing the newly released JoyaTimer as an unusual timer designed specifically for the timing of Joya no Kane bell strikes."
+      },
+      "sources": [
+        {
+          "jaLabel": "記事",
+          "enLabel": "Article",
+          "url": "https://www.excite.co.jp/news/article/Leafhide_woman_news_bsDDmJ7GxW/"
+        }
+      ]
+    },
+    {
+      "id": "suri-kagaku-solution-structure-2008",
+      "date": "2008-01",
+      "group": "authored",
+      "medium": "magazine",
+      "ja": {
+        "title": "複雑な解構造を視る",
+        "outlet": "数理科学 2008年1月号",
+        "role": "執筆 / pp.45-49",
+        "summary": "複雑な数理モデルの解構造を、計算と可視化を通してどのように捉えるかを扱った記事です。"
+      },
+      "en": {
+        "title": "Seeing Complex Solution Structures",
+        "outlet": "Mathematical Sciences, Jan. 2008",
+        "role": "Authored article / pp.45-49",
+        "summary": "An article on approaching complex solution structures in mathematical models through computation and visualization."
+      },
+      "sources": [
+        {
+          "jaLabel": "公式業績一覧",
+          "enLabel": "Official publication list",
+          "url": "https://sites.google.com/site/dueyama/publications"
+        }
+      ]
+    },
+    {
+      "id": "meiji-petit-natural-science-2007",
+      "date": "2007",
+      "group": "authored",
+      "medium": "magazine",
+      "ja": {
+        "title": "『プチ自然科学』への誘い",
+        "outlet": "『明治』第34号 / 明治大学広報部",
+        "role": "執筆 / pp.14-15",
+        "summary": "身の回りの現象を小さな自然科学の入口として見直す、明治大学広報誌への寄稿です。"
+      },
+      "en": {
+        "title": "An Invitation to Petite Natural Science",
+        "outlet": "Meiji, No.34 / Meiji University Public Relations",
+        "role": "Authored article / pp.14-15",
+        "summary": "A contribution to Meiji University's magazine inviting readers to reconsider everyday phenomena as small entry points into natural science."
+      },
+      "sources": [
+        {
+          "jaLabel": "公式業績一覧",
+          "enLabel": "Official publication list",
+          "url": "https://sites.google.com/site/dueyama/publications"
+        }
+      ]
+    },
+    {
+      "id": "pattern-formation-dynamics-chapter-2007",
+      "date": "2007",
+      "group": "authored",
+      "medium": "book",
+      "ja": {
+        "title": "パターン形成とダイナミクス・第2章",
+        "outlet": "『非線形・非平衡現象の数理4』東京大学出版会",
+        "role": "共著章 / pp.21-62",
+        "summary": "非線形・非平衡系におけるパターン形成とそのダイナミクスを体系的に解説した書籍章です。"
+      },
+      "en": {
+        "title": "Pattern Formation and Dynamics, Chapter 2",
+        "outlet": "Mathematics of Nonlinear and Nonequilibrium Phenomena 4, University of Tokyo Press",
+        "role": "Co-authored book chapter / pp.21-62",
+        "summary": "A book chapter giving a systematic account of pattern formation and its dynamics in nonlinear, nonequilibrium systems."
+      },
+      "sources": [
+        {
+          "jaLabel": "公式業績一覧",
+          "enLabel": "Official publication list",
+          "url": "https://sites.google.com/site/dueyama/publications"
+        }
+      ]
+    },
+    {
+      "id": "sugaku-seminar-ants-2003",
+      "date": "2003-05",
+      "group": "authored",
+      "medium": "magazine",
+      "ja": {
+        "title": "蟻の足跡と拡散現象",
+        "outlet": "数学セミナー 2003年5月号 通巻500号",
+        "role": "執筆 / pp.31-36",
+        "summary": "蟻の足跡が作る集団的な形と拡散現象を、数学の言葉で眺める一般向けの記事です。"
+      },
+      "en": {
+        "title": "Ant Trails and Diffusion Phenomena",
+        "outlet": "Sugaku Seminar, May 2003, No.500",
+        "role": "Authored article / pp.31-36",
+        "summary": "An accessible article viewing the collective forms produced by ant trails through the mathematics of diffusion phenomena."
+      },
+      "sources": [
+        {
+          "jaLabel": "出版社",
+          "enLabel": "Publisher",
+          "url": "https://www.nippyo.co.jp/shop/magazine/4991.html"
+        }
+      ]
+    }
+  ]
+}

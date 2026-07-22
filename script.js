@@ -352,6 +352,9 @@ const projectGrid = document.querySelector("#project-grid");
 const vercelTable = document.querySelector("#vercel-table");
 const iosAppGrid = document.querySelector("#ios-app-grid");
 const filterButtons = document.querySelectorAll(".filter-button");
+const pressMediaList = document.querySelector("#press-media-list");
+const pressMediaCount = document.querySelector("#press-media-count");
+const mediaFilterButtons = document.querySelectorAll(".media-filter-button");
 const collectionTabs = document.querySelectorAll(".collection-tab");
 const collectionPanels = document.querySelectorAll("[data-collection-panel]");
 const collectionLinks = document.querySelectorAll("[data-select-collection]");
@@ -390,11 +393,13 @@ const compactNumberFormatter = new Intl.NumberFormat(isEnglish ? "en-US" : "ja-J
   maximumFractionDigits: 1,
 });
 let currentProjectFilter = "all";
+let currentMediaFilter = "all";
 let showAllProjects = false;
 let showAllChoiceHistory = false;
 let codexChoiceData = null;
 let latestSiteUpdate = null;
 let sunoHistoryData = null;
+let pressMediaData = null;
 let selectedSunoSongId = null;
 let sunoChartMode = "total";
 
@@ -434,6 +439,136 @@ function updateSiteUpdated(value) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return;
   if (!latestSiteUpdate || date > latestSiteUpdate) latestSiteUpdate = date;
   if (siteUpdated) siteUpdated.textContent = `Updated ${latestSiteUpdate} JST`;
+}
+
+function formatPublicationDate(value) {
+  const match = String(value || "").match(/^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$/);
+  if (!match) return value;
+
+  const [, year, month, day] = match;
+  if (!month) return year;
+  if (!day) {
+    if (isEnglish) {
+      return new Intl.DateTimeFormat("en-US", { month: "short", year: "numeric", timeZone: "UTC" })
+        .format(new Date(Date.UTC(Number(year), Number(month) - 1, 1)));
+    }
+    return `${year}.${Number(month)}`;
+  }
+
+  if (!isEnglish) return `${year}.${Number(month)}.${Number(day)}`;
+
+  return formatCalendarDate(value, { year: "numeric", month: "short", day: "numeric" });
+}
+
+function formatPublicationPeriod(item) {
+  const start = formatPublicationDate(item.date);
+  if (!item.endDate) return start;
+  return `${start}–${formatPublicationDate(item.endDate)}`;
+}
+
+function pressMediumLabel(medium) {
+  const labels = {
+    television: isEnglish ? "TV" : "テレビ",
+    radio: isEnglish ? "Radio" : "ラジオ",
+    magazine: isEnglish ? "Magazine" : "雑誌",
+    web: "Web",
+    book: isEnglish ? "Book" : "書籍",
+    newspaper: isEnglish ? "Newspaper" : "新聞",
+  };
+  return labels[medium] || medium;
+}
+
+function renderPressMedia(filter = "all") {
+  if (!pressMediaList || !pressMediaData) return;
+
+  const items = pressMediaData.items.filter((item) => filter === "all" || item.group === filter);
+  pressMediaList.replaceChildren();
+  pressMediaList.setAttribute("aria-busy", "false");
+
+  if (pressMediaCount) {
+    pressMediaCount.textContent = isEnglish
+      ? `${items.length} of ${pressMediaData.items.length} verified records`
+      : `確認済み${pressMediaData.items.length}件のうち${items.length}件を表示`;
+  }
+
+  for (const item of items) {
+    const copy = isEnglish ? item.en : item.ja;
+    const sources = Array.isArray(item.sources) ? item.sources : [];
+    if (!copy || !sources.length) continue;
+
+    const article = document.createElement("article");
+    article.className = "media-entry";
+    article.dataset.group = item.group;
+    article.dataset.medium = item.medium;
+
+    const meta = document.createElement("div");
+    meta.className = "media-entry-head";
+
+    const date = document.createElement("time");
+    date.className = "media-date";
+    date.dateTime = item.date;
+    date.textContent = formatPublicationPeriod(item);
+
+    const medium = document.createElement("span");
+    medium.className = "media-medium";
+    medium.textContent = pressMediumLabel(item.medium);
+    meta.append(date, medium);
+
+    const heading = document.createElement("h4");
+    const titleLink = document.createElement("a");
+    titleLink.href = sources[0].url;
+    titleLink.textContent = copy.title;
+    heading.append(titleLink);
+
+    const outlet = document.createElement("p");
+    outlet.className = "media-outlet";
+    outlet.textContent = copy.outlet;
+
+    const role = document.createElement("p");
+    role.className = "media-role";
+    role.textContent = copy.role;
+
+    const summary = document.createElement("p");
+    summary.className = "media-summary";
+    summary.textContent = copy.summary;
+
+    const sourceDetails = document.createElement("details");
+    sourceDetails.className = "media-sources";
+    const sourceSummary = document.createElement("summary");
+    sourceSummary.textContent = isEnglish
+      ? `${sources.length} ${sources.length === 1 ? "source" : "sources"}`
+      : `資料 ${sources.length}件`;
+    const sourceList = document.createElement("ul");
+
+    for (const source of sources) {
+      const listItem = document.createElement("li");
+      const sourceLink = document.createElement("a");
+      sourceLink.href = source.url;
+      sourceLink.textContent = isEnglish ? source.enLabel : source.jaLabel;
+      listItem.append(sourceLink);
+      sourceList.append(listItem);
+    }
+
+    sourceDetails.append(sourceSummary, sourceList);
+    article.append(meta, heading, outlet, role, summary, sourceDetails);
+    pressMediaList.append(article);
+  }
+}
+
+async function loadPressMedia() {
+  if (!pressMediaList) return;
+  const dataPath = isEnglish ? "../data/press-media.json" : "data/press-media.json";
+  const response = await fetch(dataPath, { cache: "no-cache" });
+  if (!response.ok) throw new Error(`Press and media request failed (${response.status})`);
+
+  const data = await response.json();
+  if (data.schemaVersion !== 1 || !Array.isArray(data.items)) {
+    throw new Error("Press and media data is invalid");
+  }
+
+  pressMediaData = data;
+  updateSiteUpdated(data.generatedAt);
+  renderPressMedia(currentMediaFilter);
 }
 
 function updateWhatsNewNext() {
@@ -1038,6 +1173,18 @@ filterButtons.forEach((button) => {
   });
 });
 
+mediaFilterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    currentMediaFilter = button.dataset.mediaFilter;
+    mediaFilterButtons.forEach((item) => {
+      const isActive = item === button;
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-pressed", String(isActive));
+    });
+    renderPressMedia(currentMediaFilter);
+  });
+});
+
 function selectCollection(collection) {
   collectionTabs.forEach((tab) => {
     const isSelected = tab.dataset.collection === collection;
@@ -1122,6 +1269,15 @@ renderIosApps();
 loadWhatsNew().catch((error) => console.warn(error.message));
 loadCodexChoice().catch((error) => {
   codexChoiceSection?.setAttribute("aria-busy", "false");
+  console.warn(error.message);
+});
+loadPressMedia().catch((error) => {
+  if (pressMediaList) {
+    pressMediaList.setAttribute("aria-busy", "false");
+    pressMediaList.textContent = isEnglish
+      ? "The verified record could not be loaded."
+      : "確認済みの記録を読み込めませんでした。";
+  }
   console.warn(error.message);
 });
 loadSunoHistory().catch((error) => console.warn(error.message));

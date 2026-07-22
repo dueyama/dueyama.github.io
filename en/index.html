@@ -6,7 +6,7 @@
     <title>Daishin Ueyama | Research and Creative Work</title>
     <meta
       name="description"
-      content="A profile connecting Daishin Ueyama's research, simulations, apps, writing, art, and music."
+      content="A profile connecting Daishin Ueyama's research, simulations, apps, writing, press and media appearances, art, and music."
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="color-scheme" content="light" />
@@ -23,7 +23,7 @@
     <meta property="og:title" content="Daishin Ueyama | Research and Creative Work" />
     <meta
       property="og:description"
-      content="The official profile of Daishin Ueyama, connecting research, simulations, apps, writing, art, and music."
+      content="The official profile of Daishin Ueyama, connecting research, simulations, apps, writing, press and media appearances, art, and music."
     />
     <meta property="og:url" content="https://dueyama.github.io/en/" />
     <meta property="og:image" content="https://dueyama.github.io/assets/profile/dueyama-twitter.jpg" />
@@ -35,7 +35,7 @@
     <meta name="twitter:title" content="Daishin Ueyama | Research and Creative Work" />
     <meta
       name="twitter:description"
-      content="The official profile of Daishin Ueyama, connecting research, simulations, apps, writing, art, and music."
+      content="The official profile of Daishin Ueyama, connecting research, simulations, apps, writing, press and media appearances, art, and music."
     />
     <meta name="twitter:image" content="https://dueyama.github.io/assets/profile/dueyama-twitter.jpg" />
     <script type="application/ld+json">
@@ -45,10 +45,10 @@
         "@id": "https://dueyama.github.io/en/#profile-page-en",
         "url": "https://dueyama.github.io/en/",
         "name": "Daishin Ueyama | Research and Creative Work",
-        "description": "A profile connecting Daishin Ueyama's research, simulations, apps, writing, art, and music.",
+        "description": "A profile connecting Daishin Ueyama's research, simulations, apps, writing, press and media appearances, art, and music.",
         "inLanguage": "en",
         "dateCreated": "2026-07-07T12:52:45+09:00",
-        "dateModified": "2026-07-21T11:32:16+09:00",
+        "dateModified": "2026-07-22T10:35:25+09:00",
         "mainEntity": {
           "@type": "Person",
           "@id": "https://dueyama.github.io/#daishin-ueyama",
@@ -74,7 +74,7 @@
       }
     </script>
     <script src="../language.js?v=20260719-search-1"></script>
-    <link rel="stylesheet" href="../styles.css?v=20260719-about-1" />
+    <link rel="stylesheet" href="../styles.css?v=20260722-press-1" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -111,7 +111,7 @@
         </section>
 
         <div class="hero-copy">
-          <p class="eyebrow hero-meta-line"><span>Research / Making / Memory</span><span id="site-updated">Updated 2026-07-17 JST</span></p>
+          <p class="eyebrow hero-meta-line"><span>Research / Making / Memory</span><span id="site-updated">Updated 2026-07-22 JST</span></p>
           <h1 id="hero-title">
             <span>Daishin Ueyama</span>
             <span class="hero-title-sub">Research and creative work</span>
@@ -380,6 +380,7 @@
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-vercel" data-collection="vercel">Vercel</button>
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-ios" data-collection="ios">iOS</button>
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-writing" data-collection="writing">Writing</button>
+          <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-media" data-collection="media">Press</button>
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-music" data-collection="music">Music</button>
         </div>
 
@@ -425,6 +426,24 @@
           </ul>
         </div>
 
+        <div class="collection-panel" id="collection-media" role="tabpanel" data-collection-panel="media" hidden>
+          <div class="panel-heading">
+            <div><p class="kicker">Publications / Press &amp; Media</p><h3>Authored work, interviews, and appearances</h3></div>
+            <a class="panel-external-link" href="https://sites.google.com/site/dueyama/publications">Research publications</a>
+          </div>
+          <div class="media-toolbar">
+            <p class="collection-note" id="press-media-count">Loading verified records.</p>
+            <div class="media-filter-group" role="group" aria-label="Filter publications and media">
+              <button class="media-filter-button is-active" type="button" data-media-filter="all" aria-pressed="true">All</button>
+              <button class="media-filter-button" type="button" data-media-filter="authored" aria-pressed="false">Authored</button>
+              <button class="media-filter-button" type="button" data-media-filter="featured" aria-pressed="false">Features</button>
+              <button class="media-filter-button" type="button" data-media-filter="broadcast" aria-pressed="false">TV &amp; Radio</button>
+            </div>
+          </div>
+          <p class="media-intro">The complete research-paper list remains on the official website. This index focuses on authored magazine and public-facing work, interviews, profiles, and broadcasts.</p>
+          <div class="media-list" id="press-media-list" aria-live="polite" aria-busy="true"></div>
+        </div>
+
         <div class="collection-panel" id="collection-music" role="tabpanel" data-collection-panel="music" hidden>
           <div class="panel-heading"><div><p class="kicker">Suno / DonnyU</p><h3>Top five public songs</h3></div><a class="panel-external-link" href="https://suno.com/@donnyu">Open Suno</a></div>
           <p class="collection-note suno-summary" id="suno-summary"><strong>33,724 total plays / 241 likes / 41 public songs.</strong> Recorded on 2026-07-17 JST.</p>
@@ -466,6 +485,6 @@
       </section>
     </main>
 
-    <script src="../script.js?v=20260717-weekly-1" defer></script>
+    <script src="../script.js?v=20260722-press-1" defer></script>
   </body>
 </html>

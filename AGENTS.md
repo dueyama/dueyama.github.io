@@ -38,6 +38,7 @@ The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `
 - A compact `What's New` band now occupies the open upper part of the hero. It shows at most four meaningful changes from the latest weekly interval; on mobile the items scroll sideways, with a working next arrow, so the feature does not make the page long again.
 - `Codex Choice of the Week` is an editorial counterpoint to `What's New`: the latter reports verified changes, while the Choice rereads one note, paper, app, repository, project, site, or song from the whole body of work.
 - Only the current Choice is expanded near the top. Previous choices remain in JSON history and appear under progressive disclosure, with at most eight initially visible, so the feature does not make the HTML or the page grow without bound.
+- Authored articles, interviews, profiles, and broadcasts now share a sixth `掲載・出演` / `Press` collection tab. Its verified records live in JSON, and category filters plus collapsed source lists keep the comprehensive index from lengthening the default page.
 
 ## Codex Choice of the Week
 
@@ -100,6 +101,14 @@ The working corpus, audit workbook, shortlist, QA previews, and long person-port
 The maintained corpus now has a stable local home at `private/note-corpus/articles.jsonl`, with `article-summaries.csv` as the compact audit view. `scripts/sync-note-corpus.mjs` bootstraps that store from the original 326-article output, discovers only unseen note keys, fetches each full article, and leaves readable additions pending until Codex supplies a factual summary, response, themes, profile value, curation tier, and selection reason. The merge command validates those fields before regenerating both files.
 
 The strongest reading was not simply "mathematician + priest + developer." Across the essays, recurring habits were: making unclear things move, preserving imperfection and change instead of erasing them, trusting AI enough to argue with it, allowing mathematics and Buddhism to remain in tension, and facing regional decline without easy optimism. Future curation should preserve those frictions rather than flattening them into a generic interdisciplinary profile.
+
+## Publications and Media
+
+The public index lives in `data/press-media.json`. Start authored-work research from the official HP publication page, which includes the entries for 数学セミナー and 数理科学 that may not surface reliably in an ordinary name search. Use publisher, NDL, or CiNii records to strengthen bibliographic details when available.
+
+For interviews, features, television, radio, newspapers, and web coverage, prefer an official program or publisher page and keep independent public records as additional sources. A personal note can provide useful context, but should not be the only evidence when an external record exists. Group a finite series such as the eight 山口新聞 columns into one public item and place its individual links under collapsed source details.
+
+Do not publish a magazine name, issue, date, page range, appearance, or quote that has not been verified. Keep uncertain candidates such as the presently unidentified 月刊住職 item in `private/profile-maintenance/press-media-catalog.csv` until a source is found. Run `node scripts/check-press-media.mjs` after every public-data edit. The complete academic-paper bibliography stays on the official HP rather than being copied into this compact index.
 
 ## Weekly Profile Maintenance
 

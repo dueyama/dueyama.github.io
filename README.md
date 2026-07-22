@@ -11,7 +11,7 @@
 - 公式HP・論文・アプリ・Project DonnyUを結ぶCodexキュレーション
 - note、GitHub、アプリ、Sunoなどの1週間の変化をまとめる `What's New`
 - 全活動から毎週一つを読み直す `Codex Choice of the Week`
-- GitHub、Vercel、App Store、note、Sunoを切り替えて見る公開物一覧
+- GitHub、Vercel、App Store、note、掲載・出演、Sunoを切り替えて見る公開物一覧
 - App Store公開アプリと関連note記事
 - Suno DonnyU (`@donnyu`) の公開曲トップ5と週次推移
 
@@ -25,16 +25,24 @@
 - `data/suno-history.json`: public weekly play and like snapshots
 - `data/whats-new.json`: latest bilingual weekly edit
 - `data/codex-choice.json`: current bilingual Codex Choice and its history
+- `data/press-media.json`: verified bilingual authored work, features, and broadcast records
 - `data/profile-sources.json`: public sources checked by weekly maintenance
 - `scripts/update-suno-stats.mjs`: Suno collection and validation script
 - `scripts/sync-note-corpus.mjs`: private full-text note corpus and summary CSV updater
 - `scripts/audit-profile-sources.mjs`: GitHub, App Store, HP, project, and deployment change audit
 - `scripts/publish-whats-new.mjs`: validation gate for the public weekly edit
 - `scripts/publish-codex-choice.mjs`: validation gate for the current Choice and archive
+- `scripts/check-press-media.mjs`: validation gate for the publications and media index
 - `assets/`: profile image and site assets
 - `AGENTS.md`: public working note about how this page came together
 
 This site is intentionally static and build-free.
+
+## Publications and Media
+
+The `Press` / `掲載・出演` tab reads `data/press-media.json`. Authored work begins with the publication list on the official HP; publisher, NDL, CiNii, program, and article pages are used where available to verify bibliographic and appearance details. Academic papers remain on the official list instead of being duplicated here.
+
+Run `node scripts/check-press-media.mjs` after editing the index. Unconfirmed issue names, dates, page ranges, and appearances stay in the gitignored research catalog until a reliable public source can verify them.
 
 ## Suno History
 
