@@ -352,6 +352,13 @@ const projectGrid = document.querySelector("#project-grid");
 const vercelTable = document.querySelector("#vercel-table");
 const iosAppGrid = document.querySelector("#ios-app-grid");
 const filterButtons = document.querySelectorAll(".filter-button");
+const publicationList = document.querySelector("#publication-list");
+const publicationCount = document.querySelector("#publication-count");
+const publicationEmpty = document.querySelector("#publication-empty");
+const publicationSearch = document.querySelector("#publication-search");
+const publicationToggle = document.querySelector("#publication-toggle");
+const publicationFilterButtons = document.querySelectorAll(".publication-filter-button");
+const publicationTotalLabels = document.querySelectorAll("[data-publication-total]");
 const pressMediaList = document.querySelector("#press-media-list");
 const pressMediaCount = document.querySelector("#press-media-count");
 const mediaFilterButtons = document.querySelectorAll(".media-filter-button");
@@ -385,6 +392,7 @@ const sunoModeButtons = document.querySelectorAll("[data-suno-mode]");
 const isEnglish = document.documentElement.lang.toLowerCase().startsWith("en");
 const languageStorageKey = "dueyama-profile-language";
 const projectPreviewLimit = 6;
+const publicationPreviewLimit = 12;
 const choiceHistoryPreviewLimit = 8;
 const sunoTotalsSeriesId = "profile-totals";
 const numberFormatter = new Intl.NumberFormat(isEnglish ? "en-US" : "ja-JP");
@@ -393,6 +401,9 @@ const compactNumberFormatter = new Intl.NumberFormat(isEnglish ? "en-US" : "ja-J
   maximumFractionDigits: 1,
 });
 let currentProjectFilter = "all";
+let currentPublicationFilter = "peer-reviewed";
+let publicationQuery = "";
+let showAllPublications = false;
 let currentMediaFilter = "all";
 let showAllProjects = false;
 let showAllChoiceHistory = false;
@@ -400,6 +411,7 @@ let codexChoiceData = null;
 let latestSiteUpdate = null;
 let sunoHistoryData = null;
 let pressMediaData = null;
+let publicationData = null;
 let selectedSunoSongId = null;
 let sunoChartMode = "total";
 
@@ -569,6 +581,227 @@ async function loadPressMedia() {
   pressMediaData = data;
   updateSiteUpdated(data.generatedAt);
   renderPressMedia(currentMediaFilter);
+}
+
+function publicationCategoryLabel(category, short = false) {
+  const labels = {
+    "peer-reviewed": isEnglish ? (short ? "Peer" : "Peer-reviewed") : "査読あり",
+    "non-peer-reviewed": isEnglish ? (short ? "Report" : "Other papers") : "査読なし",
+    misc: isEnglish ? (short ? "Writing" : "Other writing") : "その他",
+    all: isEnglish ? "All" : "すべて",
+  };
+  return labels[category] || category;
+}
+
+function normalizePublicationSearch(value) {
+  return String(value || "").normalize("NFKC").toLocaleLowerCase();
+}
+
+function publicationSearchText(item) {
+  return normalizePublicationSearch(
+    [
+      item.title,
+      ...(item.authors || []),
+      item.containerTitle,
+      item.publisher,
+      item.citationDetail,
+      item.doi,
+      item.year,
+    ]
+      .filter(Boolean)
+      .join(" "),
+  );
+}
+
+function isDaishinUeyama(author) {
+  const normalized = String(author || "").replace(/\s+/g, " ").trim().toLocaleLowerCase();
+  return normalized.includes("ueyama") || /上山\s*大信/.test(author);
+}
+
+function appendPublicationAuthors(element, authors) {
+  authors.forEach((author, index) => {
+    if (index) element.append(document.createTextNode(", "));
+    if (isDaishinUeyama(author)) {
+      const self = document.createElement("strong");
+      self.className = "publication-author-self";
+      self.textContent = author;
+      element.append(self);
+    } else {
+      element.append(document.createTextNode(author));
+    }
+  });
+}
+
+function formatPublicationPages(value) {
+  return String(value || "").replace(/(\d)\s*-\s*(?=\d)/g, "$1–");
+}
+
+function createPublicationVenue(item) {
+  const venue = document.createElement("p");
+  venue.className = "publication-venue";
+
+  if (!item.containerTitle) {
+    venue.textContent = item.citationDetail || String(item.year);
+    return venue;
+  }
+
+  const journal = document.createElement("cite");
+  journal.textContent = item.containerTitle;
+  venue.append(journal);
+
+  if (item.volume) {
+    venue.append(document.createTextNode(" "));
+    const volume = document.createElement("strong");
+    volume.textContent = item.volume;
+    venue.append(volume);
+  }
+  if (item.issue) venue.append(document.createTextNode(`(${item.issue})`));
+
+  const locator = item.pages || item.articleNumber;
+  if (locator) venue.append(document.createTextNode(`, ${formatPublicationPages(locator)}`));
+  venue.append(document.createTextNode(` (${item.year}).`));
+  return venue;
+}
+
+function createPublicationEntry(item) {
+  const listItem = document.createElement("li");
+  listItem.className = "publication-entry";
+  listItem.dataset.category = item.category;
+
+  const chronology = document.createElement("div");
+  chronology.className = "publication-chronology";
+
+  const year = document.createElement("time");
+  year.className = "publication-year";
+  year.dateTime = String(item.year);
+  year.textContent = item.year;
+
+  const kind = document.createElement("span");
+  kind.className = "publication-kind";
+  kind.textContent = publicationCategoryLabel(item.category, true);
+  chronology.append(year, kind);
+
+  const citation = document.createElement("article");
+  citation.className = "publication-citation";
+
+  const heading = document.createElement("h4");
+  if (item.url) {
+    const titleLink = document.createElement("a");
+    titleLink.href = item.url;
+    titleLink.textContent = item.title;
+    heading.append(titleLink);
+  } else {
+    heading.textContent = item.title;
+  }
+
+  citation.append(heading);
+
+  if (item.authors?.length) {
+    const authors = document.createElement("p");
+    authors.className = "publication-authors";
+    appendPublicationAuthors(authors, item.authors);
+    citation.append(authors);
+  }
+
+  citation.append(createPublicationVenue(item));
+
+  if (item.url) {
+    const identifier = document.createElement("p");
+    identifier.className = "publication-identifier";
+    const link = document.createElement("a");
+    link.href = item.url;
+    if (item.doi) {
+      link.textContent = `doi:${item.doi}`;
+    } else if (item.linkKind === "full-text") {
+      link.textContent = isEnglish ? "Full text / PDF" : "本文 / PDF";
+    } else {
+      link.textContent = isEnglish ? "Bibliographic record" : "書誌情報";
+    }
+    identifier.append(link);
+    citation.append(identifier);
+  }
+
+  listItem.append(chronology, citation);
+  return listItem;
+}
+
+function renderPublications() {
+  if (!publicationList || !publicationData) return;
+
+  const query = normalizePublicationSearch(publicationQuery.trim());
+  const allCategories = currentPublicationFilter === "all";
+  let matches = publicationData.items.filter(
+    (item) =>
+      (allCategories || item.category === currentPublicationFilter) &&
+      (!query || publicationSearchText(item).includes(query)),
+  );
+
+  if (allCategories) {
+    const categoryRank = { "peer-reviewed": 0, "non-peer-reviewed": 1, misc: 2 };
+    matches = [...matches].sort(
+      (a, b) => b.year - a.year || categoryRank[a.category] - categoryRank[b.category] || a.position - b.position,
+    );
+  }
+
+  const shouldLimit = !query && !showAllPublications;
+  const visibleItems = shouldLimit ? matches.slice(0, publicationPreviewLimit) : matches;
+  publicationList.replaceChildren(...visibleItems.map(createPublicationEntry));
+  publicationList.setAttribute("aria-busy", "false");
+  publicationEmpty.hidden = matches.length > 0;
+
+  const categoryLabel = publicationCategoryLabel(currentPublicationFilter);
+  if (publicationCount) {
+    if (query) {
+      publicationCount.textContent = isEnglish
+        ? `${matches.length} matching ${matches.length === 1 ? "record" : "records"} in ${categoryLabel}`
+        : `${categoryLabel}から${matches.length}件が一致`;
+    } else if (visibleItems.length < matches.length) {
+      publicationCount.textContent = isEnglish
+        ? `Showing the latest ${visibleItems.length} of ${matches.length} ${categoryLabel.toLocaleLowerCase()} records`
+        : `${categoryLabel}${matches.length}件のうち最新${visibleItems.length}件を表示`;
+    } else {
+      publicationCount.textContent = isEnglish
+        ? `${matches.length} ${categoryLabel.toLocaleLowerCase()} ${matches.length === 1 ? "record" : "records"}`
+        : `${categoryLabel}${matches.length}件を表示`;
+    }
+  }
+
+  if (publicationToggle) {
+    publicationToggle.hidden = Boolean(query) || matches.length <= publicationPreviewLimit;
+    publicationToggle.textContent = showAllPublications
+      ? isEnglish
+        ? `Show the latest ${publicationPreviewLimit}`
+        : `最新${publicationPreviewLimit}件に戻す`
+      : isEnglish
+        ? `Show all ${matches.length}`
+        : `${matches.length}件をすべて表示`;
+  }
+}
+
+async function loadPublications() {
+  if (!publicationList) return;
+  const dataPath = isEnglish ? "../data/publications.json" : "data/publications.json";
+  const response = await fetch(dataPath, { cache: "no-cache" });
+  if (!response.ok) throw new Error(`Publication request failed (${response.status})`);
+
+  const data = await response.json();
+  if (data.schemaVersion !== 1 || !Array.isArray(data.items)) {
+    throw new Error("Publication data is invalid");
+  }
+
+  publicationData = data;
+  updateSiteUpdated(data.generatedAt);
+
+  const totals = {
+    "peer-reviewed": data.counts.peerReviewed,
+    "non-peer-reviewed": data.counts.nonPeerReviewed,
+    misc: data.counts.misc,
+    all: data.counts.total,
+  };
+  publicationTotalLabels.forEach((label) => {
+    label.textContent = numberFormatter.format(totals[label.dataset.publicationTotal] || 0);
+  });
+  renderPublications();
 }
 
 function updateWhatsNewNext() {
@@ -1173,6 +1406,30 @@ filterButtons.forEach((button) => {
   });
 });
 
+publicationFilterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    currentPublicationFilter = button.dataset.publicationFilter;
+    showAllPublications = false;
+    publicationFilterButtons.forEach((item) => {
+      const isActive = item === button;
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-pressed", String(isActive));
+    });
+    renderPublications();
+  });
+});
+
+publicationSearch?.addEventListener("input", () => {
+  publicationQuery = publicationSearch.value;
+  showAllPublications = false;
+  renderPublications();
+});
+
+publicationToggle?.addEventListener("click", () => {
+  showAllPublications = !showAllPublications;
+  renderPublications();
+});
+
 mediaFilterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     currentMediaFilter = button.dataset.mediaFilter;
@@ -1266,6 +1523,15 @@ sunoHistoryDialog?.addEventListener("click", (event) => {
 renderProjects();
 renderVercelTable();
 renderIosApps();
+loadPublications().catch((error) => {
+  if (publicationList) {
+    publicationList.setAttribute("aria-busy", "false");
+    publicationList.textContent = isEnglish
+      ? "The publication list could not be loaded."
+      : "論文リストを読み込めませんでした。";
+  }
+  console.warn(error.message);
+});
 loadWhatsNew().catch((error) => console.warn(error.message));
 loadCodexChoice().catch((error) => {
   codexChoiceSection?.setAttribute("aria-busy", "false");

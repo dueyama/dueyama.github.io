@@ -239,7 +239,7 @@
             </p>
             <div class="theme-links">
               <a href="https://gray-scott-3d.vercel.app/">Gray-Scott 3D</a>
-              <a href="https://sites.google.com/site/dueyama/publications">Publications</a>
+              <a href="#archive" data-select-collection="publications">Publications</a>
             </div>
           </article>
 
@@ -290,7 +290,7 @@
             <p><strong>Point</strong> Research on self-replicating patterns begun in the 1990s expanded through self-destruction, spatiotemporal chaos, and three-dimensional Turing patterns. It now reaches a 3D system anyone can run in a browser.</p>
             <p><strong>Why I chose it</strong> For Ueyama, making is not merely a way to present a result; it is a way to understand what remains unclear. Equations, papers, simulation, and WebGL form one unusually legible line of inquiry.</p>
             <div class="curation-links">
-              <a href="https://sites.google.com/site/dueyama/publications">Publications</a>
+              <a href="#archive" data-select-collection="publications">Publications</a>
               <a href="https://gray-scott-3d.vercel.app/">Gray-Scott 3D</a>
             </div>
           </article>
@@ -376,7 +376,8 @@
         </div>
 
         <div class="collection-tabs" role="tablist" aria-label="Public work collections">
-          <button class="collection-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="collection-github" data-collection="github">GitHub</button>
+          <button class="collection-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="collection-publications" data-collection="publications">Papers</button>
+          <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-github" data-collection="github">GitHub</button>
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-vercel" data-collection="vercel">Vercel</button>
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-ios" data-collection="ios">iOS</button>
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-writing" data-collection="writing">Writing</button>
@@ -384,7 +385,30 @@
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-music" data-collection="music">Music</button>
         </div>
 
-        <div class="collection-panel is-active" id="collection-github" role="tabpanel" data-collection-panel="github">
+        <div class="collection-panel is-active" id="collection-publications" role="tabpanel" data-collection-panel="publications">
+          <div class="panel-heading publication-panel-heading">
+            <div><p class="kicker">Publications</p><h3>Papers and research output, 1993–2025</h3></div>
+            <a class="panel-external-link" href="https://sites.google.com/site/dueyama/publications">Original record</a>
+          </div>
+          <div class="publication-toolbar">
+            <div class="publication-filter-group" role="group" aria-label="Publication category">
+              <button class="publication-filter-button is-active" type="button" data-publication-filter="peer-reviewed" aria-pressed="true">Peer-reviewed <span data-publication-total="peer-reviewed">37</span></button>
+              <button class="publication-filter-button" type="button" data-publication-filter="non-peer-reviewed" aria-pressed="false">Other papers <span data-publication-total="non-peer-reviewed">17</span></button>
+              <button class="publication-filter-button" type="button" data-publication-filter="misc" aria-pressed="false">Other writing <span data-publication-total="misc">8</span></button>
+              <button class="publication-filter-button" type="button" data-publication-filter="all" aria-pressed="false">All <span data-publication-total="all">62</span></button>
+            </div>
+            <label class="publication-search" for="publication-search">
+              <span>Search</span>
+              <input id="publication-search" type="search" autocomplete="off" placeholder="Title, author, or journal">
+            </label>
+          </div>
+          <p class="collection-note publication-count" id="publication-count">Loading publication data.</p>
+          <ol class="publication-list" id="publication-list" aria-live="polite" aria-busy="true"></ol>
+          <p class="publication-empty" id="publication-empty" hidden>No matching record was found.</p>
+          <button class="show-more-button publication-toggle" id="publication-toggle" type="button" hidden>Show all peer-reviewed papers</button>
+        </div>
+
+        <div class="collection-panel" id="collection-github" role="tabpanel" data-collection-panel="github" hidden>
           <div class="panel-heading">
             <div><p class="kicker">GitHub</p><h3>Public code and research repositories</h3></div>
             <div class="filter-group" role="group" aria-label="Project filters">
@@ -429,7 +453,7 @@
         <div class="collection-panel" id="collection-media" role="tabpanel" data-collection-panel="media" hidden>
           <div class="panel-heading">
             <div><p class="kicker">Publications / Press &amp; Media</p><h3>Authored work, interviews, and appearances</h3></div>
-            <a class="panel-external-link" href="https://sites.google.com/site/dueyama/publications">Research publications</a>
+            <a class="panel-external-link" href="#archive" data-select-collection="publications">Open papers</a>
           </div>
           <div class="media-toolbar">
             <p class="collection-note" id="press-media-count">Loading verified records.</p>
@@ -440,7 +464,7 @@
               <button class="media-filter-button" type="button" data-media-filter="broadcast" aria-pressed="false">TV &amp; Radio</button>
             </div>
           </div>
-          <p class="media-intro">The complete research-paper list remains on the official website. This index focuses on authored magazine and public-facing work, interviews, profiles, and broadcasts.</p>
+          <p class="media-intro">Research papers and reports now live in the Papers tab. This index focuses on authored magazine and public-facing work, interviews, profiles, and broadcasts.</p>
           <div class="media-list" id="press-media-list" aria-live="polite" aria-busy="true"></div>
         </div>
 
@@ -485,6 +509,6 @@
       </section>
     </main>
 
-    <script src="../script.js?v=20260722-press-1" defer></script>
+    <script src="../script.js?v=20260722-publications-1" defer></script>
   </body>
 </html>

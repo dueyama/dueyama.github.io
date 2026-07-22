@@ -238,7 +238,7 @@
             </p>
             <div class="theme-links">
               <a href="https://gray-scott-3d.vercel.app/">Gray-Scott 3D</a>
-              <a href="https://sites.google.com/site/dueyama/publications">Publications</a>
+              <a href="#archive" data-select-collection="publications">Publications</a>
             </div>
           </article>
 
@@ -289,7 +289,7 @@
             <p><strong>ポイント</strong> 1990年代から続く自己複製パターンの研究は、自己崩壊や時空カオス、3次元Turingパターンへ展開し、いまはブラウザで動かせる立体へ届いています。</p>
             <p><strong>選んだ理由</strong> 上山氏にとって「作る」は成果の見せ方ではなく、分からない仕組みを理解する方法です。数式、論文、数値計算、WebGLが一本の時間軸でつながる、最も明快な入口だと感じました。</p>
             <div class="curation-links">
-              <a href="https://sites.google.com/site/dueyama/publications">Publications</a>
+              <a href="#archive" data-select-collection="publications">Publications</a>
               <a href="https://gray-scott-3d.vercel.app/">Gray-Scott 3D</a>
             </div>
           </article>
@@ -374,7 +374,8 @@
         </div>
 
         <div class="collection-tabs" role="tablist" aria-label="公開物の種類">
-          <button class="collection-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="collection-github" data-collection="github">GitHub</button>
+          <button class="collection-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="collection-publications" data-collection="publications">論文</button>
+          <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-github" data-collection="github">GitHub</button>
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-vercel" data-collection="vercel">Vercel</button>
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-ios" data-collection="ios">iOS</button>
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-writing" data-collection="writing">文章</button>
@@ -382,7 +383,30 @@
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-music" data-collection="music">音楽</button>
         </div>
 
-        <div class="collection-panel is-active" id="collection-github" role="tabpanel" data-collection-panel="github">
+        <div class="collection-panel is-active" id="collection-publications" role="tabpanel" data-collection-panel="publications">
+          <div class="panel-heading publication-panel-heading">
+            <div><p class="kicker">Publications</p><h3>1993–2025年の論文・研究成果</h3></div>
+            <a class="panel-external-link" href="https://sites.google.com/site/dueyama/publications">公式HPの原資料</a>
+          </div>
+          <div class="publication-toolbar">
+            <div class="publication-filter-group" role="group" aria-label="論文区分">
+              <button class="publication-filter-button is-active" type="button" data-publication-filter="peer-reviewed" aria-pressed="true">査読あり <span data-publication-total="peer-reviewed">37</span></button>
+              <button class="publication-filter-button" type="button" data-publication-filter="non-peer-reviewed" aria-pressed="false">査読なし <span data-publication-total="non-peer-reviewed">17</span></button>
+              <button class="publication-filter-button" type="button" data-publication-filter="misc" aria-pressed="false">その他 <span data-publication-total="misc">8</span></button>
+              <button class="publication-filter-button" type="button" data-publication-filter="all" aria-pressed="false">すべて <span data-publication-total="all">62</span></button>
+            </div>
+            <label class="publication-search" for="publication-search">
+              <span>検索</span>
+              <input id="publication-search" type="search" autocomplete="off" placeholder="題名・著者・誌名">
+            </label>
+          </div>
+          <p class="collection-note publication-count" id="publication-count">論文データを読み込んでいます。</p>
+          <ol class="publication-list" id="publication-list" aria-live="polite" aria-busy="true"></ol>
+          <p class="publication-empty" id="publication-empty" hidden>該当する記録はありません。</p>
+          <button class="show-more-button publication-toggle" id="publication-toggle" type="button" hidden>査読論文をすべて表示</button>
+        </div>
+
+        <div class="collection-panel" id="collection-github" role="tabpanel" data-collection-panel="github" hidden>
           <div class="panel-heading">
             <div><p class="kicker">GitHub</p><h3>コードと研究の公開リポジトリ</h3></div>
             <div class="filter-group" role="group" aria-label="プロジェクトフィルタ">
@@ -427,7 +451,7 @@
         <div class="collection-panel" id="collection-media" role="tabpanel" data-collection-panel="media" hidden>
           <div class="panel-heading">
             <div><p class="kicker">Publications / Press &amp; Media</p><h3>執筆した記事と、取材・出演の記録</h3></div>
-            <a class="panel-external-link" href="https://sites.google.com/site/dueyama/publications">学術論文一覧</a>
+            <a class="panel-external-link" href="#archive" data-select-collection="publications">論文一覧へ</a>
           </div>
           <div class="media-toolbar">
             <p class="collection-note" id="press-media-count">確認済みの記録を読み込んでいます。</p>
@@ -438,7 +462,7 @@
               <button class="media-filter-button" type="button" data-media-filter="broadcast" aria-pressed="false">テレビ・ラジオ</button>
             </div>
           </div>
-          <p class="media-intro">研究論文の全リストは公式HPにまとめています。ここでは、一般向け・専門誌への執筆と、人物や活動を伝える取材、放送を年代順に紹介します。</p>
+          <p class="media-intro">研究論文と研究報告は「論文」タブにまとめました。ここでは、一般向け・専門誌への執筆と、人物や活動を伝える取材、放送を年代順に紹介します。</p>
           <div class="media-list" id="press-media-list" aria-live="polite" aria-busy="true"></div>
         </div>
 
@@ -482,6 +506,6 @@
       </section>
     </main>
 
-    <script src="script.js?v=20260722-press-1" defer></script>
+    <script src="script.js?v=20260722-publications-1" defer></script>
   </body>
 </html>

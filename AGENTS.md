@@ -31,7 +31,7 @@ The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `
 - The first version grew too long because HP, curation, Suno, iOS, GitHub, and Vercel were all treated as equally large sections.
 - The page was reorganized around three ideas instead of publishing platforms: making mathematics tangible, building tools from lived experience, and turning memory and time into form.
 - Codex Curation now leads with three substantial selections. Additional picks stay available in a collapsed shelf rather than extending the initial page.
-- GitHub, Vercel, iOS, writing, and music now share one tabbed public-work index. Only one collection is visible at a time, and GitHub initially shows six repositories.
+- Papers, GitHub, Vercel, iOS, writing, press, and music now share one tabbed public-work index. Only one collection is visible at a time; papers initially show the latest 12 peer-reviewed entries, and GitHub initially shows six repositories.
 - Keep the homepage as a single gathering place for now. Prefer progressive disclosure over splitting it into many small pages unless the collection becomes substantially larger.
 - A quiet visual index below the hero uses three images from the actual work: a running Gray-Scott 3D simulation, the Omoi Altar App Store icon, and Blockchain Jewelry artwork. Keep this selection small and meaningful rather than adding decorative images throughout the page.
 - The later Sol design pass made the site feel like an edited research-and-works archive: a strong typographic hero, a dark profile plate, an asymmetric strip of real project images, crisp section rules, and restrained teal, gold, and coral accents. Preserve that editorial tension instead of drifting back toward generic floating profile cards.
@@ -104,11 +104,13 @@ The strongest reading was not simply "mathematician + priest + developer." Acros
 
 ## Publications and Media
 
-The public index lives in `data/press-media.json`. Start authored-work research from the official HP publication page, which includes the entries for 数学セミナー and 数理科学 that may not surface reliably in an ordinary name search. Use publisher, NDL, or CiNii records to strengthen bibliographic details when available.
+The public academic bibliography lives in `data/publications.json`. It mirrors 37 peer-reviewed papers, 17 non-peer-reviewed papers and reports, and eight miscellaneous authored works from the official HP. Confirmed DOI metadata supplies normalized authors, title, venue, volume, issue, and pages where available; source wording, rejected DOI candidates, and audit notes remain under gitignored `private/publications/`. Run `node scripts/check-publications.mjs` after every public bibliography edit.
+
+The separate press and media index lives in `data/press-media.json`. Start authored-work research from the official HP publication page, which includes the entries for 数学セミナー and 数理科学 that may not surface reliably in an ordinary name search. Use publisher, NDL, or CiNii records to strengthen bibliographic details when available.
 
 For interviews, features, television, radio, newspapers, and web coverage, prefer an official program or publisher page and keep independent public records as additional sources. A personal note can provide useful context, but should not be the only evidence when an external record exists. Group a finite series such as the eight 山口新聞 columns into one public item and place its individual links under collapsed source details.
 
-Do not publish a magazine name, issue, date, page range, appearance, or quote that has not been verified. Keep uncertain candidates such as the presently unidentified 月刊住職 item in `private/profile-maintenance/press-media-catalog.csv` until a source is found. Run `node scripts/check-press-media.mjs` after every public-data edit. The complete academic-paper bibliography stays on the official HP rather than being copied into this compact index.
+Do not publish a magazine name, issue, date, page range, appearance, or quote that has not been verified. Keep uncertain candidates such as the presently unidentified 月刊住職 item in `private/profile-maintenance/press-media-catalog.csv` until a source is found. Run `node scripts/check-press-media.mjs` after every press-data edit.
 
 ## Weekly Profile Maintenance
 
