@@ -1,41 +1,73 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T15:11:11.950Z",
+  "generatedAt": "2026-07-25T15:17:04.373Z",
   "period": {
-    "start": "2026-07-18",
-    "end": "2026-07-19"
+    "start": "2026-07-20",
+    "end": "2026-07-26"
   },
   "items": [
     {
-      "id": "project-primeportrait-maker-2-6",
-      "kind": "project",
-      "date": "2026-07-18",
-      "url": "https://primeportrait-maker.vercel.app/",
+      "id": "note-templedb-complete-2026-07-23",
+      "kind": "note",
+      "date": "2026-07-23",
+      "url": "https://note.com/daishin_ueyama/n/n64cc5d9fa9d7",
       "ja": {
-        "label": "Webアプリアップデート",
-        "title": "PrimePortrait Maker 2.6",
-        "summary": "保存PNGの数字を画面表示に近い密度へ拡大し、素数肖像をより読みやすく。アプリアイコンと著作権フッターも加わりました。"
+        "label": "新着note",
+        "title": "「お寺のDB（TempleDB)が完成した」",
+        "summary": "古い寺院管理データをAIとともに実運用のTempleDBへ移した134日を公開。移行、復元確認、一般公開へ向けた設計までを振り返ります。"
       },
       "en": {
-        "label": "Web app update",
-        "title": "PrimePortrait Maker 2.6",
-        "summary": "Exported PNG digits are now denser and closer to the on-screen grid for better readability; the release also adds an app icon and copyright footer."
+        "label": "New note essay",
+        "title": "“The temple database, TempleDB, is complete”",
+        "summary": "A new essay traces 134 days of turning legacy temple records into a live TempleDB, including migration, restore testing, and preparations for a public release."
       }
     },
     {
-      "id": "suno-donnyu-2026-07-19-gains",
+      "id": "suno-donnyu-three-new-songs-2026-07-25",
       "kind": "suno",
-      "date": "2026-07-19",
+      "date": "2026-07-25",
       "url": "https://suno.com/@donnyu",
       "ja": {
         "label": "Suno",
-        "title": "DonnyU、再生413回・いいね4件増",
-        "summary": "公開41曲の合計は34,137再生・245いいねに。期間内では「Lanterns in the Sky」が146再生増で最大でした。"
+        "title": "DonnyU、新曲3曲を公開",
+        "summary": "「Love Me in Real Life」「Tap, Tap, No One Claps」「I’ll Remember Us」を公開。公開44曲となり、今週は5,409再生・26いいね増（累計39,546／271）。"
       },
       "en": {
         "label": "Suno",
-        "title": "DonnyU adds 413 plays and 4 likes",
-        "summary": "Across 41 public songs, totals reached 34,137 plays and 245 likes; “Lanterns in the Sky” led the interval with 146 new plays."
+        "title": "DonnyU releases three new songs",
+        "summary": "“Love Me in Real Life,” “Tap, Tap, No One Claps,” and “I’ll Remember Us” joined the 44-song catalog; the week added 5,409 plays and 26 likes, reaching 39,546 and 271."
+      }
+    },
+    {
+      "id": "project-kobayashi-phase-field-lab-2026-07-24",
+      "kind": "project",
+      "date": "2026-07-24",
+      "url": "https://kobayashi-phase-field-lab.vercel.app/",
+      "ja": {
+        "label": "Webアプリ更新",
+        "title": "フェーズフィールド・デンドライト・ラボ",
+        "summary": "アプリ全体を日英対応。2D・3DのWebGPU実験版、CPU自動切替、計算速度表示、端末別の実行設定も加わりました。"
+      },
+      "en": {
+        "label": "Web app update",
+        "title": "Phase-Field Dendrite Lab",
+        "summary": "The full app is now bilingual, with experimental 2D/3D WebGPU backends, automatic CPU fallback, compute-rate readouts, and device-aware runtime profiles."
+      }
+    },
+    {
+      "id": "project-gray-scott-3d-2026-07-23",
+      "kind": "project",
+      "date": "2026-07-23",
+      "url": "https://gray-scott-3d.vercel.app/",
+      "ja": {
+        "label": "Webアプリ更新",
+        "title": "Gray-Scott 3D",
+        "summary": "GPGPUの濃度場からVolume表示へ直接描画する構成に更新。端末別のAuto・高品質・省電力モードが、数値状態を変えず表示負荷を調整します。"
+      },
+      "en": {
+        "label": "Web app update",
+        "title": "Gray-Scott 3D",
+        "summary": "Volume rendering now samples the GPGPU field directly, while device-aware Auto, High quality, and Power saving modes tune visual load without changing the numerical state."
       }
     }
   ]

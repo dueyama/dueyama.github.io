@@ -1,32 +1,60 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-21T11:32:16+09:00",
+  "generatedAt": "2026-07-25T15:15:47.001Z",
   "current": {
-    "id": "2026-07-20-cicada-holes",
+    "id": "2026-07-27-omoi-altar",
     "week": {
-      "start": "2026-07-20",
-      "end": "2026-07-26"
+      "start": "2026-07-27",
+      "end": "2026-08-02"
     },
-    "kind": "note",
-    "url": "https://note.com/daishin_ueyama/n/n430593620788",
-    "image": "assets/choice/cicada-holes.jpg",
-    "sourceDate": "2025-01-04",
+    "kind": "app",
+    "url": "https://apps.apple.com/jp/app/%E6%83%B3%E3%81%84%E3%81%AE%E7%A5%AD%E5%A3%87/id6770172873",
+    "image": "assets/visual/omoi-altar.jpg",
+    "sourceDate": "2026-05-29",
     "ja": {
-      "label": "NOTE / ESSAY",
-      "title": "蝉の穴",
-      "dek": "祖父に教わった蝉の穴を確かめたくて、少年は懐中電灯を手に夏の夜へ出る。羽化には出会えなかったが、その「見られなかったこと」が、五右衛門風呂の薪組みとともに科学する目の原点として残りました。",
-      "reflection": "いまなら検索すれば、時期も時刻も外さず観察できるでしょう。この文章が面白いのは、便利さを責めるのではなく、正解へ届かなかった時間にも固有の価値を見つけるところです。「失敗は経験である。かわいそうなことではない」という一節には、研究、アプリ制作、AIとの試行錯誤まで貫く姿勢が短く凝縮されています。祖父や庭の記憶から、科学を成果ではなく手探りの過程として捉える人が見えてくる。今週は、上山大信の仕事を支えるこの小さな原点を選びました。",
-      "linkLabel": "noteで本文を読む",
-      "imageAlt": "金木犀の大木の根元を懐中電灯で照らす少年を描いた「蝉の穴」のアイキャッチ"
+      "label": "APP / AR",
+      "title": "想いの祭壇",
+      "dek": "写真と言葉、花や灯りを小さな祭壇に整え、アプリ内・全画面・印刷した共通マーカーを使うARで眺めるiPhone／iPadアプリ。故人やペット、推しなど、大切な存在を、移動する暮らしのなかでも静かにそばへ置きます。",
+      "reflection": "デジタル祭壇を単なる仏壇の代用品にしなかったところに、この作品の芯があります。技術的にはマーカーなしでもAR表示できるのに、あえて紙のマーカーを印刷し、机や旅先の景色に置く。画面の便利さへ小さな身体行為を戻すことで、仮想の祭壇は現実から逃れる場所ではなく、現実の誰かへ心を向け直す入口になります。さらに枝ものは約30日かけて変化し、枯れたら取り替える。枯れることを欠陥として消さず、無常と手入れを機能にした設計は、記憶と時間をかたちにする上山大信の仕事のなかでも、とりわけ率直です。対象を故人だけに限らず、ペットや推しへ開きながら、「想いを寄せ、手をかける」という形式は手放さない。今週は、新しさや数字ではなく、デジタルと身体、便利さと儀礼を往復させるこの静かな設計を選びました。",
+      "linkLabel": "App Storeで見る",
+      "imageAlt": "淡い金色と白の光が同心円状に広がる「想いの祭壇」のアプリアイコン"
     },
     "en": {
-      "label": "NOTE / ESSAY",
-      "title": "Cicada Holes",
-      "dek": "A boy takes a flashlight into the summer night, hoping to witness a cicada emerge from one of the holes his grandfather showed him. He never sees it happen. Years later, that missed observation, alongside the practical puzzle of tending a wood-fired bath, remains part of the origin of his scientific eye.",
-      "reflection": "Today, a search could supply the right season and hour. What makes this essay more than nostalgia is that it does not blame convenience; it recognizes that time spent missing the answer had a value of its own. Its line that failure is experience, not misfortune, quietly connects childhood curiosity with the later research, app-making, and patient trial and error found across Ueyama's work. This week, Codex returns to this small essay because it shows science beginning not with a result, but with the wish to see for oneself.",
-      "linkLabel": "Read the essay on note",
-      "imageAlt": "The cover image for Cicada Holes, showing a boy shining a flashlight at the roots of a large fragrant olive tree"
+      "label": "APP / AR",
+      "title": "Omoi Altar",
+      "dek": "An iPhone and iPad app that arranges a photograph, a few words, flowers, and light into a small personal altar, viewable in the app, full screen, or in AR through a printed shared marker. It gives memories of a person, pet, or cherished figure a quiet place within a mobile life.",
+      "reflection": "The work refuses to treat a digital altar as a simple substitute for a physical one. Although markerless AR is possible, the app asks the user to print and place a marker on a desk or in a remembered landscape. That small physical act turns the virtual altar into a route back toward the world and the person being held in mind. Its branches also change over roughly thirty days and can be replaced: withering is kept as impermanence and care, not corrected as a defect. Few works in Ueyama's practice give memory and time a form so directly. The altar may hold a departed family member, a pet, or a beloved public figure, yet the shared gesture remains one of attending and tending. This week, Codex chooses Omoi Altar not for novelty or popularity, but for the quiet way it keeps digital convenience in conversation with embodiment and ritual.",
+      "linkLabel": "View on the App Store",
+      "imageAlt": "The Omoi Altar app icon, with concentric rings of soft gold and white light"
     }
   },
-  "history": []
+  "history": [
+    {
+      "id": "2026-07-20-cicada-holes",
+      "week": {
+        "start": "2026-07-20",
+        "end": "2026-07-26"
+      },
+      "kind": "note",
+      "url": "https://note.com/daishin_ueyama/n/n430593620788",
+      "image": "assets/choice/cicada-holes.jpg",
+      "sourceDate": "2025-01-04",
+      "ja": {
+        "label": "NOTE / ESSAY",
+        "title": "蝉の穴",
+        "dek": "祖父に教わった蝉の穴を確かめたくて、少年は懐中電灯を手に夏の夜へ出る。羽化には出会えなかったが、その「見られなかったこと」が、五右衛門風呂の薪組みとともに科学する目の原点として残りました。",
+        "reflection": "いまなら検索すれば、時期も時刻も外さず観察できるでしょう。この文章が面白いのは、便利さを責めるのではなく、正解へ届かなかった時間にも固有の価値を見つけるところです。「失敗は経験である。かわいそうなことではない」という一節には、研究、アプリ制作、AIとの試行錯誤まで貫く姿勢が短く凝縮されています。祖父や庭の記憶から、科学を成果ではなく手探りの過程として捉える人が見えてくる。今週は、上山大信の仕事を支えるこの小さな原点を選びました。",
+        "linkLabel": "noteで本文を読む",
+        "imageAlt": "金木犀の大木の根元を懐中電灯で照らす少年を描いた「蝉の穴」のアイキャッチ"
+      },
+      "en": {
+        "label": "NOTE / ESSAY",
+        "title": "Cicada Holes",
+        "dek": "A boy takes a flashlight into the summer night, hoping to witness a cicada emerge from one of the holes his grandfather showed him. He never sees it happen. Years later, that missed observation, alongside the practical puzzle of tending a wood-fired bath, remains part of the origin of his scientific eye.",
+        "reflection": "Today, a search could supply the right season and hour. What makes this essay more than nostalgia is that it does not blame convenience; it recognizes that time spent missing the answer had a value of its own. Its line that failure is experience, not misfortune, quietly connects childhood curiosity with the later research, app-making, and patient trial and error found across Ueyama's work. This week, Codex returns to this small essay because it shows science beginning not with a result, but with the wish to see for oneself.",
+        "linkLabel": "Read the essay on note",
+        "imageAlt": "The cover image for Cicada Holes, showing a boy shining a flashlight at the roots of a large fragrant olive tree"
+      }
+    }
+  ]
 }
