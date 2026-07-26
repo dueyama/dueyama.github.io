@@ -1,26 +1,47 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-22",
+  "generatedAt": "2026-07-26",
   "profileUrl": "https://x.com/dueyama",
   "current": {
-    "id": "2079414733393047769",
-    "selectedAt": "2026-07-22",
-    "postedAt": "2026-07-21T03:54:00+09:00",
-    "url": "https://x.com/dueyama/status/2079414733393047769",
+    "id": "2081176532928827558",
+    "selectedAt": "2026-07-26",
+    "postedAt": "2026-07-26T00:35:00+09:00",
+    "url": "https://x.com/dueyama/status/2081176532928827558",
     "ja": {
-      "title": "「価値がない」という判断も、疑ってみる",
-      "excerpt": "やる価値もないから誰もやってない研究ってのがあるから、新規性だけではダメだと以前怒られたことがあるな。その通りだ。\n\nただ、やる価値もないが思い込みの場合もあるので注意は必要だ。",
-      "reason": "「新規性だけでは足りない」という忠告を受け入れたうえで、価値の有無を決める側の思い込みへ視線を返しているからです。短い投稿の中に、反省と再検討が二段で入っています。",
-      "reflection": "誰も手をつけていない研究は、未開拓の可能性かもしれないし、ただ必要とされていないのかもしれない。この投稿の面白さは、その二択で終わらず、「必要とされていない」という判定自体も時代や流行、測りやすさに左右される、と読める余白を残すところです。新規性を免罪符にせず、既存の価値基準も絶対視しない。実際に叱られた記憶を、自説の正当化ではなく判断の両側を疑う材料にしている。その往復に、上山大信の思考の癖がよく出ています。",
+      "title": "「大きくする自己改善」と「原理を変える自己改善」",
+      "excerpt": "いま、AIの自己改善といっても、スケーリング側のなかで、より大きなモデルをより効率的にという意味での自己改善なら、今の技術で十分できるようになっていると思う。\n\nその範囲で超知能までいけるかはよくわからないが、行けるという判断での今の競争と理解している。\n\n一方で、新たなブレイクスルーに向けた自己改善は、今のAIにはまだその能力はないんじゃないかと思う。（いくつか、研究でAI回していての実感としての感想。）\n\nただ、近々来ると言われるGPT-6や、個人的にはあまり根拠なく前から節目になると思っているGPT-7は、もしかしたら原理的な部分まで込めて自己改善できるようになるかもしれない。\n\nその時が本当のシンギュラリティではないかと思う。\n\nなので、GPT-7 だとすると、来年か再来年かなぁ。\n\nそのあたり。",
+      "reason": "AIの「自己改善」を一語で済ませず、既存のスケーリング路線を効率化する能力と、新しい原理を生む能力に分けているからです。研究でAIを実際に回した手触りから現在地を測りつつ、GPT-7という節目も断言ではなく仮説として置いています。",
+      "reflection": "この投稿で重要なのは、「GPT-7でシンギュラリティ」という年表そのものではありません。曖昧な「自己改善」を、既存の路線をより強く速く回す能力と、路線そのものを発見し直す能力に切り分けた点です。前者がすでに始まっているから競争は加速する。しかし後者は、性能曲線の延長だけでは測れない。上山はその境界を、外からの評論ではなく、自分の研究でAIを回した実感に引き寄せて判断しています。そのうえでGPT-6やGPT-7への期待を「根拠なく」と自分で割り引く。この自己懐疑があるため、投稿は予言ではなく観測仮説になる。シンギュラリティを単に人間より賢くなる瞬間ではなく、AIが改善すべき原理まで作り替え始める瞬間として定義し直したところに、この短文の芯があります。",
       "linkLabel": "Xで投稿を開く"
     },
     "en": {
-      "title": "Questioning the judgment that something has no value",
-      "excerpt": "There are studies no one pursues simply because they are not worth doing, so I was once told off for thinking novelty alone was enough. That was fair.\n\nBut sometimes “not worth doing” is itself an assumption, so we need to be careful.",
-      "reason": "It accepts the familiar warning that novelty alone is insufficient, then turns the same scrutiny back on those deciding what counts as worthwhile. In a very short post, reflection becomes a second act of reconsideration.",
-      "reflection": "An untouched problem can be a frontier, or it can simply be unnecessary. What makes this post interesting is that it does not stop at that binary: the judgment of “unnecessary” may itself depend on an era, a fashion, or what happens to be measurable. Novelty is not treated as an excuse, but inherited standards of value are not made absolute either. A memory of being corrected becomes material for questioning both sides of the decision rather than proving himself right. That back-and-forth is distinctly Ueyama.",
+      "title": "Self-improvement that scales, and self-improvement that changes the principles",
+      "excerpt": "By AI self-improvement today, I think current technology can already improve scaling: making larger models more efficient.\n\nI do not know whether that can reach superintelligence, but today's race seems based on the judgment that it can.\n\nI do not think today's AI can yet improve itself toward new breakthroughs. (That is my impression from using AI in several research projects.)\n\nStill, GPT-6, expected soon, or GPT-7, which I have long felt without much basis may mark a turning point, might improve itself at the level of fundamental principles.\n\nThat, I think, would be the real singularity.\n\nIf it is GPT-7, perhaps next year or the year after.\n\nAround then.",
+      "reason": "It refuses to treat “self-improvement” as one thing, separating the ability to optimize an existing scaling path from the ability to generate new principles. Ueyama measures the present boundary through the experience of actually using AI in research, while offering GPT-7 as a hypothesis rather than a proclamation.",
+      "reflection": "The most interesting part of this post is not its timetable for a GPT-7 singularity. It is the distinction hidden inside the vague phrase “self-improvement”: the capacity to run an existing path harder and faster, and the capacity to discover a different path altogether. The first is already accelerating the race. The second cannot be read straight off a performance curve. Ueyama locates that boundary not as a distant commentator but through the practical feel of using AI in his own research. He then discounts his expectation for GPT-6 or GPT-7 by openly calling it weakly grounded. That self-skepticism turns a prediction into an observational hypothesis. The post's real core is its redefinition of the singularity: not merely the moment AI becomes smarter than humans, but the moment it begins revising the principles by which it improves.",
       "linkLabel": "Open the post on X"
     }
   },
-  "history": []
+  "history": [
+    {
+      "id": "2079414733393047769",
+      "selectedAt": "2026-07-22",
+      "postedAt": "2026-07-21T03:54:00+09:00",
+      "url": "https://x.com/dueyama/status/2079414733393047769",
+      "ja": {
+        "title": "「価値がない」という判断も、疑ってみる",
+        "excerpt": "やる価値もないから誰もやってない研究ってのがあるから、新規性だけではダメだと以前怒られたことがあるな。その通りだ。\n\nただ、やる価値もないが思い込みの場合もあるので注意は必要だ。",
+        "reason": "「新規性だけでは足りない」という忠告を受け入れたうえで、価値の有無を決める側の思い込みへ視線を返しているからです。短い投稿の中に、反省と再検討が二段で入っています。",
+        "reflection": "誰も手をつけていない研究は、未開拓の可能性かもしれないし、ただ必要とされていないのかもしれない。この投稿の面白さは、その二択で終わらず、「必要とされていない」という判定自体も時代や流行、測りやすさに左右される、と読める余白を残すところです。新規性を免罪符にせず、既存の価値基準も絶対視しない。実際に叱られた記憶を、自説の正当化ではなく判断の両側を疑う材料にしている。その往復に、上山大信の思考の癖がよく出ています。",
+        "linkLabel": "Xで投稿を開く"
+      },
+      "en": {
+        "title": "Questioning the judgment that something has no value",
+        "excerpt": "There are studies no one pursues simply because they are not worth doing, so I was once told off for thinking novelty alone was enough. That was fair.\n\nBut sometimes “not worth doing” is itself an assumption, so we need to be careful.",
+        "reason": "It accepts the familiar warning that novelty alone is insufficient, then turns the same scrutiny back on those deciding what counts as worthwhile. In a very short post, reflection becomes a second act of reconsideration.",
+        "reflection": "An untouched problem can be a frontier, or it can simply be unnecessary. What makes this post interesting is that it does not stop at that binary: the judgment of “unnecessary” may itself depend on an era, a fashion, or what happens to be measurable. Novelty is not treated as an excuse, but inherited standards of value are not made absolute either. A memory of being corrected becomes material for questioning both sides of the decision rather than proving himself right. That back-and-forth is distinctly Ueyama.",
+        "linkLabel": "Open the post on X"
+      }
+    }
+  ]
 }
