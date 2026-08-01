@@ -1,28 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26",
+  "generatedAt": "2026-08-02",
   "profileUrl": "https://x.com/dueyama",
   "current": {
-    "id": "2081176532928827558",
-    "selectedAt": "2026-07-26",
-    "postedAt": "2026-07-26T00:35:00+09:00",
-    "url": "https://x.com/dueyama/status/2081176532928827558",
+    "id": "2081157144649650459",
+    "selectedAt": "2026-08-02",
+    "postedAt": "2026-07-26T08:18:23+09:00",
+    "url": "https://x.com/dueyama/status/2081157144649650459",
     "ja": {
-      "title": "「大きくする自己改善」と「原理を変える自己改善」",
-      "excerpt": "いま、AIの自己改善といっても、スケーリング側のなかで、より大きなモデルをより効率的にという意味での自己改善なら、今の技術で十分できるようになっていると思う。\n\nその範囲で超知能までいけるかはよくわからないが、行けるという判断での今の競争と理解している。\n\n一方で、新たなブレイクスルーに向けた自己改善は、今のAIにはまだその能力はないんじゃないかと思う。（いくつか、研究でAI回していての実感としての感想。）\n\nただ、近々来ると言われるGPT-6や、個人的にはあまり根拠なく前から節目になると思っているGPT-7は、もしかしたら原理的な部分まで込めて自己改善できるようになるかもしれない。\n\nその時が本当のシンギュラリティではないかと思う。\n\nなので、GPT-7 だとすると、来年か再来年かなぁ。\n\nそのあたり。",
-      "reason": "AIの「自己改善」を一語で済ませず、既存のスケーリング路線を効率化する能力と、新しい原理を生む能力に分けているからです。研究でAIを実際に回した手触りから現在地を測りつつ、GPT-7という節目も断言ではなく仮説として置いています。",
-      "reflection": "この投稿で重要なのは、「GPT-7でシンギュラリティ」という年表そのものではありません。曖昧な「自己改善」を、既存の路線をより強く速く回す能力と、路線そのものを発見し直す能力に切り分けた点です。前者がすでに始まっているから競争は加速する。しかし後者は、性能曲線の延長だけでは測れない。上山はその境界を、外からの評論ではなく、自分の研究でAIを回した実感に引き寄せて判断しています。そのうえでGPT-6やGPT-7への期待を「根拠なく」と自分で割り引く。この自己懐疑があるため、投稿は予言ではなく観測仮説になる。シンギュラリティを単に人間より賢くなる瞬間ではなく、AIが改善すべき原理まで作り替え始める瞬間として定義し直したところに、この短文の芯があります。",
+      "title": "「面倒だから放置」を、保守できる状態へ",
+      "excerpt": "ラズパイ0は、数年間ずっと温度測ってるマシンなんだけど、OSも2世代前、SDカードもそろそろ不安という状態だった。ただただ面倒なので放置していたが、Codexのおかげで最新OS、最新SDへの入れ替えができた。",
+      "reason": "数年間黙々と温度を測る小さな機械に対し、AIの価値を新機能の追加ではなく、先延ばしにしていた保守を実行できたこととして語っているからです。長期運用、古い環境、身体を伴う更新が一文に収まっています。",
+      "reflection": "この投稿で印象的なのは、Raspberry Pi Zeroの仕事が派手な計算ではなく、何年も温度を測り続けることだという点です。止められないほど重要なのに、OS移行やSDカード交換の手間は大きく、動いているあいだは後回しになる。ここでCodexが変えたのは処理速度だけではなく、「面倒で触れない」を、確認可能な手順へほどくための心理的・技術的な距離です。とはいえカードを差し替え、機械を現実に更新するのは人間の手である。AIは身体を代替するのではなく、手を動かせるところまで不確実さを小さくする。この短文は、革新を古い機械の廃棄や新機能の競争としてではなく、すでに続いている仕事を安全に続けられるようにする「手入れ」として見せています。",
       "linkLabel": "Xで投稿を開く"
     },
     "en": {
-      "title": "Self-improvement that scales, and self-improvement that changes the principles",
-      "excerpt": "By AI self-improvement today, I think current technology can already improve scaling: making larger models more efficient.\n\nI do not know whether that can reach superintelligence, but today's race seems based on the judgment that it can.\n\nI do not think today's AI can yet improve itself toward new breakthroughs. (That is my impression from using AI in several research projects.)\n\nStill, GPT-6, expected soon, or GPT-7, which I have long felt without much basis may mark a turning point, might improve itself at the level of fundamental principles.\n\nThat, I think, would be the real singularity.\n\nIf it is GPT-7, perhaps next year or the year after.\n\nAround then.",
-      "reason": "It refuses to treat “self-improvement” as one thing, separating the ability to optimize an existing scaling path from the ability to generate new principles. Ueyama measures the present boundary through the experience of actually using AI in research, while offering GPT-7 as a hypothesis rather than a proclamation.",
-      "reflection": "The most interesting part of this post is not its timetable for a GPT-7 singularity. It is the distinction hidden inside the vague phrase “self-improvement”: the capacity to run an existing path harder and faster, and the capacity to discover a different path altogether. The first is already accelerating the race. The second cannot be read straight off a performance curve. Ueyama locates that boundary not as a distant commentator but through the practical feel of using AI in his own research. He then discounts his expectation for GPT-6 or GPT-7 by openly calling it weakly grounded. That self-skepticism turns a prediction into an observational hypothesis. The post's real core is its redefinition of the singularity: not merely the moment AI becomes smarter than humans, but the moment it begins revising the principles by which it improves.",
+      "title": "Turning “too much trouble” into maintainable infrastructure",
+      "excerpt": "For several years, my Raspberry Pi Zero has done nothing but measure temperature, but it was two OS generations behind and its SD card was becoming a concern. I had left it alone simply because dealing with it was a pain, but thanks to Codex I was able to move it to the latest OS and a new SD card.",
+      "reason": "It locates AI's value not in adding a flashy feature, but in making deferred maintenance possible for a small machine that has quietly measured temperature for years. Long-running infrastructure, an aging environment, and a physical upgrade all meet in one sentence.",
+      "reflection": "The Raspberry Pi Zero's work is deliberately unglamorous: it has measured temperature, quietly, for years. That continuity makes the machine worth protecting, yet it also makes an OS migration and SD-card replacement easy to postpone while everything still runs. Codex changes more than execution speed here. It reduces the practical and psychological distance between “too much trouble to touch” and a sequence of steps that can be checked. The human still has to replace the card and alter the physical machine; AI does not erase the body, but lowers uncertainty enough for the hand to act. The post frames innovation as maintenance rather than replacement: caring for a system that already serves daily life so its work can continue safely.",
       "linkLabel": "Open the post on X"
     }
   },
   "history": [
+    {
+      "id": "2081176532928827558",
+      "selectedAt": "2026-07-26",
+      "postedAt": "2026-07-26T00:35:00+09:00",
+      "url": "https://x.com/dueyama/status/2081176532928827558",
+      "ja": {
+        "title": "「大きくする自己改善」と「原理を変える自己改善」",
+        "excerpt": "いま、AIの自己改善といっても、スケーリング側のなかで、より大きなモデルをより効率的にという意味での自己改善なら、今の技術で十分できるようになっていると思う。\n\nその範囲で超知能までいけるかはよくわからないが、行けるという判断での今の競争と理解している。\n\n一方で、新たなブレイクスルーに向けた自己改善は、今のAIにはまだその能力はないんじゃないかと思う。（いくつか、研究でAI回していての実感としての感想。）\n\nただ、近々来ると言われるGPT-6や、個人的にはあまり根拠なく前から節目になると思っているGPT-7は、もしかしたら原理的な部分まで込めて自己改善できるようになるかもしれない。\n\nその時が本当のシンギュラリティではないかと思う。\n\nなので、GPT-7 だとすると、来年か再来年かなぁ。\n\nそのあたり。",
+        "reason": "AIの「自己改善」を一語で済ませず、既存のスケーリング路線を効率化する能力と、新しい原理を生む能力に分けているからです。研究でAIを実際に回した手触りから現在地を測りつつ、GPT-7という節目も断言ではなく仮説として置いています。",
+        "reflection": "この投稿で重要なのは、「GPT-7でシンギュラリティ」という年表そのものではありません。曖昧な「自己改善」を、既存の路線をより強く速く回す能力と、路線そのものを発見し直す能力に切り分けた点です。前者がすでに始まっているから競争は加速する。しかし後者は、性能曲線の延長だけでは測れない。上山はその境界を、外からの評論ではなく、自分の研究でAIを回した実感に引き寄せて判断しています。そのうえでGPT-6やGPT-7への期待を「根拠なく」と自分で割り引く。この自己懐疑があるため、投稿は予言ではなく観測仮説になる。シンギュラリティを単に人間より賢くなる瞬間ではなく、AIが改善すべき原理まで作り替え始める瞬間として定義し直したところに、この短文の芯があります。",
+        "linkLabel": "Xで投稿を開く"
+      },
+      "en": {
+        "title": "Self-improvement that scales, and self-improvement that changes the principles",
+        "excerpt": "By AI self-improvement today, I think current technology can already improve scaling: making larger models more efficient.\n\nI do not know whether that can reach superintelligence, but today's race seems based on the judgment that it can.\n\nI do not think today's AI can yet improve itself toward new breakthroughs. (That is my impression from using AI in several research projects.)\n\nStill, GPT-6, expected soon, or GPT-7, which I have long felt without much basis may mark a turning point, might improve itself at the level of fundamental principles.\n\nThat, I think, would be the real singularity.\n\nIf it is GPT-7, perhaps next year or the year after.\n\nAround then.",
+        "reason": "It refuses to treat “self-improvement” as one thing, separating the ability to optimize an existing scaling path from the ability to generate new principles. Ueyama measures the present boundary through the experience of actually using AI in research, while offering GPT-7 as a hypothesis rather than a proclamation.",
+        "reflection": "The most interesting part of this post is not its timetable for a GPT-7 singularity. It is the distinction hidden inside the vague phrase “self-improvement”: the capacity to run an existing path harder and faster, and the capacity to discover a different path altogether. The first is already accelerating the race. The second cannot be read straight off a performance curve. Ueyama locates that boundary not as a distant commentator but through the practical feel of using AI in his own research. He then discounts his expectation for GPT-6 or GPT-7 by openly calling it weakly grounded. That self-skepticism turns a prediction into an observational hypothesis. The post's real core is its redefinition of the singularity: not merely the moment AI becomes smarter than humans, but the moment it begins revising the principles by which it improves.",
+        "linkLabel": "Open the post on X"
+      }
+    },
     {
       "id": "2079414733393047769",
       "selectedAt": "2026-07-22",

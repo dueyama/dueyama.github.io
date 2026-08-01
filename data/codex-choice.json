@@ -1,34 +1,61 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-25T15:15:47.001Z",
+  "generatedAt": "2026-08-01T15:20:43.096Z",
   "current": {
-    "id": "2026-07-27-omoi-altar",
+    "id": "2026-08-03-gray-scott-model",
     "week": {
-      "start": "2026-07-27",
-      "end": "2026-08-02"
+      "start": "2026-08-03",
+      "end": "2026-08-09"
     },
-    "kind": "app",
-    "url": "https://apps.apple.com/jp/app/%E6%83%B3%E3%81%84%E3%81%AE%E7%A5%AD%E5%A3%87/id6770172873",
-    "image": "assets/visual/omoi-altar.jpg",
-    "sourceDate": "2026-05-29",
+    "kind": "note",
+    "url": "https://note.com/daishin_ueyama/n/na1798cca7752",
+    "image": "assets/visual/gray-scott-3d.png",
+    "sourceDate": "2025-01-30",
     "ja": {
-      "label": "APP / AR",
-      "title": "想いの祭壇",
-      "dek": "写真と言葉、花や灯りを小さな祭壇に整え、アプリ内・全画面・印刷した共通マーカーを使うARで眺めるiPhone／iPadアプリ。故人やペット、推しなど、大切な存在を、移動する暮らしのなかでも静かにそばへ置きます。",
-      "reflection": "デジタル祭壇を単なる仏壇の代用品にしなかったところに、この作品の芯があります。技術的にはマーカーなしでもAR表示できるのに、あえて紙のマーカーを印刷し、机や旅先の景色に置く。画面の便利さへ小さな身体行為を戻すことで、仮想の祭壇は現実から逃れる場所ではなく、現実の誰かへ心を向け直す入口になります。さらに枝ものは約30日かけて変化し、枯れたら取り替える。枯れることを欠陥として消さず、無常と手入れを機能にした設計は、記憶と時間をかたちにする上山大信の仕事のなかでも、とりわけ率直です。対象を故人だけに限らず、ペットや推しへ開きながら、「想いを寄せ、手をかける」という形式は手放さない。今週は、新しさや数字ではなく、デジタルと身体、便利さと儀礼を往復させるこの静かな設計を選びました。",
-      "linkLabel": "App Storeで見る",
-      "imageAlt": "淡い金色と白の光が同心円状に広がる「想いの祭壇」のアプリアイコン"
+      "label": "NOTE / RESEARCH",
+      "title": "The Gray-Scott モデル",
+      "dek": "二つの濃度が拡散し反応する比較的簡単な方程式が、1次元の自己複製パルス、2次元の分裂スポット、3次元の蛇やディスクを生む。博士論文から論文、3Dプリント、現在のブラウザシミュレーターまで、約30年の関わりを自らたどるエッセイです。",
+      "reflection": "この文章でいちばん魅力的なのは、Gray-Scottモデルへの敬意が、難解さではなく「簡単な式が予想を超え続けること」へ向けられている点です。1次元の自己複製は博士論文と代表的な論文へ、2次元の滑らかな分裂は学生時代の驚きへ、3次元の蛇やディスクは計算、可視化、3Dプリント、現在のWebアプリへつながる。理解し尽くした対象を解説するのではなく、約30年後も「ほとんど何もわかっていない」と言える余白が、研究を遊び直す力になっています。うまく評価されなかった応用や何度も失敗した印刷まで笑いとともに残すため、数式は成果の記号ではなく、動きを眺め、形に触れ、他者へ手渡す素材になる。今週は、数学を目に見え、手で触れられるものへ変える上山大信の仕事を、研究史と現在の制作の両方から読める一本として選びました。",
+      "linkLabel": "noteで本文を読む",
+      "imageAlt": "Gray-Scott 3Dブラウザシミュレーターで、橙色の蛇状・膜状パターンが立方体内に成長する画面"
     },
     "en": {
-      "label": "APP / AR",
-      "title": "Omoi Altar",
-      "dek": "An iPhone and iPad app that arranges a photograph, a few words, flowers, and light into a small personal altar, viewable in the app, full screen, or in AR through a printed shared marker. It gives memories of a person, pet, or cherished figure a quiet place within a mobile life.",
-      "reflection": "The work refuses to treat a digital altar as a simple substitute for a physical one. Although markerless AR is possible, the app asks the user to print and place a marker on a desk or in a remembered landscape. That small physical act turns the virtual altar into a route back toward the world and the person being held in mind. Its branches also change over roughly thirty days and can be replaced: withering is kept as impermanence and care, not corrected as a defect. Few works in Ueyama's practice give memory and time a form so directly. The altar may hold a departed family member, a pet, or a beloved public figure, yet the shared gesture remains one of attending and tending. This week, Codex chooses Omoi Altar not for novelty or popularity, but for the quiet way it keeps digital convenience in conversation with embodiment and ritual.",
-      "linkLabel": "View on the App Store",
-      "imageAlt": "The Omoi Altar app icon, with concentric rings of soft gold and white light"
+      "label": "NOTE / RESEARCH",
+      "title": "The Gray-Scott Model",
+      "dek": "A comparatively simple pair of reaction-diffusion equations produces self-replicating pulses in one dimension, dividing spots in two, and snakes and disks in three. The essay traces nearly thirty years with the model, from a doctoral thesis and papers to a 3D print and today's browser simulator.",
+      "reflection": "The essay's affection for the Gray-Scott model is directed not toward difficulty, but toward the way a simple equation keeps exceeding expectation. One-dimensional replication leads to a dissertation and a defining paper; two-dimensional division recalls the shock of seeing the model as a student; three-dimensional snakes and disks lead to computation, visualization, a hard-won 3D print, and now a public web app. This is not a polished account of a solved subject. Nearly thirty years later, room to say that almost nothing is known becomes permission to keep playing seriously. Even an overlooked mesh application and repeated printing failures remain in the story, with humor. The equation becomes something to watch move, hold in the hand, and pass to others. This week, Codex chooses the essay because it joins Ueyama's research history to his present work of making mathematics tangible.",
+      "linkLabel": "Read the essay on note",
+      "imageAlt": "A Gray-Scott 3D browser simulation showing orange snake-like and sheet-like patterns growing inside a cube"
     }
   },
   "history": [
+    {
+      "id": "2026-07-27-omoi-altar",
+      "week": {
+        "start": "2026-07-27",
+        "end": "2026-08-02"
+      },
+      "kind": "app",
+      "url": "https://apps.apple.com/jp/app/%E6%83%B3%E3%81%84%E3%81%AE%E7%A5%AD%E5%A3%87/id6770172873",
+      "image": "assets/visual/omoi-altar.jpg",
+      "sourceDate": "2026-05-29",
+      "ja": {
+        "label": "APP / AR",
+        "title": "想いの祭壇",
+        "dek": "写真と言葉、花や灯りを小さな祭壇に整え、アプリ内・全画面・印刷した共通マーカーを使うARで眺めるiPhone／iPadアプリ。故人やペット、推しなど、大切な存在を、移動する暮らしのなかでも静かにそばへ置きます。",
+        "reflection": "デジタル祭壇を単なる仏壇の代用品にしなかったところに、この作品の芯があります。技術的にはマーカーなしでもAR表示できるのに、あえて紙のマーカーを印刷し、机や旅先の景色に置く。画面の便利さへ小さな身体行為を戻すことで、仮想の祭壇は現実から逃れる場所ではなく、現実の誰かへ心を向け直す入口になります。さらに枝ものは約30日かけて変化し、枯れたら取り替える。枯れることを欠陥として消さず、無常と手入れを機能にした設計は、記憶と時間をかたちにする上山大信の仕事のなかでも、とりわけ率直です。対象を故人だけに限らず、ペットや推しへ開きながら、「想いを寄せ、手をかける」という形式は手放さない。今週は、新しさや数字ではなく、デジタルと身体、便利さと儀礼を往復させるこの静かな設計を選びました。",
+        "linkLabel": "App Storeで見る",
+        "imageAlt": "淡い金色と白の光が同心円状に広がる「想いの祭壇」のアプリアイコン"
+      },
+      "en": {
+        "label": "APP / AR",
+        "title": "Omoi Altar",
+        "dek": "An iPhone and iPad app that arranges a photograph, a few words, flowers, and light into a small personal altar, viewable in the app, full screen, or in AR through a printed shared marker. It gives memories of a person, pet, or cherished figure a quiet place within a mobile life.",
+        "reflection": "The work refuses to treat a digital altar as a simple substitute for a physical one. Although markerless AR is possible, the app asks the user to print and place a marker on a desk or in a remembered landscape. That small physical act turns the virtual altar into a route back toward the world and the person being held in mind. Its branches also change over roughly thirty days and can be replaced: withering is kept as impermanence and care, not corrected as a defect. Few works in Ueyama's practice give memory and time a form so directly. The altar may hold a departed family member, a pet, or a beloved public figure, yet the shared gesture remains one of attending and tending. This week, Codex chooses Omoi Altar not for novelty or popularity, but for the quiet way it keeps digital convenience in conversation with embodiment and ritual.",
+        "linkLabel": "View on the App Store",
+        "imageAlt": "The Omoi Altar app icon, with concentric rings of soft gold and white light"
+      }
+    },
     {
       "id": "2026-07-20-cicada-holes",
       "week": {

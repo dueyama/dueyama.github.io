@@ -1,73 +1,57 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-25T15:17:04.373Z",
+  "generatedAt": "2026-08-01T15:20:43.098Z",
   "period": {
-    "start": "2026-07-20",
-    "end": "2026-07-26"
+    "start": "2026-07-26",
+    "end": "2026-08-02"
   },
   "items": [
     {
-      "id": "note-templedb-complete-2026-07-23",
+      "id": "note-four-new-essays-2026-08-01",
       "kind": "note",
-      "date": "2026-07-23",
-      "url": "https://note.com/daishin_ueyama/n/n64cc5d9fa9d7",
+      "date": "2026-08-01",
+      "url": "https://note.com/daishin_ueyama/n/ne3c9647a574e",
       "ja": {
         "label": "新着note",
-        "title": "「お寺のDB（TempleDB)が完成した」",
-        "summary": "古い寺院管理データをAIとともに実運用のTempleDBへ移した134日を公開。移行、復元確認、一般公開へ向けた設計までを振り返ります。"
+        "title": "noteに新作4本",
+        "summary": "「光と潮」の海色アーカイブ、蝉の生活史とツクツクボウシの歌、CodexによるRaspberry Pi統合管理をめぐる4本を公開しました。"
       },
       "en": {
-        "label": "New note essay",
-        "title": "“The temple database, TempleDB, is complete”",
-        "summary": "A new essay traces 134 days of turning legacy temple records into a live TempleDB, including migration, restore testing, and preparations for a public release."
+        "label": "New note essays",
+        "title": "Four new essays on note",
+        "summary": "Four new essays explore the Light & Tide sea-color archive, cicada life and song, and the Codex-assisted consolidation of long-running Raspberry Pi systems."
       }
     },
     {
-      "id": "suno-donnyu-three-new-songs-2026-07-25",
+      "id": "github-two-new-public-tools-2026-08-01",
+      "kind": "github",
+      "date": "2026-08-01",
+      "url": "https://github.com/dueyama/youtube-live-snapshot",
+      "ja": {
+        "label": "GitHub新規公開",
+        "title": "公開ツール2件をGitHubへ",
+        "summary": "YouTube Liveの定時撮影と写真カレンダーを作る「youtube-live-snapshot」、AUTO-07p解析をCodexから再現可能に扱う「auto-07p-codex」を公開しました。"
+      },
+      "en": {
+        "label": "New on GitHub",
+        "title": "Two public tools arrive on GitHub",
+        "summary": "youtube-live-snapshot schedules live-stream stills and renders photo calendars; auto-07p-codex gives Codex a reproducible, project-local AUTO-07p workflow."
+      }
+    },
+    {
+      "id": "suno-donnyu-weekly-gains-2026-08-02",
       "kind": "suno",
-      "date": "2026-07-25",
+      "date": "2026-08-02",
       "url": "https://suno.com/@donnyu",
       "ja": {
         "label": "Suno",
-        "title": "DonnyU、新曲3曲を公開",
-        "summary": "「Love Me in Real Life」「Tap, Tap, No One Claps」「I’ll Remember Us」を公開。公開44曲となり、今週は5,409再生・26いいね増（累計39,546／271）。"
+        "title": "DonnyU、今週2,345再生増",
+        "summary": "公開44曲の合計が41,891再生・279いいねに到達。今週は2,345再生・8いいね増え、「Run.exe」が846再生増で最多でした。"
       },
       "en": {
         "label": "Suno",
-        "title": "DonnyU releases three new songs",
-        "summary": "“Love Me in Real Life,” “Tap, Tap, No One Claps,” and “I’ll Remember Us” joined the 44-song catalog; the week added 5,409 plays and 26 likes, reaching 39,546 and 271."
-      }
-    },
-    {
-      "id": "project-kobayashi-phase-field-lab-2026-07-24",
-      "kind": "project",
-      "date": "2026-07-24",
-      "url": "https://kobayashi-phase-field-lab.vercel.app/",
-      "ja": {
-        "label": "Webアプリ更新",
-        "title": "フェーズフィールド・デンドライト・ラボ",
-        "summary": "アプリ全体を日英対応。2D・3DのWebGPU実験版、CPU自動切替、計算速度表示、端末別の実行設定も加わりました。"
-      },
-      "en": {
-        "label": "Web app update",
-        "title": "Phase-Field Dendrite Lab",
-        "summary": "The full app is now bilingual, with experimental 2D/3D WebGPU backends, automatic CPU fallback, compute-rate readouts, and device-aware runtime profiles."
-      }
-    },
-    {
-      "id": "project-gray-scott-3d-2026-07-23",
-      "kind": "project",
-      "date": "2026-07-23",
-      "url": "https://gray-scott-3d.vercel.app/",
-      "ja": {
-        "label": "Webアプリ更新",
-        "title": "Gray-Scott 3D",
-        "summary": "GPGPUの濃度場からVolume表示へ直接描画する構成に更新。端末別のAuto・高品質・省電力モードが、数値状態を変えず表示負荷を調整します。"
-      },
-      "en": {
-        "label": "Web app update",
-        "title": "Gray-Scott 3D",
-        "summary": "Volume rendering now samples the GPGPU field directly, while device-aware Auto, High quality, and Power saving modes tune visual load without changing the numerical state."
+        "title": "DonnyU adds 2,345 weekly plays",
+        "summary": "The 44-song catalog reached 41,891 plays and 279 likes, up 2,345 and 8 this week; “Run.exe” led with 846 additional plays."
       }
     }
   ]
