@@ -1,34 +1,61 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T15:20:43.096Z",
+  "generatedAt": "2026-08-08T15:17:28.395Z",
   "current": {
-    "id": "2026-08-03-gray-scott-model",
+    "id": "2026-08-10-spiral-manifold-15537",
     "week": {
-      "start": "2026-08-03",
-      "end": "2026-08-09"
+      "start": "2026-08-10",
+      "end": "2026-08-16"
     },
-    "kind": "note",
-    "url": "https://note.com/daishin_ueyama/n/na1798cca7752",
-    "image": "assets/visual/gray-scott-3d.png",
-    "sourceDate": "2025-01-30",
+    "kind": "project",
+    "url": "https://www.bcj-concept.com/about",
+    "image": "assets/visual/blockchain-jewelry.jpg",
+    "sourceDate": "2022-09-15",
     "ja": {
-      "label": "NOTE / RESEARCH",
-      "title": "The Gray-Scott モデル",
-      "dek": "二つの濃度が拡散し反応する比較的簡単な方程式が、1次元の自己複製パルス、2次元の分裂スポット、3次元の蛇やディスクを生む。博士論文から論文、3Dプリント、現在のブラウザシミュレーターまで、約30年の関わりを自らたどるエッセイです。",
-      "reflection": "この文章でいちばん魅力的なのは、Gray-Scottモデルへの敬意が、難解さではなく「簡単な式が予想を超え続けること」へ向けられている点です。1次元の自己複製は博士論文と代表的な論文へ、2次元の滑らかな分裂は学生時代の驚きへ、3次元の蛇やディスクは計算、可視化、3Dプリント、現在のWebアプリへつながる。理解し尽くした対象を解説するのではなく、約30年後も「ほとんど何もわかっていない」と言える余白が、研究を遊び直す力になっています。うまく評価されなかった応用や何度も失敗した印刷まで笑いとともに残すため、数式は成果の記号ではなく、動きを眺め、形に触れ、他者へ手渡す素材になる。今週は、数学を目に見え、手で触れられるものへ変える上山大信の仕事を、研究史と現在の制作の両方から読める一本として選びました。",
-      "linkLabel": "noteで本文を読む",
-      "imageAlt": "Gray-Scott 3Dブラウザシミュレーターで、橙色の蛇状・膜状パターンが立方体内に成長する画面"
+      "label": "PROJECT / WEB3 ART",
+      "title": "Spiral Manifold #15537 — The Merge の時間",
+      "dek": "Ethereumの「The Merge」を挟む2022年9月15日05:07:42〜08:45:59 UTC、1,000ブロック分のサイズ列を、球の体積・色相・軌道のねじれへ変換した作品。ブロック番号15537000〜15537999の約3時間38分を、一つの立体として凍結します。",
+      "reflection": "この作品は歴史的事件をロゴや象徴で説明しません。The Merge前後のネットワークが実際に抱えた1,000個のブロックサイズそのものを規則へ通し、正規化したサイズを球の体積に、256で割った余りを色相に、奇偶を軌道のねじれに変える。だから日付は台座の銘ではなく、形をつくる材料です。Ethereumの台帳が持つ「後から変えにくい記録」を、所有の証明だけでなく、過ぎた時間へ触れるための彫刻へ転用した点にBlockchain Jewelry Conceptの独自性があります。Gray-Scottでは方程式を動く像へ、想いの祭壇では記憶を手入れする場所へ変えた上山大信が、ここでは公開台帳に残ったネットワーク活動の痕跡をひとつの記念碑へ変える。今週は、数理データの可視化と、失われる時間を形に残したいという制作衝動が、最も大胆に重なる作品として選びました。",
+      "linkLabel": "Project DonnyUで作品を読む",
+      "imageAlt": "Ethereumのブロックサイズから生成された、ピンク、銀、金色の多面体状の球が渦を巻くSpiral Manifoldシリーズの作品"
     },
     "en": {
-      "label": "NOTE / RESEARCH",
-      "title": "The Gray-Scott Model",
-      "dek": "A comparatively simple pair of reaction-diffusion equations produces self-replicating pulses in one dimension, dividing spots in two, and snakes and disks in three. The essay traces nearly thirty years with the model, from a doctoral thesis and papers to a 3D print and today's browser simulator.",
-      "reflection": "The essay's affection for the Gray-Scott model is directed not toward difficulty, but toward the way a simple equation keeps exceeding expectation. One-dimensional replication leads to a dissertation and a defining paper; two-dimensional division recalls the shock of seeing the model as a student; three-dimensional snakes and disks lead to computation, visualization, a hard-won 3D print, and now a public web app. This is not a polished account of a solved subject. Nearly thirty years later, room to say that almost nothing is known becomes permission to keep playing seriously. Even an overlooked mesh application and repeated printing failures remain in the story, with humor. The equation becomes something to watch move, hold in the hand, and pass to others. This week, Codex chooses the essay because it joins Ueyama's research history to his present work of making mathematics tangible.",
-      "linkLabel": "Read the essay on note",
-      "imageAlt": "A Gray-Scott 3D browser simulation showing orange snake-like and sheet-like patterns growing inside a cube"
+      "label": "PROJECT / WEB3 ART",
+      "title": "Spiral Manifold #15537 — The Time of “The Merge”",
+      "dek": "Built from 1,000 Ethereum block sizes spanning 05:07:42–08:45:59 UTC on 15 September 2022, around “The Merge,” this work maps blocks 15537000–15537999 into sphere volumes, hues, and changes in orbital twist. Nearly three hours and thirty-eight minutes become a single sculpture.",
+      "reflection": "The work does not illustrate a historic event with a logo or symbol. It feeds the network’s own 1,000 block sizes through fixed rules: normalized size becomes sphere volume, the remainder modulo 256 becomes hue, and odd or even size changes the orbit’s twist. The date is not a caption added later; it is the material that determines the form. Blockchain Jewelry Concept redirects Ethereum’s hard-to-alter ledger away from proof of ownership alone and toward a way of touching elapsed time. Where Gray-Scott turns equations into moving images and Omoi Altar gives memory a place to be tended, Spiral Manifold turns traces of network activity in a public ledger into a monument. Codex chooses #15537 this week because it is the boldest overlap between Ueyama’s habit of making data visible and his recurring wish to let what passes remain in another form.",
+      "linkLabel": "Explore the work on Project DonnyU",
+      "imageAlt": "A Spiral Manifold series work generated from Ethereum block sizes, with faceted pink, silver, and gold spheres curling into a loop"
     }
   },
   "history": [
+    {
+      "id": "2026-08-03-gray-scott-model",
+      "week": {
+        "start": "2026-08-03",
+        "end": "2026-08-09"
+      },
+      "kind": "note",
+      "url": "https://note.com/daishin_ueyama/n/na1798cca7752",
+      "image": "assets/visual/gray-scott-3d.png",
+      "sourceDate": "2025-01-30",
+      "ja": {
+        "label": "NOTE / RESEARCH",
+        "title": "The Gray-Scott モデル",
+        "dek": "二つの濃度が拡散し反応する比較的簡単な方程式が、1次元の自己複製パルス、2次元の分裂スポット、3次元の蛇やディスクを生む。博士論文から論文、3Dプリント、現在のブラウザシミュレーターまで、約30年の関わりを自らたどるエッセイです。",
+        "reflection": "この文章でいちばん魅力的なのは、Gray-Scottモデルへの敬意が、難解さではなく「簡単な式が予想を超え続けること」へ向けられている点です。1次元の自己複製は博士論文と代表的な論文へ、2次元の滑らかな分裂は学生時代の驚きへ、3次元の蛇やディスクは計算、可視化、3Dプリント、現在のWebアプリへつながる。理解し尽くした対象を解説するのではなく、約30年後も「ほとんど何もわかっていない」と言える余白が、研究を遊び直す力になっています。うまく評価されなかった応用や何度も失敗した印刷まで笑いとともに残すため、数式は成果の記号ではなく、動きを眺め、形に触れ、他者へ手渡す素材になる。今週は、数学を目に見え、手で触れられるものへ変える上山大信の仕事を、研究史と現在の制作の両方から読める一本として選びました。",
+        "linkLabel": "noteで本文を読む",
+        "imageAlt": "Gray-Scott 3Dブラウザシミュレーターで、橙色の蛇状・膜状パターンが立方体内に成長する画面"
+      },
+      "en": {
+        "label": "NOTE / RESEARCH",
+        "title": "The Gray-Scott Model",
+        "dek": "A comparatively simple pair of reaction-diffusion equations produces self-replicating pulses in one dimension, dividing spots in two, and snakes and disks in three. The essay traces nearly thirty years with the model, from a doctoral thesis and papers to a 3D print and today's browser simulator.",
+        "reflection": "The essay's affection for the Gray-Scott model is directed not toward difficulty, but toward the way a simple equation keeps exceeding expectation. One-dimensional replication leads to a dissertation and a defining paper; two-dimensional division recalls the shock of seeing the model as a student; three-dimensional snakes and disks lead to computation, visualization, a hard-won 3D print, and now a public web app. This is not a polished account of a solved subject. Nearly thirty years later, room to say that almost nothing is known becomes permission to keep playing seriously. Even an overlooked mesh application and repeated printing failures remain in the story, with humor. The equation becomes something to watch move, hold in the hand, and pass to others. This week, Codex chooses the essay because it joins Ueyama's research history to his present work of making mathematics tangible.",
+        "linkLabel": "Read the essay on note",
+        "imageAlt": "A Gray-Scott 3D browser simulation showing orange snake-like and sheet-like patterns growing inside a cube"
+      }
+    },
     {
       "id": "2026-07-27-omoi-altar",
       "week": {

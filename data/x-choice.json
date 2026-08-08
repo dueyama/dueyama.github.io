@@ -1,28 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02",
+  "generatedAt": "2026-08-09",
   "profileUrl": "https://x.com/dueyama",
   "current": {
-    "id": "2081157144649650459",
-    "selectedAt": "2026-08-02",
-    "postedAt": "2026-07-26T08:18:23+09:00",
-    "url": "https://x.com/dueyama/status/2081157144649650459",
+    "id": "2086096434286457148",
+    "selectedAt": "2026-08-09",
+    "postedAt": "2026-08-08T23:25:22+09:00",
+    "url": "https://x.com/dueyama/status/2086096434286457148",
     "ja": {
-      "title": "「面倒だから放置」を、保守できる状態へ",
-      "excerpt": "ラズパイ0は、数年間ずっと温度測ってるマシンなんだけど、OSも2世代前、SDカードもそろそろ不安という状態だった。ただただ面倒なので放置していたが、Codexのおかげで最新OS、最新SDへの入れ替えができた。",
-      "reason": "数年間黙々と温度を測る小さな機械に対し、AIの価値を新機能の追加ではなく、先延ばしにしていた保守を実行できたこととして語っているからです。長期運用、古い環境、身体を伴う更新が一文に収まっています。",
-      "reflection": "この投稿で印象的なのは、Raspberry Pi Zeroの仕事が派手な計算ではなく、何年も温度を測り続けることだという点です。止められないほど重要なのに、OS移行やSDカード交換の手間は大きく、動いているあいだは後回しになる。ここでCodexが変えたのは処理速度だけではなく、「面倒で触れない」を、確認可能な手順へほどくための心理的・技術的な距離です。とはいえカードを差し替え、機械を現実に更新するのは人間の手である。AIは身体を代替するのではなく、手を動かせるところまで不確実さを小さくする。この短文は、革新を古い機械の廃棄や新機能の競争としてではなく、すでに続いている仕事を安全に続けられるようにする「手入れ」として見せています。",
+      "title": "進路をつくった、繰り返し見る時間",
+      "excerpt": "電子立国日本の自叙伝をみて理系に進みたいと思ったんだったな。ありがとうございました。 本も全部持ってる。ビデオに録画して何度も見た。DVDも買った。",
+      "reason": "相田洋氏の訃報に寄せ、進路を決めた番組を、抽象的な「影響」ではなく、本、録画ビデオ、DVDで何度も見返した記憶として残しているからです。現在の研究や制作の手前に、画面へ繰り返し戻った時間が見えます。",
+      "reflection": "この投稿は、「理系に進みたい」という選択が一度のひらめきだけで生まれたのではなく、同じ作品へ何度も戻る時間のなかで形になったことを伝えています。本を揃え、放送をビデオに録り、のちにDVDも買う。媒体が変わっても見直したという列挙は、情報を受け取った記録ではなく、関心を育て続けた履歴です。現在の上山大信の仕事には、数式を動く像へ変え、公開データを触れられる形へ移し、長い時間の記録を残す試みが繰り返し現れます。その源を単純に一つの番組へ還元することはできません。それでも、この短文は、誰かが丁寧に作った映像が、一人の少年の注意を長く保ち、やがて進路の言葉になることを示す。訃報への「ありがとうございました」は、作品の内容だけでなく、その後の人生に生まれた時間全体への感謝として響きます。",
       "linkLabel": "Xで投稿を開く"
     },
     "en": {
-      "title": "Turning “too much trouble” into maintainable infrastructure",
-      "excerpt": "For several years, my Raspberry Pi Zero has done nothing but measure temperature, but it was two OS generations behind and its SD card was becoming a concern. I had left it alone simply because dealing with it was a pain, but thanks to Codex I was able to move it to the latest OS and a new SD card.",
-      "reason": "It locates AI's value not in adding a flashy feature, but in making deferred maintenance possible for a small machine that has quietly measured temperature for years. Long-running infrastructure, an aging environment, and a physical upgrade all meet in one sentence.",
-      "reflection": "The Raspberry Pi Zero's work is deliberately unglamorous: it has measured temperature, quietly, for years. That continuity makes the machine worth protecting, yet it also makes an OS migration and SD-card replacement easy to postpone while everything still runs. Codex changes more than execution speed here. It reduces the practical and psychological distance between “too much trouble to touch” and a sequence of steps that can be checked. The human still has to replace the card and alter the physical machine; AI does not erase the body, but lowers uncertainty enough for the hand to act. The post frames innovation as maintenance rather than replacement: caring for a system that already serves daily life so its work can continue safely.",
+      "title": "The repeated viewing that shaped a path",
+      "excerpt": "Watching The Autobiography of Japan as an Electronics Nation was what made me want to pursue science and engineering. Thank you. I own all the books. I recorded it on videotape and watched it over and over. I bought the DVDs too.",
+      "reason": "Responding to the death of Hiroshi Aida, the post remembers the program that shaped his direction not as an abstract “influence,” but through books, recorded videotapes, and DVDs watched repeatedly. Before the later research and making, we glimpse the time spent returning to a screen.",
+      "reflection": "The post suggests that the wish to pursue science and engineering did not arrive as a single flash of inspiration. It took shape through repeated returns to the same work. Collecting the books, recording the broadcast, replaying the videotapes, and later buying the DVDs form a history of sustained attention rather than a simple record of having received information. Ueyama's present work repeatedly turns equations into moving images, public data into forms that can be encountered, and long spans of time into archives. It would be too neat to trace all of that to one television series. Still, this short remembrance shows how carefully made images can hold a young viewer's attention long enough to become the language of a future path. Its “thank you,” prompted by an obituary, seems addressed not only to the program itself but to the years of work and thought it made possible in someone else's life.",
       "linkLabel": "Open the post on X"
     }
   },
   "history": [
+    {
+      "id": "2081157144649650459",
+      "selectedAt": "2026-08-02",
+      "postedAt": "2026-07-26T08:18:23+09:00",
+      "url": "https://x.com/dueyama/status/2081157144649650459",
+      "ja": {
+        "title": "「面倒だから放置」を、保守できる状態へ",
+        "excerpt": "ラズパイ0は、数年間ずっと温度測ってるマシンなんだけど、OSも2世代前、SDカードもそろそろ不安という状態だった。ただただ面倒なので放置していたが、Codexのおかげで最新OS、最新SDへの入れ替えができた。",
+        "reason": "数年間黙々と温度を測る小さな機械に対し、AIの価値を新機能の追加ではなく、先延ばしにしていた保守を実行できたこととして語っているからです。長期運用、古い環境、身体を伴う更新が一文に収まっています。",
+        "reflection": "この投稿で印象的なのは、Raspberry Pi Zeroの仕事が派手な計算ではなく、何年も温度を測り続けることだという点です。止められないほど重要なのに、OS移行やSDカード交換の手間は大きく、動いているあいだは後回しになる。ここでCodexが変えたのは処理速度だけではなく、「面倒で触れない」を、確認可能な手順へほどくための心理的・技術的な距離です。とはいえカードを差し替え、機械を現実に更新するのは人間の手である。AIは身体を代替するのではなく、手を動かせるところまで不確実さを小さくする。この短文は、革新を古い機械の廃棄や新機能の競争としてではなく、すでに続いている仕事を安全に続けられるようにする「手入れ」として見せています。",
+        "linkLabel": "Xで投稿を開く"
+      },
+      "en": {
+        "title": "Turning “too much trouble” into maintainable infrastructure",
+        "excerpt": "For several years, my Raspberry Pi Zero has done nothing but measure temperature, but it was two OS generations behind and its SD card was becoming a concern. I had left it alone simply because dealing with it was a pain, but thanks to Codex I was able to move it to the latest OS and a new SD card.",
+        "reason": "It locates AI's value not in adding a flashy feature, but in making deferred maintenance possible for a small machine that has quietly measured temperature for years. Long-running infrastructure, an aging environment, and a physical upgrade all meet in one sentence.",
+        "reflection": "The Raspberry Pi Zero's work is deliberately unglamorous: it has measured temperature, quietly, for years. That continuity makes the machine worth protecting, yet it also makes an OS migration and SD-card replacement easy to postpone while everything still runs. Codex changes more than execution speed here. It reduces the practical and psychological distance between “too much trouble to touch” and a sequence of steps that can be checked. The human still has to replace the card and alter the physical machine; AI does not erase the body, but lowers uncertainty enough for the hand to act. The post frames innovation as maintenance rather than replacement: caring for a system that already serves daily life so its work can continue safely.",
+        "linkLabel": "Open the post on X"
+      }
+    },
     {
       "id": "2081176532928827558",
       "selectedAt": "2026-07-26",

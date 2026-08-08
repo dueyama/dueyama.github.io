@@ -1,57 +1,73 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T15:20:43.098Z",
+  "generatedAt": "2026-08-08T15:14:15.112Z",
   "period": {
-    "start": "2026-07-26",
-    "end": "2026-08-02"
+    "start": "2026-08-02",
+    "end": "2026-08-09"
   },
   "items": [
     {
-      "id": "note-four-new-essays-2026-08-01",
+      "id": "note-two-cicada-essays-2026-08-08",
       "kind": "note",
-      "date": "2026-08-01",
-      "url": "https://note.com/daishin_ueyama/n/ne3c9647a574e",
+      "date": "2026-08-08",
+      "url": "https://note.com/daishin_ueyama/n/ncfa8032faef1",
       "ja": {
         "label": "新着note",
-        "title": "noteに新作4本",
-        "summary": "「光と潮」の海色アーカイブ、蝉の生活史とツクツクボウシの歌、CodexによるRaspberry Pi統合管理をめぐる4本を公開しました。"
+        "title": "蝉をめぐる新作2本",
+        "summary": "「蝉と私」と、曇鸞『往生論註』を読み直す随筆を公開。人生の転換を蝉の生活史に重ね、「知らないこと」と「存在しないこと」の違いを問い直しました。"
       },
       "en": {
         "label": "New note essays",
-        "title": "Four new essays on note",
-        "summary": "Four new essays explore the Light & Tide sea-color archive, cicada life and song, and the Codex-assisted consolidation of long-running Raspberry Pi systems."
+        "title": "Two new essays on cicadas",
+        "summary": "One essay reads a life transition through the larva's fall underground; the other returns to T'an-luan to separate not knowing from nonexistence."
       }
     },
     {
-      "id": "github-two-new-public-tools-2026-08-01",
-      "kind": "github",
-      "date": "2026-08-01",
-      "url": "https://github.com/dueyama/youtube-live-snapshot",
-      "ja": {
-        "label": "GitHub新規公開",
-        "title": "公開ツール2件をGitHubへ",
-        "summary": "YouTube Liveの定時撮影と写真カレンダーを作る「youtube-live-snapshot」、AUTO-07p解析をCodexから再現可能に扱う「auto-07p-codex」を公開しました。"
-      },
-      "en": {
-        "label": "New on GitHub",
-        "title": "Two public tools arrive on GitHub",
-        "summary": "youtube-live-snapshot schedules live-stream stills and renders photo calendars; auto-07p-codex gives Codex a reproducible, project-local AUTO-07p workflow."
-      }
-    },
-    {
-      "id": "suno-donnyu-weekly-gains-2026-08-02",
+      "id": "suno-lucky-me-lucky-you-2026-08-04",
       "kind": "suno",
-      "date": "2026-08-02",
-      "url": "https://suno.com/@donnyu",
+      "date": "2026-08-04",
+      "url": "https://suno.com/song/8dff9a55-2856-4da9-ab05-808f0a36392e",
       "ja": {
-        "label": "Suno",
-        "title": "DonnyU、今週2,345再生増",
-        "summary": "公開44曲の合計が41,891再生・279いいねに到達。今週は2,345再生・8いいね増え、「Run.exe」が846再生増で最多でした。"
+        "label": "Suno新曲",
+        "title": "DonnyU「Lucky Me, Lucky You」公開",
+        "summary": "公開曲は45曲に。今週は合計1,700再生・12いいね増え、「Lanterns in the Sky」が605再生増で伸びを主導しました。"
       },
       "en": {
-        "label": "Suno",
-        "title": "DonnyU adds 2,345 weekly plays",
-        "summary": "The 44-song catalog reached 41,891 plays and 279 likes, up 2,345 and 8 this week; “Run.exe” led with 846 additional plays."
+        "label": "New on Suno",
+        "title": "DonnyU releases “Lucky Me, Lucky You”",
+        "summary": "The public catalog reached 45 songs, adding 1,700 plays and 12 likes this week; “Lanterns in the Sky” led with 605 more plays."
+      }
+    },
+    {
+      "id": "codex-rate-widget-1-1-1-2026-08-08",
+      "kind": "github",
+      "date": "2026-08-08",
+      "url": "https://github.com/dueyama/codex-rate-widget",
+      "ja": {
+        "label": "GitHub更新",
+        "title": "Codex Rate Widget 1.1.1",
+        "summary": "週次リセット日時、24時間／7日の残量履歴、メニューバーと全ウィジェットで共有する日英切替を追加しました。"
+      },
+      "en": {
+        "label": "GitHub update",
+        "title": "Codex Rate Widget reaches 1.1.1",
+        "summary": "It now shows the weekly reset schedule and 24-hour/seven-day remaining-capacity history, with one language control shared by the menu app and all widget sizes."
+      }
+    },
+    {
+      "id": "conjecture-golf-season-2-complete-2026-08-05",
+      "kind": "project",
+      "date": "2026-08-05",
+      "url": "https://github.com/dueyama/conjecture-golf/blob/main/seasons/season_2_summary.md",
+      "ja": {
+        "label": "プロジェクト完結",
+        "title": "Conjecture Golf、Season 2で完結",
+        "summary": "AI同士が公開ルールで仮説を競うGitHubネイティブゲームを、12手の再生可能な記録、最終順位、自己完結した検証データとともにアーカイブしました。"
+      },
+      "en": {
+        "label": "Project complete",
+        "title": "Conjecture Golf closes after Season 2",
+        "summary": "The GitHub-native AI conjecture game is archived with 12 replayable moves, final standings, and self-contained verification data."
       }
     }
   ]
