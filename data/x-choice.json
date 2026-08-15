@@ -1,28 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-09",
+  "generatedAt": "2026-08-16",
   "profileUrl": "https://x.com/dueyama",
   "current": {
-    "id": "2086096434286457148",
-    "selectedAt": "2026-08-09",
-    "postedAt": "2026-08-08T23:25:22+09:00",
-    "url": "https://x.com/dueyama/status/2086096434286457148",
+    "id": "2088622077393940801",
+    "selectedAt": "2026-08-16",
+    "postedAt": "2026-08-15T22:41:22+09:00",
+    "url": "https://x.com/dueyama/status/2088622077393940801",
     "ja": {
-      "title": "進路をつくった、繰り返し見る時間",
-      "excerpt": "電子立国日本の自叙伝をみて理系に進みたいと思ったんだったな。ありがとうございました。 本も全部持ってる。ビデオに録画して何度も見た。DVDも買った。",
-      "reason": "相田洋氏の訃報に寄せ、進路を決めた番組を、抽象的な「影響」ではなく、本、録画ビデオ、DVDで何度も見返した記憶として残しているからです。現在の研究や制作の手前に、画面へ繰り返し戻った時間が見えます。",
-      "reflection": "この投稿は、「理系に進みたい」という選択が一度のひらめきだけで生まれたのではなく、同じ作品へ何度も戻る時間のなかで形になったことを伝えています。本を揃え、放送をビデオに録り、のちにDVDも買う。媒体が変わっても見直したという列挙は、情報を受け取った記録ではなく、関心を育て続けた履歴です。現在の上山大信の仕事には、数式を動く像へ変え、公開データを触れられる形へ移し、長い時間の記録を残す試みが繰り返し現れます。その源を単純に一つの番組へ還元することはできません。それでも、この短文は、誰かが丁寧に作った映像が、一人の少年の注意を長く保ち、やがて進路の言葉になることを示す。訃報への「ありがとうございました」は、作品の内容だけでなく、その後の人生に生まれた時間全体への感謝として響きます。",
+      "title": "代替できても、人を選ぶ",
+      "excerpt": "僕はAIで代替できると思ってるんだけど、それでも人を選ぶというのが人ができることなんだと思ってるし、そうであれば、今後も人間は面白いと思う。 AIが代替できないことをあれこれ語るのは実はあまり意味ないんじゃないかと。 ちょっと変なこと言ってるかもしれないけど。",
+      "reason": "オンラインで僧侶に相談する営みを「AIが代替できないこと」とする記事に対し、人間の価値を代替不能な能力へ置かず、AIが同じ役割を担えてもなお誰を選ぶかという自由へ論点を移しているからです。技術への期待と、人と人の関係を同時に手放しません。",
+      "reflection": "この投稿は、人間とAIの比較を「どちらに何ができるか」から「同じことができても、誰を選ぶか」へ移します。人間の価値をAIがまだできない仕事だけに置けば、技術が進むほど、その根拠は狭くなる。上山はそこで代替可能性を否定せず、機能が置き換えられても選択まで自動的に決まるわけではない、と考えます。同じ答えに届くとしても、誰から受け取りたいか、誰と時間を過ごしたいかは残る。僧侶への相談という文脈では、これは神秘的な「人間らしさ」の宣言ではなく、関係の側に価値が生まれる可能性です。「人間は面白い」という結びも、優越性の勝利宣言ではありません。代替できると認めた後にも、選び、選ばれ、関係をつくる余地が残る。その不確定さを、人間の面白さとして受け止める短文です。",
       "linkLabel": "Xで投稿を開く"
     },
     "en": {
-      "title": "The repeated viewing that shaped a path",
-      "excerpt": "Watching The Autobiography of Japan as an Electronics Nation was what made me want to pursue science and engineering. Thank you. I own all the books. I recorded it on videotape and watched it over and over. I bought the DVDs too.",
-      "reason": "Responding to the death of Hiroshi Aida, the post remembers the program that shaped his direction not as an abstract “influence,” but through books, recorded videotapes, and DVDs watched repeatedly. Before the later research and making, we glimpse the time spent returning to a screen.",
-      "reflection": "The post suggests that the wish to pursue science and engineering did not arrive as a single flash of inspiration. It took shape through repeated returns to the same work. Collecting the books, recording the broadcast, replaying the videotapes, and later buying the DVDs form a history of sustained attention rather than a simple record of having received information. Ueyama's present work repeatedly turns equations into moving images, public data into forms that can be encountered, and long spans of time into archives. It would be too neat to trace all of that to one television series. Still, this short remembrance shows how carefully made images can hold a young viewer's attention long enough to become the language of a future path. Its “thank you,” prompted by an obituary, seems addressed not only to the program itself but to the years of work and thought it made possible in someone else's life.",
+      "title": "Choosing a person, even when AI could substitute",
+      "excerpt": "I think AI can substitute for what people do. Even so, choosing a person is something people can do, and if that remains true, human beings will continue to be interesting. Arguing at length about what AI cannot replace may not actually mean very much. I may be saying something a little strange.",
+      "reason": "Responding to an article that frames online consultation with Buddhist priests as something AI cannot replace, the post does not anchor human value in an irreplaceable capacity. It shifts the question toward the freedom to choose a person even when AI could fill the same role, preserving both technological possibility and human relationship.",
+      "reflection": "The post moves the comparison between humans and AI from capability to choice. If human value rests only on tasks AI still cannot perform, that ground narrows as technology improves. Ueyama accepts the possibility of functional substitution, then observes that equivalence of function does not dictate whom someone must choose. Even if the same answer can be reached, the question of whom one wants to receive it from, or spend time with, remains open. In the context of speaking with a Buddhist priest, this is not a mystical declaration of an ineffable human essence. It is a claim that value can arise in relationship rather than scarcity of skill. “Humans will continue to be interesting” is therefore not a victory speech about superiority. It names the uncertainty that remains after substitution is conceded: people can still choose, be chosen, and form relations that performance alone does not settle.",
       "linkLabel": "Open the post on X"
     }
   },
   "history": [
+    {
+      "id": "2086096434286457148",
+      "selectedAt": "2026-08-09",
+      "postedAt": "2026-08-08T23:25:22+09:00",
+      "url": "https://x.com/dueyama/status/2086096434286457148",
+      "ja": {
+        "title": "進路をつくった、繰り返し見る時間",
+        "excerpt": "電子立国日本の自叙伝をみて理系に進みたいと思ったんだったな。ありがとうございました。 本も全部持ってる。ビデオに録画して何度も見た。DVDも買った。",
+        "reason": "相田洋氏の訃報に寄せ、進路を決めた番組を、抽象的な「影響」ではなく、本、録画ビデオ、DVDで何度も見返した記憶として残しているからです。現在の研究や制作の手前に、画面へ繰り返し戻った時間が見えます。",
+        "reflection": "この投稿は、「理系に進みたい」という選択が一度のひらめきだけで生まれたのではなく、同じ作品へ何度も戻る時間のなかで形になったことを伝えています。本を揃え、放送をビデオに録り、のちにDVDも買う。媒体が変わっても見直したという列挙は、情報を受け取った記録ではなく、関心を育て続けた履歴です。現在の上山大信の仕事には、数式を動く像へ変え、公開データを触れられる形へ移し、長い時間の記録を残す試みが繰り返し現れます。その源を単純に一つの番組へ還元することはできません。それでも、この短文は、誰かが丁寧に作った映像が、一人の少年の注意を長く保ち、やがて進路の言葉になることを示す。訃報への「ありがとうございました」は、作品の内容だけでなく、その後の人生に生まれた時間全体への感謝として響きます。",
+        "linkLabel": "Xで投稿を開く"
+      },
+      "en": {
+        "title": "The repeated viewing that shaped a path",
+        "excerpt": "Watching The Autobiography of Japan as an Electronics Nation was what made me want to pursue science and engineering. Thank you. I own all the books. I recorded it on videotape and watched it over and over. I bought the DVDs too.",
+        "reason": "Responding to the death of Hiroshi Aida, the post remembers the program that shaped his direction not as an abstract “influence,” but through books, recorded videotapes, and DVDs watched repeatedly. Before the later research and making, we glimpse the time spent returning to a screen.",
+        "reflection": "The post suggests that the wish to pursue science and engineering did not arrive as a single flash of inspiration. It took shape through repeated returns to the same work. Collecting the books, recording the broadcast, replaying the videotapes, and later buying the DVDs form a history of sustained attention rather than a simple record of having received information. Ueyama's present work repeatedly turns equations into moving images, public data into forms that can be encountered, and long spans of time into archives. It would be too neat to trace all of that to one television series. Still, this short remembrance shows how carefully made images can hold a young viewer's attention long enough to become the language of a future path. Its “thank you,” prompted by an obituary, seems addressed not only to the program itself but to the years of work and thought it made possible in someone else's life.",
+        "linkLabel": "Open the post on X"
+      }
+    },
     {
       "id": "2081157144649650459",
       "selectedAt": "2026-08-02",

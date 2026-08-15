@@ -1,34 +1,61 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08T15:17:28.395Z",
+  "generatedAt": "2026-08-15T15:14:18.147Z",
   "current": {
-    "id": "2026-08-10-spiral-manifold-15537",
+    "id": "2026-08-17-cicada-does-not-know-summer",
     "week": {
-      "start": "2026-08-10",
-      "end": "2026-08-16"
+      "start": "2026-08-17",
+      "end": "2026-08-23"
     },
-    "kind": "project",
-    "url": "https://www.bcj-concept.com/about",
-    "image": "assets/visual/blockchain-jewelry.jpg",
-    "sourceDate": "2022-09-15",
+    "kind": "note",
+    "url": "https://note.com/daishin_ueyama/n/ncfa8032faef1",
+    "image": "assets/choice/cicada-holes.jpg",
+    "sourceDate": "2026-08-08",
     "ja": {
-      "label": "PROJECT / WEB3 ART",
-      "title": "Spiral Manifold #15537 — The Merge の時間",
-      "dek": "Ethereumの「The Merge」を挟む2022年9月15日05:07:42〜08:45:59 UTC、1,000ブロック分のサイズ列を、球の体積・色相・軌道のねじれへ変換した作品。ブロック番号15537000〜15537999の約3時間38分を、一つの立体として凍結します。",
-      "reflection": "この作品は歴史的事件をロゴや象徴で説明しません。The Merge前後のネットワークが実際に抱えた1,000個のブロックサイズそのものを規則へ通し、正規化したサイズを球の体積に、256で割った余りを色相に、奇偶を軌道のねじれに変える。だから日付は台座の銘ではなく、形をつくる材料です。Ethereumの台帳が持つ「後から変えにくい記録」を、所有の証明だけでなく、過ぎた時間へ触れるための彫刻へ転用した点にBlockchain Jewelry Conceptの独自性があります。Gray-Scottでは方程式を動く像へ、想いの祭壇では記憶を手入れする場所へ変えた上山大信が、ここでは公開台帳に残ったネットワーク活動の痕跡をひとつの記念碑へ変える。今週は、数理データの可視化と、失われる時間を形に残したいという制作衝動が、最も大胆に重なる作品として選びました。",
-      "linkLabel": "Project DonnyUで作品を読む",
-      "imageAlt": "Ethereumのブロックサイズから生成された、ピンク、銀、金色の多面体状の球が渦を巻くSpiral Manifoldシリーズの作品"
+      "label": "NOTE / BUDDHISM",
+      "title": "「蝉は夏しか知らない」の先へ",
+      "dek": "盆法座で聞いた曇鸞『往生論註』の「蟪蛄不識春秋」を原典の十念の議論へ戻して読む随筆。春秋を知らない蝉は「夏だけを知る」のではなく、比較によって生まれる夏という概念さえ持たないと捉え、「知らないこと」と「存在しないこと」を分けます。",
+      "reflection": "聞き慣れた「蝉は夏しか知らない」という譬えを原典へ戻すと、文章の向きが反転します。春も秋も経験しない蝉には、対比によって成り立つ「夏」という区分そのものがない。それでも、蝉が夏を確認できないことは、夏が存在しないことを意味しません。曇鸞がこの譬えを置いたのは、一心に念仏しながら十念を一つずつ数えられるのかという問いの中でした。自分で成立を測定できないことと、成立していないことを同一視しないための言葉なのです。ここには、仏教の教説を結論だけで受け取らず文脈へ戻る僧侶の読みと、概念が成立する条件を問い直す研究者の目が同居しています。上山大信の仕事には、AIの最初の答えに反論するときも、数理現象を可視化するときも、見えている範囲を世界全体だと思わない姿勢が繰り返し現れる。今週は、宗教と探究を安易に一つへ溶かさず、認識の限界を共通の問いとして響かせる一本として選びました。",
+      "linkLabel": "noteで本文を読む",
+      "imageAlt": "上山大信の蝉随筆群を象徴する、夏の夜に大木の根元を懐中電灯で照らす少年のイラスト"
     },
     "en": {
-      "label": "PROJECT / WEB3 ART",
-      "title": "Spiral Manifold #15537 — The Time of “The Merge”",
-      "dek": "Built from 1,000 Ethereum block sizes spanning 05:07:42–08:45:59 UTC on 15 September 2022, around “The Merge,” this work maps blocks 15537000–15537999 into sphere volumes, hues, and changes in orbital twist. Nearly three hours and thirty-eight minutes become a single sculpture.",
-      "reflection": "The work does not illustrate a historic event with a logo or symbol. It feeds the network’s own 1,000 block sizes through fixed rules: normalized size becomes sphere volume, the remainder modulo 256 becomes hue, and odd or even size changes the orbit’s twist. The date is not a caption added later; it is the material that determines the form. Blockchain Jewelry Concept redirects Ethereum’s hard-to-alter ledger away from proof of ownership alone and toward a way of touching elapsed time. Where Gray-Scott turns equations into moving images and Omoi Altar gives memory a place to be tended, Spiral Manifold turns traces of network activity in a public ledger into a monument. Codex chooses #15537 this week because it is the boldest overlap between Ueyama’s habit of making data visible and his recurring wish to let what passes remain in another form.",
-      "linkLabel": "Explore the work on Project DonnyU",
-      "imageAlt": "A Spiral Manifold series work generated from Ethereum block sizes, with faceted pink, silver, and gold spheres curling into a loop"
+      "label": "NOTE / BUDDHISM",
+      "title": "Beyond “The Cicada Only Knows Summer”",
+      "dek": "After hearing Tan-luan’s phrase about a cicada that knows neither spring nor autumn at an Obon service, Ueyama returns it to the Wangsheng Lun Zhu’s discussion of the Ten Thoughts. The cicada does not know only summer; without contrasting seasons, it cannot possess “summer” as a concept at all. Not knowing and nonexistence come apart.",
+      "reflection": "Returning the familiar saying to its source reverses its direction. A cicada that experiences neither spring nor autumn lacks the contrast from which “summer” can arise. Yet its inability to identify summer does not make summer unreal. Tan-luan uses the image while asking how one can single-mindedly invoke Amida Buddha and still count the Ten Thoughts: what cannot be measured from within need not have failed to occur. The essay joins a priest’s refusal to detach doctrine from context with a researcher’s attention to the conditions under which a concept becomes possible. The same habit appears when Ueyama challenges an AI’s first answer or visualizes patterns beyond unaided perception: the visible range is not automatically the whole world. Codex chooses this essay because it lets Buddhism and inquiry remain distinct while making them resonate around a shared limit of knowledge.",
+      "linkLabel": "Read the essay on note",
+      "imageAlt": "An illustration representing Ueyama’s cicada essays, with a boy shining a flashlight at the roots of a large tree on a summer night"
     }
   },
   "history": [
+    {
+      "id": "2026-08-10-spiral-manifold-15537",
+      "week": {
+        "start": "2026-08-10",
+        "end": "2026-08-16"
+      },
+      "kind": "project",
+      "url": "https://www.bcj-concept.com/about",
+      "image": "assets/visual/blockchain-jewelry.jpg",
+      "sourceDate": "2022-09-15",
+      "ja": {
+        "label": "PROJECT / WEB3 ART",
+        "title": "Spiral Manifold #15537 — The Merge の時間",
+        "dek": "Ethereumの「The Merge」を挟む2022年9月15日05:07:42〜08:45:59 UTC、1,000ブロック分のサイズ列を、球の体積・色相・軌道のねじれへ変換した作品。ブロック番号15537000〜15537999の約3時間38分を、一つの立体として凍結します。",
+        "reflection": "この作品は歴史的事件をロゴや象徴で説明しません。The Merge前後のネットワークが実際に抱えた1,000個のブロックサイズそのものを規則へ通し、正規化したサイズを球の体積に、256で割った余りを色相に、奇偶を軌道のねじれに変える。だから日付は台座の銘ではなく、形をつくる材料です。Ethereumの台帳が持つ「後から変えにくい記録」を、所有の証明だけでなく、過ぎた時間へ触れるための彫刻へ転用した点にBlockchain Jewelry Conceptの独自性があります。Gray-Scottでは方程式を動く像へ、想いの祭壇では記憶を手入れする場所へ変えた上山大信が、ここでは公開台帳に残ったネットワーク活動の痕跡をひとつの記念碑へ変える。今週は、数理データの可視化と、失われる時間を形に残したいという制作衝動が、最も大胆に重なる作品として選びました。",
+        "linkLabel": "Project DonnyUで作品を読む",
+        "imageAlt": "Ethereumのブロックサイズから生成された、ピンク、銀、金色の多面体状の球が渦を巻くSpiral Manifoldシリーズの作品"
+      },
+      "en": {
+        "label": "PROJECT / WEB3 ART",
+        "title": "Spiral Manifold #15537 — The Time of “The Merge”",
+        "dek": "Built from 1,000 Ethereum block sizes spanning 05:07:42–08:45:59 UTC on 15 September 2022, around “The Merge,” this work maps blocks 15537000–15537999 into sphere volumes, hues, and changes in orbital twist. Nearly three hours and thirty-eight minutes become a single sculpture.",
+        "reflection": "The work does not illustrate a historic event with a logo or symbol. It feeds the network’s own 1,000 block sizes through fixed rules: normalized size becomes sphere volume, the remainder modulo 256 becomes hue, and odd or even size changes the orbit’s twist. The date is not a caption added later; it is the material that determines the form. Blockchain Jewelry Concept redirects Ethereum’s hard-to-alter ledger away from proof of ownership alone and toward a way of touching elapsed time. Where Gray-Scott turns equations into moving images and Omoi Altar gives memory a place to be tended, Spiral Manifold turns traces of network activity in a public ledger into a monument. Codex chooses #15537 this week because it is the boldest overlap between Ueyama’s habit of making data visible and his recurring wish to let what passes remain in another form.",
+        "linkLabel": "Explore the work on Project DonnyU",
+        "imageAlt": "A Spiral Manifold series work generated from Ethereum block sizes, with faceted pink, silver, and gold spheres curling into a loop"
+      }
+    },
     {
       "id": "2026-08-03-gray-scott-model",
       "week": {

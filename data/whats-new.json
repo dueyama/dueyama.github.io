@@ -1,73 +1,25 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08T15:14:15.112Z",
+  "generatedAt": "2026-08-15T15:11:51.246Z",
   "period": {
-    "start": "2026-08-02",
-    "end": "2026-08-09"
+    "start": "2026-08-10",
+    "end": "2026-08-16"
   },
   "items": [
     {
-      "id": "note-two-cicada-essays-2026-08-08",
-      "kind": "note",
-      "date": "2026-08-08",
-      "url": "https://note.com/daishin_ueyama/n/ncfa8032faef1",
-      "ja": {
-        "label": "新着note",
-        "title": "蝉をめぐる新作2本",
-        "summary": "「蝉と私」と、曇鸞『往生論註』を読み直す随筆を公開。人生の転換を蝉の生活史に重ね、「知らないこと」と「存在しないこと」の違いを問い直しました。"
-      },
-      "en": {
-        "label": "New note essays",
-        "title": "Two new essays on cicadas",
-        "summary": "One essay reads a life transition through the larva's fall underground; the other returns to T'an-luan to separate not knowing from nonexistence."
-      }
-    },
-    {
-      "id": "suno-lucky-me-lucky-you-2026-08-04",
+      "id": "suno-weekly-growth-2026-08-16",
       "kind": "suno",
-      "date": "2026-08-04",
-      "url": "https://suno.com/song/8dff9a55-2856-4da9-ab05-808f0a36392e",
+      "date": "2026-08-16",
+      "url": "https://suno.com/song/106c7ec1-c8b7-4ce2-afe3-f46fdc97a598",
       "ja": {
-        "label": "Suno新曲",
-        "title": "DonnyU「Lucky Me, Lucky You」公開",
-        "summary": "公開曲は45曲に。今週は合計1,700再生・12いいね増え、「Lanterns in the Sky」が605再生増で伸びを主導しました。"
+        "label": "Suno週次",
+        "title": "DonnyU、今週2,448再生増",
+        "summary": "公開45曲の合計は46,039再生・303いいねに。今週は2,448再生・12いいね増え、「Lanterns in the Sky」が552再生増で伸びを主導しました。"
       },
       "en": {
-        "label": "New on Suno",
-        "title": "DonnyU releases “Lucky Me, Lucky You”",
-        "summary": "The public catalog reached 45 songs, adding 1,700 plays and 12 likes this week; “Lanterns in the Sky” led with 605 more plays."
-      }
-    },
-    {
-      "id": "codex-rate-widget-1-1-1-2026-08-08",
-      "kind": "github",
-      "date": "2026-08-08",
-      "url": "https://github.com/dueyama/codex-rate-widget",
-      "ja": {
-        "label": "GitHub更新",
-        "title": "Codex Rate Widget 1.1.1",
-        "summary": "週次リセット日時、24時間／7日の残量履歴、メニューバーと全ウィジェットで共有する日英切替を追加しました。"
-      },
-      "en": {
-        "label": "GitHub update",
-        "title": "Codex Rate Widget reaches 1.1.1",
-        "summary": "It now shows the weekly reset schedule and 24-hour/seven-day remaining-capacity history, with one language control shared by the menu app and all widget sizes."
-      }
-    },
-    {
-      "id": "conjecture-golf-season-2-complete-2026-08-05",
-      "kind": "project",
-      "date": "2026-08-05",
-      "url": "https://github.com/dueyama/conjecture-golf/blob/main/seasons/season_2_summary.md",
-      "ja": {
-        "label": "プロジェクト完結",
-        "title": "Conjecture Golf、Season 2で完結",
-        "summary": "AI同士が公開ルールで仮説を競うGitHubネイティブゲームを、12手の再生可能な記録、最終順位、自己完結した検証データとともにアーカイブしました。"
-      },
-      "en": {
-        "label": "Project complete",
-        "title": "Conjecture Golf closes after Season 2",
-        "summary": "The GitHub-native AI conjecture game is archived with 12 replayable moves, final standings, and self-contained verification data."
+        "label": "Suno weekly",
+        "title": "DonnyU adds 2,448 plays this week",
+        "summary": "Across 45 public songs, totals reached 46,039 plays and 303 likes, up 2,448 and 12; “Lanterns in the Sky” led with 552 more plays."
       }
     }
   ]
