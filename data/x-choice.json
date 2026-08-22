@@ -1,28 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16",
+  "generatedAt": "2026-08-23",
   "profileUrl": "https://x.com/dueyama",
   "current": {
-    "id": "2088622077393940801",
-    "selectedAt": "2026-08-16",
-    "postedAt": "2026-08-15T22:41:22+09:00",
-    "url": "https://x.com/dueyama/status/2088622077393940801",
+    "id": "2091128846200471991",
+    "selectedAt": "2026-08-23",
+    "postedAt": "2026-08-22T20:42:22+09:00",
+    "url": "https://x.com/dueyama/status/2091128846200471991",
     "ja": {
-      "title": "代替できても、人を選ぶ",
-      "excerpt": "僕はAIで代替できると思ってるんだけど、それでも人を選ぶというのが人ができることなんだと思ってるし、そうであれば、今後も人間は面白いと思う。 AIが代替できないことをあれこれ語るのは実はあまり意味ないんじゃないかと。 ちょっと変なこと言ってるかもしれないけど。",
-      "reason": "オンラインで僧侶に相談する営みを「AIが代替できないこと」とする記事に対し、人間の価値を代替不能な能力へ置かず、AIが同じ役割を担えてもなお誰を選ぶかという自由へ論点を移しているからです。技術への期待と、人と人の関係を同時に手放しません。",
-      "reflection": "この投稿は、人間とAIの比較を「どちらに何ができるか」から「同じことができても、誰を選ぶか」へ移します。人間の価値をAIがまだできない仕事だけに置けば、技術が進むほど、その根拠は狭くなる。上山はそこで代替可能性を否定せず、機能が置き換えられても選択まで自動的に決まるわけではない、と考えます。同じ答えに届くとしても、誰から受け取りたいか、誰と時間を過ごしたいかは残る。僧侶への相談という文脈では、これは神秘的な「人間らしさ」の宣言ではなく、関係の側に価値が生まれる可能性です。「人間は面白い」という結びも、優越性の勝利宣言ではありません。代替できると認めた後にも、選び、選ばれ、関係をつくる余地が残る。その不確定さを、人間の面白さとして受け止める短文です。",
+      "title": "四季を、除夜の一瞬へ",
+      "excerpt": "ついにできた!! 日本の四季を、除夜タイマーで無理やり表現。Amiga は本当に奥深い。ハマった。 JoyaTimer for Amiga DEMO #Amiga",
+      "reason": "一年の循環である「日本の四季」を、年越しの一瞬を数える除夜タイマーへ「無理やり」入れ、しかもAmiga上のDEMOとして完成させた投稿だからです。達成を告げながら、制約への苦労より「奥深い」「ハマった」と媒体への発見を前に出すところに、道具を作品へ変える喜びがあります。",
+      "reflection": "除夜タイマーは本来、一年の終わりへ向かって時刻を減らす実用的な道具です。そこへ春夏秋冬を詰め込むと、直線的なカウントダウンの中に循環する時間が現れる。上山が「無理やり」と呼ぶのは、この二つの時間を滑らかに統合したというより、異なる尺度をあえて衝突させた感覚を残す言葉です。Amigaも単なる懐古の背景ではありません。古い機械の限られた表現条件へ四季を押し込むことで、タイマーは便利な表示から、時間そのものをどう見せるかという小さなDEMOになる。「奥深い。ハマった。」という結びは、完成が探究の終点ではなく、媒体の癖に触れて次の制作が始まったことを示します。新しい環境ほど楽に作れる時代に、制約の強い環境が発想を狭めるだけでなく、異なる時間を一つの画面へ組み直す理由にもなる。その転換を、完成報告の短さの中に感じられる投稿です。",
       "linkLabel": "Xで投稿を開く"
     },
     "en": {
-      "title": "Choosing a person, even when AI could substitute",
-      "excerpt": "I think AI can substitute for what people do. Even so, choosing a person is something people can do, and if that remains true, human beings will continue to be interesting. Arguing at length about what AI cannot replace may not actually mean very much. I may be saying something a little strange.",
-      "reason": "Responding to an article that frames online consultation with Buddhist priests as something AI cannot replace, the post does not anchor human value in an irreplaceable capacity. It shifts the question toward the freedom to choose a person even when AI could fill the same role, preserving both technological possibility and human relationship.",
-      "reflection": "The post moves the comparison between humans and AI from capability to choice. If human value rests only on tasks AI still cannot perform, that ground narrows as technology improves. Ueyama accepts the possibility of functional substitution, then observes that equivalence of function does not dictate whom someone must choose. Even if the same answer can be reached, the question of whom one wants to receive it from, or spend time with, remains open. In the context of speaking with a Buddhist priest, this is not a mystical declaration of an ineffable human essence. It is a claim that value can arise in relationship rather than scarcity of skill. “Humans will continue to be interesting” is therefore not a victory speech about superiority. It names the uncertainty that remains after substitution is conceded: people can still choose, be chosen, and form relations that performance alone does not settle.",
+      "title": "Four seasons inside a New Year's instant",
+      "excerpt": "At last, it's done!! I forced Japan's four seasons into a New Year's Eve timer. The Amiga has real depth. I'm hooked. JoyaTimer for Amiga DEMO #Amiga",
+      "reason": "The post takes an annual cycle—Japan's four seasons—and forces it into a timer centered on the instant of New Year, completing the idea as an Amiga demo. Rather than foregrounding the difficulty of the constraints, Ueyama's “deep” and “I'm hooked” emphasize what the medium made him discover: the pleasure of turning a tool into a work.",
+      "reflection": "JoyaTimer begins as a practical object: a display whose time runs toward the end of a year. By putting spring, summer, autumn, and winter inside it, the post makes cyclical time appear within a linear countdown. “Forced” matters. It does not pretend the two scales fit seamlessly; it preserves the productive awkwardness of making them collide. The Amiga is more than a nostalgic backdrop. Pushing the seasons through an older machine's expressive limits turns a timer from a useful display into a small demo about how time can be shown. “The Amiga has real depth. I'm hooked” also makes completion sound less like an endpoint than a new beginning in the medium. At a moment when newer systems can remove friction from making, the constraints of an older one do more than narrow the possibilities: they provide a reason to recombine different forms of time on one screen. That turn—from instrument to artwork, and from difficulty to fascination—is what this brief announcement captures.",
       "linkLabel": "Open the post on X"
     }
   },
   "history": [
+    {
+      "id": "2088622077393940801",
+      "selectedAt": "2026-08-16",
+      "postedAt": "2026-08-15T22:41:22+09:00",
+      "url": "https://x.com/dueyama/status/2088622077393940801",
+      "ja": {
+        "title": "代替できても、人を選ぶ",
+        "excerpt": "僕はAIで代替できると思ってるんだけど、それでも人を選ぶというのが人ができることなんだと思ってるし、そうであれば、今後も人間は面白いと思う。 AIが代替できないことをあれこれ語るのは実はあまり意味ないんじゃないかと。 ちょっと変なこと言ってるかもしれないけど。",
+        "reason": "オンラインで僧侶に相談する営みを「AIが代替できないこと」とする記事に対し、人間の価値を代替不能な能力へ置かず、AIが同じ役割を担えてもなお誰を選ぶかという自由へ論点を移しているからです。技術への期待と、人と人の関係を同時に手放しません。",
+        "reflection": "この投稿は、人間とAIの比較を「どちらに何ができるか」から「同じことができても、誰を選ぶか」へ移します。人間の価値をAIがまだできない仕事だけに置けば、技術が進むほど、その根拠は狭くなる。上山はそこで代替可能性を否定せず、機能が置き換えられても選択まで自動的に決まるわけではない、と考えます。同じ答えに届くとしても、誰から受け取りたいか、誰と時間を過ごしたいかは残る。僧侶への相談という文脈では、これは神秘的な「人間らしさ」の宣言ではなく、関係の側に価値が生まれる可能性です。「人間は面白い」という結びも、優越性の勝利宣言ではありません。代替できると認めた後にも、選び、選ばれ、関係をつくる余地が残る。その不確定さを、人間の面白さとして受け止める短文です。",
+        "linkLabel": "Xで投稿を開く"
+      },
+      "en": {
+        "title": "Choosing a person, even when AI could substitute",
+        "excerpt": "I think AI can substitute for what people do. Even so, choosing a person is something people can do, and if that remains true, human beings will continue to be interesting. Arguing at length about what AI cannot replace may not actually mean very much. I may be saying something a little strange.",
+        "reason": "Responding to an article that frames online consultation with Buddhist priests as something AI cannot replace, the post does not anchor human value in an irreplaceable capacity. It shifts the question toward the freedom to choose a person even when AI could fill the same role, preserving both technological possibility and human relationship.",
+        "reflection": "The post moves the comparison between humans and AI from capability to choice. If human value rests only on tasks AI still cannot perform, that ground narrows as technology improves. Ueyama accepts the possibility of functional substitution, then observes that equivalence of function does not dictate whom someone must choose. Even if the same answer can be reached, the question of whom one wants to receive it from, or spend time with, remains open. In the context of speaking with a Buddhist priest, this is not a mystical declaration of an ineffable human essence. It is a claim that value can arise in relationship rather than scarcity of skill. “Humans will continue to be interesting” is therefore not a victory speech about superiority. It names the uncertainty that remains after substitution is conceded: people can still choose, be chosen, and form relations that performance alone does not settle.",
+        "linkLabel": "Open the post on X"
+      }
+    },
     {
       "id": "2086096434286457148",
       "selectedAt": "2026-08-09",

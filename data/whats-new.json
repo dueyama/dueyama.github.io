@@ -1,25 +1,57 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T15:11:51.246Z",
+  "generatedAt": "2026-08-22T15:11:44.226Z",
   "period": {
-    "start": "2026-08-10",
-    "end": "2026-08-16"
+    "start": "2026-08-17",
+    "end": "2026-08-23"
   },
   "items": [
     {
-      "id": "suno-weekly-growth-2026-08-16",
-      "kind": "suno",
-      "date": "2026-08-16",
-      "url": "https://suno.com/song/106c7ec1-c8b7-4ce2-afe3-f46fdc97a598",
+      "id": "omoi-altar-1-4-2026-08-19",
+      "kind": "app",
+      "date": "2026-08-19",
+      "url": "https://apps.apple.com/jp/app/%E6%83%B3%E3%81%84%E3%81%AE%E7%A5%AD%E5%A3%87/id6770172873?uo=4",
       "ja": {
-        "label": "Suno週次",
-        "title": "DonnyU、今週2,448再生増",
-        "summary": "公開45曲の合計は46,039再生・303いいねに。今週は2,448再生・12いいね増え、「Lanterns in the Sky」が552再生増で伸びを主導しました。"
+        "label": "iOSアップデート",
+        "title": "想いの祭壇 1.4、手まり花を追加",
+        "summary": "新しい「手まり花」を追加。祭壇ごとの最初の1回は無料で飾れ、同じ祭壇での以後の入れ替えは消耗型のアプリ内購入になりました。"
       },
       "en": {
-        "label": "Suno weekly",
-        "title": "DonnyU adds 2,448 plays this week",
-        "summary": "Across 45 public songs, totals reached 46,039 plays and 303 likes, up 2,448 and 12; “Lanterns in the Sky” led with 552 more plays."
+        "label": "iOS update",
+        "title": "Omoi Altar 1.4 adds Temari Flowers",
+        "summary": "The new Temari Flowers can be placed once for free on each altar; later replacements on that altar use a consumable in-app purchase."
+      }
+    },
+    {
+      "id": "suno-reset-2026-08-18",
+      "kind": "suno",
+      "date": "2026-08-18",
+      "url": "https://suno.com/song/2853cfef-c7c8-46d8-b66d-51ef0273bbcb",
+      "ja": {
+        "label": "Suno新曲",
+        "title": "DonnyU、「RESET!」を公開",
+        "summary": "最初の週次記録で406再生・4いいね。公開46曲は今週1,926再生・4いいね増え、合計47,965再生・307いいねになりました。"
+      },
+      "en": {
+        "label": "New on Suno",
+        "title": "DonnyU releases “RESET!”",
+        "summary": "Its first weekly snapshot recorded 406 plays and 4 likes. Across 46 public songs, DonnyU gained 1,926 plays and 4 likes, reaching 47,965 plays and 307 likes."
+      }
+    },
+    {
+      "id": "codex-rate-widget-1-2-2-2026-08-22",
+      "kind": "github",
+      "date": "2026-08-22",
+      "url": "https://github.com/dueyama/codex-rate-widget",
+      "ja": {
+        "label": "GitHub更新",
+        "title": "Codex Rate Widget、公開ソース1.2.2へ",
+        "summary": "7日間の一定消費ペースを重ね、ペース遅れの警告、回復までの休止時間、残量ゼロ到達時刻の予測を表示するようになりました。"
+      },
+      "en": {
+        "label": "GitHub update",
+        "title": "Codex Rate Widget source reaches 1.2.2",
+        "summary": "The public Swift source adds a seven-day pace guide, behind-pace warnings, an estimated pause to catch up, and a zero-capacity projection."
       }
     }
   ]

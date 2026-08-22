@@ -1,34 +1,61 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T15:14:18.147Z",
+  "generatedAt": "2026-08-22T15:11:48.845Z",
   "current": {
-    "id": "2026-08-17-cicada-does-not-know-summer",
+    "id": "2026-08-24-gray-scott-self-replication-paper",
     "week": {
-      "start": "2026-08-17",
-      "end": "2026-08-23"
+      "start": "2026-08-24",
+      "end": "2026-08-30"
     },
-    "kind": "note",
-    "url": "https://note.com/daishin_ueyama/n/ncfa8032faef1",
-    "image": "assets/choice/cicada-holes.jpg",
-    "sourceDate": "2026-08-08",
+    "kind": "paper",
+    "url": "https://doi.org/10.14492/hokmj/1351001084",
+    "image": "assets/visual/gray-scott-3d.png",
+    "sourceDate": "1999-02-01",
     "ja": {
-      "label": "NOTE / BUDDHISM",
-      "title": "「蝉は夏しか知らない」の先へ",
-      "dek": "盆法座で聞いた曇鸞『往生論註』の「蟪蛄不識春秋」を原典の十念の議論へ戻して読む随筆。春秋を知らない蝉は「夏だけを知る」のではなく、比較によって生まれる夏という概念さえ持たないと捉え、「知らないこと」と「存在しないこと」を分けます。",
-      "reflection": "聞き慣れた「蝉は夏しか知らない」という譬えを原典へ戻すと、文章の向きが反転します。春も秋も経験しない蝉には、対比によって成り立つ「夏」という区分そのものがない。それでも、蝉が夏を確認できないことは、夏が存在しないことを意味しません。曇鸞がこの譬えを置いたのは、一心に念仏しながら十念を一つずつ数えられるのかという問いの中でした。自分で成立を測定できないことと、成立していないことを同一視しないための言葉なのです。ここには、仏教の教説を結論だけで受け取らず文脈へ戻る僧侶の読みと、概念が成立する条件を問い直す研究者の目が同居しています。上山大信の仕事には、AIの最初の答えに反論するときも、数理現象を可視化するときも、見えている範囲を世界全体だと思わない姿勢が繰り返し現れる。今週は、宗教と探究を安易に一つへ溶かさず、認識の限界を共通の問いとして響かせる一本として選びました。",
-      "linkLabel": "noteで本文を読む",
-      "imageAlt": "上山大信の蝉随筆群を象徴する、夏の夜に大木の根元を懐中電灯で照らす少年のイラスト"
+      "label": "PAPER / PATTERN FORMATION",
+      "title": "自己複製パターンを動かす見えない階層",
+      "dek": "局在した一つのパルスが分裂を繰り返し、領域を埋めていく一次元Gray-Scottモデル。上山大信の1999年論文は、静的な自己複製を、消えた定常チューリング分岐の極限点が残す「後効果」と、それらを結ぶ不安定多様体の階層として読み解きます。",
+      "reflection": "自己複製は目を奪う現象ですが、この論文が追うのは、画面に現れる分裂そのものより、その瞬間を必然へ近づける見えない相空間の地形です。定常パターンの枝がサドルノード分岐で消えても、近傍のベクトル場は突然別物にはならない。軌道は消えた低モードの形にしばらく留まり、かつて低モードと高モードを結んでいた不安定多様体に導かれて、2モードから4モード、さらに6モードへ跳ぶ。上山は偏微分方程式を大規模な常微分方程式系へ離散化し、AUTOで分岐枝と安定性を数値的に解剖します。同時に、高次モードが安定性を回復する一般則の起源は未解明だと残す。完成した説明だけでなく、何がまだ見えていないかまで図にする研究です。現在の3Dブラウザ・シミュレーターが方程式の形を誰でも眺められるものへ開く一方、この論文は、その動きの背後にある不可視の骨格を示す。今週は、可視化を作品へ変える以前から続く、過渡現象を構造として捉える研究者の眼を選びました。",
+      "linkLabel": "DOIで論文を読む",
+      "imageAlt": "Gray-Scott 3Dブラウザシミュレーターで、橙色の膜状・蛇状パターンが暗い立方体内に成長する画面"
     },
     "en": {
-      "label": "NOTE / BUDDHISM",
-      "title": "Beyond “The Cicada Only Knows Summer”",
-      "dek": "After hearing Tan-luan’s phrase about a cicada that knows neither spring nor autumn at an Obon service, Ueyama returns it to the Wangsheng Lun Zhu’s discussion of the Ten Thoughts. The cicada does not know only summer; without contrasting seasons, it cannot possess “summer” as a concept at all. Not knowing and nonexistence come apart.",
-      "reflection": "Returning the familiar saying to its source reverses its direction. A cicada that experiences neither spring nor autumn lacks the contrast from which “summer” can arise. Yet its inability to identify summer does not make summer unreal. Tan-luan uses the image while asking how one can single-mindedly invoke Amida Buddha and still count the Ten Thoughts: what cannot be measured from within need not have failed to occur. The essay joins a priest’s refusal to detach doctrine from context with a researcher’s attention to the conditions under which a concept becomes possible. The same habit appears when Ueyama challenges an AI’s first answer or visualizes patterns beyond unaided perception: the visible range is not automatically the whole world. Codex chooses this essay because it lets Buddhism and inquiry remain distinct while making them resonate around a shared limit of knowledge.",
-      "linkLabel": "Read the essay on note",
-      "imageAlt": "An illustration representing Ueyama’s cicada essays, with a boy shining a flashlight at the roots of a large tree on a summer night"
+      "label": "PAPER / PATTERN FORMATION",
+      "title": "The Hidden Hierarchy Behind Self-Replication",
+      "dek": "In the one-dimensional Gray-Scott model, one localized pulse repeatedly divides until it fills the domain. Ueyama's 1999 paper reads this static self-replication as the aftereffect of vanished limit points on stationary Turing branches, organized by a hierarchy of unstable-manifold connections.",
+      "reflection": "Self-replication arrests the eye, but the paper looks past each split to the phase-space terrain beneath it. When a stationary branch vanishes at a saddle-node, nearby flow retains its influence. An orbit lingers near the lost low-mode pattern, then follows an unstable manifold that once connected it to a stable higher mode: two becomes four, then six. Ueyama turns the PDE into a large ODE system and uses AUTO to trace branches, stability, and jumps numerically. He also leaves an honest open edge: why general higher modes recover stability remains unknown. The current 3D browser simulator opens the equation's forms to anyone; this paper reveals the unseen skeleton beneath their motion. Codex chooses it for a research habit that predates those public visualizations: following transient spectacle as structure while marking where explanation stops.",
+      "linkLabel": "Read the paper via DOI",
+      "imageAlt": "A Gray-Scott 3D browser simulation with orange sheet-like and snake-like patterns growing inside a dark cube"
     }
   },
   "history": [
+    {
+      "id": "2026-08-17-cicada-does-not-know-summer",
+      "week": {
+        "start": "2026-08-17",
+        "end": "2026-08-23"
+      },
+      "kind": "note",
+      "url": "https://note.com/daishin_ueyama/n/ncfa8032faef1",
+      "image": "assets/choice/cicada-holes.jpg",
+      "sourceDate": "2026-08-08",
+      "ja": {
+        "label": "NOTE / BUDDHISM",
+        "title": "「蝉は夏しか知らない」の先へ",
+        "dek": "盆法座で聞いた曇鸞『往生論註』の「蟪蛄不識春秋」を原典の十念の議論へ戻して読む随筆。春秋を知らない蝉は「夏だけを知る」のではなく、比較によって生まれる夏という概念さえ持たないと捉え、「知らないこと」と「存在しないこと」を分けます。",
+        "reflection": "聞き慣れた「蝉は夏しか知らない」という譬えを原典へ戻すと、文章の向きが反転します。春も秋も経験しない蝉には、対比によって成り立つ「夏」という区分そのものがない。それでも、蝉が夏を確認できないことは、夏が存在しないことを意味しません。曇鸞がこの譬えを置いたのは、一心に念仏しながら十念を一つずつ数えられるのかという問いの中でした。自分で成立を測定できないことと、成立していないことを同一視しないための言葉なのです。ここには、仏教の教説を結論だけで受け取らず文脈へ戻る僧侶の読みと、概念が成立する条件を問い直す研究者の目が同居しています。上山大信の仕事には、AIの最初の答えに反論するときも、数理現象を可視化するときも、見えている範囲を世界全体だと思わない姿勢が繰り返し現れる。今週は、宗教と探究を安易に一つへ溶かさず、認識の限界を共通の問いとして響かせる一本として選びました。",
+        "linkLabel": "noteで本文を読む",
+        "imageAlt": "上山大信の蝉随筆群を象徴する、夏の夜に大木の根元を懐中電灯で照らす少年のイラスト"
+      },
+      "en": {
+        "label": "NOTE / BUDDHISM",
+        "title": "Beyond “The Cicada Only Knows Summer”",
+        "dek": "After hearing Tan-luan’s phrase about a cicada that knows neither spring nor autumn at an Obon service, Ueyama returns it to the Wangsheng Lun Zhu’s discussion of the Ten Thoughts. The cicada does not know only summer; without contrasting seasons, it cannot possess “summer” as a concept at all. Not knowing and nonexistence come apart.",
+        "reflection": "Returning the familiar saying to its source reverses its direction. A cicada that experiences neither spring nor autumn lacks the contrast from which “summer” can arise. Yet its inability to identify summer does not make summer unreal. Tan-luan uses the image while asking how one can single-mindedly invoke Amida Buddha and still count the Ten Thoughts: what cannot be measured from within need not have failed to occur. The essay joins a priest’s refusal to detach doctrine from context with a researcher’s attention to the conditions under which a concept becomes possible. The same habit appears when Ueyama challenges an AI’s first answer or visualizes patterns beyond unaided perception: the visible range is not automatically the whole world. Codex chooses this essay because it lets Buddhism and inquiry remain distinct while making them resonate around a shared limit of knowledge.",
+        "linkLabel": "Read the essay on note",
+        "imageAlt": "An illustration representing Ueyama’s cicada essays, with a boy shining a flashlight at the roots of a large tree on a summer night"
+      }
+    },
     {
       "id": "2026-08-10-spiral-manifold-15537",
       "week": {
