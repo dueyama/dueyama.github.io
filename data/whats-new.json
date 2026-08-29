@@ -1,57 +1,57 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-22T15:11:44.226Z",
+  "generatedAt": "2026-08-29T15:17:54.305Z",
   "period": {
-    "start": "2026-08-17",
-    "end": "2026-08-23"
+    "start": "2026-08-23",
+    "end": "2026-08-30"
   },
   "items": [
     {
-      "id": "omoi-altar-1-4-2026-08-19",
+      "id": "app-store-colordiary-1-5-joyatimer-7-3-2026-08-24",
       "kind": "app",
-      "date": "2026-08-19",
-      "url": "https://apps.apple.com/jp/app/%E6%83%B3%E3%81%84%E3%81%AE%E7%A5%AD%E5%A3%87/id6770172873?uo=4",
+      "date": "2026-08-24",
+      "url": "https://apps.apple.com/jp/developer/daishin-ueyama/id495395197",
       "ja": {
         "label": "iOSアップデート",
-        "title": "想いの祭壇 1.4、手まり花を追加",
-        "summary": "新しい「手まり花」を追加。祭壇ごとの最初の1回は無料で飾れ、同じ祭壇での以後の入れ替えは消耗型のアプリ内購入になりました。"
+        "title": "ColorDiary 1.5 と JoyaTimer 7.3",
+        "summary": "ColorDiaryは「色のふりかえり」を日数ベースに改良し、曜日・月内時期の比較、色別の日一覧、800文字メモに対応。JoyaTimerは最新のiOS・iPadOSに対応しました。"
       },
       "en": {
-        "label": "iOS update",
-        "title": "Omoi Altar 1.4 adds Temari Flowers",
-        "summary": "The new Temari Flowers can be placed once for free on each altar; later replacements on that altar use a consumable in-app purchase."
+        "label": "iOS updates",
+        "title": "ColorDiary 1.5 and JoyaTimer 7.3",
+        "summary": "ColorDiary improves Color Review with day-based comparisons, weekday and month-period views, days by color, and 800-character notes. JoyaTimer adds current iOS and iPadOS compatibility."
       }
     },
     {
-      "id": "suno-reset-2026-08-18",
-      "kind": "suno",
-      "date": "2026-08-18",
-      "url": "https://suno.com/song/2853cfef-c7c8-46d8-b66d-51ef0273bbcb",
-      "ja": {
-        "label": "Suno新曲",
-        "title": "DonnyU、「RESET!」を公開",
-        "summary": "最初の週次記録で406再生・4いいね。公開46曲は今週1,926再生・4いいね増え、合計47,965再生・307いいねになりました。"
-      },
-      "en": {
-        "label": "New on Suno",
-        "title": "DonnyU releases “RESET!”",
-        "summary": "Its first weekly snapshot recorded 406 plays and 4 likes. Across 46 public songs, DonnyU gained 1,926 plays and 4 likes, reaching 47,965 plays and 307 likes."
-      }
-    },
-    {
-      "id": "codex-rate-widget-1-2-2-2026-08-22",
+      "id": "joyatimer-amiga-demo-v1-2026-08-23",
       "kind": "github",
-      "date": "2026-08-22",
-      "url": "https://github.com/dueyama/codex-rate-widget",
+      "date": "2026-08-23",
+      "url": "https://github.com/dueyama/JoyaTimerAmiga-Demo",
       "ja": {
-        "label": "GitHub更新",
-        "title": "Codex Rate Widget、公開ソース1.2.2へ",
-        "summary": "7日間の一定消費ペースを重ね、ペース遅れの警告、回復までの休止時間、残量ゼロ到達時刻の予測を表示するようになりました。"
+        "label": "GitHub新プロジェクト",
+        "title": "JoyaTimerAmiga-Demo v1.0.0を公開",
+        "summary": "JoyaTimerを日本の四季を巡る非対話型Amiga DEMOへ。公開v1.0.0は68000/OCS/PAL・拡張メモリ構成向けで、完全なアセンブリソース、起動可能ADF、再現ビルド検証を収録しました。"
       },
       "en": {
-        "label": "GitHub update",
-        "title": "Codex Rate Widget source reaches 1.2.2",
-        "summary": "The public Swift source adds a seven-day pace guide, behind-pace warnings, an estimated pause to catch up, and a zero-capacity projection."
+        "label": "New GitHub project",
+        "title": "JoyaTimerAmiga-Demo v1.0.0 released",
+        "summary": "JoyaTimer becomes a non-interactive Amiga journey through Japan's four seasons. Public v1.0.0 targets an expanded 68000/OCS/PAL setup and includes complete assembly source, a bootable ADF, and reproducible-build checks."
+      }
+    },
+    {
+      "id": "suno-weekly-growth-2026-08-30",
+      "kind": "suno",
+      "date": "2026-08-30",
+      "url": "https://suno.com/song/106c7ec1-c8b7-4ce2-afe3-f46fdc97a598",
+      "ja": {
+        "label": "Suno週次",
+        "title": "DonnyU、今週1,431再生増",
+        "summary": "公開46曲の合計は49,396再生・316いいねに。今週は1,431再生・9いいね増え、「Lanterns in the Sky」が467再生増で伸びを主導しました。"
+      },
+      "en": {
+        "label": "Suno weekly",
+        "title": "DonnyU adds 1,431 plays this week",
+        "summary": "Across 46 public songs, totals reached 49,396 plays and 316 likes, up 1,431 and 9; “Lanterns in the Sky” led with 467 more plays."
       }
     }
   ]

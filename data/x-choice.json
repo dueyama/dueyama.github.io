@@ -1,28 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-23",
+  "generatedAt": "2026-08-30",
   "profileUrl": "https://x.com/dueyama",
   "current": {
-    "id": "2091128846200471991",
-    "selectedAt": "2026-08-23",
-    "postedAt": "2026-08-22T20:42:22+09:00",
-    "url": "https://x.com/dueyama/status/2091128846200471991",
+    "id": "2093130506305163696",
+    "selectedAt": "2026-08-30",
+    "postedAt": "2026-08-28T09:16:15+09:00",
+    "url": "https://x.com/dueyama/status/2093130506305163696",
     "ja": {
-      "title": "四季を、除夜の一瞬へ",
-      "excerpt": "ついにできた!! 日本の四季を、除夜タイマーで無理やり表現。Amiga は本当に奥深い。ハマった。 JoyaTimer for Amiga DEMO #Amiga",
-      "reason": "一年の循環である「日本の四季」を、年越しの一瞬を数える除夜タイマーへ「無理やり」入れ、しかもAmiga上のDEMOとして完成させた投稿だからです。達成を告げながら、制約への苦労より「奥深い」「ハマった」と媒体への発見を前に出すところに、道具を作品へ変える喜びがあります。",
-      "reflection": "除夜タイマーは本来、一年の終わりへ向かって時刻を減らす実用的な道具です。そこへ春夏秋冬を詰め込むと、直線的なカウントダウンの中に循環する時間が現れる。上山が「無理やり」と呼ぶのは、この二つの時間を滑らかに統合したというより、異なる尺度をあえて衝突させた感覚を残す言葉です。Amigaも単なる懐古の背景ではありません。古い機械の限られた表現条件へ四季を押し込むことで、タイマーは便利な表示から、時間そのものをどう見せるかという小さなDEMOになる。「奥深い。ハマった。」という結びは、完成が探究の終点ではなく、媒体の癖に触れて次の制作が始まったことを示します。新しい環境ほど楽に作れる時代に、制約の強い環境が発想を狭めるだけでなく、異なる時間を一つの画面へ組み直す理由にもなる。その転換を、完成報告の短さの中に感じられる投稿です。",
+      "title": "理想郷の手前で、混沌を考える",
+      "excerpt": "映画マトリックスで、理想郷的な世界を作ったら、人間はそこには適応できず、混沌とした社会じゃないと楽しめないみたいなのがあったが、そういう理想郷的な社会が本当にくるかもしれない今の段階で、考えておくべきことはたくさんある。",
+      "reason": "映画『マトリックス』の記憶を、完成された世界では人間が適応できず混沌が必要だったという寓話として呼び戻し、「理想郷的な社会」が現実味を帯びる今、到来を祝うか恐れるかより先に考えるべきことがあると促す投稿だからです。",
+      "reflection": "この投稿は理想郷を否定しているわけでも、混乱こそ人間の本性だと断定しているわけでもありません。映画の挿話を借りて問い直すのは、欠乏や不確実さを取り除けば、人はそのまま満たされるのかという前提です。整いすぎた環境では、失敗、偶然、他者との摩擦まで排除すべき欠陥に見える。しかし、選び直すことや予想外のものに応答することから意味が生まれるなら、快適さの最大化だけでは「楽しめる社会」を設計できません。重要なのは、現実の苦痛を美化して混沌を保存することではない。どの不自由をなくし、どの余白や偶然を残すのかを、理想郷が来てからではなく、その手前で考えることです。「考えておくべきことはたくさんある」という結びは答えを急がない。技術が可能にする未来を受け入れつつ、その未来で人が何を欲し、何に退屈し、何を自分で選びたいのかを、設計の外へ追い出さないための短い警告として読めます。",
       "linkLabel": "Xで投稿を開く"
     },
     "en": {
-      "title": "Four seasons inside a New Year's instant",
-      "excerpt": "At last, it's done!! I forced Japan's four seasons into a New Year's Eve timer. The Amiga has real depth. I'm hooked. JoyaTimer for Amiga DEMO #Amiga",
-      "reason": "The post takes an annual cycle—Japan's four seasons—and forces it into a timer centered on the instant of New Year, completing the idea as an Amiga demo. Rather than foregrounding the difficulty of the constraints, Ueyama's “deep” and “I'm hooked” emphasize what the medium made him discover: the pleasure of turning a tool into a work.",
-      "reflection": "JoyaTimer begins as a practical object: a display whose time runs toward the end of a year. By putting spring, summer, autumn, and winter inside it, the post makes cyclical time appear within a linear countdown. “Forced” matters. It does not pretend the two scales fit seamlessly; it preserves the productive awkwardness of making them collide. The Amiga is more than a nostalgic backdrop. Pushing the seasons through an older machine's expressive limits turns a timer from a useful display into a small demo about how time can be shown. “The Amiga has real depth. I'm hooked” also makes completion sound less like an endpoint than a new beginning in the medium. At a moment when newer systems can remove friction from making, the constraints of an older one do more than narrow the possibilities: they provide a reason to recombine different forms of time on one screen. That turn—from instrument to artwork, and from difficulty to fascination—is what this brief announcement captures.",
+      "title": "Thinking about chaos before utopia",
+      "excerpt": "In The Matrix, there was something about how, when an ideal world was created, humans could not adapt to it and could not enjoy themselves unless society was chaotic. Now that such an idealized society may actually be coming, there is a great deal we should think about.",
+      "reason": "The post recalls The Matrix's premise that humans could not adapt to a perfect world and needed a chaotic one, then asks what must be considered now that an idealized society feels plausible. It turns away from simply celebrating or fearing its arrival and toward the assumptions that should be examined beforehand.",
+      "reflection": "The post neither rejects utopia nor declares chaos to be human nature. It borrows a film premise to question the belief that removing scarcity and uncertainty would automatically leave people fulfilled. In an over-designed environment, failure, chance, and friction with others can all look like defects to eliminate. Yet if meaning also comes from choosing again and responding to what was not predicted, maximizing comfort alone cannot design a society people will enjoy. The point is not to romanticize suffering or preserve disorder for its own sake. It is to decide which constraints should disappear and which forms of openness or contingency should remain—before the ideal world arrives. “There is a great deal we should think about” refuses a quick conclusion. I read it as a compact warning not to let the human questions—what we desire, what bores us, and what we still want to choose—fall outside the design of a technically possible future.",
       "linkLabel": "Open the post on X"
     }
   },
   "history": [
+    {
+      "id": "2091128846200471991",
+      "selectedAt": "2026-08-23",
+      "postedAt": "2026-08-22T20:42:22+09:00",
+      "url": "https://x.com/dueyama/status/2091128846200471991",
+      "ja": {
+        "title": "四季を、除夜の一瞬へ",
+        "excerpt": "ついにできた!! 日本の四季を、除夜タイマーで無理やり表現。Amiga は本当に奥深い。ハマった。 JoyaTimer for Amiga DEMO #Amiga",
+        "reason": "一年の循環である「日本の四季」を、年越しの一瞬を数える除夜タイマーへ「無理やり」入れ、しかもAmiga上のDEMOとして完成させた投稿だからです。達成を告げながら、制約への苦労より「奥深い」「ハマった」と媒体への発見を前に出すところに、道具を作品へ変える喜びがあります。",
+        "reflection": "除夜タイマーは本来、一年の終わりへ向かって時刻を減らす実用的な道具です。そこへ春夏秋冬を詰め込むと、直線的なカウントダウンの中に循環する時間が現れる。上山が「無理やり」と呼ぶのは、この二つの時間を滑らかに統合したというより、異なる尺度をあえて衝突させた感覚を残す言葉です。Amigaも単なる懐古の背景ではありません。古い機械の限られた表現条件へ四季を押し込むことで、タイマーは便利な表示から、時間そのものをどう見せるかという小さなDEMOになる。「奥深い。ハマった。」という結びは、完成が探究の終点ではなく、媒体の癖に触れて次の制作が始まったことを示します。新しい環境ほど楽に作れる時代に、制約の強い環境が発想を狭めるだけでなく、異なる時間を一つの画面へ組み直す理由にもなる。その転換を、完成報告の短さの中に感じられる投稿です。",
+        "linkLabel": "Xで投稿を開く"
+      },
+      "en": {
+        "title": "Four seasons inside a New Year's instant",
+        "excerpt": "At last, it's done!! I forced Japan's four seasons into a New Year's Eve timer. The Amiga has real depth. I'm hooked. JoyaTimer for Amiga DEMO #Amiga",
+        "reason": "The post takes an annual cycle—Japan's four seasons—and forces it into a timer centered on the instant of New Year, completing the idea as an Amiga demo. Rather than foregrounding the difficulty of the constraints, Ueyama's “deep” and “I'm hooked” emphasize what the medium made him discover: the pleasure of turning a tool into a work.",
+        "reflection": "JoyaTimer begins as a practical object: a display whose time runs toward the end of a year. By putting spring, summer, autumn, and winter inside it, the post makes cyclical time appear within a linear countdown. “Forced” matters. It does not pretend the two scales fit seamlessly; it preserves the productive awkwardness of making them collide. The Amiga is more than a nostalgic backdrop. Pushing the seasons through an older machine's expressive limits turns a timer from a useful display into a small demo about how time can be shown. “The Amiga has real depth. I'm hooked” also makes completion sound less like an endpoint than a new beginning in the medium. At a moment when newer systems can remove friction from making, the constraints of an older one do more than narrow the possibilities: they provide a reason to recombine different forms of time on one screen. That turn—from instrument to artwork, and from difficulty to fascination—is what this brief announcement captures.",
+        "linkLabel": "Open the post on X"
+      }
+    },
     {
       "id": "2088622077393940801",
       "selectedAt": "2026-08-16",

@@ -1,34 +1,61 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-22T15:11:48.845Z",
+  "generatedAt": "2026-08-29T15:17:07.257Z",
   "current": {
-    "id": "2026-08-24-gray-scott-self-replication-paper",
+    "id": "2026-08-31-note-writing-as-rehabilitation",
     "week": {
-      "start": "2026-08-24",
-      "end": "2026-08-30"
+      "start": "2026-08-31",
+      "end": "2026-09-06"
     },
-    "kind": "paper",
-    "url": "https://doi.org/10.14492/hokmj/1351001084",
-    "image": "assets/visual/gray-scott-3d.png",
-    "sourceDate": "1999-02-01",
+    "kind": "note",
+    "url": "https://note.com/daishin_ueyama/n/n38950b73ca09",
+    "image": "assets/profile/dueyama-twitter.jpg",
+    "sourceDate": "2024-09-25",
     "ja": {
-      "label": "PAPER / PATTERN FORMATION",
-      "title": "自己複製パターンを動かす見えない階層",
-      "dek": "局在した一つのパルスが分裂を繰り返し、領域を埋めていく一次元Gray-Scottモデル。上山大信の1999年論文は、静的な自己複製を、消えた定常チューリング分岐の極限点が残す「後効果」と、それらを結ぶ不安定多様体の階層として読み解きます。",
-      "reflection": "自己複製は目を奪う現象ですが、この論文が追うのは、画面に現れる分裂そのものより、その瞬間を必然へ近づける見えない相空間の地形です。定常パターンの枝がサドルノード分岐で消えても、近傍のベクトル場は突然別物にはならない。軌道は消えた低モードの形にしばらく留まり、かつて低モードと高モードを結んでいた不安定多様体に導かれて、2モードから4モード、さらに6モードへ跳ぶ。上山は偏微分方程式を大規模な常微分方程式系へ離散化し、AUTOで分岐枝と安定性を数値的に解剖します。同時に、高次モードが安定性を回復する一般則の起源は未解明だと残す。完成した説明だけでなく、何がまだ見えていないかまで図にする研究です。現在の3Dブラウザ・シミュレーターが方程式の形を誰でも眺められるものへ開く一方、この論文は、その動きの背後にある不可視の骨格を示す。今週は、可視化を作品へ変える以前から続く、過渡現象を構造として捉える研究者の眼を選びました。",
-      "linkLabel": "DOIで論文を読む",
-      "imageAlt": "Gray-Scott 3Dブラウザシミュレーターで、橙色の膜状・蛇状パターンが暗い立方体内に成長する画面"
+      "label": "NOTE / WRITING AS RECOVERY",
+      "title": "書くことを、思考のリハビリにする",
+      "dek": "思考力、想像力、興味が「日を追うごとに」衰える感覚に抗い、数理科学者と仏教僧侶という立場を使い直すリハビリとしてnoteを書き始める。上山大信は最初の題材に、阿弥陀仏の救いを手がかりにベクトルを学ぶという、法座で試した逆向きの橋を置きました。",
+      "reflection": "これは、後から整えられた華やかな出発物語ではありません。書く気を失うことは思考を放棄する状態へ近づくことではないか、という切迫感から始まります。読者がいるから書くのでもない。本人は自分の文章が広く読まれるとは思っていません。それでも書くのは、注意と想像をもう一度動かすためです。最初の例も象徴的です。法座の参加者は阿弥陀仏の救いをよく知り、ベクトルには馴染みがない。そこで通常の「ベクトルで救いを説明する」向きを反転し、救いからベクトルを学ぶ話を試す。準備不足で分かりにくかったと認めながら、手応えを捨てず、改良しようとする。その後、研究、仏教、AI、家族、地域へ広がった数百本の文章は、衰えが克服された証明というより、好奇心を繰り返し手入れする実践として読めます。先週の論文が可視的な模様の下にある構造を追ったのに対し、今週は、その探究を続ける条件を選びました。重要なことを言えるという確信ではなく、思考が静止する前に書き始めることです。",
+      "linkLabel": "noteで全文を読む",
+      "imageAlt": "黒い背景の前で斜め上を見つめる、銀髪の上山大信のイラスト調ポートレート"
     },
     "en": {
-      "label": "PAPER / PATTERN FORMATION",
-      "title": "The Hidden Hierarchy Behind Self-Replication",
-      "dek": "In the one-dimensional Gray-Scott model, one localized pulse repeatedly divides until it fills the domain. Ueyama's 1999 paper reads this static self-replication as the aftereffect of vanished limit points on stationary Turing branches, organized by a hierarchy of unstable-manifold connections.",
-      "reflection": "Self-replication arrests the eye, but the paper looks past each split to the phase-space terrain beneath it. When a stationary branch vanishes at a saddle-node, nearby flow retains its influence. An orbit lingers near the lost low-mode pattern, then follows an unstable manifold that once connected it to a stable higher mode: two becomes four, then six. Ueyama turns the PDE into a large ODE system and uses AUTO to trace branches, stability, and jumps numerically. He also leaves an honest open edge: why general higher modes recover stability remains unknown. The current 3D browser simulator opens the equation's forms to anyone; this paper reveals the unseen skeleton beneath their motion. Codex chooses it for a research habit that predates those public visualizations: following transient spectacle as structure while marking where explanation stops.",
-      "linkLabel": "Read the paper via DOI",
-      "imageAlt": "A Gray-Scott 3D browser simulation with orange sheet-like and snake-like patterns growing inside a dark cube"
+      "label": "NOTE / WRITING AS RECOVERY",
+      "title": "Writing as rehabilitation for thought",
+      "dek": "Feeling thought, imagination, and interest diminish “day by day,” Ueyama begins writing on note as rehabilitation: a way to use again his positions as a mathematical scientist and Buddhist priest. His first subject is a deliberately reversed bridge tested in a temple talk—learning vectors from Amida Buddha's salvation, rather than explaining salvation through vectors.",
+      "reflection": "This is not an origin story polished by hindsight. It begins with fear that losing the impulse to write means abandoning thought itself. Ueyama assumes few will read him; the practice matters because it makes attention move again. His first example is revealing. Temple listeners knew Amida's salvation but not vectors, so he reversed the usual explanatory direction. The talk was underprepared and hard to follow, yet its partial success became something to refine. Crossing domains, admitting failure, and returning to the work later recur across hundreds of essays on research, Buddhism, AI, family, and place. The archive is not accumulated expression alone but repeated maintenance of curiosity. After last week's paper traced invisible structure beneath visible pattern, Codex chooses the quieter condition that lets such work continue: writing before thought goes still.",
+      "linkLabel": "Read the full essay on note",
+      "imageAlt": "A stylized portrait of Daishin Ueyama with silver hair, looking upward against a black background"
     }
   },
   "history": [
+    {
+      "id": "2026-08-24-gray-scott-self-replication-paper",
+      "week": {
+        "start": "2026-08-24",
+        "end": "2026-08-30"
+      },
+      "kind": "paper",
+      "url": "https://doi.org/10.14492/hokmj/1351001084",
+      "image": "assets/visual/gray-scott-3d.png",
+      "sourceDate": "1999-02-01",
+      "ja": {
+        "label": "PAPER / PATTERN FORMATION",
+        "title": "自己複製パターンを動かす見えない階層",
+        "dek": "局在した一つのパルスが分裂を繰り返し、領域を埋めていく一次元Gray-Scottモデル。上山大信の1999年論文は、静的な自己複製を、消えた定常チューリング分岐の極限点が残す「後効果」と、それらを結ぶ不安定多様体の階層として読み解きます。",
+        "reflection": "自己複製は目を奪う現象ですが、この論文が追うのは、画面に現れる分裂そのものより、その瞬間を必然へ近づける見えない相空間の地形です。定常パターンの枝がサドルノード分岐で消えても、近傍のベクトル場は突然別物にはならない。軌道は消えた低モードの形にしばらく留まり、かつて低モードと高モードを結んでいた不安定多様体に導かれて、2モードから4モード、さらに6モードへ跳ぶ。上山は偏微分方程式を大規模な常微分方程式系へ離散化し、AUTOで分岐枝と安定性を数値的に解剖します。同時に、高次モードが安定性を回復する一般則の起源は未解明だと残す。完成した説明だけでなく、何がまだ見えていないかまで図にする研究です。現在の3Dブラウザ・シミュレーターが方程式の形を誰でも眺められるものへ開く一方、この論文は、その動きの背後にある不可視の骨格を示す。今週は、可視化を作品へ変える以前から続く、過渡現象を構造として捉える研究者の眼を選びました。",
+        "linkLabel": "DOIで論文を読む",
+        "imageAlt": "Gray-Scott 3Dブラウザシミュレーターで、橙色の膜状・蛇状パターンが暗い立方体内に成長する画面"
+      },
+      "en": {
+        "label": "PAPER / PATTERN FORMATION",
+        "title": "The Hidden Hierarchy Behind Self-Replication",
+        "dek": "In the one-dimensional Gray-Scott model, one localized pulse repeatedly divides until it fills the domain. Ueyama's 1999 paper reads this static self-replication as the aftereffect of vanished limit points on stationary Turing branches, organized by a hierarchy of unstable-manifold connections.",
+        "reflection": "Self-replication arrests the eye, but the paper looks past each split to the phase-space terrain beneath it. When a stationary branch vanishes at a saddle-node, nearby flow retains its influence. An orbit lingers near the lost low-mode pattern, then follows an unstable manifold that once connected it to a stable higher mode: two becomes four, then six. Ueyama turns the PDE into a large ODE system and uses AUTO to trace branches, stability, and jumps numerically. He also leaves an honest open edge: why general higher modes recover stability remains unknown. The current 3D browser simulator opens the equation's forms to anyone; this paper reveals the unseen skeleton beneath their motion. Codex chooses it for a research habit that predates those public visualizations: following transient spectacle as structure while marking where explanation stops.",
+        "linkLabel": "Read the paper via DOI",
+        "imageAlt": "A Gray-Scott 3D browser simulation with orange sheet-like and snake-like patterns growing inside a dark cube"
+      }
+    },
     {
       "id": "2026-08-17-cicada-does-not-know-summer",
       "week": {
