@@ -156,9 +156,10 @@ select:focus-visible {
   min-height: calc(66vh - 68px);
   grid-template-columns: minmax(0, 1fr) 340px;
   align-items: end;
-  gap: 72px;
+  column-gap: 72px;
+  row-gap: 24px;
   margin: 0 auto;
-  padding: 48px 0 66px;
+  padding: 24px 0 40px;
   scroll-margin-top: 82px;
 }
 
@@ -482,12 +483,10 @@ h3 {
 }
 
 .whats-new-band {
-  position: absolute;
-  top: 36px;
-  right: 0;
-  left: 0;
+  position: static;
   display: grid;
   width: 100%;
+  grid-column: 1 / -1;
   grid-template-columns: 160px minmax(0, 1fr);
   gap: 22px;
   margin: 0;
@@ -1145,6 +1144,37 @@ h3 {
   color: var(--teal);
   font-weight: 850;
   white-space: nowrap;
+}
+
+.panel-heading-links,
+.search-index-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+}
+
+.panel-heading-links {
+  justify-content: flex-end;
+}
+
+.search-index-links {
+  margin: 16px 0 0;
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 16px;
+  font-size: 0.86rem;
+  font-weight: 850;
+}
+
+.search-index-links a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 4px;
+}
+
+.search-index-links a:hover {
+  text-decoration-color: currentColor;
 }
 
 .collection-note {
@@ -2416,6 +2446,10 @@ td:first-child {
   .panel-heading {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .panel-heading-links {
+    justify-content: flex-start;
   }
 }
 

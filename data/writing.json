@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-07",
+  "sourceUrl": "https://note.com/daishin_ueyama",
+  "snapshot": {
+    "publicCount": 326,
+    "asOf": "2026-07"
+  },
+  "items": [
+    {
+      "id": "mother-and-the-stars",
+      "url": "https://note.com/daishin_ueyama/n/n5784d23002ba",
+      "title": {
+        "ja": "母と星空",
+        "en": "Mother and the Stars"
+      },
+      "reflection": {
+        "ja": "認知症の母が繰り返す「小さな光の中に無数の星がある」という言葉が、症状であると同時に祈りのように響きます。銀河を説明した息子と、仏の世界を見ていたかもしれない母。そのすれ違いを科学か信仰のどちらかで解消しないため、静かに深く残る文章です。",
+        "en": "His mother, living with dementia, repeats that countless stars exist inside a small point of light. The words sound at once like a symptom and a prayer. The essay never resolves the distance between the son explaining galaxies and the mother who may have been seeing a Buddhist cosmos, which is why it lingers."
+      }
+    },
+    {
+      "id": "mimeograph-memories",
+      "url": "https://note.com/daishin_ueyama/n/nfe5d80ada5a0",
+      "title": {
+        "ja": "ガリ版印刷の思い出",
+        "en": "Memories of Mimeograph Printing"
+      },
+      "reflection": {
+        "ja": "寺報を刷る母の姿、学級新聞を作って泣きながら回収した失敗、コピー機への移行が、一つの媒体史として重なります。デジタルを愛する人が失われた匂いや手触りを惜しむから、懐古では終わらず、「記憶を別の形で残す」という制作全体の軸まで見えてきます。",
+        "en": "His mother printing temple newsletters, a school newspaper he made and tearfully retrieved, and the arrival of photocopiers become a small history of media. Because this comes from someone who loves digital tools, the lost smell and weight are not nostalgia alone; they reveal the larger wish to preserve memory in another form."
+      }
+    },
+    {
+      "id": "so-many-lives",
+      "url": "https://note.com/daishin_ueyama/n/nd7e11e7202b8",
+      "title": {
+        "ja": "人生いろいろ",
+        "en": "So Many Lives"
+      },
+      "reflection": {
+        "ja": "墓で初めて会った孫から、疎遠だった息子の死を知る老人。説明を重ねず、再会を果たせないまま寺の門を去る背中に任せているため強い。浄土の教えが一般論ではなく、現実には取り返せない後悔を受け止める最後の場所として現れます。",
+        "en": "At a grave, an elderly man learns of his estranged son's death from a grandson he has never met. The essay trusts the man's departing back rather than over-explaining it. The Pure Land teaching enters not as doctrine added afterward, but as the last place able to hold a reunion that life can no longer provide."
+      }
+    },
+    {
+      "id": "familiar-barber-shop",
+      "url": "https://note.com/daishin_ueyama/n/n201bc63c7984",
+      "title": {
+        "ja": "馴染みの散髪屋",
+        "en": "The Familiar Barber Shop"
+      },
+      "reflection": {
+        "ja": "赤ん坊の頃から自分を知る90歳の主人と、壊れて止まったサインポール。店がまだ続いている事実と、いつ消えてもおかしくない予感の対比が美しい。地域の衰退を統計で語るのでなく、一人の職人と場所に蓄積した個人史から描くところに文章の力があります。",
+        "en": "A ninety-year-old barber has known him since infancy; outside, the broken striped pole has stopped turning. The shop is still open, yet already carries the possibility of disappearance. Rather than describe regional decline with statistics, the essay lets us feel it through one craftsperson and a place dense with personal time."
+      }
+    },
+    {
+      "id": "cicada-holes",
+      "url": "https://note.com/daishin_ueyama/n/n430593620788",
+      "title": {
+        "ja": "蝉の穴",
+        "en": "Cicada Holes"
+      },
+      "reflection": {
+        "ja": "祖父に教わった蝉の穴を何度確かめても、羽化の瞬間は見られない。いまなら検索して正解の時間へ行けますが、見られなかった経験こそ観察する目を育てたのだと振り返ります。失敗を欠如ではなく経験そのものとして扱う、短く美しい科学の原点です。",
+        "en": "As a child he repeatedly checked holes his grandfather had shown him, but never witnessed a cicada emerge. Today a search could supply the correct hour. He instead sees the failed observation as the experience that formed a scientific eye: a concise, beautiful account of failure as something other than absence."
+      }
+    },
+    {
+      "id": "retirement-home-on-the-moon",
+      "url": "https://note.com/daishin_ueyama/n/na6f084721a62",
+      "title": {
+        "ja": "月の老人ホーム",
+        "en": "The Retirement Home on the Moon"
+      },
+      "reflection": {
+        "ja": "祖父に買ってもらった宇宙本で信じた「老いる頃には月の低重力老人ホームがある」という未来は、まだ来ていません。その切なさを、月から地球を眺め念仏しながら往生したいという願いと、最後の軽い一言で包む。宇宙、家族、老い、信仰が自然に同居する小品です。",
+        "en": "A childhood space book promised that low-gravity retirement homes would exist by the time he grew old. They do not. The essay wraps that disappointment in a wish to look back at Earth and recite the nembutsu before death, then lightens it with one last joke. Space, family, aging, and faith coexist without strain."
+      }
+    }
+  ]
+}

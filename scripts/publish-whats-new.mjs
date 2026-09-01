@@ -3,6 +3,8 @@
 import { readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { generateSearchPages } from "./generate-search-pages.mjs";
+import { syncSearchMetadata } from "./sync-search-metadata.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUTPUT_PATH = path.join(ROOT, "data", "whats-new.json");
@@ -78,7 +80,14 @@ async function main() {
   const temporary = `${OUTPUT_PATH}.tmp-${process.pid}`;
   await writeFile(temporary, `${JSON.stringify(validated, null, 2)}\n`, "utf8");
   await rename(temporary, OUTPUT_PATH);
-  process.stdout.write(`${JSON.stringify({ output: path.relative(ROOT, OUTPUT_PATH), items: validated.items.length }, null, 2)}\n`);
+  const generatedSearchPages = await generateSearchPages();
+  const searchMetadata = await syncSearchMetadata({ date: validated.period.end });
+  process.stdout.write(`${JSON.stringify({
+    output: path.relative(ROOT, OUTPUT_PATH),
+    items: validated.items.length,
+    generatedSearchPages,
+    searchMetadata,
+  }, null, 2)}\n`);
 }
 
 main().catch((error) => {

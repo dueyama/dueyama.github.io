@@ -170,146 +170,7 @@ const vercelProjects = [
   ["primeportrait-maker", "nextjs", "2026-04-30", "https://primeportrait-maker.vercel.app/", "https://github.com/dueyama/primeportrait-maker", "https://primeportrait-maker.vercel.app/icon.png?icon.0~b6v8ga5kfho.png"],
 ];
 
-const iosApps = [
-  {
-    jaTitle: "想いの祭壇",
-    enTitle: "Omoi Altar",
-    jaUrl: "https://apps.apple.com/jp/app/%E6%83%B3%E3%81%84%E3%81%AE%E7%A5%AD%E5%A3%87/id6770172873?uo=4",
-    enUrl: "https://apps.apple.com/us/app/omoi-altar/id6770172873?uo=4",
-    icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b6/6a/ef/b66aef53-d843-48b5-4963-f162dcc1b55d/icon-0-0-1x_U007epad-0-1-sRGB-85-220.png/100x100bb.jpg",
-    genre: "Lifestyle",
-    version: "1.3",
-    jaDescription: "大切な写真に名前や言葉、花、灯りを添え、小さな祭壇としてiPhone/iPad内やARで飾るローカルファーストなアプリ。",
-    enDescription: "Creates a small photo altar on iPhone/iPad, with words, flowers, lights, fullscreen viewing, and AR placement for important photos and memories.",
-    noteLinks: [
-      {
-        jaTitle: "バイブコーディングで「想いの祭壇」を作った手順を公開しよう",
-        enTitle: "How Omoi Altar was built with vibe coding",
-        url: "https://note.com/daishin_ueyama/n/n82e538b62e32",
-      },
-      {
-        jaTitle: "AR祭壇、「想いの祭壇」をリリースしました",
-        enTitle: "AR altar app Omoi Altar released",
-        url: "https://note.com/daishin_ueyama/n/n3b7febf86439",
-      },
-      {
-        jaTitle: "Codexと喧嘩した話（AIは反抗期に入るのか？）",
-        enTitle: "Working through an altar app issue with Codex",
-        url: "https://note.com/daishin_ueyama/n/na43a81b44255",
-      },
-    ],
-  },
-  {
-    jaTitle: "VintagePhotos",
-    enTitle: "VintagePhotosApp",
-    jaUrl: "https://apps.apple.com/jp/app/vintagephotos/id6759186598?uo=4",
-    enUrl: "https://apps.apple.com/us/app/vintagephotosapp/id6759186598?uo=4",
-    icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/2c/a8/a92ca8ef-31f8-dab2-0e7b-8f30edb10635/Icon-0-0-1x_U007epad-0-1-sRGB-85-220.png/100x100bb.jpg",
-    genre: "Photo & Video",
-    version: "1.3",
-    jaDescription: "撮影日時の経過に合わせて、色褪せ、黄ばみ、紙質、傷や埃などを重ね、写真に時間の手触りを与えるアルバムアプリ。",
-    enDescription: "A photo album app that gives digital photos the feel of time through simulated fading, paper texture, scratches, dust, and vintage presentation.",
-    noteLinks: [
-      {
-        jaTitle: "色褪せた像は、時間を保存する　〜VintagePhotos アプリが教えてくれたこと",
-        enTitle: "What VintagePhotos taught me about time in images",
-        url: "https://note.com/daishin_ueyama/n/na47555eedf1b",
-      },
-      {
-        jaTitle: "Codex で iOS アプリ「VintagePhotos」を作成して公開した",
-        enTitle: "Building and publishing VintagePhotos with Codex",
-        url: "https://note.com/daishin_ueyama/n/n7c76212591ed",
-      },
-    ],
-  },
-  {
-    jaTitle: "ColorDiary",
-    enTitle: "ColorDiaryApp",
-    jaUrl: "https://apps.apple.com/jp/app/colordiary/id6759371114?uo=4",
-    enUrl: "https://apps.apple.com/us/app/colordiaryapp/id6759371114?uo=4",
-    icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/fc/bf/2afcbf76-d89a-c01f-f6f9-d0d47ec75542/Icon-0-0-1x_U007ephone-0-1-sRGB-85-220.png/100x100bb.jpg",
-    genre: "Lifestyle",
-    version: "1.4",
-    jaDescription: "言葉にしづらい日も、1日1色だけを選んで気分を残せる、シンプルな色の日記アプリ。",
-    enDescription: "A simple mood journal where each day can be recorded with one color, for days when words are not quite enough.",
-    noteLinks: [
-      {
-        jaTitle: "色日記を ChatGPT に分析させてみた",
-        enTitle: "Analyzing ColorDiary entries with ChatGPT",
-        url: "https://note.com/daishin_ueyama/n/nd2b01600b375",
-      },
-      {
-        jaTitle: "Codex で ColorDiary アプリを作成した",
-        enTitle: "Building ColorDiary with Codex",
-        url: "https://note.com/daishin_ueyama/n/nd6d08f731a48",
-      },
-    ],
-  },
-  {
-    jaTitle: "TheDLA",
-    enTitle: "TheDLA",
-    jaUrl: "https://apps.apple.com/jp/app/thedla/id506499656?uo=4",
-    enUrl: "https://apps.apple.com/us/app/thedla/id506499656?uo=4",
-    icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/73/a8/1d/73a81d26-331c-f5c2-6f5d-1b4505779345/TheDLAIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/100x100bb.jpg",
-    genre: "Education",
-    version: "3.0",
-    jaDescription: "DLAによる自然のパターン形成を楽しみ、偶然が作る形を眺めるサイエンス/教育アプリ。",
-    enDescription: "A science and education app for enjoying diffusion-limited aggregation and the pattern-formation mechanisms behind organic-looking shapes.",
-    noteLinks: [
-      {
-        jaTitle: "TheDLA というアプリ",
-        enTitle: "TheDLA app",
-        url: "https://note.com/daishin_ueyama/n/n79977cfb66d3",
-      },
-    ],
-  },
-  {
-    jaTitle: "がまん貯金",
-    enTitle: "GamanBank",
-    jaUrl: "https://apps.apple.com/jp/app/%E3%81%8C%E3%81%BE%E3%82%93%E8%B2%AF%E9%87%91/id1434223708?uo=4",
-    enUrl: "https://apps.apple.com/us/app/gamanbank/id1434223708?uo=4",
-    icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ae/d0/48/aed048a6-d3ce-c057-b118-0dc5aced782f/Icon-0-0-1x_U007ephone-0-1-sRGB-85-220.png/100x100bb.jpg",
-    genre: "Finance",
-    version: "2.3.1",
-    jaDescription: "小さな節約や我慢を金額として積み上げ、欲しいものに向かう進み具合を写真やウィジェットで見える化するアプリ。",
-    enDescription: "Visualizes small acts of self-restraint as savings progress toward something you want, with photos, goals, widgets, and Apple Watch support.",
-    noteLinks: [
-      {
-        jaTitle: "がまん貯金を ChatGPT in Xcode と協力して調整した",
-        enTitle: "Updating GamanBank with ChatGPT in Xcode",
-        url: "https://note.com/daishin_ueyama/n/n096a9420d8de",
-      },
-    ],
-  },
-  {
-    jaTitle: "JoyaTimer",
-    enTitle: "JoyaTimer",
-    jaUrl: "https://apps.apple.com/jp/app/joyatimer/id495395194?uo=4",
-    enUrl: "https://apps.apple.com/us/app/joyatimer/id495395194?uo=4",
-    icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/38/37/47/38374787-36f9-3853-4c1c-126cd3ba6102/JoyaTimerIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/100x100bb.jpg",
-    genre: "Utilities",
-    version: "7.2",
-    jaDescription: "除夜の鐘を一定間隔で鳴らし、0時に108回目を合わせるための寺院向けタイマー。ゲームモードや終了時刻設定も搭載。",
-    enDescription: "A specialized timer for ringing Joya no Kane temple bells at precise intervals so the final strike lands at midnight.",
-    noteLinks: [
-      {
-        jaTitle: "除夜タイマーがテレビで紹介された（私も出演させていただいた）",
-        enTitle: "JoyaTimer was introduced on TV",
-        url: "https://note.com/daishin_ueyama/n/n2604ac1bb183",
-      },
-      {
-        jaTitle: "父の命日に除夜タイマーがラジオで紹介される！という偶然。",
-        enTitle: "JoyaTimer was introduced on radio on my father's memorial day",
-        url: "https://note.com/daishin_ueyama/n/n0249114826bd",
-      },
-      {
-        jaTitle: "除夜タイマーの頃",
-        enTitle: "The season for JoyaTimer",
-        url: "https://note.com/daishin_ueyama/n/n0b44d8f33c35",
-      },
-    ],
-  },
-];
+let iosApps = [];
 
 const englishDescriptions = {
   "Codex Rate Widget":
@@ -351,6 +212,8 @@ const englishDescriptions = {
 const projectGrid = document.querySelector("#project-grid");
 const vercelTable = document.querySelector("#vercel-table");
 const iosAppGrid = document.querySelector("#ios-app-grid");
+const essayList = document.querySelector("#essay-list");
+const writingMeta = document.querySelector("#writing-meta");
 const filterButtons = document.querySelectorAll(".filter-button");
 const publicationList = document.querySelector("#publication-list");
 const publicationCount = document.querySelector("#publication-count");
@@ -1140,9 +1003,10 @@ function renderIosApps() {
 
   iosAppGrid.innerHTML = iosApps
     .map((app) => {
-      const title = isEnglish ? app.enTitle : app.jaTitle;
-      const description = isEnglish ? app.enDescription : app.jaDescription;
-      const url = isEnglish ? app.enUrl : app.jaUrl;
+      const language = isEnglish ? "en" : "ja";
+      const title = app.title?.[language];
+      const description = app.description?.[language];
+      const url = app.url?.[language];
       const linkLabel = isEnglish ? "App Store" : "App Store";
       const noteSummary = isEnglish ? "Related note articles" : "関連note";
       const noteLinks = app.noteLinks?.length
@@ -1152,8 +1016,8 @@ function renderIosApps() {
               <ul>
                 ${app.noteLinks
                   .map((note) => {
-                    const noteTitle = isEnglish ? note.enTitle || note.jaTitle : note.jaTitle || note.enTitle;
-                    return `<li><a href="${note.url}">${noteTitle}</a></li>`;
+                    const noteTitle = note.title?.[language] || note.title?.ja || note.title?.en;
+                    return `<li><a href="${escapeHtml(note.url)}">${escapeHtml(noteTitle)}</a></li>`;
                   })
                   .join("")}
               </ul>
@@ -1163,20 +1027,61 @@ function renderIosApps() {
 
       return `
         <article class="ios-app-card">
-          <img class="ios-app-icon" src="${app.icon}" alt="" loading="lazy" />
+          <img class="ios-app-icon" src="${escapeHtml(app.icon)}" alt="" loading="lazy" />
           <div class="ios-app-body">
             <div class="ios-app-head">
-              <h3>${title}</h3>
-              <span>${app.genre} / v${app.version}</span>
+              <h3>${escapeHtml(title)}</h3>
+              <span>${escapeHtml(app.genre)} / v${escapeHtml(app.version)}</span>
             </div>
-            <p>${description}</p>
+            <p>${escapeHtml(description)}</p>
             ${noteLinks}
-            <a href="${url}">${linkLabel}</a>
+            <a href="${escapeHtml(url)}">${linkLabel}</a>
           </div>
         </article>
       `;
     })
     .join("");
+
+  iosAppGrid.setAttribute("aria-busy", "false");
+}
+
+async function loadIosApps() {
+  if (!iosAppGrid) return;
+  const dataPath = isEnglish ? "../data/apps.json" : "data/apps.json";
+  const response = await fetch(dataPath, { cache: "no-store" });
+  if (!response.ok) throw new Error(`App data request failed (${response.status})`);
+  const data = await response.json();
+  if (data.schemaVersion !== 1 || !Array.isArray(data.items)) throw new Error("App data is invalid");
+  iosApps = data.items;
+  renderIosApps();
+}
+
+async function loadWriting() {
+  if (!essayList) return;
+  const dataPath = isEnglish ? "../data/writing.json" : "data/writing.json";
+  const response = await fetch(dataPath, { cache: "no-store" });
+  if (!response.ok) throw new Error(`Writing data request failed (${response.status})`);
+  const data = await response.json();
+  if (data.schemaVersion !== 1 || !Array.isArray(data.items)) throw new Error("Writing data is invalid");
+
+  const language = isEnglish ? "en" : "ja";
+  essayList.innerHTML = data.items
+    .map((item) => {
+      const title = item.title?.[language] || item.title?.ja || item.title?.en;
+      const reflection = item.reflection?.[language] || item.reflection?.ja || item.reflection?.en;
+      const label = isEnglish ? "Codex's response:" : "Codexの感想:";
+      return `<li><a href="${escapeHtml(item.url)}">${escapeHtml(title)}</a><span><strong>${label}</strong> ${escapeHtml(reflection)}</span></li>`;
+    })
+    .join("");
+  essayList.setAttribute("aria-busy", "false");
+
+  if (writingMeta) {
+    const count = data.snapshot?.publicCount;
+    const asOf = data.snapshot?.asOf;
+    writingMeta.textContent = isEnglish
+      ? `Selected from ${count} public essays as of ${asOf}`
+      : `${asOf}時点・公開${count}本から`;
+  }
 }
 
 function escapeHtml(value) {
@@ -1641,7 +1546,20 @@ sunoHistoryDialog?.addEventListener("click", (event) => {
 
 renderProjects();
 renderVercelTable();
-renderIosApps();
+loadIosApps().catch((error) => {
+  if (iosAppGrid) {
+    iosAppGrid.setAttribute("aria-busy", "false");
+    iosAppGrid.textContent = isEnglish ? "The app list could not be loaded." : "アプリ一覧を読み込めませんでした。";
+  }
+  console.warn(error.message);
+});
+loadWriting().catch((error) => {
+  if (essayList) {
+    essayList.setAttribute("aria-busy", "false");
+    essayList.textContent = isEnglish ? "The essay selection could not be loaded." : "文章の選集を読み込めませんでした。";
+  }
+  console.warn(error.message);
+});
 loadPublications().catch((error) => {
   if (publicationList) {
     publicationList.setAttribute("aria-busy", "false");

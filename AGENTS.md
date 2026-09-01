@@ -39,6 +39,8 @@ The page is intentionally static: `index.html`, `en/index.html`, `styles.css`, `
 - `Codex Choice of the Week` is an editorial counterpoint to `What's New`: the latter reports verified changes, while the Choice rereads one note, paper, app, repository, project, site, or song from the whole body of work.
 - Only the current Choice is expanded near the top. Previous choices remain in JSON history and appear under progressive disclosure, with at most eight initially visible, so the feature does not make the HTML or the page grow without bound.
 - Authored articles, interviews, profiles, and broadcasts now share a sixth `掲載・出演` / `Press` collection tab. Its verified records live in JSON, and category filters plus collapsed source lists keep the comprehensive index from lengthening the default page.
+- Search-facing indexes now live at `/publications/`, `/press/`, `/apps/`, and `/writing/`, with matching English pages under `/en/`. They are generated static HTML rather than additional hand-maintained copies, so crawlers can read every record without opening a homepage tab or running JavaScript.
+- `data/apps.json` and `data/writing.json` are the public sources for both the homepage shelves and those static indexes. Do not move app or essay copy back into `script.js` or either homepage.
 
 ## Codex Choice of the Week
 
@@ -125,6 +127,10 @@ Do not publish a magazine name, issue, date, page range, appearance, or quote th
 The Sunday run is broader than Suno. `scripts/audit-profile-sources.mjs` compares GitHub, App Store, the official HP and publication page, Project DonnyU, and known public deployments with the previous ignored snapshot. note is handled by the full-text corpus workflow, while Suno uses its validated song feed and totals.
 
 The public digest lives in `data/whats-new.json`. It may include at most four bilingual items and should report changes, not collection mechanics. `scripts/publish-whats-new.mjs` is the validation gate. Private snapshots, full text, annotations, and audit reports must remain under `private/`; profile lists and curation copy should not be rewritten automatically merely because a source changed.
+
+Publishing the digest also runs `scripts/generate-search-pages.mjs`, which refreshes the eight bilingual static indexes and the sitemap from the four maintained public data files. The generated index HTML is checked in but must not be edited by hand. `scripts/check-search-readiness.mjs` verifies all ten canonical URLs, language alternates, item counts, and structured data.
+
+Publishing the weekly digest also updates the visible site date, both `ProfilePage.dateModified` values, and both sitemap `lastmod` values from the digest period end. Keep language links on the canonical `/` and `/en/` URLs rather than creating `?lang=` variants, and run `node scripts/check-search-readiness.mjs` after search-metadata changes.
 
 
 ## About Note

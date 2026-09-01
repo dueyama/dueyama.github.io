@@ -4,6 +4,10 @@
 
 - Site: https://dueyama.github.io/
 - English: https://dueyama.github.io/en/
+- Papers: https://dueyama.github.io/publications/
+- Press: https://dueyama.github.io/press/
+- Apps: https://dueyama.github.io/apps/
+- Writing: https://dueyama.github.io/writing/
 
 ## Contents
 
@@ -20,9 +24,12 @@
 
 - `index.html`: Japanese page
 - `en/index.html`: English page
-- `script.js`: project, app, Vercel, and note-link data
+- `script.js`: homepage rendering and interaction
 - `styles.css`: visual design
+- `search-pages.css`: shared design for the standalone public indexes
 - `language.js`: browser-language routing
+- `data/apps.json`: bilingual App Store records and related note links
+- `data/writing.json`: the maintained bilingual six-essay selection
 - `data/suno-history.json`: public weekly play and like snapshots
 - `data/whats-new.json`: latest bilingual weekly edit
 - `data/codex-choice.json`: current bilingual Codex Choice and its history
@@ -34,6 +41,9 @@
 - `scripts/sync-note-corpus.mjs`: private full-text note corpus and summary CSV updater
 - `scripts/audit-profile-sources.mjs`: GitHub, App Store, HP, project, and deployment change audit
 - `scripts/publish-whats-new.mjs`: validation gate for the public weekly edit
+- `scripts/generate-search-pages.mjs`: generates eight bilingual static index pages and the sitemap
+- `scripts/sync-search-metadata.mjs`: synchronizes visible and machine-readable update dates
+- `scripts/check-search-readiness.mjs`: checks canonical URLs, structured data, and sitemap consistency
 - `scripts/publish-codex-choice.mjs`: validation gate for the current Choice and archive
 - `scripts/check-x-choice.mjs`: validation gate for the selected `@dueyama` post
 - `scripts/check-publications.mjs`: validation gate for the public bibliography
@@ -41,7 +51,13 @@
 - `assets/`: profile image and site assets
 - `AGENTS.md`: public working note about how this page came together
 
-This site is intentionally static and build-free.
+This site is intentionally static. The homepage runs directly without a build, while the eight checked-in search index pages are reproducibly generated from the maintained JSON data.
+
+## Static Search Indexes
+
+`node scripts/generate-search-pages.mjs` generates Japanese and English pages for papers, press, apps, and selected writing. Each page contains its complete list in HTML, a unique title and description, canonical and hreflang links, `CollectionPage` / `ItemList` structured data, and the same Google Analytics tag as the profile homepage.
+
+The data remains in `data/publications.json`, `data/press-media.json`, `data/apps.json`, and `data/writing.json`; the generated HTML is not edited by hand. Run `node scripts/generate-search-pages.mjs --check` to confirm that all eight pages and the ten-URL sitemap match their sources.
 
 ## Publications and Media
 
@@ -60,6 +76,8 @@ A Codex Automation runs the update every Sunday at 00:00 JST. It also records ne
 The same weekly run checks note for newly published articles. Full text is stored only under gitignored `private/note-corpus/`; Codex reads every new article, adds its summary, response, themes, and selection rationale, and regenerates a compact local CSV. None of the full-text corpus is published.
 
 GitHub, App Store, the official HP and publications page, Project DonnyU, and known deployments are compared with the previous private snapshot. The short bilingual public result is validated before it can replace `data/whats-new.json`; deeper source changes remain a local review report until deliberately incorporated into the profile.
+
+Publishing `What's New` also regenerates the eight static indexes, synchronizes both homepages' `dateModified` and visible update date, and refreshes the ten-URL sitemap. Run `node scripts/check-search-readiness.mjs` after SEO or weekly-publication changes.
 
 `Codex Choice` follows the same weekly editorial rhythm but remains an explicitly curated selection from the full body of public work. The page HTML stays a fixed shell: JavaScript reads the current selection and compact archive from `data/codex-choice.json`. Each new week moves the previous current item into history, while the homepage initially exposes no more than eight past choices.
 

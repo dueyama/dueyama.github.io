@@ -52,14 +52,26 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://dueyama.github.io/#website",
+        "url": "https://dueyama.github.io/",
+        "name": "上山大信",
+        "alternateName": ["Daishin Ueyama", "DU"],
+        "inLanguage": ["ja", "en"]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
         "@type": "ProfilePage",
         "@id": "https://dueyama.github.io/#profile-page-ja",
         "url": "https://dueyama.github.io/",
+        "isPartOf": { "@id": "https://dueyama.github.io/#website" },
         "name": "上山大信 | 研究と制作の記録",
         "description": "上山大信の研究、シミュレーション、アプリ、文章、掲載・出演、アート、音楽を横断して紹介するプロフィールページ。",
         "inLanguage": "ja",
         "dateCreated": "2026-07-07T12:52:45+09:00",
-        "dateModified": "2026-07-22T10:35:25+09:00",
+        "dateModified": "2026-08-30T00:00:00+09:00",
         "mainEntity": {
           "@type": "Person",
           "@id": "https://dueyama.github.io/#daishin-ueyama",
@@ -68,12 +80,28 @@
           "url": "https://dueyama.github.io/",
           "image": "https://dueyama.github.io/assets/profile/dueyama-twitter.jpg",
           "jobTitle": "Professor of Mathematical Engineering",
+          "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "name": "博士（理学） / Ph.D. (Science)",
+            "credentialCategory": "Doctoral degree"
+          },
+          "knowsAbout": [
+            "Applied mathematics",
+            "Mathematical modeling",
+            "Pattern formation",
+            "Reaction-diffusion systems",
+            "Numerical simulation"
+          ],
           "affiliation": {
             "@type": "CollegeOrUniversity",
-            "name": "Musashino University"
+            "name": "Musashino University",
+            "url": "https://www.musashino-u.ac.jp/"
           },
           "sameAs": [
             "https://sites.google.com/site/dueyama/",
+            "https://www.musashino-u.ac.jp/research/interview/57_ueyama/",
+            "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=200901087391020821",
+            "https://dblp.org/pid/71/1052",
             "https://github.com/dueyama",
             "https://x.com/dueyama",
             "https://note.com/daishin_ueyama",
@@ -85,7 +113,7 @@
       }
     </script>
     <script src="language.js?v=20260719-search-1"></script>
-    <link rel="stylesheet" href="styles.css?v=20260722-x-choice-1" />
+    <link rel="stylesheet" href="styles.css?v=20260901-search-2" />
   </head>
   <body>
     <a class="skip-link" href="#main">本文へ移動</a>
@@ -102,7 +130,7 @@
           <a href="#codex-choice">Choice</a>
           <a href="#archive">公開物</a>
           <a href="#about-this-page">このページ</a>
-          <a class="language-link" href="en/?lang=en" data-language-choice="en">English</a>
+          <a class="language-link" href="en/" data-language-choice="en">English</a>
         </div>
       </nav>
     </header>
@@ -122,7 +150,7 @@
         </section>
 
         <div class="hero-copy">
-          <p class="eyebrow hero-meta-line"><span>Research / Making / Memory</span><span id="site-updated">Updated 2026-07-22 JST</span></p>
+          <p class="eyebrow hero-meta-line"><span>Research / Making / Memory</span><span id="site-updated">Updated 2026-08-30 JST</span></p>
           <h1 id="hero-title">
             <span>上山大信</span>
             <span class="hero-title-sub">研究と制作の記録</span>
@@ -430,10 +458,20 @@
           <button class="collection-tab" type="button" role="tab" aria-selected="false" aria-controls="collection-music" data-collection="music">音楽</button>
         </div>
 
+        <nav class="search-index-links" aria-label="独立した公開物一覧">
+          <a href="publications/">論文全62件</a>
+          <a href="press/">掲載・出演全21件</a>
+          <a href="apps/">iOSアプリ6件</a>
+          <a href="writing/">文章6選</a>
+        </nav>
+
         <div class="collection-panel is-active" id="collection-publications" role="tabpanel" data-collection-panel="publications">
           <div class="panel-heading publication-panel-heading">
             <div><p class="kicker">Publications</p><h3>1993–2025年の論文・研究成果</h3></div>
-            <a class="panel-external-link" href="https://sites.google.com/site/dueyama/publications">公式HPの原資料</a>
+            <div class="panel-heading-links">
+              <a class="panel-external-link" href="publications/">論文全件を開く</a>
+              <a class="panel-external-link" href="https://sites.google.com/site/dueyama/publications">公式HPの原資料</a>
+            </div>
           </div>
           <div class="publication-toolbar">
             <div class="publication-filter-group" role="group" aria-label="論文区分">
@@ -479,26 +517,19 @@
         </div>
 
         <div class="collection-panel" id="collection-ios" role="tabpanel" data-collection-panel="ios" hidden>
-          <div class="panel-heading"><div><p class="kicker">iOS Apps</p><h3>生活と現場から生まれた6つのアプリ</h3></div></div>
-          <div class="ios-app-grid" id="ios-app-grid"></div>
+          <div class="panel-heading"><div><p class="kicker">iOS Apps</p><h3>生活と現場から生まれた6つのアプリ</h3></div><a class="panel-external-link" href="apps/">アプリ一覧を開く</a></div>
+          <div class="ios-app-grid" id="ios-app-grid" aria-live="polite" aria-busy="true"></div>
         </div>
 
         <div class="collection-panel" id="collection-writing" role="tabpanel" data-collection-panel="writing" hidden>
-          <div class="panel-heading"><div><p class="kicker">note / Essay Shelf</p><h3>上山大信の文章、6選</h3><p class="panel-heading-meta">2026年7月時点・公開326本から</p></div><a class="panel-external-link" href="https://note.com/daishin_ueyama">noteを開く</a></div>
-          <ul class="essay-list">
-            <li><a href="https://note.com/daishin_ueyama/n/n5784d23002ba">母と星空</a><span><strong>Codexの感想:</strong> 認知症の母が繰り返す「小さな光の中に無数の星がある」という言葉が、症状であると同時に祈りのように響きます。銀河を説明した息子と、仏の世界を見ていたかもしれない母。そのすれ違いを科学か信仰のどちらかで解消しないため、静かに深く残る文章です。</span></li>
-            <li><a href="https://note.com/daishin_ueyama/n/nfe5d80ada5a0">ガリ版印刷の思い出</a><span><strong>Codexの感想:</strong> 寺報を刷る母の姿、学級新聞を作って泣きながら回収した失敗、コピー機への移行が、一つの媒体史として重なります。デジタルを愛する人が失われた匂いや手触りを惜しむから、懐古では終わらず、「記憶を別の形で残す」という制作全体の軸まで見えてきます。</span></li>
-            <li><a href="https://note.com/daishin_ueyama/n/nd7e11e7202b8">人生いろいろ</a><span><strong>Codexの感想:</strong> 墓で初めて会った孫から、疎遠だった息子の死を知る老人。説明を重ねず、再会を果たせないまま寺の門を去る背中に任せているため強い。浄土の教えが一般論ではなく、現実には取り返せない後悔を受け止める最後の場所として現れます。</span></li>
-            <li><a href="https://note.com/daishin_ueyama/n/n201bc63c7984">馴染みの散髪屋</a><span><strong>Codexの感想:</strong> 赤ん坊の頃から自分を知る90歳の主人と、壊れて止まったサインポール。店がまだ続いている事実と、いつ消えてもおかしくない予感の対比が美しい。地域の衰退を統計で語るのでなく、一人の職人と場所に蓄積した個人史から描くところに文章の力があります。</span></li>
-            <li><a href="https://note.com/daishin_ueyama/n/n430593620788">蝉の穴</a><span><strong>Codexの感想:</strong> 祖父に教わった蝉の穴を何度確かめても、羽化の瞬間は見られない。いまなら検索して正解の時間へ行けますが、見られなかった経験こそ観察する目を育てたのだと振り返ります。失敗を欠如ではなく経験そのものとして扱う、短く美しい科学の原点です。</span></li>
-            <li><a href="https://note.com/daishin_ueyama/n/na6f084721a62">月の老人ホーム</a><span><strong>Codexの感想:</strong> 祖父に買ってもらった宇宙本で信じた「老いる頃には月の低重力老人ホームがある」という未来は、まだ来ていません。その切なさを、月から地球を眺め念仏しながら往生したいという願いと、最後の軽い一言で包む。宇宙、家族、老い、信仰が自然に同居する小品です。</span></li>
-          </ul>
+          <div class="panel-heading"><div><p class="kicker">note / Essay Shelf</p><h3>上山大信の文章、6選</h3><p class="panel-heading-meta" id="writing-meta">2026-07時点・公開326本から</p></div><div class="panel-heading-links"><a class="panel-external-link" href="writing/">文章6選を開く</a><a class="panel-external-link" href="https://note.com/daishin_ueyama">noteを開く</a></div></div>
+          <ul class="essay-list" id="essay-list" aria-live="polite" aria-busy="true"></ul>
         </div>
 
         <div class="collection-panel" id="collection-media" role="tabpanel" data-collection-panel="media" hidden>
           <div class="panel-heading">
             <div><p class="kicker">Publications / Press &amp; Media</p><h3>執筆した記事と、取材・出演の記録</h3></div>
-            <a class="panel-external-link" href="#archive" data-select-collection="publications">論文一覧へ</a>
+            <div class="panel-heading-links"><a class="panel-external-link" href="press/">掲載・出演一覧を開く</a><a class="panel-external-link" href="publications/">論文一覧へ</a></div>
           </div>
           <div class="media-toolbar">
             <p class="collection-note" id="press-media-count">確認済みの記録を読み込んでいます。</p>
@@ -553,6 +584,6 @@
       </section>
     </main>
 
-    <script src="script.js?v=20260722-x-choice-1" defer></script>
+    <script src="script.js?v=20260901-search-2" defer></script>
   </body>
 </html>
