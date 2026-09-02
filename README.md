@@ -41,7 +41,7 @@
 - `scripts/sync-note-corpus.mjs`: private full-text note corpus and summary CSV updater
 - `scripts/audit-profile-sources.mjs`: GitHub, App Store, HP, project, and deployment change audit
 - `scripts/publish-whats-new.mjs`: validation gate for the public weekly edit
-- `scripts/generate-search-pages.mjs`: generates eight bilingual static index pages and the sitemap
+- `scripts/generate-search-pages.mjs`: generates eight bilingual static index pages and both sitemaps
 - `scripts/sync-search-metadata.mjs`: synchronizes visible and machine-readable update dates
 - `scripts/check-search-readiness.mjs`: checks canonical URLs, structured data, and sitemap consistency
 - `scripts/publish-codex-choice.mjs`: validation gate for the current Choice and archive
@@ -57,7 +57,9 @@ This site is intentionally static. The homepage runs directly without a build, w
 
 `node scripts/generate-search-pages.mjs` generates Japanese and English pages for papers, press, apps, and selected writing. Each page contains its complete list in HTML, a unique title and description, canonical and hreflang links, `CollectionPage` / `ItemList` structured data, and the same Google Analytics tag as the profile homepage.
 
-The data remains in `data/publications.json`, `data/press-media.json`, `data/apps.json`, and `data/writing.json`; the generated HTML is not edited by hand. Run `node scripts/generate-search-pages.mjs --check` to confirm that all eight pages and the ten-URL sitemap match their sources.
+The data remains in `data/publications.json`, `data/press-media.json`, `data/apps.json`, and `data/writing.json`; the generated HTML is not edited by hand. Run `node scripts/generate-search-pages.mjs --check` to confirm that all eight pages and both ten-URL sitemaps match their sources.
+
+`sitemap.xml` remains the primary sitemap advertised by `robots.txt`. The separately generated `sitemap-basic.xml` lists the same canonical URLs without dates or language annotations, for a minimal-format comparison in Search Console. Submit it only after publication is verified. Success for the basic version does not by itself establish whether the original failure was due to its URL, processing state, or content; keep the original sitemap and its report for comparison.
 
 ## Publications and Media
 

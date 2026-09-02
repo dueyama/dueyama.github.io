@@ -505,6 +505,16 @@ ${entries.join("\n")}
 `;
 }
 
+function renderBasicSitemap() {
+  const locations = [ORIGIN, `${ORIGIN}en/`];
+  for (const slug of PAGE_ORDER) locations.push(absolutePath(slug, "ja"), absolutePath(slug, "en"));
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${locations.map((location) => `  <url><loc>${escapeHtml(location)}</loc></url>`).join("\n")}
+</urlset>
+`;
+}
+
 async function readJson(filePath) {
   return JSON.parse(await readFile(filePath, "utf8"));
 }
@@ -529,6 +539,7 @@ export async function generateSearchPages({ checkOnly = false } = {}) {
     }
   }
   outputs.push({ relativePath: "sitemap.xml", content: renderSitemap(date) });
+  outputs.push({ relativePath: "sitemap-basic.xml", content: renderBasicSitemap() });
 
   const stale = [];
   for (const output of outputs) {

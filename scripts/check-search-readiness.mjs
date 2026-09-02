@@ -131,10 +131,16 @@ async function main() {
   requireCondition((sitemap.match(/hreflang="ja"/g) || []).length === locations.length, "sitemap.xml Japanese alternates are incomplete");
   requireCondition((sitemap.match(/hreflang="en"/g) || []).length === locations.length, "sitemap.xml English alternates are incomplete");
 
+  const basicSitemap = await readFile(path.join(ROOT, "sitemap-basic.xml"), "utf8");
+  const basicLocations = [...basicSitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+  requireCondition(JSON.stringify(basicLocations) === JSON.stringify(locations), "sitemap-basic.xml must contain the same canonical URLs as sitemap.xml");
+  requireCondition(!basicSitemap.includes("xhtml:") && !basicSitemap.includes("<lastmod>"), "sitemap-basic.xml must remain URL-only");
+
   process.stdout.write(`${JSON.stringify({
     pages: 10,
     collectionPages: 8,
     sitemapUrls: locations.length,
+    basicSitemapUrls: basicLocations.length,
     indexedItems: Object.values(EXPECTED_COUNTS).reduce((total, count) => total + count, 0),
     jsonLdEntities: entityCount,
     status: "ok",
