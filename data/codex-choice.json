@@ -1,34 +1,61 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-29T15:17:07.257Z",
+  "generatedAt": "2026-09-05T23:21:41.721Z",
   "current": {
-    "id": "2026-08-31-note-writing-as-rehabilitation",
+    "id": "2026-09-07-blockchain-jewelry-eleven-new-years",
     "week": {
-      "start": "2026-08-31",
-      "end": "2026-09-06"
+      "start": "2026-09-07",
+      "end": "2026-09-13"
     },
-    "kind": "note",
-    "url": "https://note.com/daishin_ueyama/n/n38950b73ca09",
-    "image": "assets/profile/dueyama-twitter.jpg",
-    "sourceDate": "2024-09-25",
+    "kind": "project",
+    "url": "https://dueyama.github.io/BlockchainJewelryConcept/",
+    "image": "assets/visual/blockchain-jewelry.jpg",
+    "sourceDate": "2026-03-11",
     "ja": {
-      "label": "NOTE / WRITING AS RECOVERY",
-      "title": "書くことを、思考のリハビリにする",
-      "dek": "思考力、想像力、興味が「日を追うごとに」衰える感覚に抗い、数理科学者と仏教僧侶という立場を使い直すリハビリとしてnoteを書き始める。上山大信は最初の題材に、阿弥陀仏の救いを手がかりにベクトルを学ぶという、法座で試した逆向きの橋を置きました。",
-      "reflection": "これは、後から整えられた華やかな出発物語ではありません。書く気を失うことは思考を放棄する状態へ近づくことではないか、という切迫感から始まります。読者がいるから書くのでもない。本人は自分の文章が広く読まれるとは思っていません。それでも書くのは、注意と想像をもう一度動かすためです。最初の例も象徴的です。法座の参加者は阿弥陀仏の救いをよく知り、ベクトルには馴染みがない。そこで通常の「ベクトルで救いを説明する」向きを反転し、救いからベクトルを学ぶ話を試す。準備不足で分かりにくかったと認めながら、手応えを捨てず、改良しようとする。その後、研究、仏教、AI、家族、地域へ広がった数百本の文章は、衰えが克服された証明というより、好奇心を繰り返し手入れする実践として読めます。先週の論文が可視的な模様の下にある構造を追ったのに対し、今週は、その探究を続ける条件を選びました。重要なことを言えるという確信ではなく、思考が静止する前に書き始めることです。",
-      "linkLabel": "noteで全文を読む",
-      "imageAlt": "黒い背景の前で斜め上を見つめる、銀髪の上山大信のイラスト調ポートレート"
+      "label": "PROJECT / ELEVEN NEW YEARS",
+      "title": "十一回の年越しを、ブロック時間の彫刻へ",
+      "dek": "2015年末から2025年末まで、毎年の年越しをまたぐEthereumの1,000ブロックを一作ずつ選び、静止画・3Dモデル・時刻範囲・メタデータとともに並べたSpiral Manifoldの公開コレクション。暦の境目を、ネットワークが実際に刻んだ数時間の形として残します。",
+      "reflection": "以前選んだThe Mergeが一度きりの歴史的事件を形にした作品なら、このコレクションが見せるのは反復です。人間が決めた「年の境目」を、ネットワーク固有のブロック時間で十一回測り直す。同じ儀礼的な節目を毎年保存することで、通過は比較できる記憶になります。これはJoyaTimerの年越し、寺院の暦、週次・日次のアーカイブにも通じる、時間を消費せず形にして残す態度です。正確な区間、UTC時刻、ハッシュ、3D viewerまで公開する設計は、鑑賞物を検証可能な証跡へつなぎます。ただし全作のNFT関連状態は現在もpreparedです。発行済みNFTコレクションではなく、造形と由来を一緒に開いた公開アーカイブとして読むところに、この仕事の誠実さがあります。",
+      "linkLabel": "公開コレクションを見る",
+      "imageAlt": "淡い背景に、赤、桃、銀、金色の多面体が何重もの輪を描くBlockchain Jewelry作品"
     },
     "en": {
-      "label": "NOTE / WRITING AS RECOVERY",
-      "title": "Writing as rehabilitation for thought",
-      "dek": "Feeling thought, imagination, and interest diminish “day by day,” Ueyama begins writing on note as rehabilitation: a way to use again his positions as a mathematical scientist and Buddhist priest. His first subject is a deliberately reversed bridge tested in a temple talk—learning vectors from Amida Buddha's salvation, rather than explaining salvation through vectors.",
-      "reflection": "This is not an origin story polished by hindsight. It begins with fear that losing the impulse to write means abandoning thought itself. Ueyama assumes few will read him; the practice matters because it makes attention move again. His first example is revealing. Temple listeners knew Amida's salvation but not vectors, so he reversed the usual explanatory direction. The talk was underprepared and hard to follow, yet its partial success became something to refine. Crossing domains, admitting failure, and returning to the work later recur across hundreds of essays on research, Buddhism, AI, family, and place. The archive is not accumulated expression alone but repeated maintenance of curiosity. After last week's paper traced invisible structure beneath visible pattern, Codex chooses the quieter condition that lets such work continue: writing before thought goes still.",
-      "linkLabel": "Read the full essay on note",
-      "imageAlt": "A stylized portrait of Daishin Ueyama with silver hair, looking upward against a black background"
+      "label": "PROJECT / ELEVEN NEW YEARS",
+      "title": "Eleven New Years, Held in Block Time",
+      "dek": "Across eleven year-end thresholds from 2015–16 through 2025–26, the public Spiral Manifold collection turns one exact 1,000-block Ethereum interval per New Year into a still image, a 3D model, and traceable metadata. Calendar time is held in the network’s own few hours of activity.",
+      "reflection": "The earlier Merge selection centered on a singular historical event; this collection is about repetition. It measures the human convention of New Year against the network’s own block time eleven times. Preserving the same ritual threshold each year turns passage into a comparable memory. That impulse connects to JoyaTimer’s year-crossing, temple calendars, and the profile’s weekly and daily archives: time is not merely consumed but given a form that can remain. Exact block ranges, UTC timestamps, hashes, and 3D viewers connect each sculpture to evidence. Yet every NFT-related status is still “prepared.” The honest reading is therefore not a minted collection but a public sculptural archive that keeps form and provenance open together.",
+      "linkLabel": "View the public collection",
+      "imageAlt": "A Blockchain Jewelry work of faceted red, pink, silver, and gold forms looping in several rings on a pale background"
     }
   },
   "history": [
+    {
+      "id": "2026-08-31-note-writing-as-rehabilitation",
+      "week": {
+        "start": "2026-08-31",
+        "end": "2026-09-06"
+      },
+      "kind": "note",
+      "url": "https://note.com/daishin_ueyama/n/n38950b73ca09",
+      "image": "assets/profile/dueyama-twitter.jpg",
+      "sourceDate": "2024-09-25",
+      "ja": {
+        "label": "NOTE / WRITING AS RECOVERY",
+        "title": "書くことを、思考のリハビリにする",
+        "dek": "思考力、想像力、興味が「日を追うごとに」衰える感覚に抗い、数理科学者と仏教僧侶という立場を使い直すリハビリとしてnoteを書き始める。上山大信は最初の題材に、阿弥陀仏の救いを手がかりにベクトルを学ぶという、法座で試した逆向きの橋を置きました。",
+        "reflection": "これは、後から整えられた華やかな出発物語ではありません。書く気を失うことは思考を放棄する状態へ近づくことではないか、という切迫感から始まります。読者がいるから書くのでもない。本人は自分の文章が広く読まれるとは思っていません。それでも書くのは、注意と想像をもう一度動かすためです。最初の例も象徴的です。法座の参加者は阿弥陀仏の救いをよく知り、ベクトルには馴染みがない。そこで通常の「ベクトルで救いを説明する」向きを反転し、救いからベクトルを学ぶ話を試す。準備不足で分かりにくかったと認めながら、手応えを捨てず、改良しようとする。その後、研究、仏教、AI、家族、地域へ広がった数百本の文章は、衰えが克服された証明というより、好奇心を繰り返し手入れする実践として読めます。先週の論文が可視的な模様の下にある構造を追ったのに対し、今週は、その探究を続ける条件を選びました。重要なことを言えるという確信ではなく、思考が静止する前に書き始めることです。",
+        "linkLabel": "noteで全文を読む",
+        "imageAlt": "黒い背景の前で斜め上を見つめる、銀髪の上山大信のイラスト調ポートレート"
+      },
+      "en": {
+        "label": "NOTE / WRITING AS RECOVERY",
+        "title": "Writing as rehabilitation for thought",
+        "dek": "Feeling thought, imagination, and interest diminish “day by day,” Ueyama begins writing on note as rehabilitation: a way to use again his positions as a mathematical scientist and Buddhist priest. His first subject is a deliberately reversed bridge tested in a temple talk—learning vectors from Amida Buddha's salvation, rather than explaining salvation through vectors.",
+        "reflection": "This is not an origin story polished by hindsight. It begins with fear that losing the impulse to write means abandoning thought itself. Ueyama assumes few will read him; the practice matters because it makes attention move again. His first example is revealing. Temple listeners knew Amida's salvation but not vectors, so he reversed the usual explanatory direction. The talk was underprepared and hard to follow, yet its partial success became something to refine. Crossing domains, admitting failure, and returning to the work later recur across hundreds of essays on research, Buddhism, AI, family, and place. The archive is not accumulated expression alone but repeated maintenance of curiosity. After last week's paper traced invisible structure beneath visible pattern, Codex chooses the quieter condition that lets such work continue: writing before thought goes still.",
+        "linkLabel": "Read the full essay on note",
+        "imageAlt": "A stylized portrait of Daishin Ueyama with silver hair, looking upward against a black background"
+      }
+    },
     {
       "id": "2026-08-24-gray-scott-self-replication-paper",
       "week": {
