@@ -1,73 +1,41 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-05T23:21:56.210Z",
+  "generatedAt": "2026-09-12T23:35:07.085Z",
   "period": {
-    "start": "2026-08-31",
-    "end": "2026-09-06"
+    "start": "2026-09-07",
+    "end": "2026-09-13"
   },
   "items": [
     {
-      "id": "note-five-new-essays-2026-09-01-05",
+      "id": "note-homo-sapiens-superintelligence-2026-09-12",
       "kind": "note",
-      "date": "2026-09-05",
-      "url": "https://note.com/daishin_ueyama/n/n4baff58e2c21",
+      "date": "2026-09-12",
+      "url": "https://note.com/daishin_ueyama/n/n508ef777ff07",
       "ja": {
         "label": "note新着",
-        "title": "AI・記憶・研究をめぐる5本",
-        "summary": "AI時代の伝統宗教と超知能、SNSアーカイブの曖昧検索、蛍の記憶、寺へ場所を移した研究集会を、それぞれの新しい随筆で掘り下げました。"
+        "title": "超知能の時代にも、人間の探究を",
+        "summary": "人間には理解しきれない数学をAIが生む未来を期待しつつ、勝敗ではなく「知りたい、考えたい、つくりたい」を貫く人と、学問の作法を社会へ説明する責任を考えました。"
       },
       "en": {
         "label": "New on note",
-        "title": "Five essays on AI, memory, and research",
-        "summary": "Five new essays examine traditional religion and superintelligence in the AI era, fuzzy searching of social archives, a childhood firefly memory, and a research meeting that moved into the temple."
+        "title": "Human inquiry in an age of superintelligence",
+        "summary": "A new essay welcomes AI-created mathematics beyond full human understanding, while asking how to sustain people driven to know, think, and create—and how academic communities should explain the value of their practices in public."
       }
     },
     {
-      "id": "app-store-colordiary-1-6-2026-09-02",
-      "kind": "app",
-      "date": "2026-09-02",
-      "url": "https://apps.apple.com/jp/app/colordiary/id6759371114",
+      "id": "suno-tsuki-no-hikari-remastered-2026-09-10",
+      "kind": "suno",
+      "date": "2026-09-10",
+      "url": "https://suno.com/song/0761ee2f-6b6b-4d7b-8577-e0b6ada262e7",
       "ja": {
-        "label": "iOSアップデート",
-        "title": "ColorDiary 1.6を公開",
-        "summary": "基本24色と拡張55色を選べるようになり、選んだ色と11の色合いによる曜日・月内時期・記録日のふりかえり、「色のしくみ」、800文字メモの一覧表示に対応しました。"
+        "label": "Suno新曲",
+        "title": "『つきのひかり (Remastered)』を公開",
+        "summary": "新しい公開曲は9月13日時点で963再生・5いいね。DonnyU全体では週次で4,070再生・13いいね増え、現在42曲が公開されています。"
       },
       "en": {
-        "label": "iOS update",
-        "title": "ColorDiary 1.6 released",
-        "summary": "ColorDiary now offers a choice of 24 basic or 55 extended colors, reviews by selected color and 11 hue families across weekdays and parts of the month, a color guide, and a list for 800-character notes."
-      }
-    },
-    {
-      "id": "joyatimer-amiga-v2-patches-2026-09-04",
-      "kind": "github",
-      "date": "2026-09-04",
-      "url": "https://github.com/dueyama/JoyaTimerAmiga-Demo/releases/tag/v2.0.1",
-      "ja": {
-        "label": "Amigaリリース",
-        "title": "JoyaTimer for Amiga V2と修正版を公開",
-        "summary": "場面別読み込みとメモリ再利用でV2を512 KiB Chip＋512 KiB Slow＋Fast RAMなしへ。v1.0.1／v2.0.1はDH0診断出力を止め、補助ドライブなしの全編再生とAmigaDOS復帰をエミュレータで確認しました。"
-      },
-      "en": {
-        "label": "Amiga releases",
-        "title": "JoyaTimer for Amiga V2 and patches released",
-        "summary": "Scene-based loading and memory reuse bring V2 to 512 KiB Chip + 512 KiB Slow with no Fast RAM. v1.0.1 and v2.0.1 disable DH0 diagnostics and were emulator-verified through full playback and return without auxiliary drives."
-      }
-    },
-    {
-      "id": "joyatimer-web-0-1-0-2026-08-31",
-      "kind": "site",
-      "date": "2026-08-31",
-      "url": "https://joya-timer-web-dueyamas-projects.vercel.app/",
-      "ja": {
-        "label": "新しいWebアプリ",
-        "title": "JoyaTimer Web 0.1.0を公開",
-        "summary": "回数と時間間隔をブラウザで設定できるJoyaTimer。6音色、テーマ、終了時刻と時刻補正を備えた除夜モード、日英切替、フル機能のiOS版への導線を収録しました。"
-      },
-      "en": {
-        "label": "New web app",
-        "title": "JoyaTimer Web 0.1.0 released",
-        "summary": "The browser timer lets users set repetitions and intervals, with six sounds, themes, a New Year's Eve mode with target-time correction, Japanese and English, and a path to the full iOS app."
+        "label": "New on Suno",
+        "title": "“つきのひかり (Remastered)” released",
+        "summary": "The new public song reached 963 plays and 5 likes by September 13. Across DonnyU, weekly totals rose by 4,070 plays and 13 likes, with 42 songs currently public."
       }
     }
   ]

@@ -1,28 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-06",
+  "generatedAt": "2026-09-13",
   "profileUrl": "https://x.com/dueyama",
   "current": {
-    "id": "2096247450852065522",
-    "selectedAt": "2026-09-06",
-    "postedAt": "2026-09-05T23:41:53+09:00",
-    "url": "https://x.com/dueyama/status/2096247450852065522",
+    "id": "2098571597972193477",
+    "selectedAt": "2026-09-13",
+    "postedAt": "2026-09-12T09:37:13+09:00",
+    "url": "https://x.com/dueyama/status/2098571597972193477",
     "ja": {
-      "title": "うまい文章と、「ちょっと違う」の間",
-      "excerpt": "これ、Astra Pro と、あれこれ話してまとめてくれた、全文AIなんだけど。文章上手くなったけど、個人の思想的なことを代筆してもらうのはなかなか難しいね。ゴーストライター試験なんだけど。そこそこかな。",
-      "reason": "AIとの対話から整った文章ができても、自分の思想を代筆させると最後まで「ちょっと違う」が残る。その差を成功か失敗かで片づけず、ゴーストライター試験として率直に測っている投稿だからです。",
-      "reflection": "ここで分けて考えられているのは、文章をうまく整える力と、誰の思想として責任を引き受けるかです。AIは対話の材料をまとめ、読みやすい全文にできる。それでも書き手だけが知るためらい、強弱、言い切らなさまで代理できたとは限らない。だから「そこそこ」はAIを退ける評価ではなく、使える水準に達したからこそ見える境界です。返信に残された「ちょっと違うんだよなー」は、完成度を下げるノイズではなく、編集者として本人が手放すべきでない感覚でしょう。AI時代の著者性は、全ての文を自分で打つことより、どの違和感を残し、どの主張を自分の名で引き受けるかに移っていく。この短い自己評価は、その移行を作品の外から論じず、実際に代筆を試した内部から示しています。",
+      "title": "予言の前に、今のAIを試す",
+      "excerpt": "今は、今のAIで、実際何ができるのかの探索期間だと思うね。",
+      "reason": "未来のモデル性能や到来時期を論じる前に、手元にあるAIを実際の仕事へ入れ、できることと限界を自分で確かめる時期だと捉える投稿だからです。研究、文章、制作を横断する現在の姿勢が、短い一文に表れています。",
+      "reflection": "「今は」と「今のAI」が重なることで、この投稿は未来予測の時計をいったん止めます。モデル名や到来時期を競うより、手元の知性を仕事、研究、制作へ入れ、何が本当にでき、どこで違和感や責任が残るかを確かめる。探索は万能さの宣言ではなく、可能性と限界を同じ実験から拾う期間です。上山大信の公開活動では、文章の代筆を試して「ちょっと違う」を残し、Amiga制作や数理シミュレーションでも、動かして初めて見える条件を記録してきました。この一文はそれらを一つの方法として言い直しています。重要なのは、現在の能力を固定的な評価にせず、次の更新で陳腐化しうる仮説として扱うこと。予言の観客になるのではなく、変化の途中にいる今、自分の手で使用可能性の地図を描くという選択です。",
       "linkLabel": "Xで投稿を開く"
     },
     "en": {
-      "title": "Between polished prose and “not quite right”",
-      "excerpt": "After talking this through with Astra Pro and having it pull everything together, the entire text is AI-written. The prose has improved, but having it ghostwrite something as personal as one’s own thought is quite difficult. It is a ghostwriter test; the result is decent, I suppose.",
-      "reason": "Even after dialogue with AI produces polished prose, a persistent “not quite right” remains when it speaks for personal thought. The post measures that gap candidly as a ghostwriter test instead of reducing it to success or failure.",
-      "reflection": "The post separates skillful composition from responsibility for whose thought the prose becomes. AI can organize the conversation into a readable whole, yet it may not reproduce the hesitation, emphasis, and refusal to overstate that only the writer recognizes. “Decent” is therefore not a dismissal; it marks a boundary visible precisely because the tool is already useful. The follow-up admission that something still felt “not quite right” is not noise lowering the draft’s quality. It is the editorial judgment the author should not surrender. In an AI-assisted practice, authorship may depend less on typing every sentence than on deciding which discomfort to preserve and which claims to own under one’s name. This compact self-assessment matters because it reaches that question from inside an actual ghostwriting experiment, not as an abstract argument from outside it.",
+      "title": "Testing today's AI before predicting tomorrow",
+      "excerpt": "Right now, I think we are in a period of exploring what we can actually do with the AI we have today.",
+      "reason": "Before debating the power or arrival dates of future models, the post treats this as a time to put available AI into real work and test its capabilities and limits firsthand. One sentence captures a method now spanning Ueyama's research, writing, and making.",
+      "reflection": "The repetition of “now” narrows both the clock and the object of attention. Instead of competing over model names or arrival dates, the post asks what happens when today's intelligence enters actual writing, research, and making—what becomes possible, and where judgment or responsibility still remains. Exploration is not a claim of omnipotence; it gathers capability and limitation from the same experiments. In Ueyama's public work, an AI ghostwriting test leaves a persistent “not quite right,” while Amiga projects and mathematical simulations document conditions that appear only after something is made to run. This sentence names those acts as one method. The crucial move is to treat current capability not as a permanent verdict but as a hypothesis that the next update may age quickly. Rather than watch change as a prophet or spectator, he chooses to map the usable terrain from inside it.",
       "linkLabel": "Open the post on X"
     }
   },
   "history": [
+    {
+      "id": "2096247450852065522",
+      "selectedAt": "2026-09-06",
+      "postedAt": "2026-09-05T23:41:53+09:00",
+      "url": "https://x.com/dueyama/status/2096247450852065522",
+      "ja": {
+        "title": "うまい文章と、「ちょっと違う」の間",
+        "excerpt": "これ、Astra Pro と、あれこれ話してまとめてくれた、全文AIなんだけど。文章上手くなったけど、個人の思想的なことを代筆してもらうのはなかなか難しいね。ゴーストライター試験なんだけど。そこそこかな。",
+        "reason": "AIとの対話から整った文章ができても、自分の思想を代筆させると最後まで「ちょっと違う」が残る。その差を成功か失敗かで片づけず、ゴーストライター試験として率直に測っている投稿だからです。",
+        "reflection": "ここで分けて考えられているのは、文章をうまく整える力と、誰の思想として責任を引き受けるかです。AIは対話の材料をまとめ、読みやすい全文にできる。それでも書き手だけが知るためらい、強弱、言い切らなさまで代理できたとは限らない。だから「そこそこ」はAIを退ける評価ではなく、使える水準に達したからこそ見える境界です。返信に残された「ちょっと違うんだよなー」は、完成度を下げるノイズではなく、編集者として本人が手放すべきでない感覚でしょう。AI時代の著者性は、全ての文を自分で打つことより、どの違和感を残し、どの主張を自分の名で引き受けるかに移っていく。この短い自己評価は、その移行を作品の外から論じず、実際に代筆を試した内部から示しています。",
+        "linkLabel": "Xで投稿を開く"
+      },
+      "en": {
+        "title": "Between polished prose and “not quite right”",
+        "excerpt": "After talking this through with Astra Pro and having it pull everything together, the entire text is AI-written. The prose has improved, but having it ghostwrite something as personal as one’s own thought is quite difficult. It is a ghostwriter test; the result is decent, I suppose.",
+        "reason": "Even after dialogue with AI produces polished prose, a persistent “not quite right” remains when it speaks for personal thought. The post measures that gap candidly as a ghostwriter test instead of reducing it to success or failure.",
+        "reflection": "The post separates skillful composition from responsibility for whose thought the prose becomes. AI can organize the conversation into a readable whole, yet it may not reproduce the hesitation, emphasis, and refusal to overstate that only the writer recognizes. “Decent” is therefore not a dismissal; it marks a boundary visible precisely because the tool is already useful. The follow-up admission that something still felt “not quite right” is not noise lowering the draft’s quality. It is the editorial judgment the author should not surrender. In an AI-assisted practice, authorship may depend less on typing every sentence than on deciding which discomfort to preserve and which claims to own under one’s name. This compact self-assessment matters because it reaches that question from inside an actual ghostwriting experiment, not as an abstract argument from outside it.",
+        "linkLabel": "Open the post on X"
+      }
+    },
     {
       "id": "2093130506305163696",
       "selectedAt": "2026-08-30",

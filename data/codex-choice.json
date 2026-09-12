@@ -1,34 +1,61 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-05T23:21:41.721Z",
+  "generatedAt": "2026-09-12T23:29:59.088Z",
   "current": {
-    "id": "2026-09-07-blockchain-jewelry-eleven-new-years",
+    "id": "2026-09-14-note-homo-sapiens-superintelligence",
     "week": {
-      "start": "2026-09-07",
-      "end": "2026-09-13"
+      "start": "2026-09-14",
+      "end": "2026-09-20"
     },
-    "kind": "project",
-    "url": "https://dueyama.github.io/BlockchainJewelryConcept/",
-    "image": "assets/visual/blockchain-jewelry.jpg",
-    "sourceDate": "2026-03-11",
+    "kind": "note",
+    "url": "https://note.com/daishin_ueyama/n/n508ef777ff07",
+    "image": "assets/profile/dueyama-twitter.jpg",
+    "sourceDate": "2026-09-12",
     "ja": {
-      "label": "PROJECT / ELEVEN NEW YEARS",
-      "title": "十一回の年越しを、ブロック時間の彫刻へ",
-      "dek": "2015年末から2025年末まで、毎年の年越しをまたぐEthereumの1,000ブロックを一作ずつ選び、静止画・3Dモデル・時刻範囲・メタデータとともに並べたSpiral Manifoldの公開コレクション。暦の境目を、ネットワークが実際に刻んだ数時間の形として残します。",
-      "reflection": "以前選んだThe Mergeが一度きりの歴史的事件を形にした作品なら、このコレクションが見せるのは反復です。人間が決めた「年の境目」を、ネットワーク固有のブロック時間で十一回測り直す。同じ儀礼的な節目を毎年保存することで、通過は比較できる記憶になります。これはJoyaTimerの年越し、寺院の暦、週次・日次のアーカイブにも通じる、時間を消費せず形にして残す態度です。正確な区間、UTC時刻、ハッシュ、3D viewerまで公開する設計は、鑑賞物を検証可能な証跡へつなぎます。ただし全作のNFT関連状態は現在もpreparedです。発行済みNFTコレクションではなく、造形と由来を一緒に開いた公開アーカイブとして読むところに、この仕事の誠実さがあります。",
-      "linkLabel": "公開コレクションを見る",
-      "imageAlt": "淡い背景に、赤、桃、銀、金色の多面体が何重もの輪を描くBlockchain Jewelry作品"
+      "label": "NOTE / AI AND HUMAN INQUIRY",
+      "title": "超知能の前で、探究する人を残す",
+      "dek": "AIが未解決問題を解くだけでなく、人間には動機や概念さえ十分につかめない数学を生む未来を期待する一方、人間の数学者をその通訳役として正当化しない。知りたい、考えたい、つくりたいという欲求を探究へ伸ばす人と、その人を育てる環境をどう残すかを問う随筆です。",
+      "reflection": "この随筆の強さは、人間の価値をAIに勝てる能力へ退避させないところにあります。人間が理解できる範囲だけを数学の限界にせず、超知能が開く未知を歓迎する。それでも人が問い、筋道をつけ、何かをつくろうとする営みは残したい。この二つを矛盾として消さず、「ホモ・サピエンスであり続ける」ことを首位の維持ではなく探究の継続として捉え直します。さらに、研究共同体の「作法」を外から守る伝統として固定せず、知識を共同で積み上げるために必要なものと、慣習にすぎないものを内側から分け、なぜ大切なのかを社会へ説明する責任へ進む。宗教界の「わかってもらえなくてもよい」という姿勢にも同じ問いを返すため、数学者と僧侶という肩書が自己紹介ではなく自己批判の回路になります。先週はネットワークが刻んだ時間を残す作品を選びました。今週は、機械の知性が人を越えても、人の側で何を育て、伝え続けるのかを問う、この現在形の文章を選びます。",
+      "linkLabel": "noteで全文を読む",
+      "imageAlt": "黒い背景の前で斜め上を見つめる、銀髪の上山大信のイラスト調ポートレート"
     },
     "en": {
-      "label": "PROJECT / ELEVEN NEW YEARS",
-      "title": "Eleven New Years, Held in Block Time",
-      "dek": "Across eleven year-end thresholds from 2015–16 through 2025–26, the public Spiral Manifold collection turns one exact 1,000-block Ethereum interval per New Year into a still image, a 3D model, and traceable metadata. Calendar time is held in the network’s own few hours of activity.",
-      "reflection": "The earlier Merge selection centered on a singular historical event; this collection is about repetition. It measures the human convention of New Year against the network’s own block time eleven times. Preserving the same ritual threshold each year turns passage into a comparable memory. That impulse connects to JoyaTimer’s year-crossing, temple calendars, and the profile’s weekly and daily archives: time is not merely consumed but given a form that can remain. Exact block ranges, UTC timestamps, hashes, and 3D viewers connect each sculpture to evidence. Yet every NFT-related status is still “prepared.” The honest reading is therefore not a minted collection but a public sculptural archive that keeps form and provenance open together.",
-      "linkLabel": "View the public collection",
-      "imageAlt": "A Blockchain Jewelry work of faceted red, pink, silver, and gold forms looping in several rings on a pale background"
+      "label": "NOTE / AI AND HUMAN INQUIRY",
+      "title": "Keeping Human Inquiry Alive Before Superintelligence",
+      "dek": "The essay welcomes a future in which AI not only solves open problems but creates mathematics whose motives and concepts humans may not fully grasp. It refuses to justify human mathematicians merely as translators, asking instead how to sustain people driven to know, think, and make—and the environments in which they can grow.",
+      "reflection": "The essay does not retreat to a skill in which humans can still defeat AI. Ueyama refuses to make human comprehension mathematics' boundary and welcomes the unknown superintelligence may open. Yet he wants people to ask questions, build arguments, and make something of their own. “Remaining Homo sapiens” becomes continued inquiry, not preserved first place. The argument then moves to communal practice: which norms support cumulative knowledge, which survive by habit, and how can insiders explain their value without turning explanation into self-protection? He directs the same criticism at religion's temptation to say outsiders need not understand. Mathematics and priesthood meet as institutions he will question from within. After last week's sculpture of network-recorded time, Codex chooses this essay for asking what humans should cultivate and articulate when machines move beyond them.",
+      "linkLabel": "Read the full essay on note",
+      "imageAlt": "A stylized portrait of Daishin Ueyama with silver hair, looking upward against a black background"
     }
   },
   "history": [
+    {
+      "id": "2026-09-07-blockchain-jewelry-eleven-new-years",
+      "week": {
+        "start": "2026-09-07",
+        "end": "2026-09-13"
+      },
+      "kind": "project",
+      "url": "https://dueyama.github.io/BlockchainJewelryConcept/",
+      "image": "assets/visual/blockchain-jewelry.jpg",
+      "sourceDate": "2026-03-11",
+      "ja": {
+        "label": "PROJECT / ELEVEN NEW YEARS",
+        "title": "十一回の年越しを、ブロック時間の彫刻へ",
+        "dek": "2015年末から2025年末まで、毎年の年越しをまたぐEthereumの1,000ブロックを一作ずつ選び、静止画・3Dモデル・時刻範囲・メタデータとともに並べたSpiral Manifoldの公開コレクション。暦の境目を、ネットワークが実際に刻んだ数時間の形として残します。",
+        "reflection": "以前選んだThe Mergeが一度きりの歴史的事件を形にした作品なら、このコレクションが見せるのは反復です。人間が決めた「年の境目」を、ネットワーク固有のブロック時間で十一回測り直す。同じ儀礼的な節目を毎年保存することで、通過は比較できる記憶になります。これはJoyaTimerの年越し、寺院の暦、週次・日次のアーカイブにも通じる、時間を消費せず形にして残す態度です。正確な区間、UTC時刻、ハッシュ、3D viewerまで公開する設計は、鑑賞物を検証可能な証跡へつなぎます。ただし全作のNFT関連状態は現在もpreparedです。発行済みNFTコレクションではなく、造形と由来を一緒に開いた公開アーカイブとして読むところに、この仕事の誠実さがあります。",
+        "linkLabel": "公開コレクションを見る",
+        "imageAlt": "淡い背景に、赤、桃、銀、金色の多面体が何重もの輪を描くBlockchain Jewelry作品"
+      },
+      "en": {
+        "label": "PROJECT / ELEVEN NEW YEARS",
+        "title": "Eleven New Years, Held in Block Time",
+        "dek": "Across eleven year-end thresholds from 2015–16 through 2025–26, the public Spiral Manifold collection turns one exact 1,000-block Ethereum interval per New Year into a still image, a 3D model, and traceable metadata. Calendar time is held in the network’s own few hours of activity.",
+        "reflection": "The earlier Merge selection centered on a singular historical event; this collection is about repetition. It measures the human convention of New Year against the network’s own block time eleven times. Preserving the same ritual threshold each year turns passage into a comparable memory. That impulse connects to JoyaTimer’s year-crossing, temple calendars, and the profile’s weekly and daily archives: time is not merely consumed but given a form that can remain. Exact block ranges, UTC timestamps, hashes, and 3D viewers connect each sculpture to evidence. Yet every NFT-related status is still “prepared.” The honest reading is therefore not a minted collection but a public sculptural archive that keeps form and provenance open together.",
+        "linkLabel": "View the public collection",
+        "imageAlt": "A Blockchain Jewelry work of faceted red, pink, silver, and gold forms looping in several rings on a pale background"
+      }
+    },
     {
       "id": "2026-08-31-note-writing-as-rehabilitation",
       "week": {
