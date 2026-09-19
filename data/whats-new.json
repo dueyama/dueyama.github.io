@@ -1,41 +1,41 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-12T23:35:07.085Z",
+  "generatedAt": "2026-09-19T15:07:09.954Z",
   "period": {
-    "start": "2026-09-07",
-    "end": "2026-09-13"
+    "start": "2026-09-14",
+    "end": "2026-09-20"
   },
   "items": [
     {
-      "id": "note-homo-sapiens-superintelligence-2026-09-12",
+      "id": "note-ai-learning-and-making-2026-09-18",
       "kind": "note",
-      "date": "2026-09-12",
-      "url": "https://note.com/daishin_ueyama/n/n508ef777ff07",
+      "date": "2026-09-18",
+      "url": "https://note.com/daishin_ueyama/n/nfa4cf680c522",
       "ja": {
         "label": "note新着",
-        "title": "超知能の時代にも、人間の探究を",
-        "summary": "人間には理解しきれない数学をAIが生む未来を期待しつつ、勝敗ではなく「知りたい、考えたい、つくりたい」を貫く人と、学問の作法を社会へ説明する責任を考えました。"
+        "title": "AIと学ぶ喜び、つくる手応えを考える2本",
+        "summary": "AI時代の学ぶ喜びと人の価値を問い直す随筆と、『燃え尽きた、だから、ぼやっとする。』を公開。能力や成長で価値を測ること、AIと制作を進めるなかで揺れる達成感を考えました。"
       },
       "en": {
         "label": "New on note",
-        "title": "Human inquiry in an age of superintelligence",
-        "summary": "A new essay welcomes AI-created mathematics beyond full human understanding, while asking how to sustain people driven to know, think, and create—and how academic communities should explain the value of their practices in public."
+        "title": "Two essays on learning and making with AI",
+        "summary": "Two new essays ask how to preserve the joy of learning without measuring human worth by ability or growth, and reflect on a fading sense of accomplishment after months of making with AI—and choosing to take a break."
       }
     },
     {
-      "id": "suno-tsuki-no-hikari-remastered-2026-09-10",
+      "id": "suno-two-new-songs-2026-09-14",
       "kind": "suno",
-      "date": "2026-09-10",
-      "url": "https://suno.com/song/0761ee2f-6b6b-4d7b-8577-e0b6ada262e7",
+      "date": "2026-09-14",
+      "url": "https://suno.com/song/182b5974-d58a-48d3-ba82-772dfb2b7c88",
       "ja": {
         "label": "Suno新曲",
-        "title": "『つきのひかり (Remastered)』を公開",
-        "summary": "新しい公開曲は9月13日時点で963再生・5いいね。DonnyU全体では週次で4,070再生・13いいね増え、現在42曲が公開されています。"
+        "title": "DonnyUで新たに2曲を公開",
+        "summary": "『ひとごみのほし (Remastered)』『みんな死んでいく』を公開。DonnyU全体では前回比3,370再生・23いいね増え、9月20日時点で44曲が公開されています。"
       },
       "en": {
         "label": "New on Suno",
-        "title": "“つきのひかり (Remastered)” released",
-        "summary": "The new public song reached 963 plays and 5 likes by September 13. Across DonnyU, weekly totals rose by 4,070 plays and 13 likes, with 42 songs currently public."
+        "title": "Two new songs on DonnyU",
+        "summary": "“ひとごみのほし (Remastered)” and “みんな死んでいく” are now public. Across DonnyU, weekly totals rose by 3,370 plays and 23 likes, with 44 songs public as of September 20."
       }
     }
   ]

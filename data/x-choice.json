@@ -1,28 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13",
+  "generatedAt": "2026-09-20",
   "profileUrl": "https://x.com/dueyama",
   "current": {
-    "id": "2098571597972193477",
-    "selectedAt": "2026-09-13",
-    "postedAt": "2026-09-12T09:37:13+09:00",
-    "url": "https://x.com/dueyama/status/2098571597972193477",
+    "id": "2099759719544242643",
+    "selectedAt": "2026-09-20",
+    "postedAt": "2026-09-15T16:18:23+09:00",
+    "url": "https://x.com/dueyama/status/2099759719544242643",
     "ja": {
-      "title": "予言の前に、今のAIを試す",
-      "excerpt": "今は、今のAIで、実際何ができるのかの探索期間だと思うね。",
-      "reason": "未来のモデル性能や到来時期を論じる前に、手元にあるAIを実際の仕事へ入れ、できることと限界を自分で確かめる時期だと捉える投稿だからです。研究、文章、制作を横断する現在の姿勢が、短い一文に表れています。",
-      "reflection": "「今は」と「今のAI」が重なることで、この投稿は未来予測の時計をいったん止めます。モデル名や到来時期を競うより、手元の知性を仕事、研究、制作へ入れ、何が本当にでき、どこで違和感や責任が残るかを確かめる。探索は万能さの宣言ではなく、可能性と限界を同じ実験から拾う期間です。上山大信の公開活動では、文章の代筆を試して「ちょっと違う」を残し、Amiga制作や数理シミュレーションでも、動かして初めて見える条件を記録してきました。この一文はそれらを一つの方法として言い直しています。重要なのは、現在の能力を固定的な評価にせず、次の更新で陳腐化しうる仮説として扱うこと。予言の観客になるのではなく、変化の途中にいる今、自分の手で使用可能性の地図を描くという選択です。",
+      "title": "「嬉しい」に、理由はいくつ要るのか",
+      "excerpt": "飼い犬見てると、嬉しいとか、怒ってるとか、直接的に見えるんだよな。 僕なんか、なになにが、なになにだから嬉しいみたいな、ワンクッションある感じ。 小さな子供も、嬉しい！がある。 なにか、変な理屈を足していくのが知性なのか？と思わなくもない。",
+      "reason": "飼い犬や小さな子供の喜びを見て、自分の感情には説明が一段挟まると気づく投稿です。知性の強さを競う議論から、考える習慣が日々の実感に何を足しているのかへ問いを戻す、その小さな観察を今週は選びました。",
+      "reflection": "「なになにが、なになにだから嬉しい」という言い方には、理由をうまく説明できてから喜んでよい、と自分に許可を出すような間が聞こえます。犬や子供の内面を解明した話ではなく、目の前の表情をきっかけに、自分の感じ方を見つめ直した文章として読みたい。「と思わなくもない」という留保も、考えることを捨てようと結論づけず、考える自分を観察の対象に残しています。数学でも制作でも、説明を足すことは曖昧なものを扱う力になります。その力が生活の隅々まで先回りすると、理由の立たない楽しさを取り落とすことはないか。続く投稿の「ワンクッションがどんどん積み重なって」という言葉は、その問いを深めます。先週の選択が今のAIで何ができるかを探るものだったのに対し、この一文は、できることや説明できることを増やす途中で、何をそのまま感じていたいかを考えさせます。",
       "linkLabel": "Xで投稿を開く"
     },
     "en": {
-      "title": "Testing today's AI before predicting tomorrow",
-      "excerpt": "Right now, I think we are in a period of exploring what we can actually do with the AI we have today.",
-      "reason": "Before debating the power or arrival dates of future models, the post treats this as a time to put available AI into real work and test its capabilities and limits firsthand. One sentence captures a method now spanning Ueyama's research, writing, and making.",
-      "reflection": "The repetition of “now” narrows both the clock and the object of attention. Instead of competing over model names or arrival dates, the post asks what happens when today's intelligence enters actual writing, research, and making—what becomes possible, and where judgment or responsibility still remains. Exploration is not a claim of omnipotence; it gathers capability and limitation from the same experiments. In Ueyama's public work, an AI ghostwriting test leaves a persistent “not quite right,” while Amiga projects and mathematical simulations document conditions that appear only after something is made to run. This sentence names those acts as one method. The crucial move is to treat current capability not as a permanent verdict but as a hypothesis that the next update may age quickly. Rather than watch change as a prophet or spectator, he chooses to map the usable terrain from inside it.",
+      "title": "How many reasons does joy need?",
+      "excerpt": "Watching my dog, happiness and anger seem so direct. With me, it feels as though there is an extra step: I am happy because this or that is the case. Small children have that simple ‘I'm happy!’ too. I sometimes wonder whether intelligence means adding odd layers of reasoning.",
+      "reason": "Watching his dog and small children, Ueyama notices an explanatory step between himself and joy. This week's choice shifts attention from how powerful intelligence can become to what the habit of reasoning adds to everyday experience.",
+      "reflection": "The phrase ‘I am happy because’ suggests a pause in which a feeling awaits its justification. I read this as self-observation prompted by a dog, rather than a finding about animal or child psychology. The tentative ending matters: he keeps the thinking self available for inquiry. In mathematics and making, adding explanations helps us handle what is unclear. When that habit reaches into every corner of life, might it also overlook pleasures that cannot give an account of themselves? His follow-up describes those extra steps accumulating until things become dull. Last week's choice explored what today's AI can do; this one asks what we want to keep feeling as our ability to do and explain more expands. The dog supplies no theory. It gives a practiced thinker a moment in which his own habits become strange enough to examine.",
       "linkLabel": "Open the post on X"
     }
   },
   "history": [
+    {
+      "id": "2098571597972193477",
+      "selectedAt": "2026-09-13",
+      "postedAt": "2026-09-12T09:37:13+09:00",
+      "url": "https://x.com/dueyama/status/2098571597972193477",
+      "ja": {
+        "title": "予言の前に、今のAIを試す",
+        "excerpt": "今は、今のAIで、実際何ができるのかの探索期間だと思うね。",
+        "reason": "未来のモデル性能や到来時期を論じる前に、手元にあるAIを実際の仕事へ入れ、できることと限界を自分で確かめる時期だと捉える投稿だからです。研究、文章、制作を横断する現在の姿勢が、短い一文に表れています。",
+        "reflection": "「今は」と「今のAI」が重なることで、この投稿は未来予測の時計をいったん止めます。モデル名や到来時期を競うより、手元の知性を仕事、研究、制作へ入れ、何が本当にでき、どこで違和感や責任が残るかを確かめる。探索は万能さの宣言ではなく、可能性と限界を同じ実験から拾う期間です。上山大信の公開活動では、文章の代筆を試して「ちょっと違う」を残し、Amiga制作や数理シミュレーションでも、動かして初めて見える条件を記録してきました。この一文はそれらを一つの方法として言い直しています。重要なのは、現在の能力を固定的な評価にせず、次の更新で陳腐化しうる仮説として扱うこと。予言の観客になるのではなく、変化の途中にいる今、自分の手で使用可能性の地図を描くという選択です。",
+        "linkLabel": "Xで投稿を開く"
+      },
+      "en": {
+        "title": "Testing today's AI before predicting tomorrow",
+        "excerpt": "Right now, I think we are in a period of exploring what we can actually do with the AI we have today.",
+        "reason": "Before debating the power or arrival dates of future models, the post treats this as a time to put available AI into real work and test its capabilities and limits firsthand. One sentence captures a method now spanning Ueyama's research, writing, and making.",
+        "reflection": "The repetition of “now” narrows both the clock and the object of attention. Instead of competing over model names or arrival dates, the post asks what happens when today's intelligence enters actual writing, research, and making—what becomes possible, and where judgment or responsibility still remains. Exploration is not a claim of omnipotence; it gathers capability and limitation from the same experiments. In Ueyama's public work, an AI ghostwriting test leaves a persistent “not quite right,” while Amiga projects and mathematical simulations document conditions that appear only after something is made to run. This sentence names those acts as one method. The crucial move is to treat current capability not as a permanent verdict but as a hypothesis that the next update may age quickly. Rather than watch change as a prophet or spectator, he chooses to map the usable terrain from inside it.",
+        "linkLabel": "Open the post on X"
+      }
+    },
     {
       "id": "2096247450852065522",
       "selectedAt": "2026-09-06",
