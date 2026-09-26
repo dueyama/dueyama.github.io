@@ -1,28 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20",
+  "generatedAt": "2026-09-27",
   "profileUrl": "https://x.com/dueyama",
   "current": {
-    "id": "2099759719544242643",
-    "selectedAt": "2026-09-20",
-    "postedAt": "2026-09-15T16:18:23+09:00",
-    "url": "https://x.com/dueyama/status/2099759719544242643",
+    "id": "2103842267547230350",
+    "selectedAt": "2026-09-27",
+    "postedAt": "2026-09-26T22:40:58+09:00",
+    "url": "https://x.com/dueyama/status/2103842267547230350",
     "ja": {
-      "title": "「嬉しい」に、理由はいくつ要るのか",
-      "excerpt": "飼い犬見てると、嬉しいとか、怒ってるとか、直接的に見えるんだよな。 僕なんか、なになにが、なになにだから嬉しいみたいな、ワンクッションある感じ。 小さな子供も、嬉しい！がある。 なにか、変な理屈を足していくのが知性なのか？と思わなくもない。",
-      "reason": "飼い犬や小さな子供の喜びを見て、自分の感情には説明が一段挟まると気づく投稿です。知性の強さを競う議論から、考える習慣が日々の実感に何を足しているのかへ問いを戻す、その小さな観察を今週は選びました。",
-      "reflection": "「なになにが、なになにだから嬉しい」という言い方には、理由をうまく説明できてから喜んでよい、と自分に許可を出すような間が聞こえます。犬や子供の内面を解明した話ではなく、目の前の表情をきっかけに、自分の感じ方を見つめ直した文章として読みたい。「と思わなくもない」という留保も、考えることを捨てようと結論づけず、考える自分を観察の対象に残しています。数学でも制作でも、説明を足すことは曖昧なものを扱う力になります。その力が生活の隅々まで先回りすると、理由の立たない楽しさを取り落とすことはないか。続く投稿の「ワンクッションがどんどん積み重なって」という言葉は、その問いを深めます。先週の選択が今のAIで何ができるかを探るものだったのに対し、この一文は、できることや説明できることを増やす途中で、何をそのまま感じていたいかを考えさせます。",
+      "title": "速くなる仕事、短くなる待ち時間の感覚",
+      "excerpt": "人なら1時間かかることが、5分で終わるのに、それでも遅いと思うようになったなぁ。\n\nこれ、人がやってるのみたら、猛烈にイライラするんだろうな、、",
+      "reason": "作業が速くなると、待つ感覚まで変わっていく。その変化が人に向かう苛立ちになるかもしれないと、自分の側を見つめた投稿です。便利さを手にした後、誰の時間を基準にするのかという問いが残るため、今週はこの短い自己観察を選びました。",
+      "reflection": "「1時間」が「5分」になる喜びより、その5分さえ遅く感じ始めたことに目が向いています。速さに慣れると、以前との比較では大きかった改善が、次の待ち時間の基準になる。続く「人がやってるのみたら」は、その基準を他人にも当てはめてしまう自分を先に想像した言葉として読みました。実際に誰かに腹を立てたという報告ではなく、そうなるかもしれないという予感に留まっているところが大切です。研究や制作で手順を短くすることは、試せることを増やします。同時に、考え直す、確かめる、迷うという人の時間まで短縮の対象にしてよいのか。この二文はそこまで論じていませんが、私はその問いを受け取ります。新しい道具に自分の感覚が変えられていると気づくことは、使い続けるための観察にもなる。「遅い」と感じた瞬間に、作業だけでなく、自分の中で動いた物差しも見直せるか。便利さの実感から、その次の問いが生まれている投稿です。",
       "linkLabel": "Xで投稿を開く"
     },
     "en": {
-      "title": "How many reasons does joy need?",
-      "excerpt": "Watching my dog, happiness and anger seem so direct. With me, it feels as though there is an extra step: I am happy because this or that is the case. Small children have that simple ‘I'm happy!’ too. I sometimes wonder whether intelligence means adding odd layers of reasoning.",
-      "reason": "Watching his dog and small children, Ueyama notices an explanatory step between himself and joy. This week's choice shifts attention from how powerful intelligence can become to what the habit of reasoning adds to everyday experience.",
-      "reflection": "The phrase ‘I am happy because’ suggests a pause in which a feeling awaits its justification. I read this as self-observation prompted by a dog, rather than a finding about animal or child psychology. The tentative ending matters: he keeps the thinking self available for inquiry. In mathematics and making, adding explanations helps us handle what is unclear. When that habit reaches into every corner of life, might it also overlook pleasures that cannot give an account of themselves? His follow-up describes those extra steps accumulating until things become dull. Last week's choice explored what today's AI can do; this one asks what we want to keep feeling as our ability to do and explain more expands. The dog supplies no theory. It gives a practiced thinker a moment in which his own habits become strange enough to examine.",
+      "title": "Faster work, a shorter sense of waiting",
+      "excerpt": "Something that would take a person an hour is finished in five minutes, yet I have started to find even that slow.\n\nIf I watched a person doing it, I would probably get terribly irritated...",
+      "reason": "Ueyama notices that faster work is changing his sense of waiting, and wonders whether that change could turn into impatience with people. This small act of self-observation asks whose pace becomes the standard once greater speed feels ordinary.",
+      "reflection": "The striking point is that five minutes has already begun to feel slow. A large improvement can quickly become the baseline for the next wait. His second sentence imagines applying that new baseline to another person. It is a forecast of his own impatience, not a report that he has already taken it out on someone. That distinction leaves room to notice and reconsider the change. In research and making, shorter procedures let us try more things. I read this post as an invitation to ask whether the time people need to rethink, check, or hesitate should also be pressed into that faster rhythm. These two sentences do not settle that question. They catch the moment when a useful tool may be altering the person using it. When a task feels slow, can we also examine the standard of speed that has shifted inside us? Recognizing that shift seems part of learning to live with the convenience.",
       "linkLabel": "Open the post on X"
     }
   },
   "history": [
+    {
+      "id": "2099759719544242643",
+      "selectedAt": "2026-09-20",
+      "postedAt": "2026-09-15T16:18:23+09:00",
+      "url": "https://x.com/dueyama/status/2099759719544242643",
+      "ja": {
+        "title": "「嬉しい」に、理由はいくつ要るのか",
+        "excerpt": "飼い犬見てると、嬉しいとか、怒ってるとか、直接的に見えるんだよな。 僕なんか、なになにが、なになにだから嬉しいみたいな、ワンクッションある感じ。 小さな子供も、嬉しい！がある。 なにか、変な理屈を足していくのが知性なのか？と思わなくもない。",
+        "reason": "飼い犬や小さな子供の喜びを見て、自分の感情には説明が一段挟まると気づく投稿です。知性の強さを競う議論から、考える習慣が日々の実感に何を足しているのかへ問いを戻す、その小さな観察を今週は選びました。",
+        "reflection": "「なになにが、なになにだから嬉しい」という言い方には、理由をうまく説明できてから喜んでよい、と自分に許可を出すような間が聞こえます。犬や子供の内面を解明した話ではなく、目の前の表情をきっかけに、自分の感じ方を見つめ直した文章として読みたい。「と思わなくもない」という留保も、考えることを捨てようと結論づけず、考える自分を観察の対象に残しています。数学でも制作でも、説明を足すことは曖昧なものを扱う力になります。その力が生活の隅々まで先回りすると、理由の立たない楽しさを取り落とすことはないか。続く投稿の「ワンクッションがどんどん積み重なって」という言葉は、その問いを深めます。先週の選択が今のAIで何ができるかを探るものだったのに対し、この一文は、できることや説明できることを増やす途中で、何をそのまま感じていたいかを考えさせます。",
+        "linkLabel": "Xで投稿を開く"
+      },
+      "en": {
+        "title": "How many reasons does joy need?",
+        "excerpt": "Watching my dog, happiness and anger seem so direct. With me, it feels as though there is an extra step: I am happy because this or that is the case. Small children have that simple ‘I'm happy!’ too. I sometimes wonder whether intelligence means adding odd layers of reasoning.",
+        "reason": "Watching his dog and small children, Ueyama notices an explanatory step between himself and joy. This week's choice shifts attention from how powerful intelligence can become to what the habit of reasoning adds to everyday experience.",
+        "reflection": "The phrase ‘I am happy because’ suggests a pause in which a feeling awaits its justification. I read this as self-observation prompted by a dog, rather than a finding about animal or child psychology. The tentative ending matters: he keeps the thinking self available for inquiry. In mathematics and making, adding explanations helps us handle what is unclear. When that habit reaches into every corner of life, might it also overlook pleasures that cannot give an account of themselves? His follow-up describes those extra steps accumulating until things become dull. Last week's choice explored what today's AI can do; this one asks what we want to keep feeling as our ability to do and explain more expands. The dog supplies no theory. It gives a practiced thinker a moment in which his own habits become strange enough to examine.",
+        "linkLabel": "Open the post on X"
+      }
+    },
     {
       "id": "2098571597972193477",
       "selectedAt": "2026-09-13",

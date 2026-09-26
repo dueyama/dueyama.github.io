@@ -1,41 +1,57 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T15:07:09.954Z",
+  "generatedAt": "2026-09-26T15:06:19.612Z",
   "period": {
-    "start": "2026-09-14",
-    "end": "2026-09-20"
+    "start": "2026-09-20",
+    "end": "2026-09-27"
   },
   "items": [
     {
-      "id": "note-ai-learning-and-making-2026-09-18",
+      "id": "note-why-learn-yourself-2026-09-21",
       "kind": "note",
-      "date": "2026-09-18",
-      "url": "https://note.com/daishin_ueyama/n/nfa4cf680c522",
+      "date": "2026-09-21",
+      "url": "https://note.com/daishin_ueyama/n/n4afdf6d6ede2",
       "ja": {
         "label": "note新着",
-        "title": "AIと学ぶ喜び、つくる手応えを考える2本",
-        "summary": "AI時代の学ぶ喜びと人の価値を問い直す随筆と、『燃え尽きた、だから、ぼやっとする。』を公開。能力や成長で価値を測ること、AIと制作を進めるなかで揺れる達成感を考えました。"
+        "title": "AI時代に、なぜ自分で学ぶのか",
+        "summary": "AIが課題を仕上げることと、自分がわかるようになることの違いを考える随筆を公開。学ぶ喜びに出会う場をどうつくるか、教える側も何を自分で理解したいのかを問い直します。"
       },
       "en": {
         "label": "New on note",
-        "title": "Two essays on learning and making with AI",
-        "summary": "Two new essays ask how to preserve the joy of learning without measuring human worth by ability or growth, and reflect on a fading sense of accomplishment after months of making with AI—and choosing to take a break."
+        "title": "Why learn for yourself in the age of AI?",
+        "summary": "A new essay distinguishes an AI-completed assignment from understanding something yourself. It asks how education can invite people into the joy of learning—and turns the question of what to understand back on the teacher."
       }
     },
     {
-      "id": "suno-two-new-songs-2026-09-14",
-      "kind": "suno",
-      "date": "2026-09-14",
-      "url": "https://suno.com/song/182b5974-d58a-48d3-ba82-772dfb2b7c88",
+      "id": "hyakunin-isshu-seasonal-supplement-2026-09-20",
+      "kind": "github",
+      "date": "2026-09-20",
+      "url": "https://dueyama.github.io/hyakunin-isshu-semantic-map/paper/seasons/",
       "ja": {
-        "label": "Suno新曲",
-        "title": "DonnyUで新たに2曲を公開",
-        "summary": "『ひとごみのほし (Remastered)』『みんな死んでいく』を公開。DonnyU全体では前回比3,370再生・23いいね増え、9月20日時点で44曲が公開されています。"
+        "label": "研究プロジェクト",
+        "title": "百人一首の意味地図に、季節比較の補章",
+        "summary": "小倉百人一首100首・百人秀歌101首の季節を、文献分類とAI判定で比較する補章を公開。両歌集の全首一覧と、AIに説明を求める条件での判定比較も追加しました。"
       },
       "en": {
-        "label": "New on Suno",
-        "title": "Two new songs on DonnyU",
-        "summary": "“ひとごみのほし (Remastered)” and “みんな死んでいく” are now public. Across DonnyU, weekly totals rose by 3,370 plays and 23 likes, with 44 songs public as of September 20."
+        "label": "Research project",
+        "title": "Seasonal comparisons for the poetry map",
+        "summary": "A new supplement compares literary seasonal classifications with AI judgments for 100 Ogura Hyakunin Isshu and 101 Hyakunin Shūka entries. It adds both collections’ full catalogue and compares judgments with and without requested explanations."
+      }
+    },
+    {
+      "id": "suno-weekly-gains-2026-09-27",
+      "kind": "suno",
+      "date": "2026-09-27",
+      "url": "https://suno.com/song/73a29c6e-f8f5-4702-9673-0098b5bc5374",
+      "ja": {
+        "label": "Suno週間動向",
+        "title": "DonnyUが週間2,882再生増",
+        "summary": "公開44曲の合計は62,990再生・383いいねに。前回から2,882再生・6いいね増え、Run.exeが1,659再生増で今週の伸びをけん引しました。"
+      },
+      "en": {
+        "label": "Suno this week",
+        "title": "DonnyU adds 2,882 plays this week",
+        "summary": "The 44 public songs now total 62,990 plays and 383 likes, up 2,882 plays and 6 likes since the previous snapshot. Run.exe led the weekly gains with 1,659 additional plays."
       }
     }
   ]
