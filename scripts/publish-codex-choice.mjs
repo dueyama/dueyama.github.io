@@ -58,6 +58,7 @@ async function validateChoice(choice, field) {
 
   return {
     id: requireString(choice.id, `${field}.id`, 100),
+    ...(choice.editor === undefined ? {} : { editor: requireString(choice.editor, `${field}.editor`, 80) }),
     week: { start, end },
     kind,
     url,

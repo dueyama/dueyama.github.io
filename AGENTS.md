@@ -2,6 +2,17 @@
 
 This is a public working note for the Codex-assisted profile page. It is not meant to be a strict rulebook; it records what was gathered, what was debated, and what future edits should remember.
 
+
+## Current cloud workflow (effective 2026-09-30)
+
+New weekly selections and commentary are maintained by ChatGPT dots **けろ**, with **GPT-6 Astra** selected. The visible Japanese heading is **今週の dots けろ Choice**. Existing Codex-authored selections and essay curation retain their historical attribution. New Choice and X Choice records carry optional `editor: "dots けろ"`; records without this field remain attributed to Codex. Keep the legacy JSON filenames and `codex_reflection` corpus field for compatibility. Do not rewrite old authors or dates.
+
+The production workflow runs in dot's own cloud computer: public-source retrieval, private note reading and annotations, editorial selection, Node generation/checks, authorized GitHub publication, and private backup. Do not start a Mac, Work, or Codex task or invoke the Codex CLI as a fallback. Use the approved dot cloud browser for primary-source verification. This supersedes the former IAB-only production requirement for this project; it does not authorize bypassing browser/site restrictions. If an individual X post cannot be read, retain the existing X Choice. Never publish guessed source values.
+
+The intended recurring time remains Sunday at 00:00 Asia/Tokyo. Each run must use a lock and a unique JST run date, compare against the previous successful source snapshot, and stop if the public main branch changed unexpectedly. Publish only the four weekly JSON files, both homepages, eight generated index pages, and sitemap.xml after checks. Source, styling, instructions, and validator changes require separate explicit scope. Never publish `private/`, the note corpus, `.git`, credentials, archives, or local preview outputs. Preserve a private, versioned recovery backup after successful publication, and keep the imported migration snapshot unchanged.
+
+The 2026-09-30 handover replaced the current selection during the September 28–October 4 week. The earlier Codex selection is retained intact in history even though its week overlaps. This is an editorial handover, not a future-week release. The full source reading, draft provenance, archive identities, lock state, and operational recovery instructions remain private.
+
 ## What We Built
 
 This repository became a bilingual GitHub Pages profile for Daishin Ueyama. The page gathers public-facing work from the official Google Sites HP, Project DonnyU / Blockchain Jewelry Concept, GitHub repositories, Vercel demos, App Store apps, Suno songs, and note articles.
@@ -71,7 +82,7 @@ The public history lives in `data/suno-history.json`. It stores only public song
 
 The page shows compact two-series charts beside the current top five, plus a profile-total chart for total plays and total likes. Selecting one opens a larger dialog where the profile totals and all currently public songs are available, and cumulative values can be switched to weekly gains. The archived 2026-07-08 top-five play counts seed the first visible song trends; profile-total, full-song, and like history begins with the 2026-07-17 snapshot.
 
-A Codex Automation updates the history every Sunday at 00:00 JST. The collector also writes a gitignored diff with newly published songs, profile-total gains, and song-level gains. New songs should take priority in `What's New`; otherwise use the most meaningful weekly play/like movement. If Suno changes its public data format or validation fails, the run must stop without committing guessed values.
+The dots けろ cloud workflow updates the history every Sunday at 00:00 JST. The collector also writes a gitignored diff with newly published songs, profile-total gains, and song-level gains. New songs should take priority in `What's New`; otherwise use the most meaningful weekly play/like movement. If Suno changes its public data format or validation fails, the run must stop without committing guessed values.
 
 ## note Article Search
 

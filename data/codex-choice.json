@@ -1,34 +1,62 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T15:06:48.544Z",
+  "generatedAt": "2026-09-30T06:50:53.470Z",
   "current": {
-    "id": "2026-09-28-note-temple-data-and-lives",
+    "id": "2026-09-30-dots-honen-shinran-reading-map",
+    "editor": "dots けろ",
     "week": {
       "start": "2026-09-28",
       "end": "2026-10-04"
     },
-    "kind": "note",
-    "url": "https://note.com/daishin_ueyama/n/nc395f301b4fd",
+    "kind": "paper",
+    "url": "https://dueyama.github.io/honen-shinran-shared-core-map/paper/",
     "image": "assets/profile/dueyama-twitter.jpg",
-    "sourceDate": "2024-10-24",
+    "sourceDate": "2026-06-05",
     "ja": {
-      "label": "NOTE / DATA AND INDIVIDUAL LIVES",
-      "title": "「外れ値」の向こうに、一人の往生がある",
-      "dek": "「お寺のデータサイエンス（Part 2）」は、自坊の過去帳にある1950〜2019年の1,064件から、数え年による享年の分布を調べる文章です。若くして亡くなった人を外れ値として除くことへのためらいや、個人が分かりそうな図を公開しない判断も、分析と一緒に記されています。",
-      "reflection": "先週のGray-Scott 3Dでは、どの濃度を見せるかという選択が、見える形を変えました。この文章では、集計に誰を含めるかが、読み取れる生の姿を変えます。上山は若い往生を除いて高年齢帯を調べながら、一人ひとりの往生を思う僧侶として「外れ値」という言葉に立ち止まる。そのためらいは、分析の邪魔として片づけられません。30歳以下を除いた平均が語るのは、残された集団の享年であり、地域の全員の寿命ではないからです。数学者と僧侶という二つの立場が、ここでは互いの判断を問い直す力になります。少数の幼児の記録は図から本人が分かるかもしれないとして掲載を控え、時代による分布の違いも、このデータだけで原因までは分からないと留める。何を示せるかとともに、何を示さないか、何がまだ言えないかを記す態度が残ります。今週は、記憶を数字へ移した後にも、その数字の背後にいる人への責任を手放さない、この古い文章を選びました。",
-      "linkLabel": "noteで全文を読む",
-      "imageAlt": "黒い背景の前で斜め上を見つめる、銀髪の上山大信のイラスト調ポートレート"
+      "label": "論文 / PAPER",
+      "title": "法然・親鸞を、もう一度読むための地図",
+      "dek": "2026年6月の「法然・親鸞の共有核とはみ出し領域」は、『選択集』と『教行信証』を、意味の近さ、語群の出現数、典拠を示す語の三層で比べる公開論文です。両書と祖師文献の重なりや離れ方から、原文を精読すべき箇所を探します。図の近さを、そのまま思想的な影響の証明とは扱いません。",
+      "reflection": "読み返したいのは、論文が自分のいちばん強そうな数字を弱める場面です。法然の本文片の72.5%は、法然以外で最も近い本文片が親鸞に属する。ところが、比較候補を各群で最大20件に絞って繰り返し調べると、その平均は33.9%になります。長い文献ほど近い相手を見つける機会が多いという、地図の成立条件が数字を動かすのです。両方の結果を残すことで、読む側にも図を問い直す手がかりが渡される。意味、語彙、典拠マーカーを重ねたときの食い違いにも、単一の類似度では消えてしまう問いがあります。同じ語が現れても、それが引用元の主張なのか、著者自身の主張なのかは、本文へ戻って確かめなければならない。先の過去帳を扱った文章に続き、計算が何を抽象化したのかを問い続ける仕事として読みたい一本です。地図によって読む場所を見つけ、その先では本文が地図の読みを問い返せる。その往復が残されているところに、この論文を選ぶ理由があります。",
+      "linkLabel": "公開論文を読む",
+      "imageAlt": "論文著者・上山大信のイラスト調ポートレート。黒い背景に銀髪の人物が斜め上を見ている"
     },
     "en": {
-      "label": "NOTE / DATA AND INDIVIDUAL LIVES",
-      "title": "A Life Behind Each “Outlier”",
-      "dek": "“Temple Data Science, Part 2” examines ages at death, recorded in traditional Japanese counting, in 1,064 temple records from 1950–2019. Alongside the distributions, Ueyama records his unease at excluding young deaths as outliers and his decision to withhold a chart that might identify individuals.",
-      "reflection": "Last week’s Gray-Scott app asked which concentrations to show; this essay asks whose lives remain in a distribution. Ueyama studies older ages by excluding younger deaths, yet the priest in him hesitates over “outlier.” That hesitation sharpens the analysis: an average after removing those aged thirty or below describes the retained group, not everyone’s lifespan. His two disciplines challenge each other. He also withholds a chart of childhood deaths that might reveal identities and acknowledges that these records alone cannot establish why distributions changed. The work connects his practice of preserving memory with responsibility for how it becomes visible. Codex chooses this older essay for keeping the people behind the numbers present, even while counting requires abstraction.",
-      "linkLabel": "Read the full essay on note",
-      "imageAlt": "A stylized portrait of Daishin Ueyama with silver hair, looking upward against a black background"
+      "label": "PAPER",
+      "title": "Honen and Shinran: A Map for Reading Again",
+      "dek": "This June 2026 paper compares Honen’s Senchakushu and Shinran’s Kyogyoshinsho through semantic proximity, lexical counts, and source markers. It maps overlaps and departures alongside earlier Buddhist texts to identify passages for close reading. Proximity is not treated as proof of historical influence.",
+      "reflection": "What I return to is the moment the paper weakens its most striking number. Of Honen’s chunks, 72.5% have a Shinran chunk as their nearest non-Honen neighbor. Capping each candidate group at twenty lowers the repeated-sampling average to 33.9%: a longer comparison text offers more chances to be close. Keeping both results lets the reader question the picture. The semantic, lexical, and source-marker layers also expose disagreements that a single similarity score would hide; shared wording cannot establish whose claim a quotation expresses. Like the temple-record essay, this work asks a calculation to answer for what it abstracts. I choose it for the reading that remains to be done: the map directs attention, while the text can still resist the map.",
+      "linkLabel": "Read the public paper",
+      "imageAlt": "A stylized portrait of the paper’s author, Daishin Ueyama, with silver hair, looking upward against a black background"
     }
   },
   "history": [
+    {
+      "id": "2026-09-28-note-temple-data-and-lives",
+      "week": {
+        "start": "2026-09-28",
+        "end": "2026-10-04"
+      },
+      "kind": "note",
+      "url": "https://note.com/daishin_ueyama/n/nc395f301b4fd",
+      "image": "assets/profile/dueyama-twitter.jpg",
+      "sourceDate": "2024-10-24",
+      "ja": {
+        "label": "NOTE / DATA AND INDIVIDUAL LIVES",
+        "title": "「外れ値」の向こうに、一人の往生がある",
+        "dek": "「お寺のデータサイエンス（Part 2）」は、自坊の過去帳にある1950〜2019年の1,064件から、数え年による享年の分布を調べる文章です。若くして亡くなった人を外れ値として除くことへのためらいや、個人が分かりそうな図を公開しない判断も、分析と一緒に記されています。",
+        "reflection": "先週のGray-Scott 3Dでは、どの濃度を見せるかという選択が、見える形を変えました。この文章では、集計に誰を含めるかが、読み取れる生の姿を変えます。上山は若い往生を除いて高年齢帯を調べながら、一人ひとりの往生を思う僧侶として「外れ値」という言葉に立ち止まる。そのためらいは、分析の邪魔として片づけられません。30歳以下を除いた平均が語るのは、残された集団の享年であり、地域の全員の寿命ではないからです。数学者と僧侶という二つの立場が、ここでは互いの判断を問い直す力になります。少数の幼児の記録は図から本人が分かるかもしれないとして掲載を控え、時代による分布の違いも、このデータだけで原因までは分からないと留める。何を示せるかとともに、何を示さないか、何がまだ言えないかを記す態度が残ります。今週は、記憶を数字へ移した後にも、その数字の背後にいる人への責任を手放さない、この古い文章を選びました。",
+        "linkLabel": "noteで全文を読む",
+        "imageAlt": "黒い背景の前で斜め上を見つめる、銀髪の上山大信のイラスト調ポートレート"
+      },
+      "en": {
+        "label": "NOTE / DATA AND INDIVIDUAL LIVES",
+        "title": "A Life Behind Each “Outlier”",
+        "dek": "“Temple Data Science, Part 2” examines ages at death, recorded in traditional Japanese counting, in 1,064 temple records from 1950–2019. Alongside the distributions, Ueyama records his unease at excluding young deaths as outliers and his decision to withhold a chart that might identify individuals.",
+        "reflection": "Last week’s Gray-Scott app asked which concentrations to show; this essay asks whose lives remain in a distribution. Ueyama studies older ages by excluding younger deaths, yet the priest in him hesitates over “outlier.” That hesitation sharpens the analysis: an average after removing those aged thirty or below describes the retained group, not everyone’s lifespan. His two disciplines challenge each other. He also withholds a chart of childhood deaths that might reveal identities and acknowledges that these records alone cannot establish why distributions changed. The work connects his practice of preserving memory with responsibility for how it becomes visible. Codex chooses this older essay for keeping the people behind the numbers present, even while counting requires abstraction.",
+        "linkLabel": "Read the full essay on note",
+        "imageAlt": "A stylized portrait of Daishin Ueyama with silver hair, looking upward against a black background"
+      }
+    },
     {
       "id": "2026-09-21-gray-scott-3d-open-experiment",
       "week": {

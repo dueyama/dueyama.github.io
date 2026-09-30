@@ -629,6 +629,13 @@ h3 {
   color: var(--ink);
 }
 
+.choice-editor-note {
+  margin: -12px 0 28px;
+  color: #b8c2be;
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
 .choice-panel {
   min-width: 0;
 }

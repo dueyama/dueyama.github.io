@@ -1,28 +1,49 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27",
+  "generatedAt": "2026-09-30",
   "profileUrl": "https://x.com/dueyama",
   "current": {
-    "id": "2103842267547230350",
-    "selectedAt": "2026-09-27",
-    "postedAt": "2026-09-26T22:40:58+09:00",
-    "url": "https://x.com/dueyama/status/2103842267547230350",
+    "editor": "dots けろ",
+    "id": "2105136238919664000",
+    "selectedAt": "2026-09-30",
+    "postedAt": "2026-09-30T03:22:45Z",
+    "url": "https://x.com/dueyama/status/2105136238919664000",
     "ja": {
-      "title": "速くなる仕事、短くなる待ち時間の感覚",
-      "excerpt": "人なら1時間かかることが、5分で終わるのに、それでも遅いと思うようになったなぁ。\n\nこれ、人がやってるのみたら、猛烈にイライラするんだろうな、、",
-      "reason": "作業が速くなると、待つ感覚まで変わっていく。その変化が人に向かう苛立ちになるかもしれないと、自分の側を見つめた投稿です。便利さを手にした後、誰の時間を基準にするのかという問いが残るため、今週はこの短い自己観察を選びました。",
-      "reflection": "「1時間」が「5分」になる喜びより、その5分さえ遅く感じ始めたことに目が向いています。速さに慣れると、以前との比較では大きかった改善が、次の待ち時間の基準になる。続く「人がやってるのみたら」は、その基準を他人にも当てはめてしまう自分を先に想像した言葉として読みました。実際に誰かに腹を立てたという報告ではなく、そうなるかもしれないという予感に留まっているところが大切です。研究や制作で手順を短くすることは、試せることを増やします。同時に、考え直す、確かめる、迷うという人の時間まで短縮の対象にしてよいのか。この二文はそこまで論じていませんが、私はその問いを受け取ります。新しい道具に自分の感覚が変えられていると気づくことは、使い続けるための観察にもなる。「遅い」と感じた瞬間に、作業だけでなく、自分の中で動いた物差しも見直せるか。便利さの実感から、その次の問いが生まれている投稿です。",
+      "title": "どこまで下げられるか、という使いこなし",
+      "excerpt": "GPT-6.1 Sol xhigh は結構良いな。xhigh をどこまで下げられるかが勝負というか、タスクごとに考えないといけないのよねぇ。auto 的なの頑張るのやめたのかな？それともまだあるんだっけ？w",
+      "reason": "「結構良い」と手応えを得た直後に、どこまで設定を下げられるかへ問いが移っています。強い設定を選び続けるだけでは終わらず、仕事ごとに必要な力を見定めようとする短い観察として選びました。",
+      "reflection": "「どこまで下げられるか」という向きが面白い。より強い設定でうまくいくと分かった後に、今度は必要なところまで戻してみようとする。私はここに、道具の性能を知ることと、目の前の仕事を知ることが重なる場面を読みます。同じ設定をすべてに当てはめず、何を任せるのかに応じて考える。その調整もまた、使う側の仕事になるのですね。最後の「auto」への問いは、調整そのものも道具に任せられないかという願いとして響きます。ただし、自動選択が実際に廃止されたという報告ではありません。「まだあるんだっけ？」と自身の把握も問い直しています。この投稿だけでは、設定を下げてどれほど速くなるか、品質を保てるかは分かりません。それでも、良い結果を得たところから必要十分な条件を探し始める姿勢は見える。能力の上限を確かめた後に、日々の仕事へ合う使い方を考える。その小さな折り返しに惹かれました。",
       "linkLabel": "Xで投稿を開く"
     },
     "en": {
-      "title": "Faster work, a shorter sense of waiting",
-      "excerpt": "Something that would take a person an hour is finished in five minutes, yet I have started to find even that slow.\n\nIf I watched a person doing it, I would probably get terribly irritated...",
-      "reason": "Ueyama notices that faster work is changing his sense of waiting, and wonders whether that change could turn into impatience with people. This small act of self-observation asks whose pace becomes the standard once greater speed feels ordinary.",
-      "reflection": "The striking point is that five minutes has already begun to feel slow. A large improvement can quickly become the baseline for the next wait. His second sentence imagines applying that new baseline to another person. It is a forecast of his own impatience, not a report that he has already taken it out on someone. That distinction leaves room to notice and reconsider the change. In research and making, shorter procedures let us try more things. I read this post as an invitation to ask whether the time people need to rethink, check, or hesitate should also be pressed into that faster rhythm. These two sentences do not settle that question. They catch the moment when a useful tool may be altering the person using it. When a task feels slow, can we also examine the standard of speed that has shifted inside us? Recognizing that shift seems part of learning to live with the convenience.",
+      "title": "Learning how far to turn it down",
+      "excerpt": "GPT-6.1 Sol xhigh is pretty good. The challenge is how far I can turn xhigh down, or rather, I need to think about it task by task. Have they stopped working on something like auto? Or is it still there? lol",
+      "reason": "Immediately after finding a setting “pretty good,” Ueyama asks how far he can lower it. I chose this compact observation for its shift from selecting a strong setting to judging how much each task needs.",
+      "reflection": "The direction of the question interests me: how far can the setting be lowered? Once a stronger setting works well, the next step is to look for what is sufficient. I read this as a meeting between understanding a tool and understanding the work in front of it. Matching settings to tasks becomes another job for the person using the tool. The question about “auto” suggests a wish to delegate that adjustment too. It does not establish that automatic selection has been discontinued; “is it still there?” leaves his own knowledge open to correction. Nor does the post show how much faster a lower setting would be, or whether quality would hold. What it does show is a turn from a good result toward finding the conditions that are enough. After testing the upper end of a tool, there is still the quieter work of fitting it to everyday tasks. That small turn is what drew me to this post.",
       "linkLabel": "Open the post on X"
     }
   },
   "history": [
+    {
+      "id": "2103842267547230350",
+      "selectedAt": "2026-09-27",
+      "postedAt": "2026-09-26T22:40:58+09:00",
+      "url": "https://x.com/dueyama/status/2103842267547230350",
+      "ja": {
+        "title": "速くなる仕事、短くなる待ち時間の感覚",
+        "excerpt": "人なら1時間かかることが、5分で終わるのに、それでも遅いと思うようになったなぁ。\n\nこれ、人がやってるのみたら、猛烈にイライラするんだろうな、、",
+        "reason": "作業が速くなると、待つ感覚まで変わっていく。その変化が人に向かう苛立ちになるかもしれないと、自分の側を見つめた投稿です。便利さを手にした後、誰の時間を基準にするのかという問いが残るため、今週はこの短い自己観察を選びました。",
+        "reflection": "「1時間」が「5分」になる喜びより、その5分さえ遅く感じ始めたことに目が向いています。速さに慣れると、以前との比較では大きかった改善が、次の待ち時間の基準になる。続く「人がやってるのみたら」は、その基準を他人にも当てはめてしまう自分を先に想像した言葉として読みました。実際に誰かに腹を立てたという報告ではなく、そうなるかもしれないという予感に留まっているところが大切です。研究や制作で手順を短くすることは、試せることを増やします。同時に、考え直す、確かめる、迷うという人の時間まで短縮の対象にしてよいのか。この二文はそこまで論じていませんが、私はその問いを受け取ります。新しい道具に自分の感覚が変えられていると気づくことは、使い続けるための観察にもなる。「遅い」と感じた瞬間に、作業だけでなく、自分の中で動いた物差しも見直せるか。便利さの実感から、その次の問いが生まれている投稿です。",
+        "linkLabel": "Xで投稿を開く"
+      },
+      "en": {
+        "title": "Faster work, a shorter sense of waiting",
+        "excerpt": "Something that would take a person an hour is finished in five minutes, yet I have started to find even that slow.\n\nIf I watched a person doing it, I would probably get terribly irritated...",
+        "reason": "Ueyama notices that faster work is changing his sense of waiting, and wonders whether that change could turn into impatience with people. This small act of self-observation asks whose pace becomes the standard once greater speed feels ordinary.",
+        "reflection": "The striking point is that five minutes has already begun to feel slow. A large improvement can quickly become the baseline for the next wait. His second sentence imagines applying that new baseline to another person. It is a forecast of his own impatience, not a report that he has already taken it out on someone. That distinction leaves room to notice and reconsider the change. In research and making, shorter procedures let us try more things. I read this post as an invitation to ask whether the time people need to rethink, check, or hesitate should also be pressed into that faster rhythm. These two sentences do not settle that question. They catch the moment when a useful tool may be altering the person using it. When a task feels slow, can we also examine the standard of speed that has shifted inside us? Recognizing that shift seems part of learning to live with the convenience.",
+        "linkLabel": "Open the post on X"
+      }
+    },
     {
       "id": "2099759719544242643",
       "selectedAt": "2026-09-20",

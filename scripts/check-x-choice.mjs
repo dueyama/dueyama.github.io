@@ -54,6 +54,7 @@ function validateChoice(choice, field) {
 
   return {
     id,
+    ...(choice.editor === undefined ? {} : { editor: requireString(choice.editor, `${field}.editor`, 80) }),
     selectedAt: requireDate(choice.selectedAt, `${field}.selectedAt`),
     postedAt: requireTimestamp(choice.postedAt, `${field}.postedAt`),
     url,

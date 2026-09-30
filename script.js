@@ -751,7 +751,7 @@ function renderCodexChoiceHistory(history) {
 
     const period = document.createElement("p");
     period.className = "codex-choice-history-period";
-    period.textContent = formatWeekPeriod(choice.week.start, choice.week.end);
+    period.textContent = `${formatWeekPeriod(choice.week.start, choice.week.end)} / ${choice.editor || "Codex"}`;
 
     const heading = document.createElement("h3");
     const link = document.createElement("a");
@@ -784,7 +784,7 @@ function renderCodexChoice(data) {
 
   codexChoiceData = data;
   codexChoiceSection.dataset.kind = choice.kind || "site";
-  codexChoicePeriod.textContent = formatWeekPeriod(choice.week.start, choice.week.end);
+  codexChoicePeriod.textContent = `${formatWeekPeriod(choice.week.start, choice.week.end)} / ${choice.editor || "Codex"}`;
   codexChoiceTitleLink.href = choice.url;
   codexChoiceTitleLink.textContent = copy.title;
   codexChoiceDek.textContent = copy.dek;
@@ -840,7 +840,7 @@ function renderXChoiceHistory(history) {
 
     const time = document.createElement("time");
     time.dateTime = choice.postedAt;
-    time.textContent = formatXChoiceDate(choice.postedAt);
+    time.textContent = `${formatXChoiceDate(choice.postedAt)} / ${choice.editor || "Codex"}`;
 
     const heading = document.createElement("h5");
     const link = document.createElement("a");
@@ -863,7 +863,7 @@ function renderXChoice(data) {
   }
 
   xChoiceTitle.textContent = copy.title;
-  xChoiceDate.textContent = formatXChoiceDate(choice.postedAt);
+  xChoiceDate.textContent = `${formatXChoiceDate(choice.postedAt)} / ${choice.editor || "Codex"}`;
   xChoiceExcerpt.textContent = copy.excerpt;
   xChoiceReason.textContent = copy.reason;
   xChoiceReflection.textContent = copy.reflection;
