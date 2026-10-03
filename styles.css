@@ -668,6 +668,7 @@ h3 {
 }
 
 .codex-choice-section[data-kind="app"] .codex-choice-media img {
+  height: auto;
   object-fit: contain;
   padding: 14px 14px 44px;
 }
