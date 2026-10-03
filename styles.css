@@ -667,12 +667,6 @@ h3 {
   object-fit: cover;
 }
 
-.codex-choice-section[data-kind="app"] .codex-choice-media img {
-  height: auto;
-  object-fit: contain;
-  padding: 14px 14px 44px;
-}
-
 .codex-choice-media figcaption {
   position: absolute;
   right: 0;
@@ -763,6 +757,118 @@ h3 {
 
 .codex-choice-link:hover {
   color: #f1bd41;
+}
+
+/* App icons belong beside the introduction, not in an empty half-page column. */
+.codex-choice-section[data-kind="app"] .codex-choice-layout {
+  max-width: 960px;
+  margin-inline: auto;
+  grid-template-columns: 184px minmax(0, 1fr);
+  grid-template-areas:
+    "media heading"
+    "media title"
+    "media summary"
+    "reflection reflection"
+    "action action"
+    "history history";
+  gap: 12px 36px;
+}
+
+.codex-choice-section[data-kind="app"] .codex-choice-copy {
+  display: contents;
+}
+
+.codex-choice-section[data-kind="app"] .codex-choice-media {
+  grid-area: media;
+  align-self: start;
+}
+
+.codex-choice-section[data-kind="app"] .codex-choice-media img {
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border: 0;
+  background: transparent;
+}
+
+.codex-choice-section[data-kind="app"] .codex-choice-media figcaption {
+  position: static;
+  margin-top: 12px;
+  padding: 0;
+  background: none;
+  color: #9eaaa6;
+  font-size: 0.7rem;
+  line-height: 1.6;
+}
+
+.codex-choice-section[data-kind="app"] .codex-choice-heading {
+  grid-area: heading;
+}
+
+.codex-choice-section[data-kind="app"] .codex-choice-copy h2 {
+  grid-area: title;
+  margin: 0;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  line-height: 1.25;
+}
+
+.codex-choice-section[data-kind="app"] .codex-choice-dek {
+  grid-area: summary;
+  margin: 0;
+}
+
+.codex-choice-section[data-kind="app"] .codex-choice-reflection {
+  grid-area: reflection;
+  width: 100%;
+  max-width: 80ch;
+  justify-self: center;
+  margin-top: 20px;
+  border-top: 1px solid #34413e;
+  border-left: 0;
+  padding: 22px 0 0;
+}
+
+.codex-choice-section[data-kind="app"] .codex-choice-link {
+  grid-area: action;
+  justify-self: center;
+  margin-top: 6px;
+}
+
+.codex-choice-section[data-kind="app"] .codex-choice-history {
+  grid-area: history;
+  margin-top: 18px;
+}
+
+@media (max-width: 680px) {
+  .codex-choice-section[data-kind="app"] .codex-choice-layout {
+    grid-template-columns: 96px minmax(0, 1fr);
+    grid-template-areas:
+      "media heading"
+      "media title"
+      "summary summary"
+      "reflection reflection"
+      "action action"
+      "history history";
+    gap: 14px 20px;
+  }
+
+  .codex-choice-section[data-kind="app"] .codex-choice-copy h2 {
+    font-size: 1.5rem;
+    overflow-wrap: anywhere;
+  }
+
+  .codex-choice-section[data-kind="app"] .codex-choice-media figcaption {
+    margin-top: 8px;
+    font-size: 0.64rem;
+  }
+
+  .codex-choice-section[data-kind="app"] .codex-choice-dek {
+    margin-top: 6px;
+  }
+
+  .codex-choice-section[data-kind="app"] .codex-choice-reflection {
+    margin-top: 8px;
+  }
 }
 
 .codex-choice-history {
