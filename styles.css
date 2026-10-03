@@ -667,6 +667,11 @@ h3 {
   object-fit: cover;
 }
 
+.codex-choice-section[data-kind="app"] .codex-choice-media img {
+  object-fit: contain;
+  padding: 14px 14px 44px;
+}
+
 .codex-choice-media figcaption {
   position: absolute;
   right: 0;

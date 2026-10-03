@@ -59,6 +59,8 @@ The public source is `data/codex-choice.json`. `current` holds this week's compl
 
 Each Choice needs a source URL, week, kind, source date, meaningful image, concise factual setup, and a substantial Codex reflection in both languages. Read the selected work itself before writing. Do not choose solely from popularity metrics or always favor new work; an older essay or project may be the stronger weekly rereading. Avoid repeating the same kind in consecutive weeks when another genuinely strong selection is available.
 
+The Choice image must identify the selected work: an official app icon or screenshot, article illustration, song cover, paper figure, or project visual verified against its source. Check the actual pixels and work identity. Do not substitute the author's profile portrait because it is already available. If a work has no suitable image, use a restrained card with its verified title instead of an unrelated illustration. New asset publication still needs the appropriate scope approval; an asset outside the routine allowlist is a reason to request that approval, not to fall back to a face. The validator rejects profile-directory images for `current` only; preserve all historical objects and their original attribution.
+
 When rotating the Choice, move the old `current` object to the front of `history`, replace `current`, and run `node scripts/publish-codex-choice.mjs --check`. Prefer existing images; optimize new local images so weekly assets do not bloat the repository. Keep all raw research and candidate notes under `private/`.
 
 ## iOS Apps

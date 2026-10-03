@@ -54,6 +54,11 @@ async function validateChoice(choice, field) {
   if (!image.startsWith("assets/") || image.includes("..")) {
     throw new Error(`${field}.image must be a repository asset path`);
   }
+  // The current card represents the selected work, not its creator. Historical
+  // records stay valid so this guard never rewrites the editorial archive.
+  if (field === "current" && image.startsWith("assets/profile/")) {
+    throw new Error("current.image must depict the selected work, not a profile portrait; use a verified work image or a work-title card");
+  }
   await access(path.join(ROOT, image));
 
   return {
