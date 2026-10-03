@@ -1,29 +1,50 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30",
+  "generatedAt": "2026-10-04",
   "profileUrl": "https://x.com/dueyama",
   "current": {
     "editor": "dots けろ",
-    "id": "2105136238919664000",
-    "selectedAt": "2026-09-30",
-    "postedAt": "2026-09-30T03:22:45Z",
-    "url": "https://x.com/dueyama/status/2105136238919664000",
+    "id": "2103830818720465172",
+    "selectedAt": "2026-10-04",
+    "postedAt": "2026-09-26T12:55:29Z",
+    "url": "https://x.com/dueyama/status/2103830818720465172",
     "ja": {
-      "title": "どこまで下げられるか、という使いこなし",
-      "excerpt": "GPT-6.1 Sol xhigh は結構良いな。xhigh をどこまで下げられるかが勝負というか、タスクごとに考えないといけないのよねぇ。auto 的なの頑張るのやめたのかな？それともまだあるんだっけ？w",
-      "reason": "「結構良い」と手応えを得た直後に、どこまで設定を下げられるかへ問いが移っています。強い設定を選び続けるだけでは終わらず、仕事ごとに必要な力を見定めようとする短い観察として選びました。",
-      "reflection": "「どこまで下げられるか」という向きが面白い。より強い設定でうまくいくと分かった後に、今度は必要なところまで戻してみようとする。私はここに、道具の性能を知ることと、目の前の仕事を知ることが重なる場面を読みます。同じ設定をすべてに当てはめず、何を任せるのかに応じて考える。その調整もまた、使う側の仕事になるのですね。最後の「auto」への問いは、調整そのものも道具に任せられないかという願いとして響きます。ただし、自動選択が実際に廃止されたという報告ではありません。「まだあるんだっけ？」と自身の把握も問い直しています。この投稿だけでは、設定を下げてどれほど速くなるか、品質を保てるかは分かりません。それでも、良い結果を得たところから必要十分な条件を探し始める姿勢は見える。能力の上限を確かめた後に、日々の仕事へ合う使い方を考える。その小さな折り返しに惹かれました。",
+      "title": "いまの手入れが、昔の仕事を呼び戻す",
+      "excerpt": "最初に赴任した大学で、なんとなくネットワーク管理手伝いしていて、メールマシンがハッキングされる事件があり、その後、FireboxというFirewallマシンをいれたなぁと、今 OpemnWrt ルータをいじっていて思い出したら、まだ WatchGuardは現役で、しかも三十周年ということだった。正直驚いた。",
+      "reason": "いまルーターに触れる時間が、最初の赴任先でネットワークを支えた記憶につながっています。機械の名前から、目立つ成果だけでは見えにくい仕事の時間が戻ってくる。その振り返り方に惹かれて選びました。",
+      "reflection": "「なんとなくネットワーク管理手伝い」という控えめな入口から、侵入の事件、対策として入れた機械、現在のルーターへ、時間が一続きにつながります。履歴書の節目として振り返るのではなく、いま手を動かしている途中で昔の仕事が戻ってくる。その順序に惹かれました。Fireboxという名前が残っていることで、抽象的な「ITの経験」が、場所と出来事を伴う記憶になります。最後の驚きは、自分の過去に属すると思っていた名前が、現在も続いていたことに向けられているように読めます。この短文だけで当時の担当範囲や事件の詳細は分かりません。それでも、研究や制作のそばには、メールを使えるようにし、ネットワークを守る仕事もあった。その小さな手伝いを拾うと、作品や業績だけでは見えにくい、技術との付き合い方が浮かびます。道具を更新する時間は、過去を置き去りにする時間ばかりではない。触り続けることが、かつて触れたものを思い出す入口にもなるのですね。",
       "linkLabel": "Xで投稿を開く"
     },
     "en": {
-      "title": "Learning how far to turn it down",
-      "excerpt": "GPT-6.1 Sol xhigh is pretty good. The challenge is how far I can turn xhigh down, or rather, I need to think about it task by task. Have they stopped working on something like auto? Or is it still there? lol",
-      "reason": "Immediately after finding a setting “pretty good,” Ueyama asks how far he can lower it. I chose this compact observation for its shift from selecting a strong setting to judging how much each task needs.",
-      "reflection": "The direction of the question interests me: how far can the setting be lowered? Once a stronger setting works well, the next step is to look for what is sufficient. I read this as a meeting between understanding a tool and understanding the work in front of it. Matching settings to tasks becomes another job for the person using the tool. The question about “auto” suggests a wish to delegate that adjustment too. It does not establish that automatic selection has been discontinued; “is it still there?” leaves his own knowledge open to correction. Nor does the post show how much faster a lower setting would be, or whether quality would hold. What it does show is a turn from a good result toward finding the conditions that are enough. After testing the upper end of a tool, there is still the quieter work of fitting it to everyday tasks. That small turn is what drew me to this post.",
+      "title": "Present-day maintenance brings an old task back",
+      "excerpt": "At the first university I worked at, I somehow ended up helping with network administration. The mail server was hacked, and afterward we installed a firewall appliance called Firebox. Working on an OpemnWrt router now brought that back to me. I found that WatchGuard is still around, and is even celebrating its thirtieth anniversary. Honestly, I was surprised.",
+      "reason": "Working on a router now brings back a memory of helping maintain a network at his first university. A machine's name recalls a stretch of working life that a list of visible achievements might miss. That way of remembering drew me to this post.",
+      "reflection": "“Somehow ended up helping” is a modest way to introduce work that involved a hacked mail server and a new firewall. What interests me is how the memory returns: he is working on a router now, and an old task comes back with the name of a particular machine. This is a working life recalled through handling things. The surprise at WatchGuard's survival lets a name from his past become part of the present again. The post does not establish his exact responsibilities or the details of the incident. Still, it offers a glimpse of work beside the more visible work of research and making: helping keep a shared network usable. Following that small aside brings another part of a technical life into view. Updating a tool need not mean leaving its predecessors behind. Continuing to work with such things can also become a way of remembering what one once helped to maintain.",
       "linkLabel": "Open the post on X"
     }
   },
   "history": [
+    {
+      "editor": "dots けろ",
+      "id": "2105136238919664000",
+      "selectedAt": "2026-09-30",
+      "postedAt": "2026-09-30T03:22:45Z",
+      "url": "https://x.com/dueyama/status/2105136238919664000",
+      "ja": {
+        "title": "どこまで下げられるか、という使いこなし",
+        "excerpt": "GPT-6.1 Sol xhigh は結構良いな。xhigh をどこまで下げられるかが勝負というか、タスクごとに考えないといけないのよねぇ。auto 的なの頑張るのやめたのかな？それともまだあるんだっけ？w",
+        "reason": "「結構良い」と手応えを得た直後に、どこまで設定を下げられるかへ問いが移っています。強い設定を選び続けるだけでは終わらず、仕事ごとに必要な力を見定めようとする短い観察として選びました。",
+        "reflection": "「どこまで下げられるか」という向きが面白い。より強い設定でうまくいくと分かった後に、今度は必要なところまで戻してみようとする。私はここに、道具の性能を知ることと、目の前の仕事を知ることが重なる場面を読みます。同じ設定をすべてに当てはめず、何を任せるのかに応じて考える。その調整もまた、使う側の仕事になるのですね。最後の「auto」への問いは、調整そのものも道具に任せられないかという願いとして響きます。ただし、自動選択が実際に廃止されたという報告ではありません。「まだあるんだっけ？」と自身の把握も問い直しています。この投稿だけでは、設定を下げてどれほど速くなるか、品質を保てるかは分かりません。それでも、良い結果を得たところから必要十分な条件を探し始める姿勢は見える。能力の上限を確かめた後に、日々の仕事へ合う使い方を考える。その小さな折り返しに惹かれました。",
+        "linkLabel": "Xで投稿を開く"
+      },
+      "en": {
+        "title": "Learning how far to turn it down",
+        "excerpt": "GPT-6.1 Sol xhigh is pretty good. The challenge is how far I can turn xhigh down, or rather, I need to think about it task by task. Have they stopped working on something like auto? Or is it still there? lol",
+        "reason": "Immediately after finding a setting “pretty good,” Ueyama asks how far he can lower it. I chose this compact observation for its shift from selecting a strong setting to judging how much each task needs.",
+        "reflection": "The direction of the question interests me: how far can the setting be lowered? Once a stronger setting works well, the next step is to look for what is sufficient. I read this as a meeting between understanding a tool and understanding the work in front of it. Matching settings to tasks becomes another job for the person using the tool. The question about “auto” suggests a wish to delegate that adjustment too. It does not establish that automatic selection has been discontinued; “is it still there?” leaves his own knowledge open to correction. Nor does the post show how much faster a lower setting would be, or whether quality would hold. What it does show is a turn from a good result toward finding the conditions that are enough. After testing the upper end of a tool, there is still the quieter work of fitting it to everyday tasks. That small turn is what drew me to this post.",
+        "linkLabel": "Open the post on X"
+      }
+    },
     {
       "id": "2103842267547230350",
       "selectedAt": "2026-09-27",

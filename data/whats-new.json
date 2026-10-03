@@ -1,57 +1,25 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T05:49:23.183Z",
+  "generatedAt": "2026-10-03T15:13:05.935Z",
   "period": {
-    "start": "2026-09-27",
-    "end": "2026-09-30"
+    "start": "2026-09-30",
+    "end": "2026-10-04"
   },
   "items": [
     {
-      "id": "2026-09-28-note-research-connections",
-      "kind": "note",
-      "date": "2026-09-28",
-      "url": "https://note.com/daishin_ueyama/n/nb9a771af8f14",
-      "ja": {
-        "label": "note",
-        "title": "研究の途中の発見を、共同研究への出会いに",
-        "summary": "AIが小さな発見と貢献者を記録し、本人の許可を得て研究者同士をつなぐ未来を考察。現在の機能ではなく構想として、検証や査読の課題にも触れています。"
-      },
-      "en": {
-        "label": "note",
-        "title": "Connecting discoveries made along the way",
-        "summary": "A new essay imagines AI recording small discoveries and their contributors, then connecting researchers with permission. It presents a future proposal, including unresolved questions about verification and peer review."
-      }
-    },
-    {
-      "id": "2026-09-28-note-ai-router",
-      "kind": "note",
-      "date": "2026-09-28",
-      "url": "https://note.com/daishin_ueyama/n/n6392c9671e03",
-      "ja": {
-        "label": "note",
-        "title": "ルーターを作り込み、AIと管理する",
-        "summary": "NanoPi R6SとOpenWrtによる自宅ルーターの構築、管理画面づくり、ログ監査の体験を公開。動かせる範囲が広がる楽しさと、自分で理解することの意味を振り返っています。"
-      },
-      "en": {
-        "label": "note",
-        "title": "Building and managing a router with AI",
-        "summary": "Ueyama shares his experience building an OpenWrt router on a NanoPi R6S, creating a dashboard, and reviewing logs with AI. The essay also asks what personal understanding means as more of the work becomes automated."
-      }
-    },
-    {
-      "id": "2026-09-27-suno-take-the-long-way",
+      "id": "2026-10-04-suno-listening-growth",
       "kind": "suno",
-      "date": "2026-09-27",
-      "url": "https://suno.com/song/7071626b-b297-4e60-866a-975c31902c15",
+      "date": "2026-10-04",
+      "url": "https://suno.com/song/2f996f6b-ae42-46d5-833c-3c030c922767",
       "ja": {
         "label": "Suno",
-        "title": "新曲「Take the Long Way」を公開",
-        "summary": "DonnyUの公開曲に「Take the Long Way」が加わり、全45曲に。9月30日の集計では新曲は205再生・1いいね、プロフィール全体は65,237再生・388いいねでした。"
+        "title": "「Higher Than the Night」が256再生増",
+        "summary": "9月30日から10月4日に、公開45曲は計657再生・7いいね増え、65,894再生・395いいねに。「Higher Than the Night」はこの期間で最も再生が増え、14,853再生となりました。新曲の追加はありません。"
       },
       "en": {
         "label": "Suno",
-        "title": "New song: Take the Long Way",
-        "summary": "Take the Long Way joins DonnyU’s catalog of 45 public songs. The September 30 snapshot records 205 plays and one like for the new song, with 65,237 plays and 388 likes across the profile."
+        "title": "Higher Than the Night gains 256 plays",
+        "summary": "From September 30 to October 4, the 45 public songs gained 657 plays and seven likes, reaching 65,894 plays and 395 likes. Higher Than the Night had the largest play increase, reaching 14,853 plays. No new songs were added."
       }
     }
   ]

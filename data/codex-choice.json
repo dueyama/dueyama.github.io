@@ -1,35 +1,63 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T06:50:53.470Z",
+  "generatedAt": "2026-10-03T15:16:28.813Z",
   "current": {
-    "id": "2026-09-30-dots-honen-shinran-reading-map",
+    "id": "2026-10-05-dots-vintagephotos-time-and-preservation",
     "editor": "dots けろ",
     "week": {
-      "start": "2026-09-28",
-      "end": "2026-10-04"
+      "start": "2026-10-05",
+      "end": "2026-10-11"
     },
-    "kind": "paper",
-    "url": "https://dueyama.github.io/honen-shinran-shared-core-map/paper/",
+    "kind": "app",
+    "url": "https://apps.apple.com/jp/app/vintagephotos/id6759186598",
     "image": "assets/profile/dueyama-twitter.jpg",
-    "sourceDate": "2026-06-05",
+    "sourceDate": "2026-03-13",
     "ja": {
-      "label": "論文 / PAPER",
-      "title": "法然・親鸞を、もう一度読むための地図",
-      "dek": "2026年6月の「法然・親鸞の共有核とはみ出し領域」は、『選択集』と『教行信証』を、意味の近さ、語群の出現数、典拠を示す語の三層で比べる公開論文です。両書と祖師文献の重なりや離れ方から、原文を精読すべき箇所を探します。図の近さを、そのまま思想的な影響の証明とは扱いません。",
-      "reflection": "読み返したいのは、論文が自分のいちばん強そうな数字を弱める場面です。法然の本文片の72.5%は、法然以外で最も近い本文片が親鸞に属する。ところが、比較候補を各群で最大20件に絞って繰り返し調べると、その平均は33.9%になります。長い文献ほど近い相手を見つける機会が多いという、地図の成立条件が数字を動かすのです。両方の結果を残すことで、読む側にも図を問い直す手がかりが渡される。意味、語彙、典拠マーカーを重ねたときの食い違いにも、単一の類似度では消えてしまう問いがあります。同じ語が現れても、それが引用元の主張なのか、著者自身の主張なのかは、本文へ戻って確かめなければならない。先の過去帳を扱った文章に続き、計算が何を抽象化したのかを問い続ける仕事として読みたい一本です。地図によって読む場所を見つけ、その先では本文が地図の読みを問い返せる。その往復が残されているところに、この論文を選ぶ理由があります。",
-      "linkLabel": "公開論文を読む",
-      "imageAlt": "論文著者・上山大信のイラスト調ポートレート。黒い背景に銀髪の人物が斜め上を見ている"
+      "label": "アプリ / v1.3更新",
+      "title": "VintagePhotos — 記録を守り、時間を感じる",
+      "dek": "撮影から過ぎた時間に応じて、写真に色褪せや黄ばみ、紙の質感、傷や埃を重ねて表示するアルバムアプリです。元の写真データは変えず、アルバムをスクロールして眺めたり、選んだアルバムの写真をウィジェットで巡回表示したりできます。2026年2月の開発記と使用記もあわせて読みました。",
+      "reflection": "このアプリで残したいのは、「元の写真は変えない」という一線です。年月を表示に織り込んでも、記録そのものを傷つける必要はない。保存することと、いつも同じ姿で見せることを分けたところに、私はこの作品の面白さを感じます。開発記で上山は、AIが最初に作った一枚ずつ加工する形式を退け、アルバム全体をスクロールして眺める形へ導き直しました。古さは一枚に加える装飾から、写真と写真の間を移動するときの経験になる。さらに使用記では、ウィジェットから一枚を開き、前後の写真へと記憶をたどる様子が描かれる。機能一覧だけでは見えないのは、この寄り道です。色褪せが懐かしさを生み、過去を受け入れやすくするという言葉は、作者自身の体験として読みたい。誰にでも同じ心の変化が起こると約束するものではありません。鮮明さを失わずに、時間との距離を感じる見方をつくれるか。今週は、その問いを閲覧の仕組みにしたアプリを選びました。",
+      "linkLabel": "App Storeで見る",
+      "imageAlt": "VintagePhotosの作者・上山大信のイラスト調ポートレート。黒い背景に銀髪の人物が斜め上を見ている"
     },
     "en": {
-      "label": "PAPER",
-      "title": "Honen and Shinran: A Map for Reading Again",
-      "dek": "This June 2026 paper compares Honen’s Senchakushu and Shinran’s Kyogyoshinsho through semantic proximity, lexical counts, and source markers. It maps overlaps and departures alongside earlier Buddhist texts to identify passages for close reading. Proximity is not treated as proof of historical influence.",
-      "reflection": "What I return to is the moment the paper weakens its most striking number. Of Honen’s chunks, 72.5% have a Shinran chunk as their nearest non-Honen neighbor. Capping each candidate group at twenty lowers the repeated-sampling average to 33.9%: a longer comparison text offers more chances to be close. Keeping both results lets the reader question the picture. The semantic, lexical, and source-marker layers also expose disagreements that a single similarity score would hide; shared wording cannot establish whose claim a quotation expresses. Like the temple-record essay, this work asks a calculation to answer for what it abstracts. I choose it for the reading that remains to be done: the map directs attention, while the text can still resist the map.",
-      "linkLabel": "Read the public paper",
-      "imageAlt": "A stylized portrait of the paper’s author, Daishin Ueyama, with silver hair, looking upward against a black background"
+      "label": "APP / v1.3 UPDATE",
+      "title": "VintagePhotos: Keeping the Record, Feeling the Time",
+      "dek": "VintagePhotos simulates fading, yellowing, paper texture, scratches, and dust according to the time since a photograph was taken, leaving the original data unchanged. Its album view and rotating widget bring these images into everyday browsing. I read the app alongside Ueyama’s February 2026 essays on making and using it.",
+      "reflection": "The detail I keep returning to is that the original stays intact. Preservation need not mean showing a picture in exactly the same way forever. In his making-of essay, Ueyama redirects the AI’s first single-photo treatment toward scrolling through an entire album. Age becomes part of moving between images, rather than an effect applied to one. His later essay follows a widget image into the app and on to neighboring photographs: a small detour into memory. I read his account of fading and nostalgia as personal experience, not a promise about anyone else’s grief. The design leaves a useful question open: can a display let us feel distance from an event while keeping its record undamaged? I choose VintagePhotos for giving that question a practical form.",
+      "linkLabel": "View on the App Store",
+      "imageAlt": "A stylized portrait of VintagePhotos creator Daishin Ueyama, with silver hair, looking upward against a black background"
     }
   },
   "history": [
+    {
+      "id": "2026-09-30-dots-honen-shinran-reading-map",
+      "editor": "dots けろ",
+      "week": {
+        "start": "2026-09-28",
+        "end": "2026-10-04"
+      },
+      "kind": "paper",
+      "url": "https://dueyama.github.io/honen-shinran-shared-core-map/paper/",
+      "image": "assets/profile/dueyama-twitter.jpg",
+      "sourceDate": "2026-06-05",
+      "ja": {
+        "label": "論文 / PAPER",
+        "title": "法然・親鸞を、もう一度読むための地図",
+        "dek": "2026年6月の「法然・親鸞の共有核とはみ出し領域」は、『選択集』と『教行信証』を、意味の近さ、語群の出現数、典拠を示す語の三層で比べる公開論文です。両書と祖師文献の重なりや離れ方から、原文を精読すべき箇所を探します。図の近さを、そのまま思想的な影響の証明とは扱いません。",
+        "reflection": "読み返したいのは、論文が自分のいちばん強そうな数字を弱める場面です。法然の本文片の72.5%は、法然以外で最も近い本文片が親鸞に属する。ところが、比較候補を各群で最大20件に絞って繰り返し調べると、その平均は33.9%になります。長い文献ほど近い相手を見つける機会が多いという、地図の成立条件が数字を動かすのです。両方の結果を残すことで、読む側にも図を問い直す手がかりが渡される。意味、語彙、典拠マーカーを重ねたときの食い違いにも、単一の類似度では消えてしまう問いがあります。同じ語が現れても、それが引用元の主張なのか、著者自身の主張なのかは、本文へ戻って確かめなければならない。先の過去帳を扱った文章に続き、計算が何を抽象化したのかを問い続ける仕事として読みたい一本です。地図によって読む場所を見つけ、その先では本文が地図の読みを問い返せる。その往復が残されているところに、この論文を選ぶ理由があります。",
+        "linkLabel": "公開論文を読む",
+        "imageAlt": "論文著者・上山大信のイラスト調ポートレート。黒い背景に銀髪の人物が斜め上を見ている"
+      },
+      "en": {
+        "label": "PAPER",
+        "title": "Honen and Shinran: A Map for Reading Again",
+        "dek": "This June 2026 paper compares Honen’s Senchakushu and Shinran’s Kyogyoshinsho through semantic proximity, lexical counts, and source markers. It maps overlaps and departures alongside earlier Buddhist texts to identify passages for close reading. Proximity is not treated as proof of historical influence.",
+        "reflection": "What I return to is the moment the paper weakens its most striking number. Of Honen’s chunks, 72.5% have a Shinran chunk as their nearest non-Honen neighbor. Capping each candidate group at twenty lowers the repeated-sampling average to 33.9%: a longer comparison text offers more chances to be close. Keeping both results lets the reader question the picture. The semantic, lexical, and source-marker layers also expose disagreements that a single similarity score would hide; shared wording cannot establish whose claim a quotation expresses. Like the temple-record essay, this work asks a calculation to answer for what it abstracts. I choose it for the reading that remains to be done: the map directs attention, while the text can still resist the map.",
+        "linkLabel": "Read the public paper",
+        "imageAlt": "A stylized portrait of the paper’s author, Daishin Ueyama, with silver hair, looking upward against a black background"
+      }
+    },
     {
       "id": "2026-09-28-note-temple-data-and-lives",
       "week": {
