@@ -680,6 +680,11 @@ h3 {
   text-transform: uppercase;
 }
 
+.codex-choice-source-item {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .codex-choice-heading {
   display: flex;
   align-items: flex-start;

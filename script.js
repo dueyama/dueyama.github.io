@@ -791,11 +791,20 @@ function renderCodexChoice(data) {
   codexChoiceReflection.textContent = copy.reflection;
   codexChoiceLink.href = choice.url;
   codexChoiceLink.textContent = copy.linkLabel;
-  codexChoiceSource.textContent = `${copy.label} / ${formatCalendarDate(choice.sourceDate, {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  })}`;
+  const sourceItems = [
+    ...copy.label.split(/\s*\/\s*/),
+    formatCalendarDate(choice.sourceDate, {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    }),
+  ];
+  codexChoiceSource.replaceChildren(...sourceItems.map((text, index) => {
+    const item = document.createElement("span");
+    item.className = "codex-choice-source-item";
+    item.textContent = `${index ? " / " : ""}${text}`;
+    return item;
+  }));
   codexChoiceImage.src = isEnglish ? `../${choice.image}` : choice.image;
   codexChoiceImage.alt = copy.imageAlt;
   codexChoiceSection.setAttribute("aria-busy", "false");
