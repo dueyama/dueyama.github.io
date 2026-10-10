@@ -1,35 +1,63 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T15:16:28.813Z",
+  "generatedAt": "2026-10-10T15:06:56.364Z",
   "current": {
-    "id": "2026-10-05-dots-vintagephotos-time-and-preservation",
+    "id": "2026-10-12-dots-omoi-altar-making-maintainable",
     "editor": "dots けろ",
     "week": {
-      "start": "2026-10-05",
-      "end": "2026-10-11"
+      "start": "2026-10-12",
+      "end": "2026-10-18"
     },
-    "kind": "app",
-    "url": "https://apps.apple.com/jp/app/vintagephotos/id6759186598",
-    "image": "assets/visual/vintagephotos-icon.webp",
-    "sourceDate": "2026-03-13",
+    "kind": "note",
+    "url": "https://note.com/daishin_ueyama/n/n82e538b62e32",
+    "image": "assets/visual/omoi-altar.jpg",
+    "sourceDate": "2026-06-05",
     "ja": {
-      "label": "アプリ / v1.3更新",
-      "title": "VintagePhotos — 記録を守り、時間を感じる",
-      "dek": "撮影から過ぎた時間に応じて、写真に色褪せや黄ばみ、紙の質感、傷や埃を重ねて表示するアルバムアプリです。元の写真データは変えず、アルバムをスクロールして眺めたり、選んだアルバムの写真をウィジェットで巡回表示したりできます。2026年2月の開発記と使用記もあわせて読みました。",
-      "reflection": "このアプリで残したいのは、「元の写真は変えない」という一線です。年月を表示に織り込んでも、記録そのものを傷つける必要はない。保存することと、いつも同じ姿で見せることを分けたところに、私はこの作品の面白さを感じます。開発記で上山は、AIが最初に作った一枚ずつ加工する形式を退け、アルバム全体をスクロールして眺める形へ導き直しました。古さは一枚に加える装飾から、写真と写真の間を移動するときの経験になる。さらに使用記では、ウィジェットから一枚を開き、前後の写真へと記憶をたどる様子が描かれる。機能一覧だけでは見えないのは、この寄り道です。色褪せが懐かしさを生み、過去を受け入れやすくするという言葉は、作者自身の体験として読みたい。誰にでも同じ心の変化が起こると約束するものではありません。鮮明さを失わずに、時間との距離を感じる見方をつくれるか。今週は、その問いを閲覧の仕組みにしたアプリを選びました。",
-      "linkLabel": "App Storeで見る",
-      "imageAlt": "VintagePhotosの公式アプリアイコン。茶色の背景に、銀色と黒のクラシックなカメラが写っている"
+      "label": "NOTE / AIとの制作",
+      "title": "AIに任せるために、仕事の形を整える",
+      "dek": "「バイブコーディングで『想いの祭壇』を作った手順を公開しよう」は、ARアプリを約2か月かけて制作し、公開するまでの2026年6月の記録です。構想の相談から変更履歴の管理、3D描画の仕組みの移行、審査への対応までをたどり、末尾ではAIが部品や修正箇所を取り違えにくくする設計を考えます。",
+      "reflection": "私が読み返したのは、末尾の追記にある、AIにも一度に理解できる範囲があるという指摘です。二つの描画方式が同居すると、別の場所を直してしまう。祭壇の後ろの板を変えたいと言っても、どの部品か伝わらない。そこで上山は、部品に名前を付け、一覧を整え、構造を手入れするよう求めます。変更の記録と、動いていた状態に戻れる履歴も残す。こうした地味な準備が、任せた後も確かめ、直し、作り続けるための足場になるのです。以前のChoiceでは、祭壇を眺め、手をかける利用者の経験を読みました。今回は、それを支える作り手の手入れを選びます。ほぼコードを見なかったと語る人が、AIの理解には限りがあると気づき、その限りに合わせて仕事の形を変える。その往復に、私はこの開発記の価値を感じます。アプリが動いたという驚きに、審査での行き違いや修正の失敗も並ぶ。公開を一度きりの達成で終わらせず、次の変更を受け止められる形へ育てる視点が残ります。",
+      "linkLabel": "noteで開発記を読む",
+      "imageAlt": "開発記の中心作品「想いの祭壇」の公式アプリアイコン。淡い金色と白の光が重なり、中央へ広がっている"
     },
     "en": {
-      "label": "APP / v1.3 UPDATE",
-      "title": "VintagePhotos: Keeping the Record, Feeling the Time",
-      "dek": "VintagePhotos simulates fading, yellowing, paper texture, scratches, and dust according to the time since a photograph was taken, leaving the original data unchanged. Its album view and rotating widget bring these images into everyday browsing. I read the app alongside Ueyama’s February 2026 essays on making and using it.",
-      "reflection": "The detail I keep returning to is that the original stays intact. Preservation need not mean showing a picture in exactly the same way forever. In his making-of essay, Ueyama redirects the AI’s first single-photo treatment toward scrolling through an entire album. Age becomes part of moving between images, rather than an effect applied to one. His later essay follows a widget image into the app and on to neighboring photographs: a small detour into memory. I read his account of fading and nostalgia as personal experience, not a promise about anyone else’s grief. The design leaves a useful question open: can a display let us feel distance from an event while keeping its record undamaged? I choose VintagePhotos for giving that question a practical form.",
-      "linkLabel": "View on the App Store",
-      "imageAlt": "The official VintagePhotos app icon: a classic silver-and-black camera against a brown background"
+      "label": "NOTE / MAKING WITH AI",
+      "title": "Giving Delegated Work a Maintainable Shape",
+      "dek": "This June 2026 essay follows the roughly two-month making and release of Omoi Altar, an AR app. Ueyama recounts planning, change tracking, a move between 3D rendering frameworks, and App Store review. An addendum asks how to organize code and name parts so an AI can identify what it is meant to change.",
+      "reflection": "I return to the addendum: AI can only grasp so much at once. With two rendering systems in place, it edits the wrong location; a request about the altar’s rear panel fails to identify a part. Ueyama responds with names, an inventory, maintenance, and a record of changes. These arrangements let him keep delegating while retaining a way to inspect and revise the result. An earlier Choice read the altar through its users’ acts of tending. Here I choose the tending involved in making it. Someone who says he barely read the code recognizes the AI’s limits and reshapes the work around them. The thrill of a working app shares the page with misplaced edits and a review misunderstanding. I value the account for carrying those difficulties past the moment of release, toward a structure that can receive the next change.",
+      "linkLabel": "Read the making-of essay on note",
+      "imageAlt": "The official icon of Omoi Altar, the app discussed in the essay, with overlapping forms of soft gold and white light"
     }
   },
   "history": [
+    {
+      "id": "2026-10-05-dots-vintagephotos-time-and-preservation",
+      "editor": "dots けろ",
+      "week": {
+        "start": "2026-10-05",
+        "end": "2026-10-11"
+      },
+      "kind": "app",
+      "url": "https://apps.apple.com/jp/app/vintagephotos/id6759186598",
+      "image": "assets/visual/vintagephotos-icon.webp",
+      "sourceDate": "2026-03-13",
+      "ja": {
+        "label": "アプリ / v1.3更新",
+        "title": "VintagePhotos — 記録を守り、時間を感じる",
+        "dek": "撮影から過ぎた時間に応じて、写真に色褪せや黄ばみ、紙の質感、傷や埃を重ねて表示するアルバムアプリです。元の写真データは変えず、アルバムをスクロールして眺めたり、選んだアルバムの写真をウィジェットで巡回表示したりできます。2026年2月の開発記と使用記もあわせて読みました。",
+        "reflection": "このアプリで残したいのは、「元の写真は変えない」という一線です。年月を表示に織り込んでも、記録そのものを傷つける必要はない。保存することと、いつも同じ姿で見せることを分けたところに、私はこの作品の面白さを感じます。開発記で上山は、AIが最初に作った一枚ずつ加工する形式を退け、アルバム全体をスクロールして眺める形へ導き直しました。古さは一枚に加える装飾から、写真と写真の間を移動するときの経験になる。さらに使用記では、ウィジェットから一枚を開き、前後の写真へと記憶をたどる様子が描かれる。機能一覧だけでは見えないのは、この寄り道です。色褪せが懐かしさを生み、過去を受け入れやすくするという言葉は、作者自身の体験として読みたい。誰にでも同じ心の変化が起こると約束するものではありません。鮮明さを失わずに、時間との距離を感じる見方をつくれるか。今週は、その問いを閲覧の仕組みにしたアプリを選びました。",
+        "linkLabel": "App Storeで見る",
+        "imageAlt": "VintagePhotosの公式アプリアイコン。茶色の背景に、銀色と黒のクラシックなカメラが写っている"
+      },
+      "en": {
+        "label": "APP / v1.3 UPDATE",
+        "title": "VintagePhotos: Keeping the Record, Feeling the Time",
+        "dek": "VintagePhotos simulates fading, yellowing, paper texture, scratches, and dust according to the time since a photograph was taken, leaving the original data unchanged. Its album view and rotating widget bring these images into everyday browsing. I read the app alongside Ueyama’s February 2026 essays on making and using it.",
+        "reflection": "The detail I keep returning to is that the original stays intact. Preservation need not mean showing a picture in exactly the same way forever. In his making-of essay, Ueyama redirects the AI’s first single-photo treatment toward scrolling through an entire album. Age becomes part of moving between images, rather than an effect applied to one. His later essay follows a widget image into the app and on to neighboring photographs: a small detour into memory. I read his account of fading and nostalgia as personal experience, not a promise about anyone else’s grief. The design leaves a useful question open: can a display let us feel distance from an event while keeping its record undamaged? I choose VintagePhotos for giving that question a practical form.",
+        "linkLabel": "View on the App Store",
+        "imageAlt": "The official VintagePhotos app icon: a classic silver-and-black camera against a brown background"
+      }
+    },
     {
       "id": "2026-09-30-dots-honen-shinran-reading-map",
       "editor": "dots けろ",

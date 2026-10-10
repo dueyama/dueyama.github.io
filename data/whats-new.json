@@ -1,25 +1,41 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T15:13:05.935Z",
+  "generatedAt": "2026-10-10T15:06:02.352Z",
   "period": {
-    "start": "2026-09-30",
-    "end": "2026-10-04"
+    "start": "2026-10-04",
+    "end": "2026-10-11"
   },
   "items": [
     {
-      "id": "2026-10-04-suno-listening-growth",
+      "id": "2026-10-11-suno-public-library",
       "kind": "suno",
-      "date": "2026-10-04",
-      "url": "https://suno.com/song/2f996f6b-ae42-46d5-833c-3c030c922767",
+      "date": "2026-10-11",
+      "url": "https://suno.com/song/8170d404-5312-48ab-92cb-f1be5575453a",
       "ja": {
         "label": "Suno",
-        "title": "「Higher Than the Night」が256再生増",
-        "summary": "9月30日から10月4日に、公開45曲は計657再生・7いいね増え、65,894再生・395いいねに。「Higher Than the Night」はこの期間で最も再生が増え、14,853再生となりました。新曲の追加はありません。"
+        "title": "公開曲一覧に「Love Me in Real Life」の別ミックス",
+        "summary": "Vocaloid Euro Dance Mixが前回の確認以降、公開曲一覧に加わりました。公開46曲の合計は69,072再生・430いいね。10月4日の記録から3,178再生・35いいね増えています。"
       },
       "en": {
         "label": "Suno",
-        "title": "Higher Than the Night gains 256 plays",
-        "summary": "From September 30 to October 4, the 45 public songs gained 657 plays and seven likes, reaching 65,894 plays and 395 likes. Higher Than the Night had the largest play increase, reaching 14,853 plays. No new songs were added."
+        "title": "Another mix of Love Me in Real Life joins the public catalog",
+        "summary": "The Vocaloid Euro Dance Mix has appeared in the public catalog since the previous check. The 46 public tracks now total 69,072 plays and 430 likes, up 3,178 plays and 35 likes from October 4."
+      }
+    },
+    {
+      "id": "2026-10-06-note-oceanus",
+      "kind": "note",
+      "date": "2026-10-06",
+      "url": "https://note.com/daishin_ueyama/n/nb3a90df0a2dc",
+      "ja": {
+        "label": "note",
+        "title": "久しぶりのOCEANUSから、これからの暮らしへ",
+        "summary": "十数年前に買った腕時計を再び着けるエッセー。日々のデータを途切れさせたくない感覚や、大学での仕事からお寺中心の生活への変化を、手元の道具から振り返っています。"
+      },
+      "en": {
+        "label": "note",
+        "title": "An old OCEANUS watch and a changing everyday life",
+        "summary": "Returning to a watch bought more than a decade ago, Ueyama reflects on the pull of uninterrupted daily data and the coming shift from university work toward life centered on his temple."
       }
     }
   ]
