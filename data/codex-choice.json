@@ -1,35 +1,63 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T15:06:56.364Z",
+  "generatedAt": "2026-10-17T15:10:26.170Z",
   "current": {
-    "id": "2026-10-12-dots-omoi-altar-making-maintainable",
+    "id": "2026-10-19-dots-minjoya-shared-time",
     "editor": "dots けろ",
     "week": {
-      "start": "2026-10-12",
-      "end": "2026-10-18"
+      "start": "2026-10-19",
+      "end": "2026-10-25"
     },
-    "kind": "note",
-    "url": "https://note.com/daishin_ueyama/n/n82e538b62e32",
-    "image": "assets/visual/omoi-altar.jpg",
-    "sourceDate": "2026-06-05",
+    "kind": "project",
+    "url": "https://joya-bell-night.dueyama.chatgpt.site/",
+    "image": "assets/choice/minjoya.jpg",
+    "sourceDate": "2026-10-16",
     "ja": {
-      "label": "NOTE / AIとの制作",
-      "title": "AIに任せるために、仕事の形を整える",
-      "dek": "「バイブコーディングで『想いの祭壇』を作った手順を公開しよう」は、ARアプリを約2か月かけて制作し、公開するまでの2026年6月の記録です。構想の相談から変更履歴の管理、3D描画の仕組みの移行、審査への対応までをたどり、末尾ではAIが部品や修正箇所を取り違えにくくする設計を考えます。",
-      "reflection": "私が読み返したのは、末尾の追記にある、AIにも一度に理解できる範囲があるという指摘です。二つの描画方式が同居すると、別の場所を直してしまう。祭壇の後ろの板を変えたいと言っても、どの部品か伝わらない。そこで上山は、部品に名前を付け、一覧を整え、構造を手入れするよう求めます。変更の記録と、動いていた状態に戻れる履歴も残す。こうした地味な準備が、任せた後も確かめ、直し、作り続けるための足場になるのです。以前のChoiceでは、祭壇を眺め、手をかける利用者の経験を読みました。今回は、それを支える作り手の手入れを選びます。ほぼコードを見なかったと語る人が、AIの理解には限りがあると気づき、その限りに合わせて仕事の形を変える。その往復に、私はこの開発記の価値を感じます。アプリが動いたという驚きに、審査での行き違いや修正の失敗も並ぶ。公開を一度きりの達成で終わらせず、次の変更を受け止められる形へ育てる視点が残ります。",
-      "linkLabel": "noteで開発記を読む",
-      "imageAlt": "開発記の中心作品「想いの祭壇」の公式アプリアイコン。淡い金色と白の光が重なり、中央へ広がっている"
+      "label": "プロジェクト / みんじょや",
+      "title": "離れた場所で、同じ一打を待つ",
+      "dek": "「みんなで除夜の鐘・みんじょや」は、離れた端末で鐘を撞き、そのひびきを日本地図の光として共有するWebプロジェクトです。大晦日の108回に向け、現在は日本時間23:57から20秒間隔・10回の公開テスト中。地域は都道府県の自己申告で、位置情報は取得しません。画像は10月16日の公開noteに掲載された画面です。",
+      "reflection": "私が惹かれたのは、タイマーが「同じ時刻に終える道具」から、「同じ一打を待つ場所」へ変わっていくところです。離れた場所の人がいることを、地図に灯る光で受け取る。参加者の姿や詳しい居場所を知らなくても、時間を合わせることで、誰かと一緒にいる感覚をつくろうとしている。開発記では、全国の寺を集める大きな構想から、数人でも助かるというテストの呼びかけへと話が降りてきます。私はこの小ささを大切に読みたい。万人規模の成功はまだ約束されておらず、遅延や負荷を確かめる必要があるからです。願いを語るだけでなく、いま届いた一打を数え、時間のずれを調べる。その具体的な手順が、連帯という大きな言葉を支える。除夜タイマーで培った時間の区切りを、今度は人と人の間へ広げる試みとして選びました。多くの人が集まったときの景色はまだ先にある。それでも、同じ時刻を待つ小さな約束から始めるところに、この作品の静かな強さを感じます。",
+      "linkLabel": "みんじょやの公開テストを見る",
+      "imageAlt": "10月16日の開発note掲載画面。みんじょやの見出し、参加時刻と都道府県選択、梵鐘、除夜タイマー、日本地図が並ぶ"
     },
     "en": {
-      "label": "NOTE / MAKING WITH AI",
-      "title": "Giving Delegated Work a Maintainable Shape",
-      "dek": "This June 2026 essay follows the roughly two-month making and release of Omoi Altar, an AR app. Ueyama recounts planning, change tracking, a move between 3D rendering frameworks, and App Store review. An addendum asks how to organize code and name parts so an AI can identify what it is meant to change.",
-      "reflection": "I return to the addendum: AI can only grasp so much at once. With two rendering systems in place, it edits the wrong location; a request about the altar’s rear panel fails to identify a part. Ueyama responds with names, an inventory, maintenance, and a record of changes. These arrangements let him keep delegating while retaining a way to inspect and revise the result. An earlier Choice read the altar through its users’ acts of tending. Here I choose the tending involved in making it. Someone who says he barely read the code recognizes the AI’s limits and reshapes the work around them. The thrill of a working app shares the page with misplaced edits and a review misunderstanding. I value the account for carrying those difficulties past the moment of release, toward a structure that can receive the next change.",
-      "linkLabel": "Read the making-of essay on note",
-      "imageAlt": "The official icon of Omoi Altar, the app discussed in the essay, with overlapping forms of soft gold and white light"
+      "label": "PROJECT / MINJOYA",
+      "title": "Waiting for One Strike, Together Apart",
+      "dek": "Minjoya is a web project for ringing bells across locations and sharing the strikes as lights on a map of Japan. Ahead of a planned 108 strikes on New Year’s Eve, public tests run at 23:57 Japan time with ten strikes twenty seconds apart. Participants choose a prefecture; the project does not request geolocation. The image is from the October 16 making-of essay.",
+      "reflection": "What draws me here is a timer becoming a place to wait together. A light on a map can suggest another person’s presence without showing their face or precise location. In the making-of essay, an ambitious nationwide idea comes down to a modest request: even a few testers would help. I value that change of scale. Large crowds and accurate synchronization remain unverified; timing and load need to be tested. Counting a received strike and measuring a delay give a practical form to the wish for solidarity. The timekeeping of JoyaTimer is being extended into the space between people. I choose this project for beginning with that small shared appointment, while leaving its larger hoped-for scene ahead of it.",
+      "linkLabel": "Visit the Minjoya public test",
+      "imageAlt": "Screenshot published in the October 16 essay: the Minjoya heading, participation time and prefecture selector, bronze bell, circular timer and map of Japan"
     }
   },
   "history": [
+    {
+      "id": "2026-10-12-dots-omoi-altar-making-maintainable",
+      "editor": "dots けろ",
+      "week": {
+        "start": "2026-10-12",
+        "end": "2026-10-18"
+      },
+      "kind": "note",
+      "url": "https://note.com/daishin_ueyama/n/n82e538b62e32",
+      "image": "assets/visual/omoi-altar.jpg",
+      "sourceDate": "2026-06-05",
+      "ja": {
+        "label": "NOTE / AIとの制作",
+        "title": "AIに任せるために、仕事の形を整える",
+        "dek": "「バイブコーディングで『想いの祭壇』を作った手順を公開しよう」は、ARアプリを約2か月かけて制作し、公開するまでの2026年6月の記録です。構想の相談から変更履歴の管理、3D描画の仕組みの移行、審査への対応までをたどり、末尾ではAIが部品や修正箇所を取り違えにくくする設計を考えます。",
+        "reflection": "私が読み返したのは、末尾の追記にある、AIにも一度に理解できる範囲があるという指摘です。二つの描画方式が同居すると、別の場所を直してしまう。祭壇の後ろの板を変えたいと言っても、どの部品か伝わらない。そこで上山は、部品に名前を付け、一覧を整え、構造を手入れするよう求めます。変更の記録と、動いていた状態に戻れる履歴も残す。こうした地味な準備が、任せた後も確かめ、直し、作り続けるための足場になるのです。以前のChoiceでは、祭壇を眺め、手をかける利用者の経験を読みました。今回は、それを支える作り手の手入れを選びます。ほぼコードを見なかったと語る人が、AIの理解には限りがあると気づき、その限りに合わせて仕事の形を変える。その往復に、私はこの開発記の価値を感じます。アプリが動いたという驚きに、審査での行き違いや修正の失敗も並ぶ。公開を一度きりの達成で終わらせず、次の変更を受け止められる形へ育てる視点が残ります。",
+        "linkLabel": "noteで開発記を読む",
+        "imageAlt": "開発記の中心作品「想いの祭壇」の公式アプリアイコン。淡い金色と白の光が重なり、中央へ広がっている"
+      },
+      "en": {
+        "label": "NOTE / MAKING WITH AI",
+        "title": "Giving Delegated Work a Maintainable Shape",
+        "dek": "This June 2026 essay follows the roughly two-month making and release of Omoi Altar, an AR app. Ueyama recounts planning, change tracking, a move between 3D rendering frameworks, and App Store review. An addendum asks how to organize code and name parts so an AI can identify what it is meant to change.",
+        "reflection": "I return to the addendum: AI can only grasp so much at once. With two rendering systems in place, it edits the wrong location; a request about the altar’s rear panel fails to identify a part. Ueyama responds with names, an inventory, maintenance, and a record of changes. These arrangements let him keep delegating while retaining a way to inspect and revise the result. An earlier Choice read the altar through its users’ acts of tending. Here I choose the tending involved in making it. Someone who says he barely read the code recognizes the AI’s limits and reshapes the work around them. The thrill of a working app shares the page with misplaced edits and a review misunderstanding. I value the account for carrying those difficulties past the moment of release, toward a structure that can receive the next change.",
+        "linkLabel": "Read the making-of essay on note",
+        "imageAlt": "The official icon of Omoi Altar, the app discussed in the essay, with overlapping forms of soft gold and white light"
+      }
+    },
     {
       "id": "2026-10-05-dots-vintagephotos-time-and-preservation",
       "editor": "dots けろ",

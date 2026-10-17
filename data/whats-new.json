@@ -1,41 +1,73 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T15:06:02.352Z",
+  "generatedAt": "2026-10-17T15:08:23.259Z",
   "period": {
-    "start": "2026-10-04",
-    "end": "2026-10-11"
+    "start": "2026-10-11",
+    "end": "2026-10-18"
   },
   "items": [
     {
-      "id": "2026-10-11-suno-public-library",
-      "kind": "suno",
-      "date": "2026-10-11",
-      "url": "https://suno.com/song/8170d404-5312-48ab-92cb-f1be5575453a",
+      "id": "2026-10-16-minjoya",
+      "kind": "project",
+      "date": "2026-10-16",
+      "url": "https://note.com/daishin_ueyama/n/ned9c3d4a9d07",
       "ja": {
-        "label": "Suno",
-        "title": "公開曲一覧に「Love Me in Real Life」の別ミックス",
-        "summary": "Vocaloid Euro Dance Mixが前回の確認以降、公開曲一覧に加わりました。公開46曲の合計は69,072再生・430いいね。10月4日の記録から3,178再生・35いいね増えています。"
+        "label": "制作 / note",
+        "title": "「みんじょや」共同打鐘のテストへ",
+        "summary": "離れた場所から同じタイミングで鐘を撞き、日本地図に光を灯すWeb企画を公開。大晦日の108回に向け、10回の打鐘で遅延や負荷を確かめるテストを始めています。"
       },
       "en": {
-        "label": "Suno",
-        "title": "Another mix of Love Me in Real Life joins the public catalog",
-        "summary": "The Vocaloid Euro Dance Mix has appeared in the public catalog since the previous check. The 46 public tracks now total 69,072 plays and 430 likes, up 3,178 plays and 35 likes from October 4."
+        "label": "PROJECT / note",
+        "title": "Minjoya begins testing shared bell ringing",
+        "summary": "A new web project connects bell ringing across locations with lights on a map of Japan. Ten-strike tests will examine timing and load ahead of a planned 108 strikes on New Year’s Eve."
       }
     },
     {
-      "id": "2026-10-06-note-oceanus",
+      "id": "2026-10-15-colordiary17",
+      "kind": "app",
+      "date": "2026-10-15",
+      "url": "https://apps.apple.com/jp/app/colordiary/id6759371114",
+      "ja": {
+        "label": "アプリ",
+        "title": "ColorDiary 1.7、メモを外へ持ち出しやすく",
+        "summary": "文章に合わせて広がる入力欄と全文コピー、メモの共有・txt保存を追加。文字色も選べるようになり、色に添えた言葉を読み返し、ほかのアプリへ渡しやすくなりました。"
+      },
+      "en": {
+        "label": "APP",
+        "title": "ColorDiary 1.7 makes notes easier to reuse",
+        "summary": "The update adds an expanding editor, full-text copying, sharing and txt export, plus a choice of note text colors. Words saved alongside daily colors are easier to review and take into other apps."
+      }
+    },
+    {
+      "id": "2026-10-18-suno-one-light",
+      "kind": "suno",
+      "date": "2026-10-18",
+      "url": "https://suno.com/song/2aede470-115b-4821-b0d7-e8dac056b4f2",
+      "ja": {
+        "label": "Suno",
+        "title": "「We Share One Light」のRemastered版が公開曲に",
+        "summary": "公開47曲の合計は75,165再生・441いいね。10月11日の記録から6,093再生・11いいね増加し、公開曲一覧には「We Share One Light (Remastered)」が加わりました。"
+      },
+      "en": {
+        "label": "Suno",
+        "title": "We Share One Light (Remastered) joins the catalog",
+        "summary": "The 47 public tracks total 75,165 plays and 441 likes, up 6,093 plays and 11 likes from October 11. We Share One Light (Remastered) has joined the public catalog."
+      }
+    },
+    {
+      "id": "2026-10-14-note-boundary",
       "kind": "note",
-      "date": "2026-10-06",
-      "url": "https://note.com/daishin_ueyama/n/nb3a90df0a2dc",
+      "date": "2026-10-14",
+      "url": "https://note.com/daishin_ueyama/n/n15f7038c5a2e",
       "ja": {
         "label": "note",
-        "title": "久しぶりのOCEANUSから、これからの暮らしへ",
-        "summary": "十数年前に買った腕時計を再び着けるエッセー。日々のデータを途切れさせたくない感覚や、大学での仕事からお寺中心の生活への変化を、手元の道具から振り返っています。"
+        "title": "科学、人生、宗教を「境界条件」から考える",
+        "summary": "チューリングの言葉を入口に、人生を力学系、信仰を未来から今に働く境界条件として捉える随筆。科学とAIの行き先を、禁止事項のリストとは別の方向づけから問い直します。"
       },
       "en": {
         "label": "note",
-        "title": "An old OCEANUS watch and a changing everyday life",
-        "summary": "Returning to a watch bought more than a decade ago, Ueyama reflects on the pull of uninterrupted daily data and the coming shift from university work toward life centered on his temple."
+        "title": "Science, life and religion as a boundary-value question",
+        "summary": "Starting from a remark attributed to Turing, this essay considers life as a dynamical system and faith as a future boundary shaping the present. It asks how science and AI might be guided beyond lists of prohibitions."
       }
     }
   ]
