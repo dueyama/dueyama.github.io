@@ -1,11 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T15:03:32.288Z",
+  "generatedAt": "2026-10-24T15:35:01.470Z",
   "period": {
     "start": "2026-10-18",
     "end": "2026-10-25"
   },
   "items": [
+    {
+      "id": "2026-10-25-r6s-notes-index",
+      "kind": "site",
+      "date": "2026-10-25",
+      "url": "https://r6s-openwrt-lab-notes.dueyama.chatgpt.site/",
+      "ja": {
+        "label": "技術記録",
+        "title": "R6S・OpenWrtの実験記録を追加",
+        "summary": "ルーター構築、AIによる通信ログ監査、Rust化、NPU・Kitsuneの比較実験、更新と復旧をまとめた技術資料への入口を追加。自分の環境で試すための仕様・確認例も公開されています。"
+      },
+      "en": {
+        "label": "TECHNICAL NOTES",
+        "title": "R6S and OpenWrt notes join the portfolio",
+        "summary": "A new portfolio entry leads to records of router construction, AI-assisted log review, Rust migration, NPU/Kitsune comparisons, and recovery, with specifications and checks for readers adapting the work to their own hardware."
+      }
+    },
     {
       "id": "2026-10-25-suno-week",
       "kind": "suno",

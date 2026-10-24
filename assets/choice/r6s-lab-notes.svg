@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">NanoPi R6S / OpenWrt Technical Notes</title>
+<desc id="desc">Editorial title card for the public R6S technical notes: build, measure, and share.</desc>
+<rect width="1200" height="720" fill="#122c30"/>
+<g fill="none" stroke="#568d88" stroke-width="2" opacity=".45"><path d="M760 0v150h180v140h260M1200 470H960v130H760v120M0 600h160v120"/><circle cx="940" cy="150" r="7"/><circle cx="960" cy="470" r="7"/></g>
+<rect x="78" y="88" width="72" height="7" rx="3" fill="#dfb76c"/>
+<text x="78" y="151" fill="#b7cfcb" font-family="sans-serif" font-size="25" letter-spacing="5">OPENWRT / TECHNICAL NOTES</text>
+<text x="72" y="325" fill="#f5f2e9" font-family="sans-serif" font-size="112" font-weight="700">NanoPi R6S</text>
+<text x="78" y="400" fill="#d6e3dd" font-family="sans-serif" font-size="39">Build. Measure. Share.</text>
+<path d="M78 468h675" stroke="#568d88" stroke-width="2"/>
+<text x="78" y="528" fill="#b7cfcb" font-family="sans-serif" font-size="24">ROUTING · AI REVIEW · RUST · NPU</text>
+<text x="78" y="627" fill="#dfb76c" font-family="sans-serif" font-size="22" letter-spacing="2">EXPERIMENTS, EVIDENCE &amp; RECOVERY</text>
+</svg>
