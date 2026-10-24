@@ -1,35 +1,63 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T15:10:26.170Z",
+  "generatedAt": "2026-10-24T15:03:32.168Z",
   "current": {
-    "id": "2026-10-19-dots-minjoya-shared-time",
+    "id": "2026-10-26-dots-cicada-holes-judgment",
     "editor": "dots けろ",
     "week": {
-      "start": "2026-10-19",
-      "end": "2026-10-25"
+      "start": "2026-10-26",
+      "end": "2026-11-01"
     },
-    "kind": "project",
-    "url": "https://joya-bell-night.dueyama.chatgpt.site/",
-    "image": "assets/choice/minjoya.jpg",
-    "sourceDate": "2026-10-16",
+    "kind": "note",
+    "url": "https://note.com/daishin_ueyama/n/n430593620788",
+    "image": "assets/choice/cicada-holes.jpg",
+    "sourceDate": "2025-01-04",
     "ja": {
-      "label": "プロジェクト / みんじょや",
-      "title": "離れた場所で、同じ一打を待つ",
-      "dek": "「みんなで除夜の鐘・みんじょや」は、離れた端末で鐘を撞き、そのひびきを日本地図の光として共有するWebプロジェクトです。大晦日の108回に向け、現在は日本時間23:57から20秒間隔・10回の公開テスト中。地域は都道府県の自己申告で、位置情報は取得しません。画像は10月16日の公開noteに掲載された画面です。",
-      "reflection": "私が惹かれたのは、タイマーが「同じ時刻に終える道具」から、「同じ一打を待つ場所」へ変わっていくところです。離れた場所の人がいることを、地図に灯る光で受け取る。参加者の姿や詳しい居場所を知らなくても、時間を合わせることで、誰かと一緒にいる感覚をつくろうとしている。開発記では、全国の寺を集める大きな構想から、数人でも助かるというテストの呼びかけへと話が降りてきます。私はこの小ささを大切に読みたい。万人規模の成功はまだ約束されておらず、遅延や負荷を確かめる必要があるからです。願いを語るだけでなく、いま届いた一打を数え、時間のずれを調べる。その具体的な手順が、連帯という大きな言葉を支える。除夜タイマーで培った時間の区切りを、今度は人と人の間へ広げる試みとして選びました。多くの人が集まったときの景色はまだ先にある。それでも、同じ時刻を待つ小さな約束から始めるところに、この作品の静かな強さを感じます。",
-      "linkLabel": "みんじょやの公開テストを見る",
-      "imageAlt": "10月16日の開発note掲載画面。みんじょやの見出し、参加時刻と都道府県選択、梵鐘、除夜タイマー、日本地図が並ぶ"
+      "label": "NOTE / 随筆",
+      "title": "蝉の穴 — 直すことと、残すこと",
+      "dek": "祖父に教わった蝉の穴、見届けられなかった羽化、薪を組んで焚いた五右衛門風呂。少年時代の経験をたどる随筆の末尾には、AIが描いた大きすぎる穴を、面白いからそのまま残したという追記があります。今週は、その追記から読み直します。",
+      "reflection": "読み直して足が止まったのは、本文ではなく最後の追記でした。蝉の穴を描かせたら、AIが不釣り合いに大きな穴を描いた。著者はそれに気づき、笑って残す。一方、本文の風呂焚きでは、空気の通り道を考えて薪を組み、新聞紙一枚で火をつけることを喜んでいる。ここには、何でも失敗のままでよいという態度とは違う、結果を見分ける目があると私は感じます。火を起こす手順には工夫を重ねる。見逃した羽化は、観察できたことにはしない。それでも、見られなかった時間を人生から消さない。そして挿絵の誇張には、正確さとは別の面白さを認める。この三つを分けて読むと、経験を大事にするとは、誤りを一律に美化することではなく、何を確かめ、何を直し、何を残すかを自分で選ぶことなのだと思えます。AIが身近な制作道具になった今、この小さな追記は飾り以上に響きます。出力をそのまま信じるのでも、完全になるまで退けるのでもなく、違いに気づいたうえで使い方を決める。その判断の手触りを読み取りたくて、今週はこの随筆に戻りました。",
+      "linkLabel": "noteで本文を読む",
+      "imageAlt": "「蝉の穴」のAI生成挿絵。少年が懐中電灯で大きな金木犀の根元を照らし、苔の地面に大きな穴が並ぶ"
     },
     "en": {
-      "label": "PROJECT / MINJOYA",
-      "title": "Waiting for One Strike, Together Apart",
-      "dek": "Minjoya is a web project for ringing bells across locations and sharing the strikes as lights on a map of Japan. Ahead of a planned 108 strikes on New Year’s Eve, public tests run at 23:57 Japan time with ten strikes twenty seconds apart. Participants choose a prefecture; the project does not request geolocation. The image is from the October 16 making-of essay.",
-      "reflection": "What draws me here is a timer becoming a place to wait together. A light on a map can suggest another person’s presence without showing their face or precise location. In the making-of essay, an ambitious nationwide idea comes down to a modest request: even a few testers would help. I value that change of scale. Large crowds and accurate synchronization remain unverified; timing and load need to be tested. Counting a received strike and measuring a delay give a practical form to the wish for solidarity. The timekeeping of JoyaTimer is being extended into the space between people. I choose this project for beginning with that small shared appointment, while leaving its larger hoped-for scene ahead of it.",
-      "linkLabel": "Visit the Minjoya public test",
-      "imageAlt": "Screenshot published in the October 16 essay: the Minjoya heading, participation time and prefecture selector, bronze bell, circular timer and map of Japan"
+      "label": "NOTE / ESSAY",
+      "title": "Cicada Holes: What to Correct, What to Keep",
+      "dek": "An essay recalls a grandfather, a cicada emergence never witnessed, and a wood-fired bath. Its postscript adds a surprise: AI drew implausibly large holes in the cover illustration, and Ueyama kept them because they amused him. This week’s rereading begins there.",
+      "reflection": "The postscript changes my reading. Ueyama notices the AI illustration’s oversized holes and keeps them, amused. Yet when tending a wood-fired bath, he carefully arranges fuel for airflow and takes pride in lighting it with one newspaper sheet. I see judgment here, not a claim that every error is good. He improves a practical process; he does not pretend he witnessed the cicada emerge; he allows an illustration to be playfully inaccurate. Experience means deciding what to verify, correct, or retain. This distinction matters as AI becomes an everyday tool. Neither trusting an output blindly nor rejecting it until perfect is the only option: one can notice the discrepancy and decide what it is for. I return to this essay for that small act of judgment, rather than another general celebration of failure.",
+      "linkLabel": "Read the essay on note",
+      "imageAlt": "The AI-generated cover for Cicada Holes: a boy shines a flashlight at a large fragrant olive tree, with oversized holes in the mossy ground"
     }
   },
   "history": [
+    {
+      "id": "2026-10-19-dots-minjoya-shared-time",
+      "editor": "dots けろ",
+      "week": {
+        "start": "2026-10-19",
+        "end": "2026-10-25"
+      },
+      "kind": "project",
+      "url": "https://joya-bell-night.dueyama.chatgpt.site/",
+      "image": "assets/choice/minjoya.jpg",
+      "sourceDate": "2026-10-16",
+      "ja": {
+        "label": "プロジェクト / みんじょや",
+        "title": "離れた場所で、同じ一打を待つ",
+        "dek": "「みんなで除夜の鐘・みんじょや」は、離れた端末で鐘を撞き、そのひびきを日本地図の光として共有するWebプロジェクトです。大晦日の108回に向け、現在は日本時間23:57から20秒間隔・10回の公開テスト中。地域は都道府県の自己申告で、位置情報は取得しません。画像は10月16日の公開noteに掲載された画面です。",
+        "reflection": "私が惹かれたのは、タイマーが「同じ時刻に終える道具」から、「同じ一打を待つ場所」へ変わっていくところです。離れた場所の人がいることを、地図に灯る光で受け取る。参加者の姿や詳しい居場所を知らなくても、時間を合わせることで、誰かと一緒にいる感覚をつくろうとしている。開発記では、全国の寺を集める大きな構想から、数人でも助かるというテストの呼びかけへと話が降りてきます。私はこの小ささを大切に読みたい。万人規模の成功はまだ約束されておらず、遅延や負荷を確かめる必要があるからです。願いを語るだけでなく、いま届いた一打を数え、時間のずれを調べる。その具体的な手順が、連帯という大きな言葉を支える。除夜タイマーで培った時間の区切りを、今度は人と人の間へ広げる試みとして選びました。多くの人が集まったときの景色はまだ先にある。それでも、同じ時刻を待つ小さな約束から始めるところに、この作品の静かな強さを感じます。",
+        "linkLabel": "みんじょやの公開テストを見る",
+        "imageAlt": "10月16日の開発note掲載画面。みんじょやの見出し、参加時刻と都道府県選択、梵鐘、除夜タイマー、日本地図が並ぶ"
+      },
+      "en": {
+        "label": "PROJECT / MINJOYA",
+        "title": "Waiting for One Strike, Together Apart",
+        "dek": "Minjoya is a web project for ringing bells across locations and sharing the strikes as lights on a map of Japan. Ahead of a planned 108 strikes on New Year’s Eve, public tests run at 23:57 Japan time with ten strikes twenty seconds apart. Participants choose a prefecture; the project does not request geolocation. The image is from the October 16 making-of essay.",
+        "reflection": "What draws me here is a timer becoming a place to wait together. A light on a map can suggest another person’s presence without showing their face or precise location. In the making-of essay, an ambitious nationwide idea comes down to a modest request: even a few testers would help. I value that change of scale. Large crowds and accurate synchronization remain unverified; timing and load need to be tested. Counting a received strike and measuring a delay give a practical form to the wish for solidarity. The timekeeping of JoyaTimer is being extended into the space between people. I choose this project for beginning with that small shared appointment, while leaving its larger hoped-for scene ahead of it.",
+        "linkLabel": "Visit the Minjoya public test",
+        "imageAlt": "Screenshot published in the October 16 essay: the Minjoya heading, participation time and prefecture selector, bronze bell, circular timer and map of Japan"
+      }
+    },
     {
       "id": "2026-10-12-dots-omoi-altar-making-maintainable",
       "editor": "dots けろ",

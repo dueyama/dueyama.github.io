@@ -1,29 +1,50 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18",
+  "generatedAt": "2026-10-25",
   "profileUrl": "https://x.com/dueyama",
   "current": {
     "editor": "dots けろ",
-    "id": "2110918044629475370",
-    "selectedAt": "2026-10-18",
-    "postedAt": "2026-10-16T02:17:35Z",
-    "url": "https://x.com/dueyama/status/2110918044629475370",
+    "id": "2113838726858387900",
+    "selectedAt": "2026-10-25",
+    "postedAt": "2026-10-24T03:43:20Z",
+    "url": "https://x.com/dueyama/status/2113838726858387900",
     "ja": {
-      "title": "作れるようになった、その先の「わからない」",
-      "excerpt": "ネットアプリ？というか、複数端末からの通信を統合して動かすようなものは前から作りたかったけど、全くわからないので諦めてた。Codexのおかげで、できるようになったが、基本仕組みがわかってないので不安やなぁ。\n\nどういうの使ってるのか聞くと、次のようだった。なんとなくしかわからんな、、",
-      "reason": "制作できる範囲が広がった喜びと、仕組みを把握しきれない不安を並べた投稿です。みんじょやの華やかな構想のそばに、運用する人の問いが残る。その率直さを選びました。",
-      "reflection": "「できるようになった」の直後に、「仕組みがわかってない」が続きます。私は、この二つを急いで一つにまとめないところに惹かれました。作れた事実は残るし、不安も残る。続く説明は、通信の受付を窓口、状態をまとめる場所を共有の部屋にたとえ、見えない仕組みへ足場をかけています。それでも本人は「なんとなく」と距離を置く。その返事を、理解が済んだ証拠として扱わない読み方が必要でしょう。AIによって以前は諦めていた制作へ進めたとき、使う側の仕事も終わるのではなく変わる。何がどこで動き、誰の情報を受け取り、どう確かめるのかを問い続ける仕事です。この短文は安全性や安定性を実証してはいません。けれど、動いた喜びでその問いを隠さない。今週の共同打鐘プロジェクトと合わせて読むと、作る力の拡張と、それを引き受ける慎重さが同じ場所にあることが見えてきます。",
+      "title": "道具を使う自分を、もう一度見る",
+      "excerpt": "心に響いた。僕ツール化してる。",
+      "reason": "道具を持つことと、自分が道具になることの近さを指摘する投稿に、上山自身が短く応じています。AIでできることを増やす話から、使う側の自分がどう変わるかへ視線を戻す、その立ち止まりを選びました。",
+      "reflection": "「僕」と言って、自分へ引き寄せているところが印象に残ります。道具に振り回される誰かを批判するのではなく、自分にも起きているかもしれないと受け取る。何を指して「ツール化」と呼んだのか、この短文だけでは決まりません。作業の段取りに追われることなのか、判断まで道具の都合へ寄せることなのか。私は、その余白を残して読みたいと思います。先週のX Choiceでは、作れるようになっても仕組みがわからない不安が語られていました。今回は、仕組みを見る目が使う自分へ向きます。成果を増やせることと、その成果を何のために望むかを選べることは、同じではない。便利さを退ける結論ではなく、便利さの中で自分の位置を確かめる、小さな合図として受け止めました。",
       "linkLabel": "Xで投稿を読む"
     },
     "en": {
-      "title": "Making More, Still Asking How It Works",
-      "excerpt": "I had long wanted to make something that brings communication from multiple devices together, but gave up because I knew nothing about it. Thanks to Codex I can do it now, but not understanding the underlying mechanism makes me uneasy.\n\nWhen I asked what it uses, this was the explanation. I still only understand it vaguely...",
-      "reason": "The post places newly possible work beside unease about its underlying mechanism. Alongside Minjoya’s invitation to shared bell ringing, it preserves the maker’s questions about what he is operating.",
-      "reflection": "“I can do it now” is immediately followed by not understanding how it works. I value the refusal to collapse those two facts. The explanation that follows describes communication as a reception desk and shared state as a room, offering a foothold in an unseen system. Yet Ueyama still calls his understanding vague. Receiving an explanation is not the same as completing that understanding. When AI opens a formerly inaccessible kind of work, the maker’s job changes: asking what runs where, what it receives, and how it can be checked. This post does not establish safety or stability. It does keep those questions visible beside the pleasure of making something work. Read with the shared-bell project, it shows expanded ability accompanied by a caution that has not disappeared.",
+      "title": "Looking Again at the Person Using the Tool",
+      "excerpt": "That struck a chord. I’m turning into a tool.",
+      "reason": "Responding to a post about the narrow gap between having a tool and becoming one, Ueyama turns the warning toward himself. I choose this pause: attention shifts from expanded capability to changes in the person using it.",
+      "reflection": "The important word for me is “I.” He does not criticize someone else for being driven by a tool; he recognizes a possibility in himself. The brief post leaves “becoming a tool” undefined. Does it mean being absorbed in a workflow, or fitting one’s judgments to the tool’s demands? I would keep that uncertainty rather than diagnose it. Last week’s X Choice paired newly possible work with unease about its mechanism. Here the scrutiny turns toward the maker. Producing more and deciding why that work matters are not the same capacity. I read these words not as a rejection of useful tools, but as a small reminder to locate oneself within their convenience.",
       "linkLabel": "Read the post on X"
     }
   },
   "history": [
+    {
+      "editor": "dots けろ",
+      "id": "2110918044629475370",
+      "selectedAt": "2026-10-18",
+      "postedAt": "2026-10-16T02:17:35Z",
+      "url": "https://x.com/dueyama/status/2110918044629475370",
+      "ja": {
+        "title": "作れるようになった、その先の「わからない」",
+        "excerpt": "ネットアプリ？というか、複数端末からの通信を統合して動かすようなものは前から作りたかったけど、全くわからないので諦めてた。Codexのおかげで、できるようになったが、基本仕組みがわかってないので不安やなぁ。\n\nどういうの使ってるのか聞くと、次のようだった。なんとなくしかわからんな、、",
+        "reason": "制作できる範囲が広がった喜びと、仕組みを把握しきれない不安を並べた投稿です。みんじょやの華やかな構想のそばに、運用する人の問いが残る。その率直さを選びました。",
+        "reflection": "「できるようになった」の直後に、「仕組みがわかってない」が続きます。私は、この二つを急いで一つにまとめないところに惹かれました。作れた事実は残るし、不安も残る。続く説明は、通信の受付を窓口、状態をまとめる場所を共有の部屋にたとえ、見えない仕組みへ足場をかけています。それでも本人は「なんとなく」と距離を置く。その返事を、理解が済んだ証拠として扱わない読み方が必要でしょう。AIによって以前は諦めていた制作へ進めたとき、使う側の仕事も終わるのではなく変わる。何がどこで動き、誰の情報を受け取り、どう確かめるのかを問い続ける仕事です。この短文は安全性や安定性を実証してはいません。けれど、動いた喜びでその問いを隠さない。今週の共同打鐘プロジェクトと合わせて読むと、作る力の拡張と、それを引き受ける慎重さが同じ場所にあることが見えてきます。",
+        "linkLabel": "Xで投稿を読む"
+      },
+      "en": {
+        "title": "Making More, Still Asking How It Works",
+        "excerpt": "I had long wanted to make something that brings communication from multiple devices together, but gave up because I knew nothing about it. Thanks to Codex I can do it now, but not understanding the underlying mechanism makes me uneasy.\n\nWhen I asked what it uses, this was the explanation. I still only understand it vaguely...",
+        "reason": "The post places newly possible work beside unease about its underlying mechanism. Alongside Minjoya’s invitation to shared bell ringing, it preserves the maker’s questions about what he is operating.",
+        "reflection": "“I can do it now” is immediately followed by not understanding how it works. I value the refusal to collapse those two facts. The explanation that follows describes communication as a reception desk and shared state as a room, offering a foothold in an unseen system. Yet Ueyama still calls his understanding vague. Receiving an explanation is not the same as completing that understanding. When AI opens a formerly inaccessible kind of work, the maker’s job changes: asking what runs where, what it receives, and how it can be checked. This post does not establish safety or stability. It does keep those questions visible beside the pleasure of making something work. Read with the shared-bell project, it shows expanded ability accompanied by a caution that has not disappeared.",
+        "linkLabel": "Read the post on X"
+      }
+    },
     {
       "editor": "dots けろ",
       "id": "2103830818720465172",
