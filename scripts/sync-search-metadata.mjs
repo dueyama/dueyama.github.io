@@ -52,14 +52,15 @@ function updateSitemap(source, date) {
     source,
     /(<lastmod>)\d{4}-\d{2}-\d{2}(<\/lastmod>)/g,
     date,
-    10,
+    12,
     "sitemap.xml lastmod",
   );
 }
 
 async function readDefaultDate() {
   const whatsNew = JSON.parse(await readFile(WHATS_NEW_PATH, "utf8"));
-  return requireDate(whatsNew?.period?.end);
+  const siteEdit = JSON.parse(await readFile(path.join(ROOT, "data", "site-edit.json"), "utf8"));
+  return [requireDate(whatsNew?.period?.end), requireDate(siteEdit.updated)].sort().at(-1);
 }
 
 async function writeAtomic(filePath, content) {
@@ -69,7 +70,7 @@ async function writeAtomic(filePath, content) {
 }
 
 export async function syncSearchMetadata({ date, checkOnly = false } = {}) {
-  const effectiveDate = requireDate(date || (await readDefaultDate()));
+  const effectiveDate = [requireDate(date || (await readDefaultDate())), await readDefaultDate()].sort().at(-1);
   const changes = [];
 
   for (const filePath of HTML_PATHS) {

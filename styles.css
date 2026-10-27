@@ -3033,3 +3033,10 @@ td:first-child {
     transition: none;
   }
 }
+
+/* AI-edited journal identity: keep the subject secondary to the activity record. */
+.hero #hero-title { font-size: clamp(2.4rem, 4.3vw, 4.15rem); line-height: 1.2; letter-spacing: -.025em; }
+.hero #hero-title .hero-title-sub { font-size: clamp(.95rem, 1.5vw, 1.2rem); line-height: 1.6; font-weight: 600; margin-top: 18px; letter-spacing: 0; }
+.hero .lead { font-size: 1rem; line-height: 1.95; }
+.hero-actions { flex-wrap: wrap; }
+@media (max-width: 600px) { .hero #hero-title { font-size: 2.35rem; } .hero #hero-title .hero-title-sub { font-size: .93rem; } }

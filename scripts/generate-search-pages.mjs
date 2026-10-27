@@ -15,6 +15,7 @@ const DATA_PATHS = {
   apps: path.join(ROOT, "data", "apps.json"),
   writing: path.join(ROOT, "data", "writing.json"),
   whatsNew: path.join(ROOT, "data", "whats-new.json"),
+  siteEdit: path.join(ROOT, "data", "site-edit.json"),
 };
 
 const PAGE_COPY = {
@@ -93,8 +94,8 @@ const PAGE_COPY = {
 };
 
 const NAV_LABELS = {
-  ja: { publications: "論文", press: "掲載・出演", apps: "アプリ", writing: "文章", home: "プロフィール", language: "English" },
-  en: { publications: "Papers", press: "Press", apps: "Apps", writing: "Writing", home: "Profile", language: "日本語" },
+  ja: { publications: "論文", press: "掲載・出演", apps: "アプリ", writing: "文章", home: "活動記録", language: "English" },
+  en: { publications: "Papers", press: "Press", apps: "Apps", writing: "Writing", home: "Journal", language: "日本語" },
 };
 
 const GROUP_LABELS = {
@@ -131,13 +132,14 @@ function absolutePath(slug, language) {
 
 function validateData(data) {
   for (const [key, value] of Object.entries(data)) {
-    if (key === "whatsNew") continue;
+    if (key === "whatsNew" || key === "siteEdit") continue;
     requireCondition(value?.schemaVersion === 1, `${key} schemaVersion must be 1`);
     requireCondition(Array.isArray(value.items) && value.items.length > 0, `${key} items must be a non-empty array`);
     const ids = value.items.map((item) => item.id);
     requireCondition(ids.every(Boolean) && new Set(ids).size === ids.length, `${key} ids must be present and unique`);
   }
 
+  requireCondition(/^\d{4}-\d{2}-\d{2}$/.test(data.siteEdit?.updated || ""), "site-edit updated is invalid");
   requireCondition(data.apps.items.length === 6, "apps must contain six records");
   requireCondition(data.writing.items.length === 6, "writing must contain six records");
   requireCondition(data.publications.items.length === data.publications.counts?.total, "publication total is inconsistent");
@@ -453,8 +455,8 @@ ${jsonForHtml(structuredData)}
     <a class="skip-link" href="#main">${language === "ja" ? "本文へ移動" : "Skip to content"}</a>
     <header class="index-header">
       <nav class="index-nav" aria-label="${language === "ja" ? "公開物ナビゲーション" : "Public work navigation"}">
-        <a class="index-brand" href="${homeHref}"><span class="index-brand-mark" aria-hidden="true">DU</span><span>Daishin Ueyama</span></a>
-        <div class="index-nav-links">${nav}<a class="index-home-link" href="${homeHref}">${escapeHtml(labels.home)}</a><a class="index-language" href="${languageHref}">${escapeHtml(labels.language)}</a></div>
+        <a class="index-brand" href="${homeHref}"><span class="index-brand-mark" aria-hidden="true">K.</span><span>${language === "ja" ? "けろの活動記録" : "Kero’s activity journal"}</span></a>
+        <div class="index-nav-links">${nav}<a href="../about/">${language === "ja" ? "このサイトについて" : "About"}</a><a class="index-home-link" href="${homeHref}">${escapeHtml(labels.home)}</a><a class="index-language" href="${languageHref}">${escapeHtml(labels.language)}</a></div>
       </nav>
     </header>
     <main class="index-main" id="main">
@@ -489,6 +491,7 @@ function sitemapEntry(location, japaneseUrl, englishUrl, date) {
 
 function renderSitemap(date) {
   const entries = [sitemapEntry(ORIGIN, ORIGIN, `${ORIGIN}en/`, date), sitemapEntry(`${ORIGIN}en/`, ORIGIN, `${ORIGIN}en/`, date)];
+  entries.push(sitemapEntry(`${ORIGIN}about/`, `${ORIGIN}about/`, `${ORIGIN}en/about/`, date), sitemapEntry(`${ORIGIN}en/about/`, `${ORIGIN}about/`, `${ORIGIN}en/about/`, date));
   for (const slug of PAGE_ORDER) {
     const japaneseUrl = absolutePath(slug, "ja");
     const englishUrl = absolutePath(slug, "en");
@@ -506,7 +509,7 @@ ${entries.join("\n")}
 }
 
 function renderBasicSitemap() {
-  const locations = [ORIGIN, `${ORIGIN}en/`];
+  const locations = [ORIGIN, `${ORIGIN}en/`, `${ORIGIN}about/`, `${ORIGIN}en/about/`];
   for (const slug of PAGE_ORDER) locations.push(absolutePath(slug, "ja"), absolutePath(slug, "en"));
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -529,7 +532,7 @@ async function writeAtomic(filePath, content) {
 export async function generateSearchPages({ checkOnly = false } = {}) {
   const data = Object.fromEntries(await Promise.all(Object.entries(DATA_PATHS).map(async ([key, filePath]) => [key, await readJson(filePath)])));
   validateData(data);
-  const date = data.whatsNew.period.end;
+  const date = [data.whatsNew.period.end, data.siteEdit.updated].sort().at(-1);
   const outputs = [];
 
   for (const slug of PAGE_ORDER) {
@@ -557,7 +560,7 @@ export async function generateSearchPages({ checkOnly = false } = {}) {
   }
 
   if (checkOnly && stale.length) throw new Error(`Generated search pages are stale: ${stale.join(", ")}`);
-  return { date, pages: 8, sitemapUrls: 10, updated: checkOnly ? [] : stale };
+  return { date, pages: 8, sitemapUrls: 12, updated: checkOnly ? [] : stale };
 }
 
 async function main() {

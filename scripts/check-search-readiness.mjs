@@ -93,7 +93,7 @@ async function checkCollectionPage(relativePath, { canonical, japaneseUrl, engli
 }
 
 function expectedSitemapUrls() {
-  const locations = [ORIGIN, `${ORIGIN}en/`];
+  const locations = [ORIGIN, `${ORIGIN}en/`, `${ORIGIN}about/`, `${ORIGIN}en/about/`];
   for (const slug of PAGE_ORDER) locations.push(`${ORIGIN}${slug}/`, `${ORIGIN}en/${slug}/`);
   return locations;
 }
@@ -125,6 +125,17 @@ async function main() {
     });
   }
 
+  for (const language of ["ja", "en"]) {
+    const relativePath = language === "ja" ? "about/index.html" : "en/about/index.html";
+    const html = await readFile(path.join(ROOT, relativePath), "utf8");
+    const canonical = `${ORIGIN}${language === "en" ? "en/" : ""}about/`;
+    requireCondition(html.includes(`rel="canonical" href="${canonical}"`), `${relativePath} canonical is incorrect`);
+    requireCondition((html.match(/<h1>/g) || []).length === 1, `${relativePath} must contain one h1`);
+    requireCondition(findEntity(jsonLdEntities(html, relativePath), "AboutPage")?.url === canonical, `${relativePath} AboutPage metadata is incorrect`);
+    for (const alternate of ["about/", "en/about/"]) requireCondition(html.includes(`href="${ORIGIN}${alternate}"`), `${relativePath} language alternate missing`);
+    entityCount += jsonLdEntities(html, relativePath).length;
+  }
+
   const sitemap = await readFile(path.join(ROOT, "sitemap.xml"), "utf8");
   const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
   requireCondition(JSON.stringify(locations) === JSON.stringify(expectedSitemapUrls()), "sitemap.xml canonical URL order is incorrect");
@@ -137,7 +148,7 @@ async function main() {
   requireCondition(!basicSitemap.includes("xhtml:") && !basicSitemap.includes("<lastmod>"), "sitemap-basic.xml must remain URL-only");
 
   process.stdout.write(`${JSON.stringify({
-    pages: 10,
+    pages: 12,
     collectionPages: 8,
     sitemapUrls: locations.length,
     basicSitemapUrls: basicLocations.length,

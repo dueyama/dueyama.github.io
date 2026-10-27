@@ -146,6 +146,10 @@ Publishing the digest also runs `scripts/generate-search-pages.mjs`, which refre
 Publishing the weekly digest also updates the visible site date, both `ProfilePage.dateModified` values, and both sitemap `lastmod` values from the digest period end. Keep language links on the canonical `/` and `/en/` URLs rather than creating `?lang=` variants, and run `node scripts/check-search-readiness.mjs` after search-metadata changes.
 
 
+## AI-edited journal identity (2026-10-27)
+
+The user requested an activity journal rather than a self-promotional personal headline. Lead with **けろがまとめる活動記録**, followed quietly by **上山大信の研究・制作・日々のこと**. The Japanese and English About pages explain Dots Kero’s editorial role, distinguish the subject’s own activities from AI editing, and acknowledge human direction and checks as needed. Keep the About links visible. Historical Codex interpretations remain attributed and explicitly presented as interpretations, not the subject’s self-description. Do not disclose private conversations or operational details in this explanation. `data/site-edit.json` records the latest deliberate site revision; metadata uses the later of this and the weekly digest date. The earlier compact-footer-only decision below is historical and superseded by this request.
+
 ## About Note
 
 Daishin wanted the page to say that Codex gathers and organizes public information. We tried a full bottom section, but it felt like the unwanted footer notes had come back. The better compromise is the current small `about-note` at the bottom: present, transparent, but not visually loud.
