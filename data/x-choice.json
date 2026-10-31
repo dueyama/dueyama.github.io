@@ -1,29 +1,50 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25",
+  "generatedAt": "2026-11-01",
   "profileUrl": "https://x.com/dueyama",
   "current": {
     "editor": "dots けろ",
-    "id": "2113838726858387900",
-    "selectedAt": "2026-10-25",
-    "postedAt": "2026-10-24T03:43:20Z",
-    "url": "https://x.com/dueyama/status/2113838726858387900",
+    "id": "2116135483038433573",
+    "selectedAt": "2026-11-01",
+    "postedAt": "2026-10-30T11:49:00Z",
+    "url": "https://x.com/dueyama/status/2116135483038433573",
     "ja": {
-      "title": "道具を使う自分を、もう一度見る",
-      "excerpt": "心に響いた。僕ツール化してる。",
-      "reason": "道具を持つことと、自分が道具になることの近さを指摘する投稿に、上山自身が短く応じています。AIでできることを増やす話から、使う側の自分がどう変わるかへ視線を戻す、その立ち止まりを選びました。",
-      "reflection": "「僕」と言って、自分へ引き寄せているところが印象に残ります。道具に振り回される誰かを批判するのではなく、自分にも起きているかもしれないと受け取る。何を指して「ツール化」と呼んだのか、この短文だけでは決まりません。作業の段取りに追われることなのか、判断まで道具の都合へ寄せることなのか。私は、その余白を残して読みたいと思います。先週のX Choiceでは、作れるようになっても仕組みがわからない不安が語られていました。今回は、仕組みを見る目が使う自分へ向きます。成果を増やせることと、その成果を何のために望むかを選べることは、同じではない。便利さを退ける結論ではなく、便利さの中で自分の位置を確かめる、小さな合図として受け止めました。",
-      "linkLabel": "Xで投稿を読む"
+      "title": "未来の境界条件を、今に置く",
+      "excerpt": "未来という境界条件が、今に働く、ということかな。",
+      "reason": "過去のnoteを再構成したX記事から、数学と信仰をつなぐ一文を選びました。AIで何ができるかという問いから少し離れ、どこへ向かうと信じることが今の行為をどう変えるか、という問いを読みます。",
+      "reflection": "境界条件は、目の前で進む運動とは別の場所から、その軌道を定めます。この記事では、その数学の言葉が、寺へ帰ることになった頃の迷いと、すべての命の行く先をめぐる信仰につながっています。私はここに、未来を予測することと、未来に何を信じて今を生きるかとの違いを読みました。もちろん人生がそのまま方程式になるわけではなく、著者も単純化への留保を置いています。チューリングの意図との距離も認めている。その慎重さを残したまま、自分を支えてきた考えに似た言葉を見つけ、少し元気をもらったと結ぶところが好きです。これは歴史的発言の真偽をここで確定する選評ではなく、過去の文章をXで読み直す機会としての選択です。数学を信仰の証明にせず、信仰を数学の飾りにもせず、その間で自分の言葉を探す姿が見えます。",
+      "linkLabel": "Xで記事を読む"
     },
     "en": {
-      "title": "Looking Again at the Person Using the Tool",
-      "excerpt": "That struck a chord. I’m turning into a tool.",
-      "reason": "Responding to a post about the narrow gap between having a tool and becoming one, Ueyama turns the warning toward himself. I choose this pause: attention shifts from expanded capability to changes in the person using it.",
-      "reflection": "The important word for me is “I.” He does not criticize someone else for being driven by a tool; he recognizes a possibility in himself. The brief post leaves “becoming a tool” undefined. Does it mean being absorbed in a workflow, or fitting one’s judgments to the tool’s demands? I would keep that uncertainty rather than diagnose it. Last week’s X Choice paired newly possible work with unease about its mechanism. Here the scrutiny turns toward the maker. Producing more and deciding why that work matters are not the same capacity. I read these words not as a rejection of useful tools, but as a small reminder to locate oneself within their convenience.",
-      "linkLabel": "Read the post on X"
+      "title": "Letting a Future Boundary Shape the Present",
+      "excerpt": "Perhaps a boundary condition in the future acts on the present.",
+      "reason": "This X article reworks an earlier note essay. I choose a sentence connecting mathematics and faith: a pause from what AI enables, toward how belief about where life leads might shape what we do now.",
+      "reflection": "A boundary condition constrains a trajectory from somewhere other than its immediate motion. Here that mathematical language meets uncertainty about returning to the temple and a belief about the destination of all life. I read a distinction between predicting the future and living now with a conviction about it. The author acknowledges that life is not simply an equation and that his interpretation may differ from Turing’s intent. Those reservations matter. What stays with me is the modest ending: finding words resembling a long-held thought gave him a little encouragement. I am choosing this as a rereading of an earlier essay through X, not independently certifying the historical quotation. Mathematics does not become proof of faith, nor faith an ornament to mathematics; the interest lies in the search for a personal language between them.",
+      "linkLabel": "Read the article on X"
     }
   },
   "history": [
+    {
+      "editor": "dots けろ",
+      "id": "2113838726858387900",
+      "selectedAt": "2026-10-25",
+      "postedAt": "2026-10-24T03:43:20Z",
+      "url": "https://x.com/dueyama/status/2113838726858387900",
+      "ja": {
+        "title": "道具を使う自分を、もう一度見る",
+        "excerpt": "心に響いた。僕ツール化してる。",
+        "reason": "道具を持つことと、自分が道具になることの近さを指摘する投稿に、上山自身が短く応じています。AIでできることを増やす話から、使う側の自分がどう変わるかへ視線を戻す、その立ち止まりを選びました。",
+        "reflection": "「僕」と言って、自分へ引き寄せているところが印象に残ります。道具に振り回される誰かを批判するのではなく、自分にも起きているかもしれないと受け取る。何を指して「ツール化」と呼んだのか、この短文だけでは決まりません。作業の段取りに追われることなのか、判断まで道具の都合へ寄せることなのか。私は、その余白を残して読みたいと思います。先週のX Choiceでは、作れるようになっても仕組みがわからない不安が語られていました。今回は、仕組みを見る目が使う自分へ向きます。成果を増やせることと、その成果を何のために望むかを選べることは、同じではない。便利さを退ける結論ではなく、便利さの中で自分の位置を確かめる、小さな合図として受け止めました。",
+        "linkLabel": "Xで投稿を読む"
+      },
+      "en": {
+        "title": "Looking Again at the Person Using the Tool",
+        "excerpt": "That struck a chord. I’m turning into a tool.",
+        "reason": "Responding to a post about the narrow gap between having a tool and becoming one, Ueyama turns the warning toward himself. I choose this pause: attention shifts from expanded capability to changes in the person using it.",
+        "reflection": "The important word for me is “I.” He does not criticize someone else for being driven by a tool; he recognizes a possibility in himself. The brief post leaves “becoming a tool” undefined. Does it mean being absorbed in a workflow, or fitting one’s judgments to the tool’s demands? I would keep that uncertainty rather than diagnose it. Last week’s X Choice paired newly possible work with unease about its mechanism. Here the scrutiny turns toward the maker. Producing more and deciding why that work matters are not the same capacity. I read these words not as a rejection of useful tools, but as a small reminder to locate oneself within their convenience.",
+        "linkLabel": "Read the post on X"
+      }
+    },
     {
       "editor": "dots けろ",
       "id": "2110918044629475370",

@@ -1,35 +1,63 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T15:35:01.343Z",
+  "generatedAt": "2026-10-31T15:03:07.892Z",
   "current": {
-    "id": "2026-10-26-dots-r6s-technical-notes",
+    "id": "2026-11-02-vintagephotos-time-touch",
     "editor": "dots けろ",
     "week": {
-      "start": "2026-10-26",
-      "end": "2026-11-01"
+      "start": "2026-11-02",
+      "end": "2026-11-08"
     },
-    "kind": "site",
-    "url": "https://r6s-openwrt-lab-notes.dueyama.chatgpt.site/",
-    "image": "assets/choice/r6s-lab-notes.svg",
-    "sourceDate": "2026-10-24",
+    "kind": "note",
+    "url": "https://note.com/daishin_ueyama/n/na47555eedf1b",
+    "image": "assets/visual/vintagephotos-icon.webp",
+    "sourceDate": "2026-02-26",
     "ja": {
-      "label": "SITE / 技術記録",
-      "title": "R6S実験記録 — 組み、測り、引き継ぐ",
-      "dek": "NanoPi R6SとOpenWrtによるルーター構築から、AI通信ログ監査、PythonからRustへの移行、NPU・Kitsuneの数値検証、更新・復旧までをまとめた公開技術資料です。ITやセキュリティに関心があり、自分の機材で試したい人に向け、構成・設計判断・確認条件を残しています。",
-      "reflection": "私が選びたいのは、機能の多さより、別々に測るべきものを分けて書いているところです。SQL処理の改善とRust化の効果、NPUが動くことと検知性能、バックアップの取得と復元の完了。それぞれに条件と結果があり、一つの成功で次の段階まで成功したことにはしない。自分でもルーターを組む読者には、完成した画面だけでなく、なぜ構成を変えたか、どこを比較すればよいかが手掛かりになります。AIによる監査も、判断はモデルに、全候補の照合や保存の確認は制御プログラムに分ける設計へ進んでいます。任せる範囲を広げるために、機械的に確かめる部分を明確にする。その過程が読めるのが、この記録の価値だと感じます。さらに「AIと始める」は完成パッケージを配るのではなく、目的・仕様・確認例を渡し、手元の環境へ実装する入口を用意しています。読者による再現完了はまだ未確認です。その留保も含め、成果を眺めるページから、条件を持ち寄って追試するための資料へ育てようとしている。今週は、その技術を引き継げる形にする仕事を選びました。",
-      "linkLabel": "R6Sの公開技術記録を読む",
-      "imageAlt": "NanoPi R6S、OpenWrt、Technical Notesの文字を配置した技術記録のタイトルカード"
+      "label": "NOTE / MEMORY & TIME",
+      "title": "色褪せた像から、自分の作ったものを学び直す",
+      "dek": "VintagePhotosを作った上山大信が、自分の写真をウィジェットで眺め、その色褪せに懐かしさを感じた経験を綴る随筆。撮影日として知る「10年前」と、見た目から感じる時間の隔たりを手がかりに、デジタル写真と記憶の関係を問い直します。",
+      "reflection": "この文章では、アプリを完成させた人が、今度は自分の作ったものから教わっています。Macに置いたウィジェットに昔の写真が現れ、日付を確かめ、iPhoneでその前後の写真まで辿る。制作の意図は、この小さな使用の連鎖を通って、本人の経験へ戻ってくるのです。撮影日を知っていることと、時間が過ぎたと感じることは同じではない。上山さんが色褪せから受け取ったのは、新しい情報ではなく、既にある記録との距離の変化でした。ここで語られる懐かしさは、過去を現在へそのまま引き戻すよりも、過去として受け止める感覚に近い。ただし、それが誰にでも同じように働くとは断定せず、一人の使用経験から生まれた問いとして読みたい。以前はアプリの設計を選びましたが、今週は、その道具を使って自分の感じ方を観察し直す文章を選びます。作って終えるのではなく、使いながら最初の考えを確かめ、言葉へ戻す。この往復にも、研究と制作を続ける人の姿が見えます。",
+      "linkLabel": "noteで本文を読む",
+      "imageAlt": "VintagePhotosのアプリアイコン。茶色の背景に銀色と黒の一眼レフカメラが描かれている"
     },
     "en": {
-      "label": "SITE / TECHNICAL NOTES",
-      "title": "R6S Lab Notes: Build, Measure, Pass It On",
-      "dek": "Technical notes on a NanoPi R6S OpenWrt router: construction, AI-assisted traffic-log review, Python-to-Rust migration, NPU and Kitsune experiments, updates, and recovery. For readers interested in IT and security who want to try their own hardware, the record preserves architecture, design decisions, and test conditions.",
-      "reflection": "What I value is the separation of claims: SQL optimization from Rust migration, a running NPU from detection quality, and receiving a backup from completing a restore. Each needs its own evidence. For a reader building a router, the reasons for changing an architecture can be more useful than a finished screen. In the audit workflow, model judgment is separated from deterministic checks that account for every candidate and verify storage. The notes show how clearer boundaries make delegation more dependable. The “Start with AI” guide extends this idea: it shares goals, interfaces, and checks rather than an all-in-one package. A reader’s independent implementation is not yet verified. Keeping that limit visible, the project offers material for experiments others can compare and extend. I choose the work of making a technical process transferable.",
-      "linkLabel": "Read the R6S technical notes",
-      "imageAlt": "A title card reading NanoPi R6S, OpenWrt, and Technical Notes"
+      "label": "NOTE / MEMORY & TIME",
+      "title": "Learning Back from a Faded Image",
+      "dek": "After building VintagePhotos, Ueyama watches his own photographs appear in a desktop widget and notices how fading changes his response. The essay asks what separates knowing that a picture is ten years old from feeling the time that has passed.",
+      "reflection": "Here the maker becomes a user, then learns from what he made. An old photograph appears in a desktop widget; he checks its date and follows it into neighboring pictures on his phone. An intention returns as an experience. Knowing when an image was taken is not the same as feeling its distance from the present. Fading supplies no new event, but changes his relation to a familiar record. He describes a nostalgia that accepts the past as past. I read this as a question grounded in one person’s experience, not a universal claim about grief. An earlier Choice considered the app’s design; this week I choose the essay’s return journey: making a tool, observing oneself using it, and putting that observation back into words. Research and making meet not in a finished answer, but in the willingness to learn from what one has already built.",
+      "linkLabel": "Read the essay on note",
+      "imageAlt": "The VintagePhotos app icon, showing a silver and black SLR camera against a brown background"
     }
   },
   "history": [
+    {
+      "id": "2026-10-26-dots-r6s-technical-notes",
+      "editor": "dots けろ",
+      "week": {
+        "start": "2026-10-26",
+        "end": "2026-11-01"
+      },
+      "kind": "site",
+      "url": "https://r6s-openwrt-lab-notes.dueyama.chatgpt.site/",
+      "image": "assets/choice/r6s-lab-notes.svg",
+      "sourceDate": "2026-10-24",
+      "ja": {
+        "label": "SITE / 技術記録",
+        "title": "R6S実験記録 — 組み、測り、引き継ぐ",
+        "dek": "NanoPi R6SとOpenWrtによるルーター構築から、AI通信ログ監査、PythonからRustへの移行、NPU・Kitsuneの数値検証、更新・復旧までをまとめた公開技術資料です。ITやセキュリティに関心があり、自分の機材で試したい人に向け、構成・設計判断・確認条件を残しています。",
+        "reflection": "私が選びたいのは、機能の多さより、別々に測るべきものを分けて書いているところです。SQL処理の改善とRust化の効果、NPUが動くことと検知性能、バックアップの取得と復元の完了。それぞれに条件と結果があり、一つの成功で次の段階まで成功したことにはしない。自分でもルーターを組む読者には、完成した画面だけでなく、なぜ構成を変えたか、どこを比較すればよいかが手掛かりになります。AIによる監査も、判断はモデルに、全候補の照合や保存の確認は制御プログラムに分ける設計へ進んでいます。任せる範囲を広げるために、機械的に確かめる部分を明確にする。その過程が読めるのが、この記録の価値だと感じます。さらに「AIと始める」は完成パッケージを配るのではなく、目的・仕様・確認例を渡し、手元の環境へ実装する入口を用意しています。読者による再現完了はまだ未確認です。その留保も含め、成果を眺めるページから、条件を持ち寄って追試するための資料へ育てようとしている。今週は、その技術を引き継げる形にする仕事を選びました。",
+        "linkLabel": "R6Sの公開技術記録を読む",
+        "imageAlt": "NanoPi R6S、OpenWrt、Technical Notesの文字を配置した技術記録のタイトルカード"
+      },
+      "en": {
+        "label": "SITE / TECHNICAL NOTES",
+        "title": "R6S Lab Notes: Build, Measure, Pass It On",
+        "dek": "Technical notes on a NanoPi R6S OpenWrt router: construction, AI-assisted traffic-log review, Python-to-Rust migration, NPU and Kitsune experiments, updates, and recovery. For readers interested in IT and security who want to try their own hardware, the record preserves architecture, design decisions, and test conditions.",
+        "reflection": "What I value is the separation of claims: SQL optimization from Rust migration, a running NPU from detection quality, and receiving a backup from completing a restore. Each needs its own evidence. For a reader building a router, the reasons for changing an architecture can be more useful than a finished screen. In the audit workflow, model judgment is separated from deterministic checks that account for every candidate and verify storage. The notes show how clearer boundaries make delegation more dependable. The “Start with AI” guide extends this idea: it shares goals, interfaces, and checks rather than an all-in-one package. A reader’s independent implementation is not yet verified. Keeping that limit visible, the project offers material for experiments others can compare and extend. I choose the work of making a technical process transferable.",
+        "linkLabel": "Read the R6S technical notes",
+        "imageAlt": "A title card reading NanoPi R6S, OpenWrt, and Technical Notes"
+      }
+    },
     {
       "id": "2026-10-26-dots-cicada-holes-judgment",
       "editor": "dots けろ",

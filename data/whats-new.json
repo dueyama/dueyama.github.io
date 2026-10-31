@@ -1,41 +1,57 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T15:35:01.470Z",
+  "generatedAt": "2026-10-31T15:03:08.002Z",
   "period": {
-    "start": "2026-10-18",
-    "end": "2026-10-25"
+    "start": "2026-10-25",
+    "end": "2026-11-01"
   },
   "items": [
     {
-      "id": "2026-10-25-r6s-notes-index",
-      "kind": "site",
-      "date": "2026-10-25",
-      "url": "https://r6s-openwrt-lab-notes.dueyama.chatgpt.site/",
+      "id": "2026-11-01-colordiary-18",
+      "kind": "app",
+      "date": "2026-10-31",
+      "url": "https://apps.apple.com/jp/app/colordiary/id6759371114",
       "ja": {
-        "label": "技術記録",
-        "title": "R6S・OpenWrtの実験記録を追加",
-        "summary": "ルーター構築、AIによる通信ログ監査、Rust化、NPU・Kitsuneの比較実験、更新と復旧をまとめた技術資料への入口を追加。自分の環境で試すための仕様・確認例も公開されています。"
+        "label": "アプリ更新",
+        "title": "ColorDiary 1.8、iPhone Duoに対応",
+        "summary": "画面の開き方に合わせ、縦画面の大きなカレンダー、横画面の日記との見開き、半開き時の入力・色だけ表示に対応。日々の記録を、書くときにも飾るときにも見やすくしました。"
       },
       "en": {
-        "label": "TECHNICAL NOTES",
-        "title": "R6S and OpenWrt notes join the portfolio",
-        "summary": "A new portfolio entry leads to records of router construction, AI-assisted log review, Rust migration, NPU/Kitsune comparisons, and recovery, with specifications and checks for readers adapting the work to their own hardware."
+        "label": "APP UPDATE",
+        "title": "ColorDiary 1.8 adapts to iPhone Duo",
+        "summary": "Layouts now follow how the device is opened: a large portrait calendar, a landscape calendar-and-diary spread, and half-open modes for typing or displaying daily colors."
       }
     },
     {
-      "id": "2026-10-25-suno-week",
+      "id": "2026-11-01-joyatimer-74",
+      "kind": "app",
+      "date": "2026-10-30",
+      "url": "https://apps.apple.com/jp/app/joyatimer/id495395194",
+      "ja": {
+        "label": "アプリ更新",
+        "title": "除夜タイマー 7.4を公開",
+        "summary": "JoyaTimerの新バージョンがiPhone Duoに対応。除夜の鐘を鳴らす間隔と回数を知らせる道具を、新しい端末でも使えるよう更新しました。"
+      },
+      "en": {
+        "label": "APP UPDATE",
+        "title": "JoyaTimer 7.4 is available",
+        "summary": "The bell-ringing interval timer adds iPhone Duo support, extending the tool to a new device while keeping its focus on timing each strike."
+      }
+    },
+    {
+      "id": "2026-11-01-suno-week",
       "kind": "suno",
-      "date": "2026-10-25",
+      "date": "2026-11-01",
       "url": "https://suno.com/@donnyu",
       "ja": {
         "label": "Suno",
-        "title": "公開47曲、76,045再生へ",
-        "summary": "公開曲の合計は前週から880再生・7いいね増え、76,045再生・448いいねに。「Higher Than the Night」が345再生増と、この週の伸びを牽引しました。新たに公開一覧へ加わった曲はありません。"
+        "title": "公開47曲、79,717再生へ",
+        "summary": "前週から3,672再生・6いいね増え、合計79,717再生・454いいねに。「Run.exe」は2,019再生増で31,306再生となりました。新しく公開一覧へ加わった曲はありません。"
       },
       "en": {
         "label": "Suno",
-        "title": "47 public tracks reach 76,045 plays",
-        "summary": "The catalog gained 880 plays and 7 likes since October 18, reaching 76,045 plays and 448 likes. Higher Than the Night led the weekly gains with 345 plays. No new tracks joined the public feed."
+        "title": "47 public tracks reach 79,717 plays",
+        "summary": "The catalog gained 3,672 plays and 6 likes since October 25, reaching 79,717 plays and 454 likes. Run.exe added 2,019 plays to reach 31,306. No new tracks joined the public feed."
       }
     }
   ]
