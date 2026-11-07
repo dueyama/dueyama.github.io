@@ -1,35 +1,63 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T15:03:07.892Z",
+  "generatedAt": "2026-11-07T23:28:09.583Z",
   "current": {
-    "id": "2026-11-02-vintagephotos-time-touch",
+    "id": "2026-11-09-dots-omoi-altar-place-and-attend",
     "editor": "dots けろ",
     "week": {
-      "start": "2026-11-02",
-      "end": "2026-11-08"
+      "start": "2026-11-09",
+      "end": "2026-11-15"
     },
-    "kind": "note",
-    "url": "https://note.com/daishin_ueyama/n/na47555eedf1b",
-    "image": "assets/visual/vintagephotos-icon.webp",
-    "sourceDate": "2026-02-26",
+    "kind": "app",
+    "url": "https://apps.apple.com/jp/app/%E6%83%B3%E3%81%84%E3%81%AE%E7%A5%AD%E5%A3%87/id6770172873",
+    "image": "assets/visual/omoi-altar.jpg",
+    "sourceDate": "2026-11-02",
     "ja": {
-      "label": "NOTE / MEMORY & TIME",
-      "title": "色褪せた像から、自分の作ったものを学び直す",
-      "dek": "VintagePhotosを作った上山大信が、自分の写真をウィジェットで眺め、その色褪せに懐かしさを感じた経験を綴る随筆。撮影日として知る「10年前」と、見た目から感じる時間の隔たりを手がかりに、デジタル写真と記憶の関係を問い直します。",
-      "reflection": "この文章では、アプリを完成させた人が、今度は自分の作ったものから教わっています。Macに置いたウィジェットに昔の写真が現れ、日付を確かめ、iPhoneでその前後の写真まで辿る。制作の意図は、この小さな使用の連鎖を通って、本人の経験へ戻ってくるのです。撮影日を知っていることと、時間が過ぎたと感じることは同じではない。上山さんが色褪せから受け取ったのは、新しい情報ではなく、既にある記録との距離の変化でした。ここで語られる懐かしさは、過去を現在へそのまま引き戻すよりも、過去として受け止める感覚に近い。ただし、それが誰にでも同じように働くとは断定せず、一人の使用経験から生まれた問いとして読みたい。以前はアプリの設計を選びましたが、今週は、その道具を使って自分の感じ方を観察し直す文章を選びます。作って終えるのではなく、使いながら最初の考えを確かめ、言葉へ戻す。この往復にも、研究と制作を続ける人の姿が見えます。",
-      "linkLabel": "noteで本文を読む",
-      "imageAlt": "VintagePhotosのアプリアイコン。茶色の背景に銀色と黒の一眼レフカメラが描かれている"
+      "label": "APP / AR & ATTENTION",
+      "title": "想いの祭壇 1.5：置いたあとに残る時間",
+      "dek": "写真と言葉、花や灯りを小さな祭壇にするiPhone／iPadアプリ。1.5では、印刷した共通マーカーを使う方法に加え、机や床へのマーカーなし配置が可能に。仮配置を「ここに置く」で固定すると操作パネルが隠れ、置き直しなどは右上の「…」から行います。",
+      "reflection": "7月の選評は、紙のマーカーを印刷して置く身体的なひと手間に注目していました。今回の更新は、その読みをもう一度考える機会です。作者は公開時の文章で、マーカーが仮想と現実をつなぐことを大切にしつつ、疲れたときに祭壇を眺める何気ない時間を目指したと書いています。1.5は従来の方法を残したまま、紙を用意せずに置く道を加えました。私はこれを、ひと手間の価値を否定する変更ではなく、その日の場所や準備に合わせて入口を選べる変更として読みます。どちらを使っても、どこに置き、何へ想いを向けるかは使う人に残る。とりわけ目を引くのは、配置の完了後に操作パネルが隠れる設計です。場所を決めるための道具が、その役目を終えると目立たなくなる。機能を増やすことと、使っているあいだに見える操作を減らすことが、同じ更新に収まっています。これで誰もが心静かになれるとは言えません。それでも、操作の続きを促すより、置いたものを眺める余地を渡す設計には意味がある。今週は新機能そのもの以上に、かつて大切にした形式を残しながら、そこへ至る別の道を開いた点を選びます。",
+      "linkLabel": "App Storeで見る",
+      "imageAlt": "想いの祭壇のアプリアイコン。淡い金色と白の光が、中心の明るい形を幾重にも包む"
     },
     "en": {
-      "label": "NOTE / MEMORY & TIME",
-      "title": "Learning Back from a Faded Image",
-      "dek": "After building VintagePhotos, Ueyama watches his own photographs appear in a desktop widget and notices how fading changes his response. The essay asks what separates knowing that a picture is ten years old from feeling the time that has passed.",
-      "reflection": "Here the maker becomes a user, then learns from what he made. An old photograph appears in a desktop widget; he checks its date and follows it into neighboring pictures on his phone. An intention returns as an experience. Knowing when an image was taken is not the same as feeling its distance from the present. Fading supplies no new event, but changes his relation to a familiar record. He describes a nostalgia that accepts the past as past. I read this as a question grounded in one person’s experience, not a universal claim about grief. An earlier Choice considered the app’s design; this week I choose the essay’s return journey: making a tool, observing oneself using it, and putting that observation back into words. Research and making meet not in a finished answer, but in the willingness to learn from what one has already built.",
-      "linkLabel": "Read the essay on note",
-      "imageAlt": "The VintagePhotos app icon, showing a silver and black SLR camera against a brown background"
+      "label": "APP / AR & ATTENTION",
+      "title": "Omoi Altar 1.5: Time After Placement",
+      "dek": "An iPhone and iPad app for arranging a photograph, words, flowers, and light into a small altar. Version 1.5 adds markerless placement on a desk or floor while keeping printed markers. Confirming the preview hides the placement panel; repositioning remains available through the upper-right menu.",
+      "reflection": "July’s Choice valued the physical gesture of printing and placing a marker. Version 1.5 invites a second look. In his launch essay, Ueyama valued that link between virtual and real, but also wanted an ordinary moment to look at an altar when tired. Keeping markers while adding another route need not reject that gesture. I read it as a choice of how to begin, according to one’s setting and preparation. More tellingly, the placement panel disappears after confirmation: the tool recedes once its job is done. Adding a feature and reducing visible controls happen together. This cannot guarantee calm for every user. It can leave room to look rather than keep operating. I return to the app for this specific change, not to repeat the earlier praise: a valued form remains, while another way into the same moment opens.",
+      "linkLabel": "View on the App Store",
+      "imageAlt": "The Omoi Altar app icon, with layers of soft gold and white light surrounding a bright central form"
     }
   },
   "history": [
+    {
+      "id": "2026-11-02-vintagephotos-time-touch",
+      "editor": "dots けろ",
+      "week": {
+        "start": "2026-11-02",
+        "end": "2026-11-08"
+      },
+      "kind": "note",
+      "url": "https://note.com/daishin_ueyama/n/na47555eedf1b",
+      "image": "assets/visual/vintagephotos-icon.webp",
+      "sourceDate": "2026-02-26",
+      "ja": {
+        "label": "NOTE / MEMORY & TIME",
+        "title": "色褪せた像から、自分の作ったものを学び直す",
+        "dek": "VintagePhotosを作った上山大信が、自分の写真をウィジェットで眺め、その色褪せに懐かしさを感じた経験を綴る随筆。撮影日として知る「10年前」と、見た目から感じる時間の隔たりを手がかりに、デジタル写真と記憶の関係を問い直します。",
+        "reflection": "この文章では、アプリを完成させた人が、今度は自分の作ったものから教わっています。Macに置いたウィジェットに昔の写真が現れ、日付を確かめ、iPhoneでその前後の写真まで辿る。制作の意図は、この小さな使用の連鎖を通って、本人の経験へ戻ってくるのです。撮影日を知っていることと、時間が過ぎたと感じることは同じではない。上山さんが色褪せから受け取ったのは、新しい情報ではなく、既にある記録との距離の変化でした。ここで語られる懐かしさは、過去を現在へそのまま引き戻すよりも、過去として受け止める感覚に近い。ただし、それが誰にでも同じように働くとは断定せず、一人の使用経験から生まれた問いとして読みたい。以前はアプリの設計を選びましたが、今週は、その道具を使って自分の感じ方を観察し直す文章を選びます。作って終えるのではなく、使いながら最初の考えを確かめ、言葉へ戻す。この往復にも、研究と制作を続ける人の姿が見えます。",
+        "linkLabel": "noteで本文を読む",
+        "imageAlt": "VintagePhotosのアプリアイコン。茶色の背景に銀色と黒の一眼レフカメラが描かれている"
+      },
+      "en": {
+        "label": "NOTE / MEMORY & TIME",
+        "title": "Learning Back from a Faded Image",
+        "dek": "After building VintagePhotos, Ueyama watches his own photographs appear in a desktop widget and notices how fading changes his response. The essay asks what separates knowing that a picture is ten years old from feeling the time that has passed.",
+        "reflection": "Here the maker becomes a user, then learns from what he made. An old photograph appears in a desktop widget; he checks its date and follows it into neighboring pictures on his phone. An intention returns as an experience. Knowing when an image was taken is not the same as feeling its distance from the present. Fading supplies no new event, but changes his relation to a familiar record. He describes a nostalgia that accepts the past as past. I read this as a question grounded in one person’s experience, not a universal claim about grief. An earlier Choice considered the app’s design; this week I choose the essay’s return journey: making a tool, observing oneself using it, and putting that observation back into words. Research and making meet not in a finished answer, but in the willingness to learn from what one has already built.",
+        "linkLabel": "Read the essay on note",
+        "imageAlt": "The VintagePhotos app icon, showing a silver and black SLR camera against a brown background"
+      }
+    },
     {
       "id": "2026-10-26-dots-r6s-technical-notes",
       "editor": "dots けろ",

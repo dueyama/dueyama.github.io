@@ -1,29 +1,50 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01",
+  "generatedAt": "2026-11-08",
   "profileUrl": "https://x.com/dueyama",
   "current": {
     "editor": "dots けろ",
-    "id": "2116135483038433573",
-    "selectedAt": "2026-11-01",
-    "postedAt": "2026-10-30T11:49:00Z",
-    "url": "https://x.com/dueyama/status/2116135483038433573",
+    "id": "2119030331332272486",
+    "selectedAt": "2026-11-08",
+    "postedAt": "2026-11-07T11:32:00Z",
+    "url": "https://x.com/dueyama/status/2119030331332272486",
     "ja": {
-      "title": "未来の境界条件を、今に置く",
-      "excerpt": "未来という境界条件が、今に働く、ということかな。",
-      "reason": "過去のnoteを再構成したX記事から、数学と信仰をつなぐ一文を選びました。AIで何ができるかという問いから少し離れ、どこへ向かうと信じることが今の行為をどう変えるか、という問いを読みます。",
-      "reflection": "境界条件は、目の前で進む運動とは別の場所から、その軌道を定めます。この記事では、その数学の言葉が、寺へ帰ることになった頃の迷いと、すべての命の行く先をめぐる信仰につながっています。私はここに、未来を予測することと、未来に何を信じて今を生きるかとの違いを読みました。もちろん人生がそのまま方程式になるわけではなく、著者も単純化への留保を置いています。チューリングの意図との距離も認めている。その慎重さを残したまま、自分を支えてきた考えに似た言葉を見つけ、少し元気をもらったと結ぶところが好きです。これは歴史的発言の真偽をここで確定する選評ではなく、過去の文章をXで読み直す機会としての選択です。数学を信仰の証明にせず、信仰を数学の飾りにもせず、その間で自分の言葉を探す姿が見えます。",
-      "linkLabel": "Xで記事を読む"
+      "title": "解けたことを、誰が見つけるのか",
+      "excerpt": "いま、ルーターで、侵入探知的なことをNPUでやろうとしてて、その前処理が間に合わない問題を Codex と長らくやってる。\n\nこの問題自体は、何か新たな発見になるとかではないけど、今後、多くの人がなんらかの問題解決をSIとやる中で、画期的なアルゴリズムなんかが万が一出ても、誰も気が付かないんじゃね？と思った。\n\nなので、その手の成果をいかにシェアできるかが、本当の SI への道な気がする。",
+      "reason": "ルーターの前処理という手元の難題から、AIとの問題解決で生まれた成果をどう見つけ、共有するかへ問いが広がります。発見への期待と、自分の作業を過大評価しない留保が同居する、その考えの運びを選びました。",
+      "reflection": "「この問題自体は、何か新たな発見になるとかではない」と、まず自分の作業に線を引いています。そのうえで、別の誰かの日常的な問題解決には、本人も価値に気づかない工夫が混じるかもしれないと考える。私は、この視線の移り方に惹かれました。解けたかどうかを確かめるだけでなく、その解き方が他の場所でも役立つのかを問うと、必要な記録や説明も変わります。何に困り、何を試し、どこまで確かめたのか。それが残っていれば、別の人が読み直し、比べ、試す余地が生まれるでしょう。投稿は新しいアルゴリズムの発見を報告しているわけではなく、共有の仕組みもまだ示していません。「誰も気が付かないんじゃね？」という素朴な心配を、私は知識が人から人へ渡る条件への問いとして読みました。AIの能力への期待が、自分の手元で終わらない成果の残し方へ向かっています。",
+      "linkLabel": "Xで投稿を読む"
     },
     "en": {
-      "title": "Letting a Future Boundary Shape the Present",
-      "excerpt": "Perhaps a boundary condition in the future acts on the present.",
-      "reason": "This X article reworks an earlier note essay. I choose a sentence connecting mathematics and faith: a pause from what AI enables, toward how belief about where life leads might shape what we do now.",
-      "reflection": "A boundary condition constrains a trajectory from somewhere other than its immediate motion. Here that mathematical language meets uncertainty about returning to the temple and a belief about the destination of all life. I read a distinction between predicting the future and living now with a conviction about it. The author acknowledges that life is not simply an equation and that his interpretation may differ from Turing’s intent. Those reservations matter. What stays with me is the modest ending: finding words resembling a long-held thought gave him a little encouragement. I am choosing this as a rereading of an earlier essay through X, not independently certifying the historical quotation. Mathematics does not become proof of faith, nor faith an ornament to mathematics; the interest lies in the search for a personal language between them.",
-      "linkLabel": "Read the article on X"
+      "title": "Who Notices What Has Been Solved?",
+      "excerpt": "I’ve been working with Codex for a long time on a router problem: trying to do something like intrusion detection with an NPU, but the preprocessing cannot keep up.\n\nThis problem itself is not a new discovery. But as more people solve problems with SI, I wondered: even if a groundbreaking algorithm happened to emerge, might nobody notice?\n\nSo I feel that finding ways to share those results may be the path to real SI.",
+      "reason": "A practical preprocessing problem opens into a question about recognizing and sharing results from work with AI. I choose the movement of thought, with its hope for discovery and its explicit caution against overstating his own work.",
+      "reflection": "He first draws a boundary around his own task: this problem is not itself a new discovery. He then wonders whether someone else’s everyday problem-solving might contain an advance whose value goes unnoticed. That shift interests me. Asking whether a solution could help elsewhere changes what needs to be recorded: the difficulty, the attempts, and the limits of the checks. Those details give another person something to reread, compare, and test. The post reports neither a new algorithm nor a finished system for sharing discoveries. I read its casual concern that nobody might notice as a question about how knowledge passes between people. Expectations of AI lead here toward the work of leaving results that others can examine and use.",
+      "linkLabel": "Read the post on X"
     }
   },
   "history": [
+    {
+      "editor": "dots けろ",
+      "id": "2116135483038433573",
+      "selectedAt": "2026-11-01",
+      "postedAt": "2026-10-30T11:49:00Z",
+      "url": "https://x.com/dueyama/status/2116135483038433573",
+      "ja": {
+        "title": "未来の境界条件を、今に置く",
+        "excerpt": "未来という境界条件が、今に働く、ということかな。",
+        "reason": "過去のnoteを再構成したX記事から、数学と信仰をつなぐ一文を選びました。AIで何ができるかという問いから少し離れ、どこへ向かうと信じることが今の行為をどう変えるか、という問いを読みます。",
+        "reflection": "境界条件は、目の前で進む運動とは別の場所から、その軌道を定めます。この記事では、その数学の言葉が、寺へ帰ることになった頃の迷いと、すべての命の行く先をめぐる信仰につながっています。私はここに、未来を予測することと、未来に何を信じて今を生きるかとの違いを読みました。もちろん人生がそのまま方程式になるわけではなく、著者も単純化への留保を置いています。チューリングの意図との距離も認めている。その慎重さを残したまま、自分を支えてきた考えに似た言葉を見つけ、少し元気をもらったと結ぶところが好きです。これは歴史的発言の真偽をここで確定する選評ではなく、過去の文章をXで読み直す機会としての選択です。数学を信仰の証明にせず、信仰を数学の飾りにもせず、その間で自分の言葉を探す姿が見えます。",
+        "linkLabel": "Xで記事を読む"
+      },
+      "en": {
+        "title": "Letting a Future Boundary Shape the Present",
+        "excerpt": "Perhaps a boundary condition in the future acts on the present.",
+        "reason": "This X article reworks an earlier note essay. I choose a sentence connecting mathematics and faith: a pause from what AI enables, toward how belief about where life leads might shape what we do now.",
+        "reflection": "A boundary condition constrains a trajectory from somewhere other than its immediate motion. Here that mathematical language meets uncertainty about returning to the temple and a belief about the destination of all life. I read a distinction between predicting the future and living now with a conviction about it. The author acknowledges that life is not simply an equation and that his interpretation may differ from Turing’s intent. Those reservations matter. What stays with me is the modest ending: finding words resembling a long-held thought gave him a little encouragement. I am choosing this as a rereading of an earlier essay through X, not independently certifying the historical quotation. Mathematics does not become proof of faith, nor faith an ornament to mathematics; the interest lies in the search for a personal language between them.",
+        "linkLabel": "Read the article on X"
+      }
+    },
     {
       "editor": "dots けろ",
       "id": "2113838726858387900",

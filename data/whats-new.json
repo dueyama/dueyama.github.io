@@ -1,57 +1,73 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T15:03:08.002Z",
+  "generatedAt": "2026-11-07T23:28:09.644Z",
   "period": {
-    "start": "2026-10-25",
-    "end": "2026-11-01"
+    "start": "2026-11-01",
+    "end": "2026-11-08"
   },
   "items": [
     {
-      "id": "2026-11-01-colordiary-18",
+      "id": "2026-11-08-omoi-altar-15",
       "kind": "app",
-      "date": "2026-10-31",
-      "url": "https://apps.apple.com/jp/app/colordiary/id6759371114",
+      "date": "2026-11-02",
+      "url": "https://apps.apple.com/jp/app/%E6%83%B3%E3%81%84%E3%81%AE%E7%A5%AD%E5%A3%87/id6770172873",
       "ja": {
         "label": "アプリ更新",
-        "title": "ColorDiary 1.8、iPhone Duoに対応",
-        "summary": "画面の開き方に合わせ、縦画面の大きなカレンダー、横画面の日記との見開き、半開き時の入力・色だけ表示に対応。日々の記録を、書くときにも飾るときにも見やすくしました。"
+        "title": "想いの祭壇1.5、マーカーなしで置けるように",
+        "summary": "机や床への仮配置を確認し、「ここに置く」で祭壇を固定。印刷した共通マーカーを使う方法も残し、配置後の操作は右上のメニューにまとめました。"
       },
       "en": {
         "label": "APP UPDATE",
-        "title": "ColorDiary 1.8 adapts to iPhone Duo",
-        "summary": "Layouts now follow how the device is opened: a large portrait calendar, a landscape calendar-and-diary spread, and half-open modes for typing or displaying daily colors."
+        "title": "Omoi Altar 1.5 adds markerless placement",
+        "summary": "Preview an altar on a desk or floor, then confirm its position. Printed common markers remain available, while controls after placement are gathered in the upper-right menu."
       }
     },
     {
-      "id": "2026-11-01-joyatimer-74",
-      "kind": "app",
-      "date": "2026-10-30",
-      "url": "https://apps.apple.com/jp/app/joyatimer/id495395194",
-      "ja": {
-        "label": "アプリ更新",
-        "title": "除夜タイマー 7.4を公開",
-        "summary": "JoyaTimerの新バージョンがiPhone Duoに対応。除夜の鐘を鳴らす間隔と回数を知らせる道具を、新しい端末でも使えるよう更新しました。"
-      },
-      "en": {
-        "label": "APP UPDATE",
-        "title": "JoyaTimer 7.4 is available",
-        "summary": "The bell-ringing interval timer adds iPhone Duo support, extending the tool to a new device while keeping its focus on timing each strike."
-      }
-    },
-    {
-      "id": "2026-11-01-suno-week",
-      "kind": "suno",
+      "id": "2026-11-08-note-bamboo-boundary",
+      "kind": "note",
       "date": "2026-11-01",
-      "url": "https://suno.com/@donnyu",
+      "url": "https://note.com/daishin_ueyama/n/nfeb0a7e45868",
       "ja": {
-        "label": "Suno",
-        "title": "公開47曲、79,717再生へ",
-        "summary": "前週から3,672再生・6いいね増え、合計79,717再生・454いいねに。「Run.exe」は2,019再生増で31,306再生となりました。新しく公開一覧へ加わった曲はありません。"
+        "label": "新しい随筆",
+        "title": "「自然との戦いを楽しむ」を公開",
+        "summary": "広がった竹やぶを手入れする一日から、子供時代のタケノコ掘りが果たしていた役割を読み直す随筆。面倒な作業のあとに残った達成感と、自然との境界を保ちながら暮らす楽しさを綴ります。"
       },
       "en": {
-        "label": "Suno",
-        "title": "47 public tracks reach 79,717 plays",
-        "summary": "The catalog gained 3,672 plays and 6 likes since October 25, reaching 79,717 plays and 454 likes. Run.exe added 2,019 plays to reach 31,306. No new tracks joined the public feed."
+        "label": "NEW ESSAY",
+        "title": "Finding enjoyment in working with nature",
+        "summary": "A day clearing encroaching bamboo leads Ueyama to reconsider his childhood task of digging shoots. The essay explores the satisfaction of physical work and the ongoing effort of maintaining a boundary with nature."
+      }
+    },
+    {
+      "id": "2026-11-08-minjoya-friday-night",
+      "kind": "project",
+      "date": "2026-11-04",
+      "url": "https://joya-bell-night.dueyama.chatgpt.site/",
+      "ja": {
+        "label": "次の公開テスト",
+        "title": "みんじょや、11月13日の特別な夜へ",
+        "summary": "「13th Friday night」を11月13日に予定。日本時間23:00:24から先着100名の参加受付、23:10:24開始、13秒間隔で13打、最後の一打は23:13。現在は全国モードを休止し、手元での試し打ちを公開しています。"
+      },
+      "en": {
+        "label": "UPCOMING PUBLIC TEST",
+        "title": "Minjoya plans a special November 13 night",
+        "summary": "The “13th Friday night” shared-bell test is planned for November 13. Registration opens at 23:00:24 JST for up to 100 participants; 13 strikes begin at 23:10:24 and end at 23:13. Shared mode is currently paused, with local practice available."
+      }
+    },
+    {
+      "id": "2026-11-08-r6s-pi5-log-move",
+      "kind": "site",
+      "date": "2026-11-07",
+      "url": "https://r6s-openwrt-lab-notes.dueyama.chatgpt.site/",
+      "ja": {
+        "label": "技術記録",
+        "title": "ルーターのログ保存・集計をPi 5へ",
+        "summary": "R6Sの公開技術記録に、Snort・WANログの保存とSQL集計をRaspberry Pi 5へ移した経過を追加。R6Sは通信制御・検知・NPU処理を担当し、移設後の照会や復元コピーの照合、残る未確認事項も記録しています。"
+      },
+      "en": {
+        "label": "TECHNICAL NOTES",
+        "title": "Moving router log storage and analysis to Pi 5",
+        "summary": "The public R6S notes document moving Snort/WAN log storage and SQL processing to Raspberry Pi 5. R6S retains routing, detection, and NPU work. The record distinguishes verified queries and restored-copy checks from remaining unverified conditions."
       }
     }
   ]
